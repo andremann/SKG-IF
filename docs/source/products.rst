@@ -26,7 +26,7 @@ Others
 
 
 
-Metadata Fields
+Properties
 ----------------
 This section is to describe the metadata fields for the Research Products
 
@@ -163,7 +163,7 @@ Date Type
 ^^^^^^^^^
 :Description: The type of the date (e.g. publishing, embargo...)
 :Type: String
-:Use" Mandatory (1)
+:Use: Mandatory (1)
 :Representation: XML attribute ``dateType
 
 
@@ -187,16 +187,16 @@ Date Format
 
 ResourceType
 -----
-:Descriptio: The type of the research product. One among (literatur, researcData, researchSoftware, Other)
-:Type:String
+:Description: The type of the research product. One among (literatur, researcData, researchSoftware, Other)
+:Type: String
 :Use: Mandatory
 :Representation: XML element ``resourceType``
 
 ResourceTypeDescription
 ^^^^^
 :Description: Free text describing the resource (i.e. journal-article, workflow, collection ....)
-:Type:String 
-:Use:Required 
+:Type: String 
+:Use: Required 
 :Representation: XML attribute ``resourceTypeDescription``
 
 
