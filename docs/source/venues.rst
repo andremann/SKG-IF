@@ -1,12 +1,12 @@
 Venues
 ######
-
+TODO Description
 
 Properties
 ==========
-- LocalIdentifier
-- Identifiers
-- Title
+- localIdentifier
+- identifiers
+- title
 - issn
 - eissn
 - lissn
