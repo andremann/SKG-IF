@@ -16,10 +16,7 @@ Research data
 
 Research Software
 -----------------
-:Description: (definition from RDA WG) Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or 
-for a research purpose. Note that software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are used for research but were not created during or with a 
-clear research intent should be considered software in research and not Research Software. This differentiation may vary between disciplines. The minimal requirement for achieving computational 
-reproducibility is that all the computational components (Research Software, software used in research, documentation and hardware) used during the research are identified, described, and made 
+:Description: (definition from RDA WG) Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose. Note that software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are used for research but were not created during or with a clear research intent should be considered software in research and not Research Software. This differentiation may vary between disciplines. The minimal requirement for achieving computational reproducibility is that all the computational components (Research Software, software used in research, documentation and hardware) used during the research are identified, described, and made 
 accessible to the extent that is possible.
 
 
@@ -41,7 +38,9 @@ Local Identifier
 :Description: Unique code identifiying the Produc in the SKG (if any, otherwise "stateless identifier")
 :Use: mandatory (1)
 :Representation: XML attribute ``localIdentifier``
-:Example: .. code-block::json
+:Example: 
+
+.. code-block::json
 
 "localIdentifier":"50|doi_dedup___::80f29c8c8ba18c46c88a285b7e739dc3"
 
