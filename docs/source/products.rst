@@ -40,9 +40,10 @@ Local Identifier
 :Representation: XML attribute ``localIdentifier``
 :Example: 
 
-.. code-block::json
+.. code-block:: xml
+   :linenos:
 
-"localIdentifier":"50|doi_dedup___::80f29c8c8ba18c46c88a285b7e739dc3"
+    <localIdentifier>50|doi_dedup___::80f29c8c8ba18c46c88a285b7e739dc3</localIdentifier>
 
 
 Identifiers
