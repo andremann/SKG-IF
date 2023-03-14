@@ -51,7 +51,7 @@ Identifiers
 :Description: Identifier for the resource outside of the SKG. 
 :Type: Wrapper element
 :Use: Optional (0,.. n)
-:Representation: XML element ``Identifiers``
+:Representation: XML element ``identifiers``
 
 identifier
 """"""""""""""""
@@ -73,19 +73,19 @@ identifierValue
 .. code-block:: xml
    :linenos:
 
-    <Identifiers>
+    <identifiers>
         <identifier identifierScheme="doi">10....</identifier>
-    </Identifiers>
+    </identifiers>
 
 Title
 ^^^^^
 :Description: The title of the research product
 :Type: String
 :Use: mandatory, possibly multiple (1..*)
-:Representation: XML element ``Title`` as a multilingual string
+:Representation: XML element ``title`` as a multilingual string
 
 titleType
-^^^^^^^^^^^^^
+""""""""""""""""
 :Description: The type of the title (main, subtitle)
 :Type: String
 :Use: mandatory, (1)
@@ -93,7 +93,7 @@ titleType
 
 
 titleLanguage
-^^^^^^^^^^^^^
+""""""""""""""""
 :Description: The language of the title of the research product
 :Type: String
 :Use: mandatory, (1)
@@ -101,7 +101,7 @@ titleLanguage
 
 
 languageCode
-^^^^^^^^^^^^^
+""""""""""""""""
 :Description: The code of the language of the title of the research product
 :Type: String
 :Use: mandatory, (1)
@@ -113,18 +113,97 @@ languageCode
 .. code-block:: xml
    :linenos:
 
-    <Title titleType="main", titleLanguage="en" languageScheme="ISO-2">On the.... </Title>
+    <title titleType="main", titleLanguage="en" languageCode="ISO-2">On the.... </title>
        
 
 Abstract
 ^^^^^^^^
 :Description: A description for the research product 
+:Type: String
 :Use: required, possibly multiple (0..*)
-:Representation: XML element ``Abstract`` as a multilingual string
+:Representation: XML element ``abstract`` 
+
+abstractLanguage
+""""""""""""""""
+:Description: The language of the abstract of the research product
+:Type: String
+:Use: mandatory, (1)
+:Representation: XML attribute ``abstractLanguage`` 
+
+
+languageCode
+""""""""""""""""
+:Description: The code of the language of the abstract of the research product
+:Type: String
+:Use: mandatory, (1)
+:Representation: XML attribute ``languageCode`` 
+
+.. code-block:: xml
+   :linenos:
+
+    <abstract abstractLanguage="en" languageCode="ISO-2">This dataset ...</abstract>
 
 
 Dates
+--------
+:Description: Relevant dates for the research product
+:Type: Wrapper element 
+:Use: Mandatory, possibly more than one (1..*)
+:Representation: XML element ``dates``
+
 Date
-DateType
+^^^^^
+:Description: The relevant date for the research product 
+:Type: String 
+:Use: Mandatory (1)
+:Representation: XML element ``date``
+
+
+Date Type
+^^^^^^^^^
+:Description: The type of the date (e.g. publishing, embargo...)
+:Type: String
+:Use" Mandatory (1)
+:Representation: XML attribute ``dateType
+
+
+Date Format
+^^^^^^^
+:Description: The format of the relevant date 
+:Type: String 
+:Use: Mandatory (1)
+:Representation: XML attribute ``dateFormat``
+
+
+:Example:
+
+.. code-block:: xml
+   :linenos:
+
+    <dates>
+        <date dateType="embargo" dateFormat="yyyy-MM-dd">2022-12-03</date> 
+    </dates>
+
+
 ResourceType
+-----
+:Descriptio: The type of the research product. One among (literatur, researcData, researchSoftware, Other)
+:Type:String
+:Use: Mandatory
+:Representation: XML element ``resourceType``
+
 ResourceTypeDescription
+^^^^^
+:Description: Free text describing the resource (i.e. journal-article, workflow, collection ....)
+:Type:String 
+:Use:Required 
+:Representation: XML attribute ``resourceTypeDescription``
+
+
+:Example:
+
+.. code-block:: xml
+   :linenos:
+
+    <resourceType resourceTypeGeneral="monograph">literature</resourceType>
+
