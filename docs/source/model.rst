@@ -6,8 +6,8 @@ TODO write introduction
 
 .. toctree::
 
-    products
-    authors
-    venues
+      products
+      authors
+      venues
 
     
