@@ -1,22 +1,13 @@
 Model entities
 ==============
 
-
-Research products
------------------
+TODO write introduction
 
 
-Literature
-----------
+.. toctree::
 
+    products
+    authors
+    venues
 
-Research data
--------------
-
-
-Research software
------------------
-
-
-Other
------
+    
