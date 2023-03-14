@@ -16,8 +16,7 @@ Research data
 
 Research Software
 -----------------
-:Description: (definition from RDA WG) Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose. Note that software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are used for research but were not created during or with a clear research intent should be considered software in research and not Research Software. This differentiation may vary between disciplines. The minimal requirement for achieving computational reproducibility is that all the computational components (Research Software, software used in research, documentation and hardware) used during the research are identified, described, and made 
-accessible to the extent that is possible.
+:Description: (definition from RDA WG) Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose. Note that software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are used for research but were not created during or with a clear research intent should be considered software in research and not Research Software. This differentiation may vary between disciplines. The minimal requirement for achieving computational reproducibility is that all the computational components (Research Software, software used in research, documentation and hardware) used during the research are identified, described, and made accessible to the extent that is possible.
 
 
 Others
@@ -36,8 +35,9 @@ This section is to describe the metadata fields for the Research Products
 Local Identifier
 ^^^^^^^^^^^^^^^^^^^
 :Description: Unique code identifiying the Produc in the SKG (if any, otherwise "stateless identifier")
+:Type: String
 :Use: mandatory (1)
-:Representation: XML attribute ``localIdentifier``
+:Representation: XML element ``localIdentifier``
 :Example: 
 
 .. code-block:: xml
@@ -48,32 +48,73 @@ Local Identifier
 
 Identifiers
 ^^^^^^^^^^^^
-:Description: Identifier for the resource outside of the SKG
+:Description: Identifier for the resource outside of the SKG. 
+:Type: Wrapper element
 :Use: Optional (0,.. n)
-:Representation: XML attribute ``Identifiers``
+:Representation: XML element ``Identifiers``
 
-
-identifierScheme
+identifier
 """"""""""""""""
-:Description: The schema of the external identifier 
+:Description: The external identifier 
+:Type: String
 :Use: Mandatory (1)
-:Representation: XML attribute ``identifierScheme``
+:Representation: XML element ``identifier``
 
 
 identifierValue
 """"""""""""""""
-:Description: The value for the identifier in the schema 
+:Description: The scheme for the external identifier
+:Type: String
 :Use: Mandatory (1)
-:Representation: XML attribute ``IdentifierValue``
+:Representation: XML attribute ``IdentifierScheme``
 
+:Example:
+
+.. code-block:: xml
+   :linenos:
+
+    <Identifiers>
+        <identifier identifierScheme="doi">10....</identifier>
+    </Identifiers>
 
 Title
 ^^^^^
 :Description: The title of the research product
+:Type: String
 :Use: mandatory, possibly multiple (1..*)
 :Representation: XML element ``Title`` as a multilingual string
 
+titleType
+^^^^^^^^^^^^^
+:Description: The type of the title (main, subtitle)
+:Type: String
+:Use: mandatory, (1)
+:Representation: XML attribute ``titleType`` 
 
+
+titleLanguage
+^^^^^^^^^^^^^
+:Description: The language of the title of the research product
+:Type: String
+:Use: mandatory, (1)
+:Representation: XML attribute ``titleLanguage`` 
+
+
+languageCode
+^^^^^^^^^^^^^
+:Description: The code of the language of the title of the research product
+:Type: String
+:Use: mandatory, (1)
+:Representation: XML attribute ``languageCode`` 
+
+
+:Example:
+
+.. code-block:: xml
+   :linenos:
+
+    <Title titleType="main", titleLanguage="en" languageScheme="ISO-2">On the.... </Title>
+       
 
 Abstract
 ^^^^^^^^
