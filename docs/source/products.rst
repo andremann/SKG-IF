@@ -54,7 +54,8 @@ Identifiers
 :Representation: XML element ``identifiers``
 
 identifier
-^^^
+^^^^^^^^^^^
+
 :Description: The external identifier 
 :Type: String
 :Use: mandatory (1)
@@ -62,7 +63,8 @@ identifier
 
 
 identifierValue
-^^^
+^^^^^^^^^
+
 :Description: The scheme for the external identifier
 :Type: String
 :Use: mandatory (1)
@@ -85,7 +87,8 @@ Title
 :Representation: XML element ``title`` as a multilingual string
 
 titleType
-^^^
+^^^^^^^^
+
 :Description: The type of the title (main, subtitle)
 :Type: String
 :Use: mandatory, (1)
@@ -93,7 +96,8 @@ titleType
 
 
 titleLanguage
-^^^
+^^^^^^^^^^
+
 :Description: The language of the title of the research product
 :Type: String
 :Use: mandatory, (1)
