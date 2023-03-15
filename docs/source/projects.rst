@@ -31,7 +31,7 @@ Identifiers
     <tag>...</tag>
 
 Identifier scheme
-----
+^^^^^^^^
 :Description: 
 :Type: 
 :Use: 
@@ -43,7 +43,7 @@ Identifier scheme
     <tag>...</tag>
 
 Identifier value
-----
+^^^^^^^^
 :Description: 
 :Type: 
 :Use: 

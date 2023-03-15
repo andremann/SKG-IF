@@ -34,8 +34,8 @@ Identifiers
 Title
 ----
 :Description: 
-:Type: 
-:Use: 
+:Type: string
+:Use: mandatory, (1)
 :Representation: XML element ``title``
 :Example: 
 .. code-block:: xml
@@ -67,7 +67,7 @@ eISSN
 
     <tag>...</tag>
 
-lissn
+Linked ISSN
 ----
 :Description: 
 :Type: 
@@ -96,7 +96,7 @@ Start page
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``start_page``
+:Representation: XML element ``startPage``
 :Example: 
 .. code-block:: xml
    :linenos:
@@ -108,7 +108,7 @@ End page
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``end_page``
+:Representation: XML element ``endPage``
 :Example: 
 .. code-block:: xml
    :linenos:

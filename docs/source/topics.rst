@@ -73,7 +73,7 @@ Provenance type
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``provenance_type``
+:Representation: XML element ``provenanceType``
 :Example: 
 .. code-block:: xml
    :linenos:

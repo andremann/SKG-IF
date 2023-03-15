@@ -5,7 +5,6 @@ TODO add Description
 
 Literature
 ====
-
 :Description: Intended for reading by humans (article, thesis, peer-review, blog posts, books, reports, patents, etc.)
 
 
@@ -50,14 +49,14 @@ Identifiers
 ----
 :Description: Identifier for the resource outside of the SKG. 
 :Type: Wrapper element
-:Use: pptional (0,.. n)
+:Use: optional (0,.. n)
 :Representation: XML element ``identifiers``
 
 identifier
 ^^^^^^^^^^^
 
 :Description: The external identifier 
-:Type: String
+:Type: string
 :Use: mandatory (1)
 :Representation: XML element ``identifier``
 
@@ -66,7 +65,7 @@ identifierValue
 ^^^^^^^^^
 
 :Description: The scheme for the external identifier
-:Type: String
+:Type: string
 :Use: mandatory (1)
 :Representation: XML attribute ``IdentifierScheme``
 
@@ -82,7 +81,7 @@ identifierValue
 Title
 ----
 :Description: The title of the research product
-:Type: String
+:Type: string
 :Use: mandatory, possibly multiple (1..*)
 :Representation: XML element ``title`` as a multilingual string
 
@@ -90,7 +89,7 @@ titleType
 ^^^^^^^^
 
 :Description: The type of the title (main, subtitle)
-:Type: String
+:Type: string
 :Use: mandatory, (1)
 :Representation: XML attribute ``titleType`` 
 
@@ -99,7 +98,7 @@ titleLanguage
 ^^^^^^^^^^
 
 :Description: The language of the title of the research product
-:Type: String
+:Type: string
 :Use: mandatory, (1)
 :Representation: XML attribute ``titleLanguage`` 
 
@@ -107,7 +106,7 @@ titleLanguage
 languageCode
 ^^^
 :Description: The code of the language of the title of the research product
-:Type: String
+:Type: string
 :Use: mandatory, (1)
 :Representation: XML attribute ``languageCode`` 
 
@@ -123,14 +122,14 @@ languageCode
 Abstract
 ----
 :Description: A description for the research product 
-:Type: String
+:Type: string
 :Use: required, possibly multiple (0..*)
 :Representation: XML element ``abstract`` 
 
 abstractLanguage
 ^^^
 :Description: The language of the abstract of the research product
-:Type: String
+:Type: string
 :Use: mandatory, (1)
 :Representation: XML attribute ``abstractLanguage`` 
 
@@ -138,7 +137,7 @@ abstractLanguage
 languageCode
 ^^^
 :Description: The code of the language of the abstract of the research product
-:Type: String
+:Type: string
 :Use: mandatory, (1)
 :Representation: XML attribute ``languageCode`` 
 
@@ -151,14 +150,14 @@ languageCode
 Dates
 ---
 :Description: Relevant dates for the research product
-:Type: Wrapper element 
+:Type: wrapper element 
 :Use: mandatory, possibly more than one (1..*)
 :Representation: XML element ``dates``
 
 Date
 ^^^
 :Description: The relevant date for the research product 
-:Type: String 
+:Type: string 
 :Use: mandatory (1)
 :Representation: XML element ``date``
 
@@ -166,7 +165,7 @@ Date
 Date Type
 """
 :Description: The type of the date (e.g. publishing, embargo...)
-:Type: String
+:Type: string
 :Use: mandatory (1)
 :Representation: XML attribute ``dateType
 
@@ -174,7 +173,7 @@ Date Type
 Date Format
 """
 :Description: The format of the relevant date 
-:Type: String 
+:Type: string 
 :Use: mandatory (1)
 :Representation: XML attribute ``dateFormat``
 
@@ -192,15 +191,15 @@ Date Format
 ResourceType
 -----
 :Description: The type of the research product. One among (literatur, researcData, researchSoftware, Other)
-:Type: String
-:Use: Mandatory
+:Type: string
+:Use: mandatory
 :Representation: XML element ``resourceType``
 
 ResourceTypeDescription
 ^^^^^
 :Description: Free text describing the resource (i.e. journal-article, workflow, collection ....)
-:Type: String 
-:Use: Required 
+:Type: string 
+:Use: required 
 :Representation: XML attribute ``resourceTypeDescription``
 
 

@@ -8,8 +8,8 @@ This section is to describe the metadata fields for the Organisations.
 
 Local identifier
 ----
-:Description: 
-:Type: 
+:Description: Unique code identifiying the Organisation in the OSG (if any, otherwise "stateless identifier")
+:Type: string 
 :Use: 
 :Representation: XML element ``localIdentifier``
 :Example: 
@@ -20,9 +20,9 @@ Local identifier
 
 Identifier
 ----
-:Description: 
-:Type: 
-:Use: 
+:Description: Persistent identifiers for the organization
+:Type: string
+:Use: recommended, (1..*)
 :Representation: XML element ``identifier``
 :Example: 
 .. code-block:: xml
@@ -31,10 +31,10 @@ Identifier
     <tag>...</tag>
 
 Identifier scheme
-----
+^^^^^^^^
 :Description: 
-:Type: 
-:Use: 
+:Type: string
+:Use: mandatory
 :Representation: XML element ``identifierScheme``
 :Example: 
 .. code-block:: xml
@@ -43,10 +43,10 @@ Identifier scheme
     <tag>...</tag>
 
 Identifier value
-----
+^^^^^^^^
 :Description: 
-:Type: 
-:Use: 
+:Type: string
+:Use: mandatory
 :Representation: XML element ``identifierValue``
 :Example: 
 .. code-block:: xml
@@ -57,8 +57,8 @@ Identifier value
 Name
 ----
 :Description: 
-:Type: 
-:Use: 
+:Type: string
+:Use: mandatory, (1)
 :Representation: XML element ``name``
 :Example: 
 .. code-block:: xml
@@ -69,8 +69,8 @@ Name
 Short name
 ----
 :Description: 
-:Type: 
-:Use: 
+:Type: string
+:Use: optional, (1..*)
 :Representation: XML element ``shortName``
 :Example: 
 .. code-block:: xml
@@ -81,8 +81,8 @@ Short name
 Other names
 ----
 :Description: 
-:Type: 
-:Use: 
+:Type: string
+:Use: optional, (1..*)
 :Representation: XML element ``otherNames``
 :Example: 
 .. code-block:: xml
@@ -93,8 +93,8 @@ Other names
 Website
 ----
 :Description: 
-:Type: 
-:Use: 
+:Type: string
+:Use: mandatory, (1)
 :Representation: XML element ``website``
 :Example: 
 .. code-block:: xml
@@ -105,8 +105,8 @@ Website
 Country
 ----
 :Description: 
-:Type: 
-:Use: 
+:Type: string
+:Use: mandatory, (1)
 :Representation: XML element ``country``
 :Example: 
 .. code-block:: xml
