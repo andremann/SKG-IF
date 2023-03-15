@@ -7,7 +7,7 @@ Properties
 This section is to describe the metadata fields for the Venues.
 
 
-LocalIdentifier
+Local identifier
 ----
 :Description: Unique code identifiying the Venue in the OSG (if any, otherwise "stateless identifier")
 :Type: string
