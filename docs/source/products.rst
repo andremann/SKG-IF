@@ -50,14 +50,14 @@ Identifiers
 ----
 :Description: Identifier for the resource outside of the SKG. 
 :Type: Wrapper element
-:Use: Optional (0,.. n)
+:Use: pptional (0,.. n)
 :Representation: XML element ``identifiers``
 
 identifier
 ^^^
 :Description: The external identifier 
 :Type: String
-:Use: Mandatory (1)
+:Use: mandatory (1)
 :Representation: XML element ``identifier``
 
 
@@ -65,7 +65,7 @@ identifierValue
 ^^^
 :Description: The scheme for the external identifier
 :Type: String
-:Use: Mandatory (1)
+:Use: mandatory (1)
 :Representation: XML attribute ``IdentifierScheme``
 
 :Example:
@@ -148,14 +148,14 @@ Dates
 ---
 :Description: Relevant dates for the research product
 :Type: Wrapper element 
-:Use: Mandatory, possibly more than one (1..*)
+:Use: mandatory, possibly more than one (1..*)
 :Representation: XML element ``dates``
 
 Date
 ^^^
 :Description: The relevant date for the research product 
 :Type: String 
-:Use: Mandatory (1)
+:Use: mandatory (1)
 :Representation: XML element ``date``
 
 
@@ -163,7 +163,7 @@ Date Type
 """
 :Description: The type of the date (e.g. publishing, embargo...)
 :Type: String
-:Use: Mandatory (1)
+:Use: mandatory (1)
 :Representation: XML attribute ``dateType
 
 
@@ -171,7 +171,7 @@ Date Format
 """
 :Description: The format of the relevant date 
 :Type: String 
-:Use: Mandatory (1)
+:Use: mandatory (1)
 :Representation: XML attribute ``dateFormat``
 
 

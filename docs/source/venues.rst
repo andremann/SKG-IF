@@ -4,63 +4,63 @@ TODO Description
 
 Properties
 ==========
-This section is to describe the metadata fields for the ``Venues``.
+This section is to describe the metadata fields for the Venues.
 
 
-localIdentifier
+LocalIdentifier
 ----
-:Description: 
-:Type: 
-:Use: 
-:Representation: XML element ``tag``
+:Description: Unique code identifiying the Venue in the OSG (if any, otherwise "stateless identifier")
+:Type: string
+:Use: recommended, (0..*)
+:Representation: XML element ``localIdentifier``
 :Example: 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
 
-identifiers
+Identifiers
 ----
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``tag``
+:Representation: XML element ``identifiers``
 :Example: 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
 
-title
+Title
 ----
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``tag``
+:Representation: XML element ``title``
 :Example: 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
 
-issn
+ISSN
 ----
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``tag``
+:Representation: XML element ``issn``
 :Example: 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
 
-eissn
+eISSN
 ----
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``tag``
+:Representation: XML element ``eissn``
 :Example: 
 .. code-block:: xml
    :linenos:
@@ -72,67 +72,67 @@ lissn
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``tag``
+:Representation: XML element ``lissn``
 :Example: 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
 
-issue
+Issue
 ----
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``tag``
+:Representation: XML element ``issue``
 :Example: 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
 
-start page
+Start page
 ----
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``tag``
+:Representation: XML element ``start_page``
 :Example: 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
 
-end page
+End page
 ----
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``tag``
+:Representation: XML element ``end_page``
 :Example: 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
 
-volume
+Volume
 ----
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``tag``
+:Representation: XML element ``volume``
 :Example: 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
 
-edition
+Edition
 ----
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``tag``
+:Representation: XML element ``edition``
 :Example: 
 .. code-block:: xml
    :linenos:
