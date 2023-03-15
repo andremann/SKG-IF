@@ -213,10 +213,11 @@ ResourceTypeDescription
 
 
 Relationships
-===
+============
 
 hasDeclaredAffiliation
----
+----------------------
+
 :Description: It is the affiliation of one of the people creating the research result. Reference to a pair <author, organization>, i.e. organization to which the author was affiliated when generating this product. For this relation the author is an entity in the SKG
 :Source: research product 
 :Target: (author, organization)
@@ -236,8 +237,8 @@ hasDeclaredAffiliation
     </relation>
 
 
-hasAuthorAffiliatedWith (to Organization)					
----
+hasAuthorAffiliatedWith 
+---------------------------
 :Description: It is a relation between the result and the organization. We do not know who is the author involved
 :Source: research product 
 :Target: organization 
@@ -254,7 +255,8 @@ hasAuthorAffiliatedWith (to Organization)
     </relation>
 
 publishedIn
----
+--------------
+
 :Description: The research product publishing venue 
 :Source: research product
 :Target: venue 
@@ -271,7 +273,8 @@ publishedIn
     </relation>
 
 fundedBy 
----
+-------------
+
 :Description: the funds thanks to which the product has been made
 :Source: research product 
 :Target: project, organization (funder) 
@@ -292,7 +295,8 @@ fundedBy
 
 
 hasSubject
----
+-----------
+
 :Description: The topic this research product is related to 
 :Source: research product 
 :Target: Topic 
@@ -311,7 +315,8 @@ hasSubject
 
 
 relatedWithProduct 
----
+-------------------
+
 :Description: other product the research product is related with 
 :Source: research product 
 :Target: research product
