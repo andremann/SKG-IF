@@ -104,7 +104,7 @@ titleLanguage
 
 
 languageCode
-^^^
+^^^^^^^^^^
 :Description: The code of the language of the title of the research product
 :Type: string
 :Use: mandatory, (1)
@@ -127,7 +127,7 @@ Abstract
 :Representation: XML element ``abstract`` 
 
 abstractLanguage
-^^^
+^^^^^^^^^^^^^^
 :Description: The language of the abstract of the research product
 :Type: string
 :Use: mandatory, (1)
@@ -135,7 +135,7 @@ abstractLanguage
 
 
 languageCode
-^^^
+^^^^^^^^^^^
 :Description: The code of the language of the abstract of the research product
 :Type: string
 :Use: mandatory, (1)
@@ -155,7 +155,7 @@ Dates
 :Representation: XML element ``dates``
 
 Date
-^^^
+^^^^^^^^^^^^^
 :Description: The relevant date for the research product 
 :Type: string 
 :Use: mandatory (1)
@@ -163,7 +163,7 @@ Date
 
 
 Date Type
-"""
+"""""""""""""
 :Description: The type of the date (e.g. publishing, embargo...)
 :Type: string
 :Use: mandatory (1)
@@ -171,7 +171,7 @@ Date Type
 
 
 Date Format
-"""
+"""""""""""""
 :Description: The format of the relevant date 
 :Type: string 
 :Use: mandatory (1)
@@ -196,7 +196,7 @@ ResourceType
 :Representation: XML element ``resourceType``
 
 ResourceTypeDescription
-^^^^^
+^^^^^^^^^^^^^^^
 :Description: Free text describing the resource (i.e. journal-article, workflow, collection ....)
 :Type: string 
 :Use: required 
@@ -212,10 +212,11 @@ ResourceTypeDescription
 
 
 Relationships
-===
+============
 
 hasDeclaredAffiliation
----
+----------------------
+
 :Description: It is the affiliation of one of the people creating the research result. Reference to a pair <author, organization>, i.e. organization to which the author was affiliated when generating this product. For this relation the author is an entity in the SKG
 :Source: research product 
 :Target: (author, organization)
@@ -235,8 +236,8 @@ hasDeclaredAffiliation
     </relation>
 
 
-hasAuthorAffiliatedWith (to Organization)					
----
+hasAuthorAffiliatedWith 
+---------------------------
 :Description: It is a relation between the result and the organization. We do not know who is the author involved
 :Source: research product 
 :Target: organization 
@@ -252,8 +253,9 @@ hasAuthorAffiliatedWith (to Organization)
         </targets>
     </relation>
 
-publishedInJournal 
----
+publishedIn
+--------------
+
 :Description: The research product publishing venue 
 :Source: research product
 :Target: venue 
@@ -269,11 +271,12 @@ publishedInJournal
         </targets>
     </relation>
 
-fundedBy (to Project, to Organization)	pointer to a a pair <project, funder>				
----
+fundedBy 
+-------------
+
 :Description: the funds thanks to which the product has been made
 :Source: research product 
-:Target: project, funder 
+:Target: project, organization (funder) 
 :Example:
 
 
@@ -284,14 +287,15 @@ fundedBy (to Project, to Organization)	pointer to a a pair <project, funder>
         <source type="researchProduct">resultId</source>
         <targets>
             <target type="project">projectId</target>
-            <target type="funder">funderId</target> 
+            <target type="organization">organizationId</target> 
         </targets>
     </relation>
 
-:Note: We do not have inserted an entity funder in the model
+
 
 hasSubject
----
+-----------
+
 :Description: The topic this research product is related to 
 :Source: research product 
 :Target: Topic 
@@ -309,8 +313,9 @@ hasSubject
     </relation>
 
 
-relatedWithProduct (to Product, semantics, local semantics)	Reference to another product, with semantics as "imposed" by TF and "local semantics" as originally provided by OSG			
----
+relatedWithProduct 
+-------------------
+
 :Description: other product the research product is related with 
 :Source: research product 
 :Target: research product
