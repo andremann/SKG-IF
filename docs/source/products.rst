@@ -105,7 +105,7 @@ titleLanguage
 
 
 languageCode
-^^^
+^^^^^^^^^^
 :Description: The code of the language of the title of the research product
 :Type: String
 :Use: mandatory, (1)
@@ -128,7 +128,7 @@ Abstract
 :Representation: XML element ``abstract`` 
 
 abstractLanguage
-^^^
+^^^^^^^^^^^^^^
 :Description: The language of the abstract of the research product
 :Type: String
 :Use: mandatory, (1)
@@ -136,7 +136,7 @@ abstractLanguage
 
 
 languageCode
-^^^
+^^^^^^^^^^^
 :Description: The code of the language of the abstract of the research product
 :Type: String
 :Use: mandatory, (1)
@@ -156,7 +156,7 @@ Dates
 :Representation: XML element ``dates``
 
 Date
-^^^
+^^^^^^^^^^^^^
 :Description: The relevant date for the research product 
 :Type: String 
 :Use: mandatory (1)
@@ -164,7 +164,7 @@ Date
 
 
 Date Type
-"""
+"""""""""""""
 :Description: The type of the date (e.g. publishing, embargo...)
 :Type: String
 :Use: mandatory (1)
@@ -172,7 +172,7 @@ Date Type
 
 
 Date Format
-"""
+"""""""""""""
 :Description: The format of the relevant date 
 :Type: String 
 :Use: mandatory (1)
@@ -197,7 +197,7 @@ ResourceType
 :Representation: XML element ``resourceType``
 
 ResourceTypeDescription
-^^^^^
+^^^^^^^^^^^^^^^
 :Description: Free text describing the resource (i.e. journal-article, workflow, collection ....)
 :Type: String 
 :Use: Required 
@@ -253,7 +253,7 @@ hasAuthorAffiliatedWith (to Organization)
         </targets>
     </relation>
 
-publishedInJournal 
+publishedIn
 ---
 :Description: The research product publishing venue 
 :Source: research product
@@ -270,11 +270,11 @@ publishedInJournal
         </targets>
     </relation>
 
-fundedBy (to Project, to Organization)	pointer to a a pair <project, funder>				
+fundedBy 
 ---
 :Description: the funds thanks to which the product has been made
 :Source: research product 
-:Target: project, funder 
+:Target: project, organization (funder) 
 :Example:
 
 
@@ -285,11 +285,11 @@ fundedBy (to Project, to Organization)	pointer to a a pair <project, funder>
         <source type="researchProduct">resultId</source>
         <targets>
             <target type="project">projectId</target>
-            <target type="funder">funderId</target> 
+            <target type="organization">organizationId</target> 
         </targets>
     </relation>
 
-:Note: We do not have inserted an entity funder in the model
+
 
 hasSubject
 ---
@@ -310,7 +310,7 @@ hasSubject
     </relation>
 
 
-relatedWithProduct (to Product, semantics, local semantics)	Reference to another product, with semantics as "imposed" by TF and "local semantics" as originally provided by OSG			
+relatedWithProduct 
 ---
 :Description: other product the research product is related with 
 :Source: research product 
