@@ -6,7 +6,10 @@ A Data source is a service where published material (metadata and files) are sto
 Example:
 `Episciences`_  is an overlay platform supporting the management of open-access journals on top of the Open Access repository HAL.fr. In this context, episciences.org is a publishing venue (journal, open access, open peer review), while HAL is a data source. Articles published via episciences.org will be therefore linked to the respective journal (publishing venue) and the data source HAL. 
 However, HAL is also a publishing venue for researchers that are directly uploading their products; a publishing venue with peer-review and some support for metadata curation. In this case, research products will be linked to HAL as a publishing venue and as a data source. 
-.. _ Episciences: 'https://episciences.org'
+.. _Episciences: 'https://episciences.org'
+
+`A cool website`_ and `The Dino <https://docutils.sourceforge.io/>`_.
+.. _A cool website: https://www.sphinx-doc.org/
 
 .. note::
     Each research product must be associated with its publishing venue and its data source.
