@@ -39,14 +39,14 @@ Identifier scheme
 :Description: The scheme for the external identifier
 :Type: string
 :Use: mandatory (1)
-:Representation: XML element ``identifier``
+:Representation: XML element ``identifierScheme``
 
 Identifier value
 ^^^^^^^^^
 :Description: The external identifier 
 :Type: string
 :Use: mandatory (1)
-:Representation: XML attribute ``IdentifierScheme``
+:Representation: XML attribute ``identifierValue``
 
 :Example: 
 .. code-block:: xml
