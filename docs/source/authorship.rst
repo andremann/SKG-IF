@@ -62,9 +62,9 @@ Relationships
 relatedProduct
 ----------------------
 
-:Description: It is the product related to this declared affiliation
+:Description: It is the product related to this authorship
 :Use: Mandatory (1)
-:Source: declaredAffiliation 
+:Source: authorship 
 :Target: research product 
 
 
@@ -74,40 +74,40 @@ relatedProduct
    :linenos:
 
     <relation semantics="relatedProduct">
-        <source type="declaredAffiliation">declaredAffiliationId</source>
+        <source type="authorship">authorshipId</source>
         <target type=researchProduct>resultId</target>
     </relation>
 
 
+
 relatedAuthor 
 ---------------------------
-:Description: It is the researcher related to this declaredAffiliation entity
+:Description: It is the researcher related to this authorship entity
 :Use: Mandatory (1)
-:Source: declared affiliation 
-:Target: research result 
+:Source: authorship
+:Target: researcher
 :Example:
 
 .. code-block:: xml
    :linenos:
 
     <relation semantics="relatedAuthor">
-        <source type="declaredAffiliation">declaredAffiliationId</source>
-        <target type="researchProduct">resultId</target>
+        <source type="authorship">authorshipId</source>
+        <target type="researcher">researcherId</target>
     </relation>
 
 relatedAuthorAffiliation
 --------------
-:Description: The affiliation of the researched related to the declaredAffiliation entity
+:Description: The affiliation of the researched related to the authorship entity
 :Use: Optional (0..*)
-:Source: declaredAffiliation 
-:Target: Organization
+:Source: authorship 
+:Target: organization
 :Example:
 
 .. code-block:: xml
    :linenos:
 
     <relation semantics="relatedAuthorAffiliation">
-        <source type="declaredAffiliation">declaredAffiliationId</source>
+        <source type="authorship">authorshipId</source>
         <target type="organization">organizationId</target>
     </relation>
-
