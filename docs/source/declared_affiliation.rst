@@ -1,4 +1,4 @@
-Declared Affiliation
+Authorship
 ####################
 
 It is to model the contribution of a researcher in the creation of the research result. 
