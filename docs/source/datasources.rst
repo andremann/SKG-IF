@@ -27,7 +27,11 @@ Local dentifier
 .. code-block:: json
    :linenos:
 
-    is_paratext: false 
+    open_access: {
+    is_oa: true,
+    oa_status: "gold",
+    oa_url: "https://peerj.com/articles/4375.pdf"
+    }
 
 
 Identifiers			
