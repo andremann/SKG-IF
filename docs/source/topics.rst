@@ -20,36 +20,27 @@ Local identifier
 
     <tag>...</tag>
 
-Identifier
+Identifiers			
 ----
-:Description: 
-:Type: 
-:Use: 
-:Representation: XML element ``identifier``
-:Example: 
-.. code-block:: xml
-   :linenos:
+:Description: Alternative identifiers
+:Type: Wrapper element
+:Use: optional, (1..*)
+:Representation: XML element ``identifiers``
 
-    <tag>...</tag>
+Identifier scheme
+^^^^^^^^^^^
+:Description: The scheme for the external identifier
+:Type: String
+:Use: mandatory (1)
+:Representation: XML element ``identifierScheme``
 
-Scheme
-----
-:Description: 
-:Type: 
-:Use: 
-:Representation: XML element ``scheme``
-:Example: 
-.. code-block:: xml
-   :linenos:
+Identifier value
+^^^^^^^^^
+:Description: The external identifier 
+:Type: String
+:Use: mandatory (1)
+:Representation: XML attribute ``identifierValue``
 
-    <tag>...</tag>
-
-Value
-----
-:Description: 
-:Type: 
-:Use: 
-:Representation: XML element ``value``
 :Example: 
 .. code-block:: xml
    :linenos:
@@ -69,7 +60,7 @@ Provenance
     <tag>...</tag>
 
 Provenance type
-----
+^^^^^^^^^
 :Description: 
 :Type: 
 :Use: 
@@ -81,7 +72,7 @@ Provenance type
     <tag>...</tag>
 
 Trust
-----
+^^^^^^^^^
 :Description: 
 :Type: 
 :Use: 
