@@ -1,5 +1,7 @@
+.. _Researcher:
+
 Researcher
-==========
+############
 
 TODO definition
 

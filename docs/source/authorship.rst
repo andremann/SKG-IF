@@ -1,9 +1,9 @@
 Authorship
 ####################
 
-It is to model the contribution of a researcher in the creation of the research result. 
-Each declared affiliation will have one link to the researcher contributing to the creation of the research result, and one link to the reserch result.
-One link can also be made to refer to the organization the researcher related to the declared affiliation entity, declared to be affiliated to when contributing to create the research result.  
+It is to model the contribution of a `Researcher`_ in the creation of the `Research product`_. 
+Each Authorship will have one link to the `Researcher`_ contributing to the creation of the research product, and one link to the `Research product`_.
+One link can also be made to refer to the `Organization`_ the `Researcher`_ related to the Authorship entity, declared to be affiliated to when contributing to create the `Research product`_.  
 
 Properties
 ==========
@@ -42,7 +42,7 @@ Rank
 ----
 :Description: The rank of the author 
 :Type: Integer
-:Use: Optiona, (0..1)
+:Use: Optional (0..1)
 :Representation: XML element ``rank`` 
 
 :Example:

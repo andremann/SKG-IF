@@ -1,3 +1,5 @@
+.. _Organizations:
+
 Organisations
 #############
 TODO Description

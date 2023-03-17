@@ -1,3 +1,5 @@
+.. _Research products:
+
 Research products
 ####
 
