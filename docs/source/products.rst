@@ -15,15 +15,14 @@ Research data
 :Description: Self-contained, persistently identified digital assets intended for processing (e.g. files containing: tables, metadata collections, dumps; persistent dynamic queries to scientific databases)
 
 
-Research Software
+Research software
 ====
 :Description: (definition from RDA WG) Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose. Note that software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are used for research but were not created during or with a clear research intent should be considered software in research and not Research Software. This differentiation may vary between disciplines. The minimal requirement for achieving computational reproducibility is that all the computational components (Research Software, software used in research, documentation and hardware) used during the research are identified, described, and made accessible to the extent that is possible.
 
 
-Others
+Other products
 ====
 :Description: any digital asset, uniquely identified, whose nature does not fall in the first three types
-
 
 
 
@@ -33,7 +32,7 @@ This section is to describe the metadata fields for the Research Products
 
 
 
-Local Identifier
+Local identifier
 ----
 :Description: Unique code identifiying the Produc in the SKG (if any, otherwise "stateless identifier")
 :Type: String
@@ -46,14 +45,14 @@ Local Identifier
     <localIdentifier>50|doi_dedup___::80f29c8c8ba18c46c88a285b7e739dc3</localIdentifier>
 
 
-Identifiers
+Alternative identifiers
 ----
 :Description: Identifier for the resource outside of the SKG. 
 :Type: Wrapper element
 :Use: optional (0,.. n)
 :Representation: XML element ``identifiers``
 
-Identifier Scheme
+Identifier scheme
 ^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
@@ -73,6 +72,7 @@ Itentifier value
     <identifiers>
         <identifier identifierScheme="doi">10....</identifier>
     </identifiers>
+
 
 Title
 ----
@@ -155,14 +155,14 @@ Date
 Date Type
 """""""""""""
 :Description: The type of the date (e.g. publishing, embargo...).
-:Type: string
+:Type: String
 :Use: mandatory (1)
 :Representation: XML attribute ``dateType
 
 Date Format
 """""""""""""
 :Description: The format of the relevant date.
-:Type: string 
+:Type: String 
 :Use: mandatory (1)
 :Representation: XML attribute ``dateFormat``
 
@@ -177,14 +177,14 @@ Date Format
 Resource type
 -----
 :Description: The type of the research product. One among (literatur, researcData, researchSoftware, Other).
-:Type: string
+:Type: String
 :Use: mandatory
 :Representation: XML element ``resourceType``
 
 Resource type description
 ^^^^^^^^^^^^^^^
 :Description: Free text describing the resource (i.e. journal-article, workflow, collection ....).
-:Type: string 
+:Type: String 
 :Use: required 
 :Representation: XML attribute ``resourceTypeDescription``
 
@@ -197,7 +197,7 @@ Resource type description
 Issue
 ----
 :Description: 
-:Type: 
+:Type: String
 :Use: 
 :Representation: XML element ``issue``
 
