@@ -6,13 +6,13 @@ Example:
 `Episciences <https://episciences.org>`_  is an overlay platform supporting the management of open-access journals on top of the Open Access repository HAL.fr. In this context, episciences.org is a publishing venue (journal, open access, open peer review), while HAL is a data source. Articles published via episciences.org will be therefore linked to the respective journal (publishing venue) and the data source HAL. 
 However, HAL is also a publishing venue for researchers that are directly uploading their products; a publishing venue with peer-review and some support for metadata curation. In this case, research products will be linked to HAL as a publishing venue and as a data source. 
 
+.. note::
+    Each Research product must be associated with its publishing venue and its data source. 
+
 
 Properties
 ==========
 This section is to describe the metadata fields for the Venues.
-
-.. note::
-    Each Research product must be associated with its publishing venue and its data source. 
 
 
 Local identifier
@@ -71,7 +71,20 @@ Name
 Venue type
 ----
 :Description: The type of the venue
-:Type: controlled vocabulary
+:Type: vocabulary
+.. tabularcolumns:: p{0.132\linewidth}p{0.198\linewidth}p{0.330\linewidth}
+.. csv-table:: Example CSV table
+   :name: tables-csv-example
+   :header: "SKG-IF", "OpenCitations"
+   :class: longtable
+   :align: center
+
+   "Repository", "Repository, Scientific database"
+   "Journal", "Journal issue, Journal volume, Journal"
+   "Conference", "Proceedings series, Proceedings"
+   "Book", "Book, Book part, Book section, Book series, Book set, Edited book, Reference book, Monograph"
+   "Other", "Report series, Standard series, Archival document"
+   "Unknown", ""
 :Use: mandatory, (1)
 :Representation: XML element ``venueType``
 :Example: 

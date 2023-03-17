@@ -20,9 +20,9 @@ Local identifier
 
 Identifiers
 ----
-:Description: 
-:Type: 
-:Use: 
+:Description: Alternative identifiers
+:Type: Wrapper element
+:Use: recommended, (0..*)
 :Representation: XML element ``identifiers``
 :Example: 
 .. code-block:: xml
@@ -33,8 +33,8 @@ Identifiers
 Identifier scheme
 ^^^^^^^^
 :Description: 
-:Type: 
-:Use: 
+:Type: String
+:Use: mandatory, (1)
 :Representation: XML element ``identifierScheme``
 :Example: 
 .. code-block:: xml
@@ -45,8 +45,8 @@ Identifier scheme
 Identifier value
 ^^^^^^^^
 :Description: 
-:Type: 
-:Use: 
+:Type: String
+:Use: mandatory, (1)
 :Representation: XML element ``identifierValue``
 :Example: 
 .. code-block:: xml
@@ -57,8 +57,8 @@ Identifier value
 Title
 ----
 :Description: 
-:Type: 
-:Use: 
+:Type: String
+:Use: mandatory, (1)
 :Representation: XML element ``title``
 :Example: 
 .. code-block:: xml
@@ -69,8 +69,8 @@ Title
 Abstract
 ----
 :Description: 
-:Type: 
-:Use: 
+:Type: String
+:Use: recommended, (1)
 :Representation: XML element ``abstract``
 :Example: 
 .. code-block:: xml
@@ -81,8 +81,8 @@ Abstract
 Acronym
 ----
 :Description: 
-:Type: 
-:Use: 
+:Type: String
+:Use: optional, (1)
 :Representation: XML element ``acronym``
 :Example: 
 .. code-block:: xml
