@@ -159,43 +159,6 @@ Linked ISSN
     <tag>...</tag>
 
 
-Issue
-----
-:Description: 
-:Type: 
-:Use: 
-:Representation: XML element ``issue``
-:Example: 
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
-
-
-Volume
-----
-:Description: 
-:Type: 
-:Use: 
-:Representation: XML element ``volume``
-:Example: 
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
-
-
-Edition
-----
-:Description: 
-:Type: 
-:Use: 
-:Representation: XML element ``edition``
-:Example: 
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
 
 
 Acronym
