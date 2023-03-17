@@ -1,7 +1,7 @@
 Authorship
 ####################
 
-It is to model the contribution of a `Researcher`_ in the creation of the `Research product`_. 
+It is to model the contribution of a :ref:`Researcher <Researcher>`: in the creation of the `Research product`_. 
 Each **Authorship** will have one link to the `Researcher`_ contributing to the creation of the `Research product`_, and one link to the `Research product`_.
 One link can also be made to refer to the `Organization`_ the `Researcher`_ related to the Authorship entity, declared to be affiliated to when contributing to create the `Research product`_.  
 
