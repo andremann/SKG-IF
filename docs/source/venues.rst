@@ -29,7 +29,7 @@ Local identifier
 
 Identifiers
 ----
-:Description: 
+:Description: Alternative external identifiers
 :Type: Wrapper element
 :Use: optional, (0..*)
 :Representation: XML element ``identifiers``
@@ -71,9 +71,11 @@ Name
 Venue type
 ----
 :Description: The type of the venue
-:Type: vocabulary
+:Type: vocabulary (see below)
+:Use: mandatory, (1)
+:Representation: XML element ``venueType``
 .. tabularcolumns:: p{0.132\linewidth}p{0.198\linewidth}p{0.330\linewidth}
-.. csv-table:: Example CSV table
+.. csv-table:: Controlled vocabulary for different types of venue and its mapping towards OpenCitations
    :name: tables-csv-example
    :header: "SKG-IF", "OpenCitations"
    :class: longtable
@@ -85,8 +87,7 @@ Venue type
    "Book", "Book, Book part, Book section, Book series, Book set, Edited book, Reference book, Monograph"
    "Other", "Report series, Standard series, Archival document"
    "Unknown", ""
-:Use: mandatory, (1)
-:Representation: XML element ``venueType``
+
 :Example: 
 .. code-block:: xml
    :linenos:
@@ -96,8 +97,8 @@ Venue type
 
 Peer review
 ----
-:Description: The type of peer-review taking place at the venue
-:Type: controlled vocabulary
+:Description: the type of peer-review in charge at the venue
+:Type: Vocabulary {single-blind, double-blind, open, none}
 :Use: mandatory, (1)
 :Representation: XML element ``peerReview``
 :Example: 
@@ -109,8 +110,8 @@ Peer review
 
 Metadata curation
 ----
-:Description: The type of metadata curation taking place at the venue
-:Type: controlled vocabulary
+:Description: The type of metadata curation taking place at the venue.
+:Type: Boolean
 :Use: mandatory, (1)
 :Representation: XML element ``metadataCuration``
 :Example: 
@@ -122,9 +123,9 @@ Metadata curation
 
 ISSN
 ----
-:Description: 
-:Type: 
-:Use: 
+:Description: The ISSNs used by this venue.
+:Type: String
+:Use: optional, (0..*)
 :Representation: XML element ``issn``
 :Example: 
 .. code-block:: xml
@@ -136,8 +137,8 @@ ISSN
 eISSN
 ----
 :Description: 
-:Type: 
-:Use: 
+:Type: String
+:Use: optional, (0..*)
 :Representation: XML element ``eissn``
 :Example: 
 .. code-block:: xml
@@ -148,49 +149,10 @@ eISSN
 
 Linked ISSN
 ----
-:Description: 
-:Type: 
-:Use: 
+:Description: The `ISSN-L <https://en.wikipedia.org/wiki/International_Standard_Serial_Number#Linking_ISSN>`_ identifying this venue. 
+:Type: String
+:Use: optional, (0..1)
 :Representation: XML element ``lissn``
-:Example: 
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
-
-
-Issue
-----
-:Description: 
-:Type: 
-:Use: 
-:Representation: XML element ``issue``
-:Example: 
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
-
-
-Volume
-----
-:Description: 
-:Type: 
-:Use: 
-:Representation: XML element ``volume``
-:Example: 
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
-
-
-Edition
-----
-:Description: 
-:Type: 
-:Use: 
-:Representation: XML element ``edition``
 :Example: 
 .. code-block:: xml
    :linenos:
