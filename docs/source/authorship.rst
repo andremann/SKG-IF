@@ -1,9 +1,9 @@
 Authorship
 ####################
 
-It is to model the contribution of a :ref:`Researcher <Researcher>`: in the creation of the `Research product`_. 
-Each **Authorship** will have one link to the `Researcher`_ contributing to the creation of the `Research product`_, and one link to the `Research product`_.
-One link can also be made to refer to the `Organization`_ the `Researcher`_ related to the Authorship entity, declared to be affiliated to when contributing to create the `Research product`_.  
+It is to model the contribution of a :ref:`Researcher <Researcher>` in the creation of the :ref:`Research product <Research product>`. 
+Each **Authorship** will have one link to the :ref:`Researcher <Researcher>` contributing to the creation of the :ref:`Research product <Research product>`, and one link to the :ref:`Research product <Research product>`.
+One link can also be made to refer to the :ref:`Organization <Organization>` the :ref:`Researcher <Researcher>` related to the Authorship entity, declared to be affiliated to when contributing to create the :ref:`Research product <Research product>`.  
 
 Properties
 ==========
@@ -65,7 +65,7 @@ relatedProduct
 :Description: It is the product related to this authorship
 :Use: Mandatory (1)
 :Source: **Authorship** 
-:Target: `Research product`_ 
+:Target: :ref:`Research product <Research product>`
 
 
 :Example:
@@ -85,7 +85,7 @@ relatedAuthor
 :Description: It is the researcher related to this authorship entity
 :Use: Mandatory (1)
 :Source: **Authorship** 
-:Target: `Researcher`_
+:Target: :ref:`Researcher <Researcher>`
 :Example:
 
 .. code-block:: xml
@@ -101,7 +101,7 @@ relatedAuthorAffiliation
 :Description: The affiliation of the researched related to the authorship entity
 :Use: Optional (0..*)
 :Source: **Authorship**  
-:Target: `Organization`_
+:Target: :ref:`Organization <Organization>`
 :Example:
 
 .. code-block:: xml
