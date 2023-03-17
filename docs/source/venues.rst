@@ -17,7 +17,7 @@ This section is to describe the metadata fields for the Venues.
 
 Local identifier
 ----
-:Description: Unique code identifiying the Venue in the OSG (if any, otherwise "stateless identifier")
+:Description: Unique code identifiying the Venue in the OSG (if any, otherwise "stateless identifier").
 :Type: string
 :Use: recommended, (0..*)
 :Representation: XML element ``localIdentifier``
@@ -29,21 +29,21 @@ Local identifier
 
 Identifiers
 ----
-:Description: Alternative external identifiers
+:Description: Alternative external identifiers.
 :Type: Wrapper element
 :Use: optional, (0..*)
 :Representation: XML element ``identifiers``
 
 Identifier scheme
 ^^^^^^^^^^^
-:Description: The scheme for the external identifier
+:Description: The scheme for the external identifier.
 :Type: string
 :Use: mandatory (1)
 :Representation: XML element ``identifierScheme``
 
 Identifier value
 ^^^^^^^^^
-:Description: The external identifier 
+:Description: The external identifier.
 :Type: string
 :Use: mandatory (1)
 :Representation: XML attribute ``identifierValue``
@@ -57,7 +57,7 @@ Identifier value
 
 Name
 ----
-:Description: The name of the venue
+:Description: The name of the venue.
 :Type: string
 :Use: mandatory, (1)
 :Representation: XML element ``name``
@@ -70,7 +70,7 @@ Name
 
 Venue type
 ----
-:Description: The type of the venue
+:Description: The type of the venue.
 :Type: vocabulary (see below)
 :Use: mandatory, (1)
 :Representation: XML element ``venueType``
@@ -97,7 +97,7 @@ Venue type
 
 Peer review
 ----
-:Description: the type of peer-review in charge at the venue
+:Description: the type of peer-review in charge at a venue.
 :Type: Vocabulary {single-blind, double-blind, open, none}
 :Use: mandatory, (1)
 :Representation: XML element ``peerReview``
@@ -110,7 +110,7 @@ Peer review
 
 Metadata curation
 ----
-:Description: The type of metadata curation taking place at the venue.
+:Description: The type of metadata curation taking place at a venue.
 :Type: Boolean
 :Use: mandatory, (1)
 :Representation: XML element ``metadataCuration``
@@ -123,7 +123,7 @@ Metadata curation
 
 ISSN
 ----
-:Description: The ISSNs used by this venue.
+:Description: The ISSNs used by a venue.
 :Type: String
 :Use: optional, (0..*)
 :Representation: XML element ``issn``
@@ -136,7 +136,7 @@ ISSN
 
 eISSN
 ----
-:Description: 
+:Description: Eletronic ISSN used by a venue.
 :Type: String
 :Use: optional, (0..*)
 :Representation: XML element ``eissn``
@@ -164,9 +164,9 @@ Linked ISSN
 
 Acronym
 ----
-:Description: 
-:Type: 
-:Use: 
+:Description: Acronym used by a venue.
+:Type: String
+:Use: recommended, (0..1)
 :Representation: XML element ``acronym``
 :Example: 
 .. code-block:: xml

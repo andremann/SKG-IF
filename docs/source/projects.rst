@@ -8,7 +8,7 @@ This section is to describe the metadata fields for the **Projects**.
 
 Local identifier
 ----
-:Description: Unique code identifiying the **Project** in the OSG (if any, otherwise "stateless identifier")
+:Description: Unique code identifiying the **Project** in the OSG (if any, otherwise "stateless identifier").
 :Type: 
 :Use: 
 :Representation: XML element ``localIdentifier``
@@ -32,7 +32,7 @@ Identifiers
 
 Identifier scheme
 ^^^^^^^^
-:Description: 
+:Description: The scheme for the external identifier.
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML element ``identifierScheme``
@@ -44,7 +44,7 @@ Identifier scheme
 
 Identifier value
 ^^^^^^^^
-:Description: 
+:Description: The scheme for the external identifier.
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML element ``identifierValue``
@@ -56,7 +56,7 @@ Identifier value
 
 Title
 ----
-:Description: 
+:Description: Title of the project.
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML element ``title``
@@ -68,7 +68,7 @@ Title
 
 Abstract
 ----
-:Description: 
+:Description: Abstract of the project.
 :Type: String
 :Use: recommended, (1)
 :Representation: XML element ``abstract``
@@ -80,7 +80,7 @@ Abstract
 
 Acronym
 ----
-:Description: 
+:Description: Project acronym.
 :Type: String
 :Use: optional, (1)
 :Representation: XML element ``acronym``
@@ -92,55 +92,50 @@ Acronym
 
 Funding
 ----
-:Description: 
+:Description: Project funding information.
 :Type: 
 :Use: 
 :Representation: XML element ``funding``
-:Example: 
-.. code-block:: xml
-   :linenos:
 
-    <tag>...</tag>
-
-Money granted
-----
-:Description: 
+Funder
+^^^^^^
+:Description: Project funder.
 :Type: 
 :Use: 
-:Representation: XML element ``moneyGranted``
-:Example: 
-.. code-block:: xml
-   :linenos:
+:Representation: XML element ``funder``
 
-    <tag>...</tag>
+Funding scheme
+^^^^^^
+:Description: Project funding scheme.
+:Type: 
+:Use: 
+:Representation: XML element ``fundingScheme``
 
 Currency
-----
-:Description: 
+^^^^^^
+:Description: Currency of the funded amount.
 :Type: 
 :Use: 
 :Representation: XML element ``currency``
-:Example: 
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
 
 Funded amount
-----
-:Description: 
+^^^^^^
+:Description: Amount funded for the project.
 :Type: 
 :Use: 
 :Representation: XML element ``fundedAmount``
+
 :Example: 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
 
+
+
 Keywords
 ----
-:Description: 
+:Description: Project keywords.
 :Type: 
 :Use: 
 :Representation: XML element ``keywords``
@@ -150,11 +145,12 @@ Keywords
 
     <tag>...</tag>
 
+
 Start date
 ----
 :Description: 
-:Type: 
-:Use: 
+:Type: Date
+:Use: recommended, (0..1)
 :Representation: XML element ``startDate``
 :Example: 
 .. code-block:: xml
@@ -162,11 +158,12 @@ Start date
 
     <tag>...</tag>
 
+
 End date
 ----
 :Description: 
-:Type: 
-:Use: 
+:Type: Date
+:Use: recommended, (0..1)
 :Representation: XML element ``endDate``
 :Example: 
 .. code-block:: xml
@@ -174,11 +171,12 @@ End date
 
     <tag>...</tag>
 
+
 Website
 ----
-:Description: 
-:Type: 
-:Use: 
+:Description: Project website.
+:Type: URL
+:Use: recommended, (0..1)
 :Representation: XML element ``website``
 :Example: 
 .. code-block:: xml

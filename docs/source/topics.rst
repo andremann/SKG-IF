@@ -15,30 +15,30 @@ Local identifier
 :Use: 
 :Representation: XML element ``localIdentifier``
 :Example: 
-.. code-block:: json
+.. code-block:: xml
    :linenos:
 
-    {id : '1234'}
+    <tag>...</tag>
 
 Identifiers			
 ----
 :Description: Alternative identifiers
 :Type: Wrapper element
-:Use: optional, (1..*)
+:Use: recommended, (1..*)
 :Representation: XML element ``identifiers``
 
 Identifier scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier
 :Type: String
-:Use: mandatory (1)
+:Use: mandatory, (1)
 :Representation: XML element ``identifierScheme``
 
 Identifier value
 ^^^^^^^^^
 :Description: The external identifier 
 :Type: String
-:Use: mandatory (1)
+:Use: mandatory, (1)
 :Representation: XML attribute ``identifierValue``
 
 :Example: 
@@ -50,7 +50,7 @@ Identifier value
 Provenance
 ----
 :Description: 
-:Type: 
+:Type: Wrapper element
 :Use: 
 :Representation: XML element ``provenance``
 :Example: 
