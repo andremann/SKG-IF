@@ -1,9 +1,9 @@
 Authorship
 ####################
 
-It is to model the contribution of a researcher in the creation of the research result. 
-Each declared affiliation will have one link to the researcher contributing to the creation of the research result, and one link to the reserch result.
-One link can also be made to refer to the organization the researcher related to the declared affiliation entity, declared to be affiliated to when contributing to create the research result.  
+It is to model the contribution of a :ref:`Researcher <Researcher>` in the creation of the :ref:`Research product <Research product>`. 
+Each **Authorship** will have one link to the :ref:`Researcher <Researcher>` contributing to the creation of the :ref:`Research product <Research product>`, and one link to the :ref:`Research product <Research product>`.
+One link can also be made to refer to the :ref:`Organization <Organization>` the :ref:`Researcher <Researcher>` related to the Authorship entity, declared to be affiliated to when contributing to create the :ref:`Research product <Research product>`.  
 
 Properties
 ==========
@@ -42,7 +42,7 @@ Rank
 ----
 :Description: The rank of the author 
 :Type: Integer
-:Use: Optiona, (0..1)
+:Use: Optional (0..1)
 :Representation: XML element ``rank`` 
 
 :Example:
@@ -64,8 +64,8 @@ relatedProduct
 
 :Description: It is the product related to this authorship
 :Use: Mandatory (1)
-:Source: authorship 
-:Target: research product 
+:Source: **Authorship** 
+:Target: :ref:`Research product <Research product>`
 
 
 :Example:
@@ -84,8 +84,8 @@ relatedAuthor
 ---------------------------
 :Description: It is the researcher related to this authorship entity
 :Use: Mandatory (1)
-:Source: authorship
-:Target: researcher
+:Source: **Authorship** 
+:Target: :ref:`Researcher <Researcher>`
 :Example:
 
 .. code-block:: xml
@@ -100,8 +100,8 @@ relatedAuthorAffiliation
 --------------
 :Description: The affiliation of the researched related to the authorship entity
 :Use: Optional (0..*)
-:Source: authorship 
-:Target: organization
+:Source: **Authorship**  
+:Target: :ref:`Organization <Organization>`
 :Example:
 
 .. code-block:: xml
