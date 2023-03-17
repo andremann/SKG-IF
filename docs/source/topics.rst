@@ -15,10 +15,10 @@ Local identifier
 :Use: 
 :Representation: XML element ``localIdentifier``
 :Example: 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    {id : '1234'}
 
 Identifiers			
 ----

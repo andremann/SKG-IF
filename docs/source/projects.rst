@@ -4,11 +4,11 @@ TODO Description
 
 Properties
 ==========
-This section is to describe the metadata fields for the Projects.
+This section is to describe the metadata fields for the **Projects**.
 
 Local identifier
 ----
-:Description: 
+:Description: Unique code identifiying the **Project** in the OSG (if any, otherwise "stateless identifier")
 :Type: 
 :Use: 
 :Representation: XML element ``localIdentifier``
