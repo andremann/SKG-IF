@@ -39,7 +39,6 @@ Local Identifier
 :Type: String
 :Use: mandatory (1)
 :Representation: XML element ``localIdentifier``
-:Example: 
 
 .. code-block:: xml
    :linenos:
@@ -54,24 +53,19 @@ Identifiers
 :Use: optional (0,.. n)
 :Representation: XML element ``identifiers``
 
-identiIdentifierfier
-^^^^^^^^^^^
-
-:Description: The external identifier 
-:Type: string
-:Use: mandatory (1)
-:Representation: XML element ``identifier``
-
-
 Identifier Scheme
 ^^^^^^^^^
-
-:Description: The scheme for the external identifier
-:Type: string
+:Description: The scheme for the external identifier.
+:Type: String
 :Use: mandatory (1)
 :Representation: XML attribute ``IdentifierScheme``
 
-:Example:
+Itentifier value
+^^^^^^^^^^^
+:Description: The external identifier.
+:Type: String
+:Use: mandatory (1)
+:Representation: XML element ``identifier``
 
 .. code-block:: xml
    :linenos:
@@ -82,19 +76,17 @@ Identifier Scheme
 
 Title
 ----
-:Description: The title of the research product
-:Type: string
+:Description: The title of the research product.
+:Type: String
 :Use: mandatory, possibly multiple (1..*)
 :Representation: XML element ``title`` as a multilingual string
 
 titleType
 ^^^^^^^^
-
-:Description: The type of the title (main, subtitle)
-:Type: string
+:Description: The type of the title (main, subtitle).
+:Type: String
 :Use: mandatory, (1)
 :Representation: XML attribute ``titleType`` 
-
 
 .. titleLanguage
 .. ^^^^^^^^^^
@@ -112,9 +104,6 @@ titleType
 .. :Use: mandatory, (1)
 .. :Representation: XML attribute ``languageCode`` 
 
-
-:Example:
-
 .. code-block:: xml
    :linenos:
 
@@ -123,8 +112,8 @@ titleType
 
 Abstract
 ----
-:Description: A description for the research product 
-:Type: string
+:Description: A description for the research product.
+:Type: String
 :Use: required, possibly multiple (0..*)
 :Representation: XML element ``abstract`` 
 
@@ -151,36 +140,31 @@ Abstract
 
 Dates
 ---
-:Description: Relevant dates for the research product
-:Type: wrapper element 
+:Description: Relevant dates for the research product.
+:Type: Wrapper element 
 :Use: mandatory, possibly more than one (1..*)
 :Representation: XML element ``dates``
 
 Date
 ^^^^^^^^^^^^^
-:Description: The relevant date for the research product 
-:Type: string 
+:Description: The relevant date for the research product.
+:Type: String 
 :Use: mandatory (1)
 :Representation: XML element ``date``
 
-
 Date Type
 """""""""""""
-:Description: The type of the date (e.g. publishing, embargo...)
+:Description: The type of the date (e.g. publishing, embargo...).
 :Type: string
 :Use: mandatory (1)
 :Representation: XML attribute ``dateType
 
-
 Date Format
 """""""""""""
-:Description: The format of the relevant date 
+:Description: The format of the relevant date.
 :Type: string 
 :Use: mandatory (1)
 :Representation: XML attribute ``dateFormat``
-
-
-:Example:
 
 .. code-block:: xml
    :linenos:
@@ -190,27 +174,25 @@ Date Format
     </dates>
 
 
-ResourceType
+Resource type
 -----
-:Description: The type of the research product. One among (literatur, researcData, researchSoftware, Other)
+:Description: The type of the research product. One among (literatur, researcData, researchSoftware, Other).
 :Type: string
 :Use: mandatory
 :Representation: XML element ``resourceType``
 
-ResourceTypeDescription
+Resource type description
 ^^^^^^^^^^^^^^^
-:Description: Free text describing the resource (i.e. journal-article, workflow, collection ....)
+:Description: Free text describing the resource (i.e. journal-article, workflow, collection ....).
 :Type: string 
 :Use: required 
 :Representation: XML attribute ``resourceTypeDescription``
-
-
-:Example:
 
 .. code-block:: xml
    :linenos:
 
     <resourceType resourceTypeGeneral="monograph">literature</resourceType>
+
 
 Issue
 ----
@@ -218,7 +200,7 @@ Issue
 :Type: 
 :Use: 
 :Representation: XML element ``issue``
-:Example: 
+
 .. code-block:: xml
    :linenos:
 
@@ -231,7 +213,33 @@ Volume
 :Type: 
 :Use: 
 :Representation: XML element ``volume``
-:Example: 
+
+.. code-block:: xml
+   :linenos:
+
+    <tag>...</tag>
+
+
+Start page
+----
+:Description: 
+:Type: Integer
+:Use: optional, (0..1)
+:Representation: XML element ``startPage``
+
+.. code-block:: xml
+   :linenos:
+
+    <tag>...</tag>
+
+
+End page
+----
+:Description: 
+:Type: Integer
+:Use: optional, (0..1)
+:Representation: XML element ``endPage``
+
 .. code-block:: xml
    :linenos:
 
@@ -244,7 +252,7 @@ Edition
 :Type: 
 :Use: 
 :Representation: XML element ``edition``
-:Example: 
+
 .. code-block:: xml
    :linenos:
 
@@ -255,15 +263,11 @@ Relationships
 ============
 
 hasAuthorship
-----------------------
-
+---------------------
 :Description: It models the authorship of the research result. It can also reference to the organization(s) to which the author was affiliated when generating this product. For this relation the author is an entity in the SKG
 :Use: Optional (0..*)
 :Source: research product 
 :Target: authorship 
-
-
-:Example:
 
 .. code-block:: xml
    :linenos:
@@ -280,7 +284,6 @@ hasAuthorAffiliatedWith
 :Use: Optional (0..*)
 :Source: research product 
 :Target: organization 
-:Example:
 
 .. code-block:: xml
    :linenos:
@@ -292,12 +295,10 @@ hasAuthorAffiliatedWith
 
 publishedIn
 --------------
-
 :Description: The research product publishing venue 
 :Use: Optional (0..*)
 :Source: research product
 :Target: venue 
-:Example:
 
 .. code-block:: xml
    :linenos:
@@ -309,13 +310,10 @@ publishedIn
 
 fundedBy 
 -------------
-
 :Description: the funds thanks to which the product has been made
 :Use: Optional (0..*)
 :Source: research product 
 :Target: project
-:Example:
-
 
 .. code-block:: xml
    :linenos:
@@ -329,13 +327,10 @@ fundedBy
 
 hasSubject
 -----------
-
 :Description: The topic this research product is related to 
 :Use: Optional (0..*)
 :Source: research product 
 :Target: Topic 
-:Example:
-
 
 .. code-block:: xml
    :linenos:
@@ -348,14 +343,11 @@ hasSubject
 
 relatedWithProduct 
 -------------------
-
 :Description: other product the research product is related with 
 :Use: Optional (0..*)
 :Source: research product 
 :Target: research product
 :Note: the semantics should be one among a set of predifined values. Possible "imposed" semantics: DataCite semantics or Scholix semantics set
-:Example:
-
 
 .. code-block:: xml
    :linenos:

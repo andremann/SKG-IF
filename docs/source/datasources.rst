@@ -19,11 +19,11 @@ This section is to describe the metadata fields for the Data sources.
 
 Local identifier		
 ----
-:Description: Unique code identifiying the Conference in the OSG (if any, otherwise "stateless identifier")	
+:Description: Unique code identifiying the Conference in the OSG (if any, otherwise "stateless identifier").
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML element ``localIdentifier``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -32,26 +32,26 @@ Local identifier
 
 Identifiers			
 ----
-:Description: Alternative identifiers
+:Description: Alternative identifiers.
 :Type: Wrapper element
 :Use: optional, (1..*)
 :Representation: XML element ``identifiers``
 
 Identifier scheme
 ^^^^^^^^^^^
-:Description: The scheme for the external identifier
+:Description: The scheme for the external identifier.
 :Type: String
 :Use: mandatory (1)
 :Representation: XML element ``identifierScheme``
 
 Identifier value
 ^^^^^^^^^
-:Description: The external identifier 
+:Description: The external identifier.
 :Type: String
 :Use: mandatory (1)
 :Representation: XML attribute ``identifierValue``
 
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -60,11 +60,11 @@ Identifier value
 
 Name		
 ----
-:Description: Name of the data source
+:Description: Name of the data source.
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML element ``name``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -77,7 +77,7 @@ Submission policy URL
 :Type: URL
 :Use: recommended, (0..1)
 :Representation: XML element ``submissionPolicyUrl``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -90,7 +90,7 @@ Preservation policy URL
 :Type: URL
 :Use: recommended, (0..1)
 :Representation: XML element ``preservationPolicyUrl``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -103,7 +103,7 @@ Version control
 :Type: Boolean
 :Use: optional, (1)
 :Representation: XML element ``versionControl``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -116,7 +116,7 @@ Persistent Identity Systems
 :Type: Wrapper element
 :Use: recommended,	(0..*)
 :Representation: XML element ``persistentIdentitySystem``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -129,7 +129,7 @@ Persistent Identity Product Type
 :Type: Vocabulary: `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_
 :Use: Mandatory, (1)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -142,7 +142,7 @@ Persistent Identity Product Type Scheme
 :Type: Vocabulary: `Persistent Identity Scheme <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-PersistentIdentityScheme>`_
 :Use: mandatory, (1..*)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -155,7 +155,7 @@ Jurisdiction
 :Type: Vocabulary: `Jurisdiction <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-Jurisdiction>`_ 
 :Use: mandatory, (1)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -168,7 +168,7 @@ Data Source Classification
 :Type: Vocabulary: `Data Source Classification <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-DataSourceClassification>`_
 :Use: mandatory, (1)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -181,7 +181,7 @@ Research Product Types
 :Type: Vocabulary: `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_
 :Use: mandatory, (1..*)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -194,7 +194,7 @@ Thematic
 :Type: Boolean
 :Use: mandatory, (1)
 :Representation: XML element ``thematic``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -207,7 +207,7 @@ Research Product Licensing
 :Type: Wrapper element
 :Use: recommended, (0..*)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -220,7 +220,7 @@ Research Product License Name
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -233,7 +233,7 @@ Research Product License URL
 :Type: URL
 :Use: mandatory, (1)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -246,7 +246,7 @@ Research Product Access Policy
 :Type: Vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_
 :Use: recommended,	(0..*)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -259,7 +259,7 @@ Research Product Metadata Licensing
 :Type: Wrapper element
 :Use: recommended, (0..1)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -272,7 +272,7 @@ Research Product Metadata License Name
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -285,7 +285,7 @@ Research Product Metadata License URL
 :Type: URL
 :Use: mandatory, (1)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -298,7 +298,7 @@ Research Product Metadata Access Policy
 :Type: Vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_
 :Use: recommended, (0..*)
 :Representation: XML element ``tag``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 

@@ -21,7 +21,7 @@ Local identifier
 :Type: string
 :Use: recommended, (0..*)
 :Representation: XML element ``localIdentifier``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -48,7 +48,7 @@ Identifier value
 :Use: mandatory (1)
 :Representation: XML attribute ``identifierValue``
 
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -61,7 +61,7 @@ Name
 :Type: string
 :Use: mandatory, (1)
 :Representation: XML element ``name``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -88,7 +88,7 @@ Venue type
    "Other", "Report series, Standard series, Archival document"
    "Unknown", ""
 
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -101,7 +101,7 @@ Peer review
 :Type: Vocabulary {single-blind, double-blind, open, none}
 :Use: mandatory, (1)
 :Representation: XML element ``peerReview``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -114,7 +114,7 @@ Metadata curation
 :Type: Boolean
 :Use: mandatory, (1)
 :Representation: XML element ``metadataCuration``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -127,7 +127,7 @@ ISSN
 :Type: String
 :Use: optional, (0..*)
 :Representation: XML element ``issn``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -140,7 +140,7 @@ eISSN
 :Type: String
 :Use: optional, (0..*)
 :Representation: XML element ``eissn``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -153,7 +153,7 @@ Linked ISSN
 :Type: String
 :Use: optional, (0..1)
 :Representation: XML element ``lissn``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -168,7 +168,7 @@ Acronym
 :Type: String
 :Use: recommended, (0..1)
 :Representation: XML element ``acronym``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -181,7 +181,7 @@ Conference place
 :Type: 
 :Use: 
 :Representation: XML element ``place``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -194,7 +194,7 @@ Conference dates
 :Type: date period
 :Use: 
 :Representation: XML element ``dates``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 

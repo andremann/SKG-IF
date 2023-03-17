@@ -12,7 +12,7 @@ Local identifier
 :Type: 
 :Use: 
 :Representation: XML element ``localIdentifier``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -24,7 +24,7 @@ Identifiers
 :Type: Wrapper element
 :Use: recommended, (0..*)
 :Representation: XML element ``identifiers``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -36,7 +36,7 @@ Identifier scheme
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML element ``identifierScheme``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -48,7 +48,7 @@ Identifier value
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML element ``identifierValue``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -60,7 +60,7 @@ Title
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML element ``title``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -72,7 +72,7 @@ Abstract
 :Type: String
 :Use: recommended, (1)
 :Representation: XML element ``abstract``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -84,7 +84,7 @@ Acronym
 :Type: String
 :Use: optional, (1)
 :Representation: XML element ``acronym``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -104,12 +104,12 @@ Funder
 :Use: 
 :Representation: XML element ``funder``
 
-Funding scheme
+Funding stream
 ^^^^^^
-:Description: Project funding scheme.
+:Description: Project funding stream.
 :Type: 
 :Use: 
-:Representation: XML element ``fundingScheme``
+:Representation: XML element ``fundingStram``
 
 Currency
 ^^^^^^
@@ -125,7 +125,7 @@ Funded amount
 :Use: 
 :Representation: XML element ``fundedAmount``
 
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -139,7 +139,7 @@ Keywords
 :Type: 
 :Use: 
 :Representation: XML element ``keywords``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -152,7 +152,7 @@ Start date
 :Type: Date
 :Use: recommended, (0..1)
 :Representation: XML element ``startDate``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -165,7 +165,7 @@ End date
 :Type: Date
 :Use: recommended, (0..1)
 :Representation: XML element ``endDate``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -178,7 +178,7 @@ Website
 :Type: URL
 :Use: recommended, (0..1)
 :Representation: XML element ``website``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 

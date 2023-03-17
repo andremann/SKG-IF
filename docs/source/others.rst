@@ -1,4 +1,4 @@
-Other Entities
+Other entities
 ####
 
 .. toctree::

@@ -14,7 +14,7 @@ Local identifier
 :Type: 
 :Use: 
 :Representation: XML element ``localIdentifier``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -22,26 +22,26 @@ Local identifier
 
 Identifiers			
 ----
-:Description: Alternative identifiers
+:Description: Alternative identifiers.
 :Type: Wrapper element
 :Use: recommended, (1..*)
 :Representation: XML element ``identifiers``
 
 Identifier scheme
 ^^^^^^^^^^^
-:Description: The scheme for the external identifier
+:Description: The scheme for the external identifier.
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML element ``identifierScheme``
 
 Identifier value
 ^^^^^^^^^
-:Description: The external identifier 
+:Description: The external identifier.
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML attribute ``identifierValue``
 
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -53,7 +53,7 @@ Provenance
 :Type: Wrapper element
 :Use: 
 :Representation: XML element ``provenance``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -65,7 +65,7 @@ Provenance type
 :Type: 
 :Use: 
 :Representation: XML element ``provenanceType``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -77,7 +77,7 @@ Trust
 :Type: 
 :Use: 
 :Representation: XML element ``trust``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 

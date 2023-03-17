@@ -14,13 +14,11 @@ Local Identifier
 :Type: String
 :Use: mandatory (1)
 :Representation: XML element ``localIdentifier``
-:Example: 
-
+ 
 .. code-block:: xml
    :linenos:
 
     <localIdentifier>20|....</localIdentifier>
-
 
 
 Role
@@ -30,14 +28,12 @@ Role
 :Use: Mandatory (1)
 :Representation: XML element ``role``
 
-
-:Example:
-
 .. code-block:: xml
    :linenos:
 
     <role>43ebbd94-98b4-42f1-866b-c930cef228ca</role>
     
+
 Rank
 ----
 :Description: The rank of the author 
@@ -45,30 +41,21 @@ Rank
 :Use: Optional (0..1)
 :Representation: XML element ``rank`` 
 
-:Example:
-
 .. code-block:: xml
    :linenos:
 
     <rank>1</rank>
        
 
-
-
-
 Relationships
 ============
 
 relatedProduct
 ----------------------
-
 :Description: It is the product related to this authorship
 :Use: Mandatory (1)
 :Source: **Authorship** 
 :Target: :ref:`Research product <Research product>`
-
-
-:Example:
 
 .. code-block:: xml
    :linenos:
@@ -79,14 +66,12 @@ relatedProduct
     </relation>
 
 
-
 relatedAuthor 
 ---------------------------
 :Description: It is the researcher related to this authorship entity
 :Use: Mandatory (1)
 :Source: **Authorship** 
 :Target: :ref:`Researcher <Researcher>`
-:Example:
 
 .. code-block:: xml
    :linenos:
@@ -96,13 +81,13 @@ relatedAuthor
         <target type="researcher">researcherId</target>
     </relation>
 
+
 relatedAuthorAffiliation
 --------------
 :Description: The affiliation of the researched related to the authorship entity
 :Use: Optional (0..*)
 :Source: **Authorship**  
 :Target: :ref:`Organization <Organization>`
-:Example:
 
 .. code-block:: xml
    :linenos:

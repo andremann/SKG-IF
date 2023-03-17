@@ -12,7 +12,7 @@ Local Identifier
 :Type: String
 :Use: mandatory (1)
 :Representation: XML element ``localIdentifier``
-:Example: 
+ 
 
 .. code-block:: xml
    :linenos:
@@ -28,8 +28,6 @@ Role
 :Representation: XML element ``role``
 
 
-:Example:
-
 .. code-block:: xml
    :linenos:
 
@@ -41,8 +39,6 @@ Start Date
 :Type: String
 :Use: Required, (1)
 :Representation: XML element ``startDate`` 
-
-:Example:
 
 .. code-block:: xml
    :linenos:
@@ -56,8 +52,6 @@ End Date
 :Type: String
 :Use: Required, (1)
 :Representation: XML element ``endDate`` 
-
-:Example:
 
 .. code-block:: xml
    :linenos:
@@ -76,9 +70,6 @@ relatedResearcher
 :Source: affiliation 
 :Target: researcher
 
-
-:Example:
-
 .. code-block:: xml
    :linenos:
 
@@ -95,9 +86,6 @@ relatedOrganization
 :Use: Mandatory (1)
 :Source: affiliation 
 :Target: organization
-
-
-:Example:
 
 .. code-block:: xml
    :linenos:

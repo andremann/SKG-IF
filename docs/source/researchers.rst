@@ -14,7 +14,7 @@ Local Identifier
 :Type: String
 :Use: mandatory (1)
 :Representation: XML element ``localIdentifier``
-:Example: 
+ 
 
 .. code-block:: xml
    :linenos:
@@ -42,8 +42,6 @@ Identifier Scheme
 :Use: Mandatory (1) (possible values ORCID, Viaf, create a controlled vocabulary?)
 :Representation: XML attribute ``identifierScheme``
 
-:Example:
-
 .. code-block:: xml
    :linenos:
 
@@ -58,7 +56,6 @@ Given name
 :Type: String 
 :Use: Required (1)
 :Representation: XML element ``givenName``
-:Example:
 
 .. code-block:: xml
    :linenos:
@@ -101,8 +98,6 @@ isAffiliatedWith
 :Use: Optional (0..*)
 :Source: researcher id 
 :Target: affiliation 
-:Example:
-
 
 .. code-block:: xml
    :linenos:
@@ -119,8 +114,7 @@ hasCollaboratedToProject
 :Use: Optional(0..*)
 :Source: researcher 
 :Target: Project
-:Example: 
-
+ 
 .. code-block:: xml
    :linenos:
 

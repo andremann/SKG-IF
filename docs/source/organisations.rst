@@ -14,7 +14,7 @@ Local identifier
 :Type: string 
 :Use: 
 :Representation: XML element ``localIdentifier``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -26,7 +26,7 @@ Identifier
 :Type: string
 :Use: recommended, (1..*)
 :Representation: XML element ``identifier``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -38,7 +38,7 @@ Identifier scheme
 :Type: string
 :Use: mandatory
 :Representation: XML element ``identifierScheme``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
@@ -50,11 +50,12 @@ Identifier value
 :Type: string
 :Use: mandatory
 :Representation: XML element ``identifierValue``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
+
 
 Name
 ----
@@ -62,11 +63,12 @@ Name
 :Type: string
 :Use: mandatory, (1)
 :Representation: XML element ``name``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
+
 
 Short name
 ----
@@ -74,11 +76,12 @@ Short name
 :Type: string
 :Use: optional, (1..*)
 :Representation: XML element ``shortName``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
+
 
 Other names
 ----
@@ -86,11 +89,12 @@ Other names
 :Type: string
 :Use: optional, (1..*)
 :Representation: XML element ``otherNames``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
+
 
 Website
 ----
@@ -98,11 +102,12 @@ Website
 :Type: string
 :Use: mandatory, (1)
 :Representation: XML element ``website``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
     <tag>...</tag>
+
 
 Country
 ----
@@ -110,7 +115,7 @@ Country
 :Type: string
 :Use: mandatory, (1)
 :Representation: XML element ``country``
-:Example: 
+ 
 .. code-block:: xml
    :linenos:
 
