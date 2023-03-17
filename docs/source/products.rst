@@ -210,16 +210,55 @@ ResourceTypeDescription
 
     <resourceType resourceTypeGeneral="monograph">literature</resourceType>
 
+Issue
+----
+:Description: 
+:Type: 
+:Use: 
+:Representation: XML element ``issue``
+:Example: 
+.. code-block:: xml
+   :linenos:
+
+    <tag>...</tag>
+
+
+Volume
+----
+:Description: 
+:Type: 
+:Use: 
+:Representation: XML element ``volume``
+:Example: 
+.. code-block:: xml
+   :linenos:
+
+    <tag>...</tag>
+
+
+Edition
+----
+:Description: 
+:Type: 
+:Use: 
+:Representation: XML element ``edition``
+:Example: 
+.. code-block:: xml
+   :linenos:
+
+    <tag>...</tag>
+
 
 Relationships
 ============
 
-hasDeclaredAffiliation
+hasAuthorship
 ----------------------
 
-:Description: It is the affiliation of one of the people creating the research result. Reference to a pair <author, organization>, i.e. organization to which the author was affiliated when generating this product. For this relation the author is an entity in the SKG
+:Description: It models the authorship of the research result. It can also reference to the organization(s) to which the author was affiliated when generating this product. For this relation the author is an entity in the SKG
+:Use: Optional (0..*)
 :Source: research product 
-:Target: (author, organization)
+:Target: authorship 
 
 
 :Example:
@@ -227,15 +266,16 @@ hasDeclaredAffiliation
 .. code-block:: xml
    :linenos:
 
-    <relation semantics="hasDeclaredAffiliation">
+    <relation semantics="hasAuthorship">
         <source type="researchProduct">resultId</source>
-        <target type="declaredAffiliation">declaredAffiliationId</target>
+        <target type="authorship">authorshipId</target>
     </relation>
 
 
 hasAuthorAffiliatedWith 
 ---------------------------
-:Description: It is a relation between the result and the organization. We do not know who is the author involved
+:Description: It is a relation between the result and the organization. We do not know who is the researcher involved (affiliated to the organization)
+:Use: Optional (0..*)
 :Source: research product 
 :Target: organization 
 :Example:
@@ -252,6 +292,7 @@ publishedIn
 --------------
 
 :Description: The research product publishing venue 
+:Use: Optional (0..*)
 :Source: research product
 :Target: venue 
 :Example:
@@ -268,6 +309,7 @@ fundedBy
 -------------
 
 :Description: the funds thanks to which the product has been made
+:Use: Optional (0..*)
 :Source: research product 
 :Target: project
 :Example:
@@ -287,6 +329,7 @@ hasSubject
 -----------
 
 :Description: The topic this research product is related to 
+:Use: Optional (0..*)
 :Source: research product 
 :Target: Topic 
 :Example:
@@ -305,6 +348,7 @@ relatedWithProduct
 -------------------
 
 :Description: other product the research product is related with 
+:Use: Optional (0..*)
 :Source: research product 
 :Target: research product
 :Note: the semantics should be one among a set of predifined values. Possible "imposed" semantics: DataCite semantics or Scholix semantics set
