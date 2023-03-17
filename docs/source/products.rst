@@ -52,7 +52,7 @@ Identifiers
 :Use: optional (0,.. n)
 :Representation: XML element ``identifiers``
 
-identifier
+identiIdentifierfier
 ^^^^^^^^^^^
 
 :Description: The external identifier 
@@ -61,7 +61,7 @@ identifier
 :Representation: XML element ``identifier``
 
 
-identifierValue
+Identifier Scheme
 ^^^^^^^^^
 
 :Description: The scheme for the external identifier
@@ -94,21 +94,21 @@ titleType
 :Representation: XML attribute ``titleType`` 
 
 
-titleLanguage
-^^^^^^^^^^
+.. titleLanguage
+.. ^^^^^^^^^^
 
-:Description: The language of the title of the research product
-:Type: string
-:Use: mandatory, (1)
-:Representation: XML attribute ``titleLanguage`` 
+.. :Description: The language of the title of the research product
+.. :Type: string
+.. :Use: mandatory, (1)
+.. :Representation: XML attribute ``titleLanguage`` 
 
 
-languageCode
-^^^^^^^^^^
-:Description: The code of the language of the title of the research product
-:Type: string
-:Use: mandatory, (1)
-:Representation: XML attribute ``languageCode`` 
+.. languageCode
+.. ^^^^^^^^^^
+.. :Description: The code of the language of the title of the research product
+.. :Type: string
+.. :Use: mandatory, (1)
+.. :Representation: XML attribute ``languageCode`` 
 
 
 :Example:
@@ -116,7 +116,7 @@ languageCode
 .. code-block:: xml
    :linenos:
 
-    <title titleType="main", titleLanguage="en" languageCode="ISO-2">On the.... </title>
+    <title titleType="main">On the.... </title>
        
 
 Abstract
@@ -126,25 +126,25 @@ Abstract
 :Use: required, possibly multiple (0..*)
 :Representation: XML element ``abstract`` 
 
-abstractLanguage
-^^^^^^^^^^^^^^
-:Description: The language of the abstract of the research product
-:Type: string
-:Use: mandatory, (1)
-:Representation: XML attribute ``abstractLanguage`` 
+.. abstractLanguage
+.. ^^^^^^^^^^^^^^
+.. :Description: The language of the abstract of the research product
+.. :Type: string
+.. :Use: mandatory, (1)
+.. :Representation: XML attribute ``abstractLanguage`` 
 
 
-languageCode
-^^^^^^^^^^^
-:Description: The code of the language of the abstract of the research product
-:Type: string
-:Use: mandatory, (1)
-:Representation: XML attribute ``languageCode`` 
+.. languageCode
+.. ^^^^^^^^^^^
+.. :Description: The code of the language of the abstract of the research product
+.. :Type: string
+.. :Use: mandatory, (1)
+.. :Representation: XML attribute ``languageCode`` 
 
 .. code-block:: xml
    :linenos:
 
-    <abstract abstractLanguage="en" languageCode="ISO-2">This dataset ...</abstract>
+    <abstract>This dataset ...</abstract>
 
 
 Dates
@@ -229,10 +229,7 @@ hasDeclaredAffiliation
 
     <relation semantics="hasDeclaredAffiliation">
         <source type="researchProduct">resultId</source>
-        <targets>
-            <target type="author">authorId</target>
-            <target type="organization">organizationId</target>
-        </targets>
+        <target type="declaredAffiliation">declaredAffiliationId</target>
     </relation>
 
 
@@ -248,9 +245,7 @@ hasAuthorAffiliatedWith
 
     <relation semantics="hasAuthorAffiliatedWith">
         <source type="researchProduct">resultId</source>
-        <targets>
-            <target type="organization">organizationId</target>
-        </targets>
+        <target type="organization">organizationId</target>
     </relation>
 
 publishedIn
@@ -266,9 +261,7 @@ publishedIn
 
     <relation semantics="publishedIn">
         <source type="researchProduct">resultId</source>
-        <targets>
-            <target type="venue">venueId</target>
-        </targets>
+        <target type="venue">venueId</target>
     </relation>
 
 fundedBy 
@@ -276,7 +269,7 @@ fundedBy
 
 :Description: the funds thanks to which the product has been made
 :Source: research product 
-:Target: project, organization (funder) 
+:Target: project
 :Example:
 
 
@@ -285,10 +278,7 @@ fundedBy
 
     <relation semantics="fundedBy">
         <source type="researchProduct">resultId</source>
-        <targets>
             <target type="project">projectId</target>
-            <target type="organization">organizationId</target> 
-        </targets>
     </relation>
 
 
@@ -307,9 +297,7 @@ hasSubject
 
     <relation semantics="hasSubject">
         <source type="researchProduct">resultId</source>
-        <targets>
-            <target type="project">topicId</target>
-        </targets>
+        <target type="project">topicId</target>
     </relation>
 
 
@@ -328,7 +316,5 @@ relatedWithProduct
 
     <relation semantics="IsSupplementedBy">
         <source type="researchProduct">resultId</source>
-        <targets>
-            <target type="researchProduct">resultId</target>
-        </targets>
+        <target type="researchProduct">resultId</target>
     </relation>
