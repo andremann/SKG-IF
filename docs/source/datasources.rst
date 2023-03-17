@@ -17,21 +17,17 @@ This section is to describe the metadata fields for the Data sources.
 
 
 
-Local dentifier		
+Local identifier		
 ----
 :Description: Unique code identifiying the Conference in the OSG (if any, otherwise "stateless identifier")	
 :Type: String
 :Use: mandatory, (1)
 :Representation: XML element ``localIdentifier``
 :Example: 
-.. code-block:: json
+.. code-block:: xml
    :linenos:
 
-    open_access: {
-    is_oa: true,
-    oa_status: "gold",
-    oa_url: "https://peerj.com/articles/4375.pdf"
-    }
+    <tag>...</tag>
 
 
 Identifiers			
