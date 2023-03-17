@@ -24,10 +24,10 @@ Local dentifier
 :Use: mandatory, (1)
 :Representation: XML element ``localIdentifier``
 :Example: 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    is_paratext: false 
 
 
 Identifiers			

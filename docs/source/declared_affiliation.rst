@@ -10,7 +10,7 @@ Properties
 
 Local Identifier
 ----
-:Description: Unique code identifiying the DeclaredAffiliation in the SKG (if any, otherwise "stateless identifier")
+:Description: Unique code identifiying the Authorship in the SKG (if any, otherwise "stateless identifier")
 :Type: String
 :Use: mandatory (1)
 :Representation: XML element ``localIdentifier``
@@ -24,7 +24,7 @@ Local Identifier
 
 Role
 ----
-:Description: Specific role of the researcher 
+:Description: Specific role of the researcher in the organization
 :Type: String (possibility: values from CRediT taxonomy)
 :Use: Mandatory (1)
 :Representation: XML element ``role``
@@ -37,34 +37,46 @@ Role
 
     <role>43ebbd94-98b4-42f1-866b-c930cef228ca</role>
     
-Rank
+Start Date
 ----
-:Description: The rank of the author 
-:Type: Integer
-:Use: Optiona, (0..1)
-:Representation: XML element ``rank`` 
+:Description: The date when the researcher started to be affiliated with the organization
+:Type: String
+:Use: Required, (1)
+:Representation: XML element ``startDate`` 
 
 :Example:
 
 .. code-block:: xml
    :linenos:
 
-    <rank>1</rank>
+    <startDate>2019-01-01</startDate>
        
 
+Start Date
+----
+:Description: The date when the researcher was no more affiliated with the organization
+:Type: String
+:Use: Required, (1)
+:Representation: XML element ``endDate`` 
 
+:Example:
+
+.. code-block:: xml
+   :linenos:
+
+    <endDate>2019-01-01</endDate>
 
 
 Relationships
 ============
 
-relatedProduct
+relatedResearcher
 ----------------------
 
-:Description: It is the product related to this declared affiliation
+:Description: It is the researcher to whom this affiliation is related
 :Use: Mandatory (1)
-:Source: declaredAffiliation 
-:Target: research product 
+:Source: affiliation 
+:Target: researcher
 
 
 :Example:
@@ -72,41 +84,27 @@ relatedProduct
 .. code-block:: xml
    :linenos:
 
-    <relation semantics="relatedProduct">
-        <source type="declaredAffiliation">declaredAffiliationId</source>
-        <target type=researchProduct>resultId</target>
+    <relation semantics="relatedResearcher">
+        <source type="affiliation">affiliationId</source>
+        <target type=researcher>researcherId</target>
     </relation>
 
 
-relatedAuthor 
----------------------------
-:Description: It is the researcher related to this declaredAffiliation entity
+relatedOrganization
+----------------------
+
+:Description: It is the organization to which this affiliation is related
 :Use: Mandatory (1)
-:Source: declared affiliation 
-:Target: research result 
+:Source: affiliation 
+:Target: organization
+
+
 :Example:
 
 .. code-block:: xml
    :linenos:
 
-    <relation semantics="relatedAuthor">
-        <source type="declaredAffiliation">declaredAffiliationId</source>
-        <target type="researchProduct">resultId</target>
+    <relation semantics="relatedOrganization">
+        <source type="affiliation">affiliationId</source>
+        <target type=organization>organizationId</target>
     </relation>
-
-relatedAuthorAffiliation
---------------
-:Description: The affiliation of the researched related to the declaredAffiliation entity
-:Use: Optional (0..*)
-:Source: declaredAffiliation 
-:Target: Organization
-:Example:
-
-.. code-block:: xml
-   :linenos:
-
-    <relation semantics="relatedAuthorAffiliation">
-        <source type="declaredAffiliation">declaredAffiliationId</source>
-        <target type="organization">organizationId</target>
-    </relation>
-
