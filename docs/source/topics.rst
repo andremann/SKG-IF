@@ -1,6 +1,8 @@
+.. _Topic:
+
 Topics
 ######
-TODO Description
+This section is to describe the metadata fields for the research **Topic** entity.
 
 
 Properties

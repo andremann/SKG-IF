@@ -1,7 +1,9 @@
+.. _ Affiliation:
+
 Affiliation
 ####################
 
-It is to model the affiliation of a researcher during their working life time. 
+An **Affiliation** entity models the affiliation(s) of a :ref:`Researcher <Researcher>` to research :ref:`Organisation <Organisation>` during his/her working life time.
 
 Properties
 ==========

@@ -3,7 +3,7 @@
 Researcher
 ############
 
-TODO definition
+This section is to describe the metadata fields for the **Researcher** entity.
 
 Properties 
 ===========

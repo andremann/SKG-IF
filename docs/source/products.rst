@@ -1,4 +1,4 @@
-.. _Research products:
+.. _Research product:
 
 Research products
 ####

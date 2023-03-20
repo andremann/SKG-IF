@@ -1,6 +1,8 @@
+.. _Project:
+
 Projects
 ########
-TODO Description
+This section is to describe the metadata fields for the **Project** entity.
 
 Properties
 ==========

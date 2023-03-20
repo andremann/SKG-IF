@@ -8,7 +8,7 @@ TODO write introduction
    :maxdepth: 2
 
    products
-   authors
+   researchers
    organisations
    venues
    datasources

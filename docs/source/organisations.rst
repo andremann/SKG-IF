@@ -1,4 +1,4 @@
-.. _Organizations:
+.. _Organisation:
 
 Organisations
 #############
@@ -6,7 +6,7 @@ TODO Description
 
 Properties
 ==========
-This section is to describe the metadata fields for the Organisations.
+This section is to describe the metadata fields for the **Organisations**.
 
 Local identifier
 ----

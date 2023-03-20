@@ -1,13 +1,15 @@
+.. _Venue:
+
 Venues
 ######
-A Venue is an entity that models a publishing “gateway” used by scientists to make their research products available to others.
+A **Venue** is an entity that models a publishing “gateway” used by :ref:`Researcher <Researcher>` to make their :ref:`Research product <Research product>` available to others.
 
 Example:
 `Episciences <https://episciences.org>`_  is an overlay platform supporting the management of open-access journals on top of the Open Access repository HAL.fr. In this context, episciences.org is a publishing venue (journal, open access, open peer review), while HAL is a data source. Articles published via episciences.org will be therefore linked to the respective journal (publishing venue) and the data source HAL. 
 However, HAL is also a publishing venue for researchers that are directly uploading their products; a publishing venue with peer-review and some support for metadata curation. In this case, research products will be linked to HAL as a publishing venue and as a data source. 
 
 .. note::
-    Each Research product must be associated with its publishing venue and its data source. 
+    Each :ref:`Research product <Research product>` must be associated with its publishing **Venue** and its :ref:`Data source <Data source>`. 
 
 
 Properties
