@@ -111,7 +111,7 @@ titleType
        
 
 Abstract
-----
+--------
 :Description: A description for the research product.
 :Type: String
 :Use: required, possibly multiple (0..*)
@@ -139,7 +139,7 @@ Abstract
 
 
 Dates
----
+-----
 :Description: Relevant dates for the research product.
 :Type: Wrapper element 
 :Use: mandatory, possibly more than one (1..*)
