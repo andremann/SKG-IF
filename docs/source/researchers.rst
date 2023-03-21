@@ -8,46 +8,46 @@ This section is to describe the metadata fields for the **Researcher** entity.
 Properties 
 ===========
 
-Local Identifier
----------------
-:Description: Unique code identifiying the Researcher in the SKG (if any, otherwise "stateless identifier")	
+
+Local identifier
+----
+:Description: Unique code identifiying the **Project** in the OSG (if any, otherwise "stateless identifier").
+:Type: 
+:Use: 
+ 
+.. code-block:: json
+   :linenos:
+
+    "local_identifier": "the_id"
+
+
+Alternative identifiers
+----
+:Description: Identifier for the resource outside of the SKG. 
+:Type: List
+:Use: optional (0..n)
+
+Identifier scheme
+^^^^^^^^^
+:Description: The scheme for the external identifier.
 :Type: String
 :Use: mandatory (1)
-:Representation: XML element ``localIdentifier``
- 
 
-.. code-block:: xml
-   :linenos:
-
-    <localIdentifier>authorIdentifier</localIdentifier>
-
-Identifiers
-------------
-:Description: External identifiers for the researcher 
-:Type: Wrapping element 
-:Use: Required (0..*)
-:Representation: XML element ``identifiers``
-
-Identifier 
-^^^^^^^^^^^^
-:Description: The value for the external identifier
-:Type: String 
-:Use: Mandatory (1)
-:Representation: Xml element ``identifier``
-
-Identifier Scheme
-^^^^^^^^^^^^^^^^^^
-:Description: The scheme for the identifier
+Itentifier value
+^^^^^^^^^^^
+:Description: The external identifier.
 :Type: String
-:Use: Mandatory (1) (possible values ORCID, Viaf, create a controlled vocabulary?)
-:Representation: XML attribute ``identifierScheme``
+:Use: mandatory (1)
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <identifiers>
-        <identifier identifierScheme="doi">10....</identifier>
-    </identifiers>
+    "identifiers": [
+        {
+            "scheme": "https://..."
+            "value": "the_id"
+        }
+    ]
 
 
 Given name
@@ -55,12 +55,11 @@ Given name
 :Description: The given name of a person
 :Type: String 
 :Use: Required (1)
-:Representation: XML element ``givenName``
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <giveName>John</giveName>
+    "given_name": "Andrea"
 
 
 Family name
@@ -68,24 +67,24 @@ Family name
 :Description: The family name of a person
 :Type: String
 :Use: Mandatory (1)
-:Representation: XML element ``familyName``
 
-.. code-block:: xml
+
+.. code-block:: json
    :linenos:
 
-    <familyName>Doe</familyName>
+    "family_name": "Mannocci"
+
 
 Agent
 ------
-:Description: The name of an agent which produced the (for example UNICEF)
+:Description: The name of an agent (e.g., a collactive name or a legal entity) that authored the product.
 :Type: String
 :Use: Optional (0..1) 
-:Representation: XML element ``agent``
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <familyName>UNICEF</familyName>
+    "agent": "UNICEF"
 
 
 
@@ -99,7 +98,7 @@ isAffiliatedWith
 :Source: researcher id 
 :Target: affiliation 
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
     <relation semantics="isAffiliatedWith">
@@ -115,7 +114,7 @@ hasCollaboratedToProject
 :Source: researcher 
 :Target: Project
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
     <relation semantics="hasCollaboratedToProject">

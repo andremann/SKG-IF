@@ -13,126 +13,121 @@ Local identifier
 :Description: Unique code identifiying the **Project** in the OSG (if any, otherwise "stateless identifier").
 :Type: 
 :Use: 
-:Representation: XML element ``localIdentifier``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "local_identifier": "the_id"
 
-Identifiers
+
+Identifiers			
 ----
-:Description: Alternative identifiers
-:Type: Wrapper element
-:Use: recommended, (0..*)
-:Representation: XML element ``identifiers``
- 
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
+:Description: Alternative identifiers.
+:Type: list
+:Use: optional, (1..*)
 
 Identifier scheme
-^^^^^^^^
+^^^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
-:Use: mandatory, (1)
-:Representation: XML element ``identifierScheme``
- 
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
+:Use: mandatory (1)
 
 Identifier value
-^^^^^^^^
-:Description: The scheme for the external identifier.
+^^^^^^^^^
+:Description: The external identifier.
 :Type: String
-:Use: mandatory, (1)
-:Representation: XML element ``identifierValue``
+:Use: mandatory (1)
+
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "identifiers": [
+        {
+            "scheme": "https://..."
+            "value": "the_id"
+        }
+    ]
+
 
 Title
 ----
 :Description: Title of the project.
 :Type: String
 :Use: mandatory, (1)
-:Representation: XML element ``title``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "title": "the title"
+
 
 Abstract
 ----
 :Description: Abstract of the project.
 :Type: String
 :Use: recommended, (1)
-:Representation: XML element ``abstract``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "abstract": "..."
+
 
 Acronym
 ----
 :Description: Project acronym.
 :Type: String
 :Use: optional, (1)
-:Representation: XML element ``acronym``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "acronym": "GraspOS"
+
 
 Funding
 ----
 :Description: Project funding information.
 :Type: 
 :Use: 
-:Representation: XML element ``funding``
 
 Funder
 ^^^^^^
 :Description: Project funder.
 :Type: 
 :Use: 
-:Representation: XML element ``funder``
 
 Funding stream
 ^^^^^^
 :Description: Project funding stream.
 :Type: 
 :Use: 
-:Representation: XML element ``fundingStram``
 
 Currency
 ^^^^^^
 :Description: Currency of the funded amount.
 :Type: 
 :Use: 
-:Representation: XML element ``currency``
 
 Funded amount
 ^^^^^^
 :Description: Amount funded for the project.
 :Type: 
 :Use: 
-:Representation: XML element ``fundedAmount``
 
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "funding": {
+        "funder": "",
+        "funding_stream": "",
+        "currency": "",
+        "funded_amount": ""
+        }
 
+    }
 
 
 Keywords
@@ -140,12 +135,11 @@ Keywords
 :Description: Project keywords.
 :Type: 
 :Use: 
-:Representation: XML element ``keywords``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "keywords": ["key1", "key2", "key3", "key4", "key5"]
 
 
 Start date
@@ -153,12 +147,35 @@ Start date
 :Description: 
 :Type: Date
 :Use: recommended, (0..1)
-:Representation: XML element ``startDate``
  
-.. code-block:: xml
+Date value
+^^^^^^^^^^^^^
+:Description: The relevant date for the research product.
+:Type: String 
+:Use: mandatory (1)
+
+Date type
+"""""""""""""
+:Description: The type of the date (e.g. publishing, embargo...).
+:Type: String
+:Use: mandatory (1)
+
+Date format
+"""""""""""""
+:Description: The format of the relevant date.
+:Type: String 
+:Use: mandatory (1)
+
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "start_date": [
+        {
+            "date_value": "2022-12-03",
+            "date_type": "embargo",
+            "date_format": "yyyy-MM-dd",
+        }
+    ]
 
 
 End date
@@ -166,12 +183,35 @@ End date
 :Description: 
 :Type: Date
 :Use: recommended, (0..1)
-:Representation: XML element ``endDate``
  
-.. code-block:: xml
+Date value
+^^^^^^^^^^^^^
+:Description: The relevant date for the research product.
+:Type: String 
+:Use: mandatory (1)
+
+Date type
+"""""""""""""
+:Description: The type of the date (e.g. publishing, embargo...).
+:Type: String
+:Use: mandatory (1)
+
+Date format
+"""""""""""""
+:Description: The format of the relevant date.
+:Type: String 
+:Use: mandatory (1)
+
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "end_date": [
+        {
+            "date_value": "2022-12-03",
+            "date_type": "embargo",
+            "date_format": "yyyy-MM-dd",
+        }
+    ]
 
 
 Website
@@ -179,12 +219,11 @@ Website
 :Description: Project website.
 :Type: URL
 :Use: recommended, (0..1)
-:Representation: XML element ``website``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "website": "https://..."
 
 
 

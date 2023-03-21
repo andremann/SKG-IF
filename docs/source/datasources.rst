@@ -21,7 +21,7 @@ This section is to describe the metadata fields for the Data sources.
 
 Local identifier		
 ----
-:Description: Unique code identifiying the Conference in the OSG (if any, otherwise "stateless identifier").
+:Description: Unique code identifiying the Data source in the SKG (if any, otherwise "stateless identifier").
 :Type: String
 :Use: mandatory, (1)
  
@@ -55,8 +55,8 @@ Identifier value
 
     "identifiers": [
         {
-            scheme: "", 
-            value: ""
+            "scheme": "https://..."
+            "value": "the_id"
         }
     ]
 

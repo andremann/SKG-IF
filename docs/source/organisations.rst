@@ -10,51 +10,44 @@ This section is to describe the metadata fields for the **Organisations**.
 
 Local identifier
 ----
-:Description: Unique code identifiying the Organisation in the OSG (if any, otherwise "stateless identifier")
+:Description: Unique code identifiying the Organisation in the SKG (if any, otherwise "stateless identifier")
 :Type: string 
 :Use: 
-:Representation: XML element ``localIdentifier``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "local_identifier": "the_id"
 
-Identifier
+
+Identifiers			
 ----
-:Description: Persistent identifiers for the organization
-:Type: string
-:Use: recommended, (1..*)
-:Representation: XML element ``identifier``
- 
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
+:Description: Alternative identifiers.
+:Type: list
+:Use: optional, (1..*)
 
 Identifier scheme
-^^^^^^^^
-:Description: 
-:Type: string
-:Use: mandatory
-:Representation: XML element ``identifierScheme``
- 
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
+^^^^^^^^^^^
+:Description: The scheme for the external identifier.
+:Type: String
+:Use: mandatory (1)
 
 Identifier value
-^^^^^^^^
-:Description: 
-:Type: string
-:Use: mandatory
-:Representation: XML element ``identifierValue``
+^^^^^^^^^
+:Description: The external identifier.
+:Type: String
+:Use: mandatory (1)
+
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "identifiers": [
+        {
+            "scheme": "https://..."
+            "value": "the_id"
+        }
+    ]
 
 
 Name
@@ -62,12 +55,11 @@ Name
 :Description: 
 :Type: string
 :Use: mandatory, (1)
-:Representation: XML element ``name``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "name": "the name"
 
 
 Short name
@@ -75,51 +67,47 @@ Short name
 :Description: 
 :Type: string
 :Use: optional, (1..*)
-:Representation: XML element ``shortName``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "short_name": "the short name"
 
 
 Other names
 ----
 :Description: 
-:Type: string
+:Type: List of strings
 :Use: optional, (1..*)
-:Representation: XML element ``otherNames``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "other_names": ["foo", "bar"]
 
 
 Website
 ----
 :Description: 
-:Type: string
+:Type: URL
 :Use: mandatory, (1)
-:Representation: XML element ``website``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "website": "https://..."
 
 
 Country
 ----
 :Description: 
-:Type: string
+:Type: String (follow ISO??)
 :Use: mandatory, (1)
-:Representation: XML element ``country``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "country": "Italy"
 
 
 

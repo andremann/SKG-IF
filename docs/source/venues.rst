@@ -17,44 +17,45 @@ Properties
 This section is to describe the metadata fields for the Venues.
 
 
-Local identifier
+Local identifier		
 ----
-:Description: Unique code identifiying the Venue in the OSG (if any, otherwise "stateless identifier").
-:Type: string
-:Use: recommended, (0..*)
-:Representation: XML element ``localIdentifier``
+:Description: Unique code identifiying the **Venue** in the SKG (if any, otherwise "stateless identifier").
+:Type: String
+:Use: mandatory, (1)
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "local_id": "123_local_id"
 
-Identifiers
+
+Identifiers			
 ----
-:Description: Alternative external identifiers.
-:Type: Wrapper element
-:Use: optional, (0..*)
-:Representation: XML element ``identifiers``
+:Description: Alternative identifiers.
+:Type: list
+:Use: optional, (1..*)
 
 Identifier scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier.
-:Type: string
+:Type: String
 :Use: mandatory (1)
-:Representation: XML element ``identifierScheme``
 
 Identifier value
 ^^^^^^^^^
 :Description: The external identifier.
-:Type: string
+:Type: String
 :Use: mandatory (1)
-:Representation: XML attribute ``identifierValue``
 
- 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "identifiers": [
+        {
+            "scheme": "https://..."
+            "value": "the_id"
+        }
+    ]
 
 
 Name
@@ -64,10 +65,10 @@ Name
 :Use: mandatory, (1)
 :Representation: XML element ``name``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "name": "the name"
 
 
 Venue type
@@ -90,11 +91,10 @@ Venue type
    "Other", "Report series, Standard series, Archival document"
    "Unknown", ""
 
- 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "venue_type", "Repository"
 
 
 Peer review
@@ -102,12 +102,11 @@ Peer review
 :Description: the type of peer-review in charge at a venue.
 :Type: Vocabulary {single-blind, double-blind, open, none}
 :Use: mandatory, (1)
-:Representation: XML element ``peerReview``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "peer_review": "open"
 
 
 Metadata curation
@@ -115,12 +114,11 @@ Metadata curation
 :Description: The type of metadata curation taking place at a venue.
 :Type: Boolean
 :Use: mandatory, (1)
-:Representation: XML element ``metadataCuration``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "metadata_curation": true
 
 
 ISSN
@@ -128,12 +126,11 @@ ISSN
 :Description: The ISSNs used by a venue.
 :Type: String
 :Use: optional, (0..*)
-:Representation: XML element ``issn``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "issn": "xxxx-yyyy"
 
 
 eISSN
@@ -141,12 +138,11 @@ eISSN
 :Description: Eletronic ISSN used by a venue.
 :Type: String
 :Use: optional, (0..*)
-:Representation: XML element ``eissn``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "eissn": "xxxx-yyyy"
 
 
 Linked ISSN
@@ -154,14 +150,11 @@ Linked ISSN
 :Description: The `ISSN-L <https://en.wikipedia.org/wiki/International_Standard_Serial_Number#Linking_ISSN>`_ identifying this venue. 
 :Type: String
 :Use: optional, (0..1)
-:Representation: XML element ``lissn``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
-
-
+    "lissn": "xxxx-yyyy"
 
 
 Acronym
@@ -169,12 +162,11 @@ Acronym
 :Description: Acronym used by a venue.
 :Type: String
 :Use: recommended, (0..1)
-:Representation: XML element ``acronym``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "acronym": "ABC"
 
 
 Conference place
@@ -184,10 +176,10 @@ Conference place
 :Use: 
 :Representation: XML element ``place``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "place": "NYC"
 
 
 Conference dates
@@ -197,10 +189,36 @@ Conference dates
 :Use: 
 :Representation: XML element ``dates``
  
-.. code-block:: xml
+Start date
+^^^^^^^^^^^^^
+:Description: 
+:Type: String 
+:Use: mandatory (1)
+
+End date
+^^^^^^^^^^^^^
+:Description: 
+:Type: String 
+:Use: mandatory (1)
+
+Date format
+"""""""""""""
+:Description: The format of the relevant date.
+:Type: String 
+:Use: mandatory (1)
+
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "dates": [
+        {
+            "start_date": "2022-12-03",
+            "end_date": "2022-12-06",
+            "date_format": "yyyy-MM-dd",
+        }
+    ]
+
+    
 
 
 

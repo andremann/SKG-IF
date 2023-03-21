@@ -10,80 +10,73 @@ Properties
 This section is to describe the metadata fields for the Topics.
 
 
-Local identifier
+Local identifier		
 ----
-:Description: 
-:Type: 
-:Use: 
-:Representation: XML element ``localIdentifier``
+:Description: Unique code identifiying the **Topic** in the SKG (if any, otherwise "stateless identifier").
+:Type: String
+:Use: mandatory, (1)
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "local_id": "123_local_id"
+
 
 Identifiers			
 ----
 :Description: Alternative identifiers.
-:Type: Wrapper element
-:Use: recommended, (1..*)
-:Representation: XML element ``identifiers``
+:Type: list
+:Use: optional, (1..*)
 
 Identifier scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
-:Use: mandatory, (1)
-:Representation: XML element ``identifierScheme``
+:Use: mandatory (1)
 
 Identifier value
 ^^^^^^^^^
 :Description: The external identifier.
 :Type: String
-:Use: mandatory, (1)
-:Representation: XML attribute ``identifierValue``
+:Use: mandatory (1)
 
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "identifiers": [
+        {
+            "scheme": "https://..."
+            "value": "the_id"
+        }
+    ]
+
 
 Provenance
 ----
 :Description: 
 :Type: Wrapper element
 :Use: 
-:Representation: XML element ``provenance``
  
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
-
 Provenance type
 ^^^^^^^^^
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``provenanceType``
  
-.. code-block:: xml
-   :linenos:
-
-    <tag>...</tag>
-
 Trust
 ^^^^^^^^^
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``trust``
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "provenance": {
+        "type": "OpenAIRE",
+        "trust": 0.9
+        }
 
 
 

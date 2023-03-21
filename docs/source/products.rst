@@ -47,7 +47,7 @@ Local identifier
 Alternative identifiers
 ----
 :Description: Identifier for the resource outside of the SKG. 
-:Type: Wrapper element
+:Type: List
 :Use: optional (0..n)
 
 Identifier scheme
@@ -138,22 +138,22 @@ Abstract
 Dates
 -----
 :Description: Relevant dates for the research product.
-:Type: Wrapper element 
+:Type: List
 :Use: mandatory, possibly more than one (1..*)
 
-Date
+Date value
 ^^^^^^^^^^^^^
 :Description: The relevant date for the research product.
 :Type: String 
 :Use: mandatory (1)
 
-Date Type
+Date type
 """""""""""""
 :Description: The type of the date (e.g. publishing, embargo...).
 :Type: String
 :Use: mandatory (1)
 
-Date Format
+Date format
 """""""""""""
 :Description: The format of the relevant date.
 :Type: String 
@@ -164,9 +164,9 @@ Date Format
 
     "dates": [
         {
+            "date_value": "2022-12-03",
             "date_type": "embargo",
             "date_format": "yyyy-MM-dd",
-            "date_value": 2022-12-03
         }
     ]
 
