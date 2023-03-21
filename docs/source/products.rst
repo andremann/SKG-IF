@@ -3,7 +3,7 @@
 Research products
 ####
 
-TODO add Description
+This entity models **Research products**, which may be of four types, as follows.
 
 Literature
 ====
@@ -37,41 +37,41 @@ Local identifier
 :Description: Unique code identifiying the Produc in the SKG (if any, otherwise "stateless identifier")
 :Type: String
 :Use: mandatory (1)
-:Representation: XML element ``localIdentifier``
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <localIdentifier>50|doi_dedup___::80f29c8c8ba18c46c88a285b7e739dc3</localIdentifier>
+    "localIdentifier": "the_id"
 
 
 Alternative identifiers
 ----
 :Description: Identifier for the resource outside of the SKG. 
 :Type: Wrapper element
-:Use: optional (0,.. n)
-:Representation: XML element ``identifiers``
+:Use: optional (0..n)
 
 Identifier scheme
 ^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
 :Use: mandatory (1)
-:Representation: XML attribute ``IdentifierScheme``
 
 Itentifier value
 ^^^^^^^^^^^
 :Description: The external identifier.
 :Type: String
 :Use: mandatory (1)
-:Representation: XML element ``identifier``
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <identifiers>
-        <identifier identifierScheme="doi">10....</identifier>
-    </identifiers>
+    "identifiers": [
+        {
+            "scheme": "https://..."
+            "value": "the_id"
+        }
+    ]
+    
 
 
 Title
@@ -79,14 +79,12 @@ Title
 :Description: The title of the research product.
 :Type: String
 :Use: mandatory, possibly multiple (1..*)
-:Representation: XML element ``title`` as a multilingual string
 
-titleType
-^^^^^^^^
-:Description: The type of the title (main, subtitle).
-:Type: String
-:Use: mandatory, (1)
-:Representation: XML attribute ``titleType`` 
+.. titleType
+.. ^^^^^^^^
+.. :Description: The type of the title (main, subtitle).
+.. :Type: String
+.. :Use: mandatory, (1)
 
 .. titleLanguage
 .. ^^^^^^^^^^
@@ -104,18 +102,17 @@ titleType
 .. :Use: mandatory, (1)
 .. :Representation: XML attribute ``languageCode`` 
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <title titleType="main">On the.... </title>
+    "title": "title"
        
 
 Abstract
 --------
 :Description: A description for the research product.
 :Type: String
-:Use: required, possibly multiple (0..*)
-:Representation: XML element ``abstract`` 
+:Use: required, possibly multiple (0..*) 
 
 .. abstractLanguage
 .. ^^^^^^^^^^^^^^
@@ -132,10 +129,10 @@ Abstract
 .. :Use: mandatory, (1)
 .. :Representation: XML attribute ``languageCode`` 
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <abstract>This dataset ...</abstract>
+    "abstract": "..."
 
 
 Dates
@@ -143,55 +140,59 @@ Dates
 :Description: Relevant dates for the research product.
 :Type: Wrapper element 
 :Use: mandatory, possibly more than one (1..*)
-:Representation: XML element ``dates``
 
 Date
 ^^^^^^^^^^^^^
 :Description: The relevant date for the research product.
 :Type: String 
 :Use: mandatory (1)
-:Representation: XML element ``date``
 
 Date Type
 """""""""""""
 :Description: The type of the date (e.g. publishing, embargo...).
 :Type: String
 :Use: mandatory (1)
-:Representation: XML attribute ``dateType
 
 Date Format
 """""""""""""
 :Description: The format of the relevant date.
 :Type: String 
 :Use: mandatory (1)
-:Representation: XML attribute ``dateFormat``
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <dates>
-        <date dateType="embargo" dateFormat="yyyy-MM-dd">2022-12-03</date> 
-    </dates>
+    "dates": [
+        {
+            "date_type": "embargo",
+            "date_format": "yyyy-MM-dd",
+            "date_value": 2022-12-03
+        }
+    ]
 
 
 Resource type
 -----
-:Description: The type of the research product. One among (literatur, researcData, researchSoftware, Other).
+:Description: The type of the research product. One among {literature, researcData, researchSoftware, Other}.
 :Type: String
 :Use: mandatory
-:Representation: XML element ``resourceType``
 
-Resource type description
-^^^^^^^^^^^^^^^
-:Description: Free text describing the resource (i.e. journal-article, workflow, collection ....).
-:Type: String 
-:Use: required 
-:Representation: XML attribute ``resourceTypeDescription``
-
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <resourceType resourceTypeGeneral="monograph">literature</resourceType>
+    "resource_type": "literature"
+
+
+Resource type description
+-----
+:Description: Free text describing the resource (i.e., journal-article, workflow, collection, etc.).
+:Type: String 
+:Use: required 
+
+.. code-block:: json
+   :linenos:
+
+    "resource_type": "journal-article"
 
 
 Issue
@@ -199,12 +200,11 @@ Issue
 :Description: 
 :Type: String
 :Use: 
-:Representation: XML element ``issue``
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "issue": ""
 
 
 Volume
@@ -212,12 +212,11 @@ Volume
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``volume``
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "volume": ""
 
 
 Start page
@@ -225,12 +224,11 @@ Start page
 :Description: 
 :Type: Integer
 :Use: optional, (0..1)
-:Representation: XML element ``startPage``
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "start_page": ""
 
 
 End page
@@ -238,12 +236,11 @@ End page
 :Description: 
 :Type: Integer
 :Use: optional, (0..1)
-:Representation: XML element ``endPage``
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "end_page": ""
 
 
 Edition
@@ -251,12 +248,11 @@ Edition
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``edition``
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <tag>...</tag>
+    "edition": ""
 
 
 Relationships
@@ -269,7 +265,7 @@ hasAuthorship
 :Source: research product 
 :Target: authorship 
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
     <relation semantics="hasAuthorship">
@@ -285,7 +281,7 @@ hasAuthorAffiliatedWith
 :Source: research product 
 :Target: organization 
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
     <relation semantics="hasAuthorAffiliatedWith">
@@ -300,7 +296,7 @@ publishedIn
 :Source: research product
 :Target: venue 
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
     <relation semantics="publishedIn">
@@ -315,7 +311,7 @@ fundedBy
 :Source: research product 
 :Target: project
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
     <relation semantics="fundedBy">
@@ -332,7 +328,7 @@ hasSubject
 :Source: research product 
 :Target: Topic 
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
     <relation semantics="hasSubject">
@@ -349,7 +345,7 @@ relatedWithProduct
 :Target: research product
 :Note: the semantics should be one among a set of predifined values. Possible "imposed" semantics: DataCite semantics or Scholix semantics set
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
     <relation semantics="IsSupplementedBy">
