@@ -71,6 +71,18 @@ Name
     "name": "the name"
 
 
+Acronym
+----
+:Description: Acronym used by a venue.
+:Type: String
+:Use: recommended, (0..1)
+ 
+.. code-block:: json
+   :linenos:
+
+    "acronym": "IJDL"
+
+
 Venue type
 ----
 :Description: The type of the venue.
@@ -157,18 +169,6 @@ Linked ISSN
     "lissn": "xxxx-yyyy"
 
 
-Acronym
-----
-:Description: Acronym used by a venue.
-:Type: String
-:Use: recommended, (0..1)
- 
-.. code-block:: json
-   :linenos:
-
-    "acronym": "ABC"
-
-
 Conference place
 ----
 :Description: 
@@ -217,9 +217,6 @@ Date format
             "date_format": "yyyy-MM-dd",
         }
     ]
-
-    
-
 
 
 Relationships
