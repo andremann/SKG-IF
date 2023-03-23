@@ -1,4 +1,4 @@
-Model entities
+Core model entities
 ##############
 
 TODO write introduction
