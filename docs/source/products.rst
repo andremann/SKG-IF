@@ -173,9 +173,9 @@ Date format
 
 Product type
 -----
-:Description: The type of the research product. One among {literature, researcData, researchSoftware, Other}.
-:Type: String
-:Use: mandatory
+:Description: The type of the research product. 
+:Type: String, one among `literature`, `researc data`, `research software`, `other``}.
+:Use: mandatory, (1)
 
 .. code-block:: json
    :linenos:
@@ -185,14 +185,14 @@ Product type
 
 Product type description
 -----
-:Description: Free text describing the product (i.e., journal-article, workflow, collection, etc.).
-:Type: String 
+:Description: Free text describing the product.
+:Type: String, e.g., `journal-article`, `workflow`, `collection`, etc.
 :Use: required 
 
 .. code-block:: json
    :linenos:
 
-    "product_type_descritpion": "journal-article"
+    "product_type_description": "journal-article"
 
 
 Issue

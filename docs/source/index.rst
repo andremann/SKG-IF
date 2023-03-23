@@ -6,7 +6,8 @@ This documentation provides an overview of the work carried out by the RDA Inter
 towards the definition of the Scholarly Knowledge Graphs Interoperability Framwork (**SKG-IF**) documentation.
 
 .. note::
-   This project is under active development.
+   This project is under active development. 
+   This documentation translates and will be in sync with the specifications drafted `here <https://docs.google.com/spreadsheets/d/1m8vQkklLWmDYk55oI6YxZcqkvL7CHp385stjIyy-5mI>`_.
 
 
 Contents
