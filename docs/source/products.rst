@@ -171,7 +171,7 @@ Date format
     ]
 
 
-Resource type
+Product type
 -----
 :Description: The type of the research product. One among {literature, researcData, researchSoftware, Other}.
 :Type: String
@@ -180,19 +180,19 @@ Resource type
 .. code-block:: json
    :linenos:
 
-    "resource_type": "literature"
+    "product_type": "literature"
 
 
-Resource type description
+Product type description
 -----
-:Description: Free text describing the resource (i.e., journal-article, workflow, collection, etc.).
+:Description: Free text describing the product (i.e., journal-article, workflow, collection, etc.).
 :Type: String 
 :Use: required 
 
 .. code-block:: json
    :linenos:
 
-    "resource_type": "journal-article"
+    "product_type_descritpion": "journal-article"
 
 
 Issue
