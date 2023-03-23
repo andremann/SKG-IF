@@ -67,8 +67,8 @@ Itentifier value
 
     "identifiers": [
         {
-            "scheme": "https://..."
-            "value": "the_id"
+            "scheme": "https://doi.org"
+            "value": "10.1103/PhysRevE.80.056103"
         }
     ]
     
@@ -105,7 +105,7 @@ Title
 .. code-block:: json
    :linenos:
 
-    "title": "title"
+    "title": "The computer science ontology: a large-scale taxonomy of research areas"
        
 
 Abstract
@@ -132,7 +132,7 @@ Abstract
 .. code-block:: json
    :linenos:
 
-    "abstract": "..."
+    "abstract": "Ontologies of research areas are important tools for characterising, exploring, and analysing the research landscape..."
 
 
 Dates
@@ -204,7 +204,7 @@ Issue
 .. code-block:: json
    :linenos:
 
-    "issue": ""
+    "issue": "42"
 
 
 Volume
@@ -216,7 +216,7 @@ Volume
 .. code-block:: json
    :linenos:
 
-    "volume": ""
+    "volume": "IX"
 
 
 Start page
@@ -228,7 +228,7 @@ Start page
 .. code-block:: json
    :linenos:
 
-    "start_page": ""
+    "start_page": "3"
 
 
 End page
@@ -240,7 +240,7 @@ End page
 .. code-block:: json
    :linenos:
 
-    "end_page": ""
+    "end_page": "13"
 
 
 Edition
@@ -268,10 +268,10 @@ hasAuthorship
 .. code-block:: json
    :linenos:
 
-    <relation semantics="hasAuthorship">
-        <source type="researchProduct">resultId</source>
-        <target type="authorship">authorshipId</target>
-    </relation>
+    "has_authorship": {
+        "researchProduct": "product_id",
+        "authorship": "authorship_id"
+    }
 
 
 hasAuthorAffiliatedWith 
@@ -284,12 +284,13 @@ hasAuthorAffiliatedWith
 .. code-block:: json
    :linenos:
 
-    <relation semantics="hasAuthorAffiliatedWith">
-        <source type="researchProduct">resultId</source>
-        <target type="organization">organizationId</target>
-    </relation>
+    "has_author_affiliated_with": {
+        "research_product": "product_id",
+        "organisation": "organisation_id"
+    }
 
-publishedIn
+
+is_published_in
 --------------
 :Description: The research product publishing venue 
 :Use: Optional (0..*)
@@ -299,12 +300,13 @@ publishedIn
 .. code-block:: json
    :linenos:
 
-    <relation semantics="publishedIn">
-        <source type="researchProduct">resultId</source>
-        <target type="venue">venueId</target>
-    </relation>
+    "is_published_in": {
+        "research_product": "product_id",
+        "venue": "venue_id"
+    }
 
-fundedBy 
+
+is_funded_by 
 -------------
 :Description: the funds thanks to which the product has been made
 :Use: Optional (0..*)
@@ -314,14 +316,13 @@ fundedBy
 .. code-block:: json
    :linenos:
 
-    <relation semantics="fundedBy">
-        <source type="researchProduct">resultId</source>
-            <target type="project">projectId</target>
-    </relation>
+    "is_funded_by": {
+         "research_product": "product_id",
+         "project": "project_id"
+    }
 
 
-
-hasSubject
+has_subject
 -----------
 :Description: The topic this research product is related to 
 :Use: Optional (0..*)
@@ -331,13 +332,13 @@ hasSubject
 .. code-block:: json
    :linenos:
 
-    <relation semantics="hasSubject">
-        <source type="researchProduct">resultId</source>
-        <target type="project">topicId</target>
-    </relation>
+    "has_subject": {
+        "research_product": "product_id",
+         "subject": "subject_id"
+    }
 
 
-relatedWithProduct 
+is_related_with_product
 -------------------
 :Description: other product the research product is related with 
 :Use: Optional (0..*)
@@ -348,7 +349,8 @@ relatedWithProduct
 .. code-block:: json
    :linenos:
 
-    <relation semantics="IsSupplementedBy">
-        <source type="researchProduct">resultId</source>
-        <target type="researchProduct">resultId</target>
-    </relation>
+    "is_related_with_product": {
+        "semantics": "IsSupplementTo"
+        "research_product": "product_id",
+         "research_product": "product_id",
+    }
