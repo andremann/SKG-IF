@@ -1,9 +1,9 @@
-.. _Researcher:
+.. _Person:
 
-Researcher
+Person
 ############
 
-This section is to describe the metadata fields for the **Researcher** entity.
+This section is to describe the metadata fields for the **Person** entity.
 
 Properties 
 ===========
@@ -93,31 +93,31 @@ Relationships
 
 isAffiliatedWith
 ------------------
-:Description: the affiliation of the researcher 
+:Description: the affiliation of the person 
 :Use: Optional (0..*)
-:Source: researcher id 
+:Source: person id 
 :Target: affiliation 
 
 .. code-block:: json
    :linenos:
 
     <relation semantics="isAffiliatedWith">
-        <source type="researcher">researcherId</source>
+        <source type="person">personId</source>
         <target type="affiliation">affiliationId</target>
     </relation>
 
 
 hasCollaboratedToProject
 -----------------------
-:Description: the projects the researcher has collaborated to
+:Description: the projects the person has collaborated to
 :Use: Optional(0..*)
-:Source: researcher 
+:Source: person 
 :Target: Project
  
 .. code-block:: json
    :linenos:
 
     <relation semantics="hasCollaboratedToProject">
-        <source type="researcher">researcherId</source>
+        <source type="person">personId</source>
         <target type="project">projectId</target>
     </relation>

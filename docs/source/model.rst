@@ -8,11 +8,11 @@ TODO write introduction
    :maxdepth: 2
 
    products
-   researchers
+   persons
    organisations
    venues
    datasources
-   projects
+   grants
    topics
    others
     

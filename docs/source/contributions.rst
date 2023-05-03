@@ -1,18 +1,18 @@
-.. _Authorship:
+.. _Contribution:
 
-Authorship
+Contribution
 ####################
 
-It is to model the contribution of a :ref:`Researcher <Researcher>` in the creation of the :ref:`Research product <Research product>`. 
-Each **Authorship** will have one link to the :ref:`Researcher <Researcher>` contributing to the creation of the :ref:`Research product <Research product>`, and one link to the :ref:`Research product <Research product>`.
-One link can also be made to refer to the :ref:`Organisation <Organisation>` the :ref:`Researcher <Researcher>` related to the Authorship entity, declared to be affiliated to when contributing to create the :ref:`Research product <Research product>`.  
+It is to model the contribution of a :ref:`Person <Person>` in the creation of the :ref:`Research product <Research product>`. 
+Each **Contribution** will have one link to the :ref:`Person <Person>` contributing to the creation of the :ref:`Research product <Research product>`, and one link to the :ref:`Research product <Research product>`.
+One link can also be made to refer to the :ref:`Organisation <Organisation>` the :ref:`Person <Person>` related to the Contribution entity, declared to be affiliated to when contributing to create the :ref:`Research product <Research product>`.  
 
 Properties
 ==========
 
 Local Identifier
 ----
-:Description: Unique code identifiying the Authorship in the SKG (if any, otherwise "stateless identifier")
+:Description: Unique code identifiying the Contribution in the SKG (if any, otherwise "stateless identifier")
 :Type: String
 :Use: mandatory (1)
 :Representation: XML element ``localIdentifier``
@@ -54,47 +54,47 @@ Relationships
 
 relatedProduct
 ----------------------
-:Description: It is the product related to this authorship
+:Description: It is the product related to this contribution
 :Use: Mandatory (1)
-:Source: **Authorship** 
+:Source: **Contribution** 
 :Target: :ref:`Research product <Research product>`
 
 .. code-block:: xml
    :linenos:
 
     <relation semantics="relatedProduct">
-        <source type="authorship">authorshipId</source>
+        <source type="contribution">contributionId</source>
         <target type=researchProduct>resultId</target>
     </relation>
 
 
 relatedAuthor 
 ---------------------------
-:Description: It is the researcher related to this authorship entity
+:Description: It is the researcher related to this contribution entity
 :Use: Mandatory (1)
-:Source: **Authorship** 
+:Source: **Contribution** 
 :Target: :ref:`Researcher <Researcher>`
 
 .. code-block:: xml
    :linenos:
 
     <relation semantics="relatedAuthor">
-        <source type="authorship">authorshipId</source>
+        <source type="contribution">contributionId</source>
         <target type="researcher">researcherId</target>
     </relation>
 
 
 relatedAuthorAffiliation
 --------------
-:Description: The affiliation of the researched related to the authorship entity
+:Description: The affiliation of the researched related to the contribution entity
 :Use: Optional (0..*)
-:Source: **Authorship**  
+:Source: **Contribution**  
 :Target: :ref:`Organization <Organization>`
 
 .. code-block:: xml
    :linenos:
 
     <relation semantics="relatedAuthorAffiliation">
-        <source type="authorship">authorshipId</source>
+        <source type="contribution">contributionId</source>
         <target type="organization">organizationId</target>
     </relation>

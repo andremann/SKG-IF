@@ -1,16 +1,16 @@
-.. _Project:
+.. _Grant:
 
-Projects
+Grants
 ########
-This section is to describe the metadata fields for the **Project** entity.
+This section is to describe the metadata fields for the **Grant** entity.
 
 Properties
 ==========
-This section is to describe the metadata fields for the **Projects**.
+This section is to describe the metadata fields for the **Grant**.
 
 Local identifier
 ----
-:Description: Unique code identifiying the **Project** in the OSG (if any, otherwise "stateless identifier").
+:Description: Unique code identifiying the **Grant** in the SKG (if any, otherwise "stateless identifier").
 :Type: 
 :Use: 
  
@@ -52,7 +52,7 @@ Identifier value
 
 Title
 ----
-:Description: Title of the project.
+:Description: Title of the grant.
 :Type: String
 :Use: mandatory, (1)
  
@@ -64,7 +64,7 @@ Title
 
 Abstract
 ----
-:Description: Abstract of the project.
+:Description: Abstract of the grant.
 :Type: String
 :Use: recommended, (1)
  
@@ -76,7 +76,7 @@ Abstract
 
 Acronym
 ----
-:Description: Project acronym.
+:Description: Grant acronym.
 :Type: String
 :Use: optional, (1)
  
@@ -88,19 +88,19 @@ Acronym
 
 Funding
 ----
-:Description: Project funding information.
+:Description: Grant funding information.
 :Type: 
 :Use: 
 
 Funder
 ^^^^^^
-:Description: Project funder.
+:Description: Grant funder.
 :Type: 
 :Use: 
 
 Funding stream
 ^^^^^^
-:Description: Project funding stream.
+:Description: Grant funding stream.
 :Type: 
 :Use: 
 
@@ -112,7 +112,7 @@ Currency
 
 Funded amount
 ^^^^^^
-:Description: Amount funded for the project.
+:Description: Amount funded for the grant.
 :Type: 
 :Use: 
 
@@ -132,7 +132,7 @@ Funded amount
 
 Keywords
 ----
-:Description: Project keywords.
+:Description: Grant keywords.
 :Type: 
 :Use: 
  
@@ -216,7 +216,7 @@ Date format
 
 Website
 ----
-:Description: Project website.
+:Description: Grant website.
 :Type: URL
 :Use: recommended, (0..1)
  

@@ -3,7 +3,7 @@
 Affiliation
 ####################
 
-An **Affiliation** entity models the affiliation(s) of a :ref:`Researcher <Researcher>` to research :ref:`Organisation <Organisation>` during his/her working life time.
+An **Affiliation** entity models the affiliation(s) of a :ref:`Person <Person>` to research :ref:`Organisation <Organisation>` during his/her working life time.
 
 Properties
 ==========
