@@ -276,7 +276,7 @@ hasAuthorship
 
 hasAuthorAffiliatedWith 
 ---------------------------
-:Description: It is a relation between the result and the organization. We do not know who is the researcher involved (affiliated to the organization)
+:Description: It is a relation between the result and the organization. We do not know who is the :ref:`Person <Person>` involved (affiliated to the organization)
 :Use: Optional (0..*)
 :Source: research product 
 :Target: organization 
@@ -311,14 +311,14 @@ is_funded_by
 :Description: the funds thanks to which the product has been made
 :Use: Optional (0..*)
 :Source: research product 
-:Target: project
+:Target: grant
 
 .. code-block:: json
    :linenos:
 
     "is_funded_by": {
          "research_product": "product_id",
-         "project": "project_id"
+         "grant": "grant_id"
     }
 
 

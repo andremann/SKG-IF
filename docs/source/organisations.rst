@@ -113,4 +113,4 @@ Country
 
 Relationships
 =============
-- isBeneficiaryOfProject (to Project)
+- isBeneficiaryOfGrant (to Grant)

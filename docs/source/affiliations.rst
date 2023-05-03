@@ -24,7 +24,7 @@ Local Identifier
 
 Role
 ----
-:Description: Specific role of the researcher in the organization
+:Description: Specific role of the :ref:`Person <Person>` in the organization
 :Type: String (possibility: values from CRediT taxonomy)
 :Use: Mandatory (1)
 :Representation: XML element ``role``
@@ -37,7 +37,7 @@ Role
     
 Start Date
 ----
-:Description: The date when the researcher started to be affiliated with the organization
+:Description: The date when the :ref:`Person <Person>` started to be affiliated with the organization
 :Type: String
 :Use: Required, (1)
 :Representation: XML element ``startDate`` 
@@ -50,7 +50,7 @@ Start Date
 
 End Date
 ----
-:Description: The date when the researcher was no more affiliated with the organization
+:Description: The date when the :ref:`Person <Person>` was no more affiliated with the organization
 :Type: String
 :Use: Required, (1)
 :Representation: XML element ``endDate`` 
@@ -64,20 +64,20 @@ End Date
 Relationships
 ============
 
-relatedResearcher
+relatedPerson
 ----------------------
 
-:Description: It is the researcher to whom this affiliation is related
+:Description: It is the Person to whom this affiliation is related
 :Use: Mandatory (1)
 :Source: affiliation 
-:Target: researcher
+:Target: person
 
 .. code-block:: xml
    :linenos:
 
-    <relation semantics="relatedResearcher">
-        <source type="affiliation">affiliationId</source>
-        <target type=researcher>researcherId</target>
+    <relation semantics="relatedPerson">
+        <source type="affiliation">affiliation_id</source>
+        <target type=person>person_id</target>
     </relation>
 
 

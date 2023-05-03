@@ -25,7 +25,7 @@ Local Identifier
 
 Role
 ----
-:Description: Specific role of the researcher 
+:Description: Specific role of a :ref:`Person <Person>` 
 :Type: String (possibility: values from CRediT taxonomy)
 :Use: Mandatory (1)
 :Representation: XML element ``role``
@@ -70,23 +70,23 @@ relatedProduct
 
 relatedAuthor 
 ---------------------------
-:Description: It is the researcher related to this contribution entity
+:Description: It is the :ref:`Person <Person>` related to this contribution entity
 :Use: Mandatory (1)
 :Source: **Contribution** 
-:Target: :ref:`Researcher <Researcher>`
+:Target: :ref:`Person <Person>`
 
 .. code-block:: xml
    :linenos:
 
-    <relation semantics="relatedAuthor">
-        <source type="contribution">contributionId</source>
-        <target type="researcher">researcherId</target>
+    <relation semantics="relatedPerson">
+        <source type="contribution">contribution_id</source>
+        <target type="person">person_id</target>
     </relation>
 
 
-relatedAuthorAffiliation
+relatedPersonAffiliation
 --------------
-:Description: The affiliation of the researched related to the contribution entity
+:Description: The affiliation of the :ref:`Person <Person>` related to the contribution entity
 :Use: Optional (0..*)
 :Source: **Contribution**  
 :Target: :ref:`Organization <Organization>`
@@ -95,6 +95,6 @@ relatedAuthorAffiliation
    :linenos:
 
     <relation semantics="relatedAuthorAffiliation">
-        <source type="contribution">contributionId</source>
-        <target type="organization">organizationId</target>
+        <source type="contribution">contribution_id</source>
+        <target type="organization">organisation_id</target>
     </relation>

@@ -11,7 +11,7 @@ Properties
 
 Local identifier
 ----
-:Description: Unique code identifiying the **Project** in the OSG (if any, otherwise "stateless identifier").
+:Description: Unique code identifiying the **Person** in the SKG (if any, otherwise "stateless identifier").
 :Type: 
 :Use: 
  
@@ -107,17 +107,17 @@ isAffiliatedWith
     </relation>
 
 
-hasCollaboratedToProject
+hasCollaboratedToGrant
 -----------------------
-:Description: the projects the person has collaborated to
+:Description: the grants the person has collaborated to
 :Use: Optional(0..*)
 :Source: person 
-:Target: Project
+:Target: Grant
  
 .. code-block:: json
    :linenos:
 
-    <relation semantics="hasCollaboratedToProject">
+    <relation semantics="hasCollaboratedToGrant">
         <source type="person">personId</source>
-        <target type="project">projectId</target>
+        <target type="grant">grantId</target>
     </relation>
