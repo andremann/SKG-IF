@@ -52,7 +52,7 @@ Itentifier value
 
 Given name
 ---------
-:Description: The given name of a person
+:Description: The given name of a person.
 :Type: String 
 :Use: Required (1)
 
@@ -64,7 +64,7 @@ Given name
 
 Family name
 -------------
-:Description: The family name of a person
+:Description: The family name of a person.
 :Type: String
 :Use: Mandatory (1)
 
@@ -77,7 +77,7 @@ Family name
 
 Agent
 ------
-:Description: The name of an agent (e.g., a collactive name or a legal entity) that authored the product.
+:Description: The name of an agent (e.g., a collactive name or a legal entity).
 :Type: String
 :Use: Optional (0..1) 
 

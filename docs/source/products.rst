@@ -258,25 +258,25 @@ Edition
 Relationships
 ============
 
-hasAuthorship
+hasContribution
 ---------------------
-:Description: It models the authorship of the research result. It can also reference to the organization(s) to which the author was affiliated when generating this product. For this relation the author is an entity in the SKG
+:Description: It models the contribution of the research result. It can also reference to the organization(s) to which the :ref:`Person <Person>` was affiliated when generating this product. For this relation the :ref:`Person <Person>` is an entity in the SKG.
 :Use: Optional (0..*)
 :Source: research product 
-:Target: authorship 
+:Target: Contribution 
 
 .. code-block:: json
    :linenos:
 
-    "has_authorship": {
-        "researchProduct": "product_id",
-        "authorship": "authorship_id"
+    "has_contribution": {
+        "research_product": "product_id",
+        "contribution": "contribution_id"
     }
 
 
-hasAuthorAffiliatedWith 
+hasPersonAffiliatedWith 
 ---------------------------
-:Description: It is a relation between the result and the organization. We do not know who is the :ref:`Person <Person>` involved (affiliated to the organization)
+:Description: It is a relation between the result and the organization. We do not know who is the :ref:`Person <Person>` involved (affiliated to the organization).
 :Use: Optional (0..*)
 :Source: research product 
 :Target: organization 
@@ -284,7 +284,7 @@ hasAuthorAffiliatedWith
 .. code-block:: json
    :linenos:
 
-    "has_author_affiliated_with": {
+    "has_person_affiliated_with": {
         "research_product": "product_id",
         "organisation": "organisation_id"
     }

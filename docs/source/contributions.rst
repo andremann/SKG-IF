@@ -38,7 +38,7 @@ Role
 
 Rank
 ----
-:Description: The rank of the author 
+:Description: The rank of the person (as an author) 
 :Type: Integer
 :Use: Optional (0..1)
 :Representation: XML element ``rank`` 
@@ -68,7 +68,7 @@ relatedProduct
     </relation>
 
 
-relatedAuthor 
+relatedPerson 
 ---------------------------
 :Description: It is the :ref:`Person <Person>` related to this contribution entity
 :Use: Mandatory (1)
@@ -94,7 +94,7 @@ relatedPersonAffiliation
 .. code-block:: xml
    :linenos:
 
-    <relation semantics="relatedAuthorAffiliation">
+    <relation semantics="relatedPersonAffiliation">
         <source type="contribution">contribution_id</source>
         <target type="organization">organisation_id</target>
     </relation>
