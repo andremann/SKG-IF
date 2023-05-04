@@ -73,28 +73,28 @@ Itentifier value
     
 
 
-Title
+Titles
 ----
-:Description: The title of the research product.
-:Type: String
-:Use: Mandatory, possibly multiple (1..*)
+:Description: The titles of a research product (multiple for multilinguism).
+:Type: List
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
 
-    "title": "The computer science ontology: a large-scale taxonomy of research areas"
+    "title": ["The computer science ontology: a large-scale taxonomy of research areas"]
        
 
-Abstract
+Abstracts
 --------
-:Description: A description for the research product.
-:Type: String
-:Use: Required, possibly multiple (0..*) 
+:Description: The abstracts of a research product (multiple for multilinguism).
+:Type: List
+:Use: Recommended (1)
 
 .. code-block:: json
    :linenos:
 
-    "abstract": "Ontologies of research areas are important tools for characterising, exploring, and analysing the research landscape..."
+    "abstracts": ["Ontologies of research areas are important tools for characterising, exploring, and analysing the research landscape..."]
 
 
 Dates
@@ -136,7 +136,7 @@ Date format
 Product type
 -----
 :Description: The type of the research product. 
-:Type: String, one among `literature`, `researc data`, `research software`, `other``}.
+:Type: String, one among `literature`, `research data`, `research software`, `other``}.
 :Use: Mandatory, (1)
 
 .. code-block:: json

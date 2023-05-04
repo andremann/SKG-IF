@@ -1,6 +1,6 @@
 .. _Person:
 
-Person
+Persons
 ############
 
 This section is to describe the metadata fields for the **Person** entity.
@@ -12,8 +12,8 @@ Properties
 Local identifier
 ----
 :Description: Unique code identifiying the **Person** in the SKG (if any, otherwise "stateless identifier").
-:Type: 
-:Use: 
+:Type: String
+:Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
@@ -21,19 +21,19 @@ Local identifier
     "local_identifier": "the_id"
 
 
-Alternative identifiers
+Identifiers
 ----
 :Description: Identifier for the resource outside of the SKG. 
 :Type: List
-:Use: Optional (0..n)
+:Use: Recommended (1)
 
-Identifier scheme
+Scheme
 ^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
 :Use: Mandatory (1)
 
-Itentifier value
+Value
 ^^^^^^^^^^^
 :Description: The external identifier.
 :Type: String
@@ -54,12 +54,12 @@ Given name
 ---------
 :Description: The given name of a person.
 :Type: String 
-:Use: Required (1)
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
 
-    "given_name": "Andrea"
+    "given_name": "John"
 
 
 Family name
@@ -72,14 +72,14 @@ Family name
 .. code-block:: json
    :linenos:
 
-    "family_name": "Mannocci"
+    "family_name": "Doe"
 
 
 Agent
 ------
 :Description: The name of an agent (e.g., a collactive name or a legal entity).
 :Type: String
-:Use: Optional (0..1) 
+:Use: Optional (0..1)
 
 .. code-block:: json
    :linenos:
@@ -91,33 +91,35 @@ Agent
 Relationships
 ================
 
-isAffiliatedWith
+is_affiliated_with
 ------------------
-:Description: the affiliation of the person 
+:Description: 
 :Use: Optional (0..*)
-:Source: person id 
-:Target: affiliation 
+:Source type: Person
+:Target type: Affiliation 
 
 .. code-block:: json
    :linenos:
 
-    <relation semantics="isAffiliatedWith">
-        <source type="person">personId</source>
-        <target type="affiliation">affiliationId</target>
-    </relation>
+    {
+    "semantics"="is_affiliated_with"
+    "source" = "person_id",
+    "target" = "affiliation_id"
+    }
 
 
-hasCollaboratedToGrant
+has_contribution
 -----------------------
-:Description: the grants the person has collaborated to
+:Description: 
 :Use: Optional(0..*)
-:Source: person 
-:Target: Grant
+:Source type: Person 
+:Target type: Contribution
  
 .. code-block:: json
    :linenos:
 
-    <relation semantics="hasCollaboratedToGrant">
-        <source type="person">personId</source>
-        <target type="grant">grantId</target>
-    </relation>
+    {
+    "semantics"="has_contribution"
+    "source" = "person_id",
+    "target" = "contribution_id"
+    }
