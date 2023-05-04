@@ -9,7 +9,7 @@ towards the definition of the Scholarly Knowledge Graphs Interoperability Framwo
    This project is under active development. 
    This documentation translates and will be in sync with the specifications drafted `here <https://docs.google.com/spreadsheets/d/1m8vQkklLWmDYk55oI6YxZcqkvL7CHp385stjIyy-5mI>`_.
 
-.. include:: snippets/foo.rsti
+.. .. include:: snippets/foo.rsti
 
 Contents
 --------
@@ -18,4 +18,4 @@ Contents
    :maxdepth: 2
    
    model
-   
+   exchange

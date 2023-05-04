@@ -16,5 +16,4 @@ TODO write introduction
    topics
    contributions
    affiliations
-..   others
     
