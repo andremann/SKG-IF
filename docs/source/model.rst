@@ -3,7 +3,7 @@ Core model entities
 
 TODO write introduction
 
-.. .. image:: /images/model.jpg
+.. image:: /images/model.jpg
 
 .. toctree::
    :maxdepth: 2
