@@ -1,6 +1,6 @@
 .. _Contribution:
 
-Contribution
+Contributions
 ####################
 
 It is to model the contribution of a :ref:`Person <Person>` in the creation of the :ref:`Research product <Research product>`. 
@@ -19,70 +19,106 @@ Local Identifier
 .. code-block:: json
    :linenos:
 
-    "name": ""
+    "local_id": "the_id"
 
 
-Role
+Roles
 ----
 :Description: Specific role of a :ref:`Person <Person>` for the **Contribution**
-:Type: String (possibility: values from CRediT taxonomy)
+:Type: List of values from CRediT taxonomy
 :Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
 
-    "role": "author"
+    "roles": ["writing-original-draft", "supervision"]
     
 
 Rank
 ----
 :Description: The rank of the person (as an author) 
 :Type: Integer
-:Use: Optional (0..1)
+:Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
 
-    "rank": "1"
+    "rank": 1
        
 
 Relationships
 ============
 
-relatedProduct
-----------------------
-:Description: It is the product related to this contribution
-:Use: Mandatory (1)
-:Source: **Contribution** 
-:Target: :ref:`Research product <Research product>`
-
-.. code-block:: json
-   :linenos:
-
-    "name": ""
-
-
-relatedPerson 
+related_person 
 ---------------------------
 :Description: It is the :ref:`Person <Person>` related to this contribution entity
 :Use: Mandatory (1)
-:Source: **Contribution** 
+:Source: Contribution
 :Target: :ref:`Person <Person>`
 
 .. code-block:: json
    :linenos:
 
-    "name": ""
+   {
+   
+   }
 
 
-relatedPersonAffiliation
+related_product
+----------------------
+:Description: It is the product related to this contribution
+:Use: Optional (0..1)
+:Source type: Contribution
+:Target type: :ref:`Research product <Research product>`
+
+.. code-block:: json
+   :linenos:
+
+    {
+
+    }
+
+
+related_venue
+----------------------
+:Description: 
+:Use: Optional (0..1)
+:Source type: Contribution
+:Target type: Venue
+
+.. code-block:: json
+   :linenos:
+
+    {
+
+    }
+
+
+related_grant
 --------------
 :Description: The affiliation of the :ref:`Person <Person>` related to the contribution entity
-:Use: Optional (0..*)
-:Source: **Contribution**  
+:Use: Optional (0..1)
+:Source: Contribution  
 :Target: :ref:`Organization <Organization>`
 
 .. code-block:: json
    :linenos:
 
-    "name": ""
+    {
+    
+    }
+
+
+related_person_affiliation
+--------------
+:Description: The affiliation of the :ref:`Person <Person>` related to the contribution entity
+:Use: Optional (0..*)
+:Source: Contribution  
+:Target: :ref:`Organization <Organization>`
+
+.. code-block:: json
+   :linenos:
+
+    {
+    
+    }

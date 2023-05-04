@@ -106,7 +106,7 @@ Dates
 Date value
 ^^^^^^^^^^^^^
 :Description: The relevant date for the research product.
-:Type: String 
+:Type: String (ISO 8601 date string)
 :Use: Mandatory (1)
 
 Date type

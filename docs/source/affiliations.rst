@@ -1,6 +1,6 @@
 .. _ Affiliation:
 
-Affiliation
+Affiliations
 ####################
 
 An **Affiliation** entity models the affiliation(s) of a :ref:`Person <Person>` to research :ref:`Organisation <Organisation>` during his/her working life time.
@@ -19,69 +19,61 @@ Local Identifier
 
     "local_id": "the_id"
 
-
-Role
-----
-:Description: Specific role of the :ref:`Person <Person>` in the organization
-:Type: String (possibility: values from CRediT taxonomy)
-:Use: Mandatory (1)
-
-.. code-block:: json
-   :linenos:
-
-    "role": "researcher"
-
     
 Start Date
 ----
-:Description: The date when the :ref:`Person <Person>` started to be affiliated with the organization
-:Type: String
-:Use: Required, (1)
+:Description: The date when the :ref:`Person <Person>` started to be affiliated with the :ref:`Organisation <Organisation>`.
+:Type: String (ISO 8601 date string)
+:Use: Recommended (1)
 
 .. code-block:: json
    :linenos:
 
-    "name": ""
+    "start_date": "2019-09-13"
        
 
 End Date
 ----
-:Description: The date when the :ref:`Person <Person>` was no more affiliated with the organization
-:Type: String
-:Use: Required, (1)
+:Description: The date when the :ref:`Person <Person>` was no more affiliated with the :ref:`Organisation <Organisation>`.
+:Type: String (ISO 8601 date string)
+:Use: Recommended (1)
 
 .. code-block:: json
    :linenos:
 
-    "name": ""
+    "end_date": "2022-12-03"
 
 
 Relationships
 ============
 
-relatedPerson
+related_person
 ----------------------
 
-:Description: It is the Person to whom this affiliation is related
+:Description: It is the :ref:`Person <Person>` to whom this affiliation is related
 :Use: Mandatory (1)
-:Source: affiliation 
-:Target: person
+:Source type: :ref:`Affiliation <Affiliation>` 
+:Target type: :ref:`Person <Person>`
 
 .. code-block:: json
    :linenos:
 
-    "name": ""
+    {
+    
+    }
 
 
-relatedOrganization
+related_organisation
 ----------------------
 
-:Description: It is the organization to which this affiliation is related
+:Description: It is the :ref:`Organisation <Organisation>` to which this affiliation is related
 :Use: Mandatory (1)
-:Source: affiliation 
-:Target: organization
+:Source type: :ref:`Affiliation <Affiliation>`  
+:Target type: :ref:`Organisation <Organisation>`
 
 .. code-block:: json
    :linenos:
 
-    "name": ""
+    {
+    
+    }
