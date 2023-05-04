@@ -21,27 +21,27 @@ Local identifier
 ----
 :Description: Unique code identifiying the **Venue** in the SKG (if any, otherwise "stateless identifier").
 :Type: String
-:Use: Mandatory, (1)
+:Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
 
-    "local_id": "123_local_id"
+    "local_identifier": "123_local_id"
 
 
 Identifiers			
 ----
-:Description: Alternative identifiers.
+:Description: Alternative identifiers. Allowed schemes are ISSN, EISSN, LISSN, ISBN, OpenDOAR ID, re3data.org ID, etc.
 :Type: List
-:Use: Optional, (1..*)
+:Use: Optional, (0..1)
 
-Identifier scheme
+Scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
 :Use: Mandatory (1)
 
-Identifier value
+Value
 ^^^^^^^^^
 :Description: The external identifier.
 :Type: String
@@ -62,7 +62,7 @@ Name
 ----
 :Description: The name of the venue.
 :Type: String
-:Use: Mandatory, (1)
+:Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
@@ -74,7 +74,7 @@ Acronym
 ----
 :Description: Acronym used by a venue.
 :Type: String
-:Use: Recommended, (0..1)
+:Use: Recommended (0..1)
  
 .. code-block:: json
    :linenos:
@@ -82,11 +82,11 @@ Acronym
     "acronym": "IJDL"
 
 
-Venue type
+Type
 ----
 :Description: The type of the venue.
-:Type: vocabulary (see below)
-:Use: Mandatory, (1)
+:Type: String following the vocabulary below
+:Use: Mandatory (1)
 
 .. tabularcolumns:: p{0.132\linewidth}p{0.198\linewidth}p{0.330\linewidth}
 .. csv-table:: Controlled vocabulary for different types of venue and its mapping towards OpenCitations
@@ -105,115 +105,31 @@ Venue type
 .. code-block:: json
    :linenos:
 
-    "venue_type", "Repository"
+    "type", "Repository"
 
 
-Peer review
+Is currently full open access
 ----
-:Description: the type of peer-review in charge at a venue.
-:Type: Vocabulary {single-blind, double-blind, open, none}
-:Use: Mandatory, (1)
- 
-.. code-block:: json
-   :linenos:
-
-    "peer_review": "open"
-
-
-Metadata curation
-----
-:Description: The type of metadata curation taking place at a venue.
+:Description: 
 :Type: Boolean
-:Use: Mandatory, (1)
- 
-.. code-block:: json
-   :linenos:
-
-    "metadata_curation": true
-
-
-ISSN
-----
-:Description: The ISSNs used by a venue.
-:Type: String
-:Use: Optional, (0..*)
- 
-.. code-block:: json
-   :linenos:
-
-    "issn": "xxxx-yyyy"
-
-
-eISSN
-----
-:Description: Eletronic ISSN used by a venue.
-:Type: String
-:Use: Optional, (0..*)
- 
-.. code-block:: json
-   :linenos:
-
-    "eissn": "xxxx-yyyy"
-
-
-Linked ISSN
-----
-:Description: The `ISSN-L <https://en.wikipedia.org/wiki/International_Standard_Serial_Number#Linking_ISSN>`_ identifying this venue. 
-:Type: String
-:Use: Optional, (0..1)
- 
-.. code-block:: json
-   :linenos:
-
-    "lissn": "xxxx-yyyy"
-
-
-Conference place
-----
-:Description: 
-:Type: 
-:Use: 
- 
-.. code-block:: json
-   :linenos:
-
-    "place": "NYC"
-
-
-Conference dates
-----
-:Description: 
-:Type: date period
-:Use: 
- 
-Start date
-^^^^^^^^^^^^^
-:Description: 
-:Type: String 
 :Use: Mandatory (1)
-
-End date
-^^^^^^^^^^^^^
-:Description: 
-:Type: String 
-:Use: Mandatory (1)
-
-Date format
-"""""""""""""
-:Description: The format of the relevant date.
-:Type: String 
-:Use: Mandatory (1)
-
+ 
 .. code-block:: json
    :linenos:
 
-    "dates": [
-        {
-            "start_date": "2022-12-03",
-            "end_date": "2022-12-06",
-            "date_format": "yyyy-MM-dd",
-        }
-    ]
+    "is_currently_full_oa": True
+
+
+Creation date
+----
+:Description: 
+:Type: String ()
+:Use: Recommended (1)
+ 
+.. code-block:: json
+   :linenos:
+
+    "creation date": "2019-09-13"
 
 
 Relationships

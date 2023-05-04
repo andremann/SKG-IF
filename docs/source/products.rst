@@ -222,7 +222,7 @@ Relationships
 
 hasContribution
 ---------------------
-:Description: It models the contribution of the research result. It can also reference to the organization(s) to which the :ref:`Person <Person>` was affiliated when generating this product. For this relation the :ref:`Person <Person>` is an entity in the SKG.
+:Description: It models the contribution of the research result. It can also reference to the :ref:`Organisation <Organisation>`(s) to which the :ref:`Person <Person>` was affiliated when generating this product. For this relation the :ref:`Person <Person>` is an entity in the SKG.
 :Use: Optional (0..*)
 :Source: research product 
 :Target: Contribution 
@@ -238,10 +238,10 @@ hasContribution
 
 hasPersonAffiliatedWith 
 ---------------------------
-:Description: It is a relation between the result and the organization. We do not know who is the :ref:`Person <Person>` involved (affiliated to the organization).
+:Description: It is a relation between the result and the :ref:`Organisation <Organisation>`. We do not know who is the :ref:`Person <Person>` involved (affiliated to the :ref:`Organisation <Organisation>`).
 :Use: Optional (0..*)
 :Source: research product 
-:Target: organization 
+:Target: :ref:`Organisation <Organisation>` 
 
 .. code-block:: json
    :linenos:

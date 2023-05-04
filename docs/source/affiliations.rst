@@ -52,14 +52,16 @@ related_person
 
 :Description: It is the :ref:`Person <Person>` to whom this affiliation is related
 :Use: Mandatory (1)
-:Source type: :ref:`Affiliation <Affiliation>` 
+:Source type: Affiliation
 :Target type: :ref:`Person <Person>`
 
 .. code-block:: json
    :linenos:
 
     {
-    
+        "semantics"="related_person"
+        "source" = "affiliation_id",
+        "target" = "person_id"
     }
 
 
@@ -68,12 +70,14 @@ related_organisation
 
 :Description: It is the :ref:`Organisation <Organisation>` to which this affiliation is related
 :Use: Mandatory (1)
-:Source type: :ref:`Affiliation <Affiliation>`  
+:Source type: Affiliation
 :Target type: :ref:`Organisation <Organisation>`
 
 .. code-block:: json
    :linenos:
 
     {
-    
+        "semantics"="related_organisation"
+        "source" = "affiliation_id",
+        "target" = "organisation_id"
     }

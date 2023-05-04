@@ -52,7 +52,7 @@ Value
 
 Given name
 ---------
-:Description: The given name of a person.
+:Description: The given name of a **Person**.
 :Type: String 
 :Use: Mandatory (1)
 
@@ -64,7 +64,7 @@ Given name
 
 Family name
 -------------
-:Description: The family name of a person.
+:Description: The family name of a **Person**.
 :Type: String
 :Use: Mandatory (1)
 
@@ -102,9 +102,9 @@ is_affiliated_with
    :linenos:
 
     {
-    "semantics"="is_affiliated_with"
-    "source" = "person_id",
-    "target" = "affiliation_id"
+        "semantics"="is_affiliated_with"
+        "source" = "person_id",
+        "target" = "affiliation_id"
     }
 
 
@@ -119,7 +119,7 @@ has_contribution
    :linenos:
 
     {
-    "semantics"="has_contribution"
-    "source" = "person_id",
-    "target" = "contribution_id"
+        "semantics"="has_contribution"
+        "source" = "person_id",
+        "target" = "contribution_id"
     }

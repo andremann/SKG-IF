@@ -11,8 +11,8 @@ This section is to describe the metadata fields for the **Grant**.
 Local identifier
 ----
 :Description: Unique code identifiying the **Grant** in the SKG (if any, otherwise "stateless identifier").
-:Type: 
-:Use: 
+:Type: String
+:Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
@@ -24,15 +24,15 @@ Identifiers
 ----
 :Description: Alternative identifiers.
 :Type: List
-:Use: Optional, (1..*)
+:Use: Recommended (1)
 
-Identifier scheme
+Scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
 :Use: Mandatory (1)
 
-Identifier value
+Value
 ^^^^^^^^^
 :Description: The external identifier.
 :Type: String
@@ -54,7 +54,7 @@ Title
 ----
 :Description: Title of the grant.
 :Type: String
-:Use: Mandatory, (1)
+:Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
@@ -66,7 +66,7 @@ Abstract
 ----
 :Description: Abstract of the grant.
 :Type: String
-:Use: Recommended, (1)
+:Use: Recommended (1)
  
 .. code-block:: json
    :linenos:
@@ -78,7 +78,7 @@ Acronym
 ----
 :Description: Grant acronym.
 :Type: String
-:Use: Optional, (1)
+:Use: Optional (1)
  
 .. code-block:: json
    :linenos:
@@ -86,55 +86,59 @@ Acronym
     "acronym": "GraspOS"
 
 
-Funding
-----
-:Description: Grant funding information.
-:Type: 
-:Use: 
-
 Funder
-^^^^^^
+------
 :Description: Grant funder.
-:Type: 
-:Use: 
+:Type: String
+:Use: Mandatory (1)
+
+.. code-block:: json
+   :linenos:
+
+    "funder": ""
+
 
 Funding stream
-^^^^^^
+------
 :Description: Grant funding stream.
-:Type: 
-:Use: 
+:Type: String
+:Use: Optional (0..1)
+
+.. code-block:: json
+   :linenos:
+
+    "funding_stream": ""
+
 
 Currency
-^^^^^^
+------
 :Description: Currency of the funded amount.
-:Type: 
-:Use: 
+:Type: String
+:Use: Optional (0..1), Mandatory if funded amount is given
+.. code-block:: json
+   :linenos:
+
+    "currency": ""
+
 
 Funded amount
-^^^^^^
+------
 :Description: Amount funded for the grant.
-:Type: 
-:Use: 
+:Type: Number
+:Use: Optional (0..1)
 
  
 .. code-block:: json
    :linenos:
 
-    "funding": {
-        "funder": "",
-        "funding_stream": "",
-        "currency": "",
-        "funded_amount": ""
-        }
-
-    }
+    "funded_amount": 1.000.000
 
 
 Keywords
 ----
 :Description: Grant keywords.
-:Type: 
-:Use: 
+:Type: List
+:Use: Optional (0..1)
  
 .. code-block:: json
    :linenos:
@@ -145,80 +149,32 @@ Keywords
 Start date
 ----
 :Description: 
-:Type: Date
-:Use: Recommended, (0..1)
- 
-Date value
-^^^^^^^^^^^^^
-:Description: The relevant date for the research product.
-:Type: String 
-:Use: Mandatory (1)
-
-Date type
-"""""""""""""
-:Description: The type of the date (e.g. publishing, embargo...).
-:Type: String
-:Use: Mandatory (1)
-
-Date format
-"""""""""""""
-:Description: The format of the relevant date.
-:Type: String 
-:Use: Mandatory (1)
+:Type: String (ISO 8601 date string)
+:Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
 
-    "start_date": [
-        {
-            "date_value": "2022-12-03",
-            "date_type": "embargo",
-            "date_format": "yyyy-MM-dd",
-        }
-    ]
+    "start_date": "2019-09-13"
 
 
 End date
 ----
 :Description: 
-:Type: Date
+:Type: String (ISO 8601 date string)
 :Use: Recommended, (0..1)
  
-Date value
-^^^^^^^^^^^^^
-:Description: The relevant date for the research product.
-:Type: String 
-:Use: Mandatory (1)
-
-Date type
-"""""""""""""
-:Description: The type of the date (e.g. publishing, embargo...).
-:Type: String
-:Use: Mandatory (1)
-
-Date format
-"""""""""""""
-:Description: The format of the relevant date.
-:Type: String 
-:Use: Mandatory (1)
-
 .. code-block:: json
    :linenos:
 
-    "end_date": [
-        {
-            "date_value": "2022-12-03",
-            "date_type": "embargo",
-            "date_format": "yyyy-MM-dd",
-        }
-    ]
+    "start_date": "2022-12-03"
 
 
 Website
 ----
 :Description: Grant website.
 :Type: URL
-:Use: Recommended, (0..1)
+:Use: Recommended (0..1)
  
 .. code-block:: json
    :linenos:
@@ -230,5 +186,5 @@ Website
 Relationships
 =============
 - toResearchProduct
-- to organization
+- to :ref:`Organisation <Organisation>` 
 - hasSubject (to Topic)

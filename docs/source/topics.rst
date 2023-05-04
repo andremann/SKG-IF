@@ -14,27 +14,27 @@ Local identifier
 ----
 :Description: Unique code identifiying the **Topic** in the SKG (if any, otherwise "stateless identifier").
 :Type: String
-:Use: Mandatory, (1)
+:Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
 
-    "local_id": "123_local_id"
+    "local_identifier": "123_local_id"
 
 
 Identifiers			
 ----
 :Description: Alternative identifiers.
 :Type: List
-:Use: Optional, (1..*)
+:Use: Optional, (0..1)
 
-Identifier scheme
+Scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
 :Use: Mandatory (1)
 
-Identifier value
+Value
 ^^^^^^^^^
 :Description: The external identifier.
 :Type: String
@@ -55,28 +55,30 @@ Identifier value
 Provenance
 ----
 :Description: 
-:Type: Object
-:Use: 
+:Type: List
+:Use: Recommended (0..1)
  
 Type
 ^^^^^^^^^
 :Description: 
-:Type: 
-:Use: 
+:Type: String
+:Use: Mandatory (1)
  
 Trust
 ^^^^^^^^^
 :Description: 
-:Type: 
-:Use: 
+:Type: Number
+:Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
 
-    "provenance": {
-        "type": "OpenAIRE",
-        "trust": 0.9
+    "provenance": [
+        {
+            "type": "OpenAIRE",
+            "trust": 0.9
         }
+    ]
 
 
 

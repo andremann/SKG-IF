@@ -36,7 +36,7 @@ Roles
 
 Rank
 ----
-:Description: The rank of the person (as an author) 
+:Description: The rank of the :ref:`Person <Person>` (as an author) 
 :Type: Integer
 :Use: Recommended (0..1)
 
@@ -60,8 +60,10 @@ related_person
    :linenos:
 
    {
-   
-   }
+        "semantics"="related_person"
+        "source" = "contribution_id",
+        "target" = "person_id"
+    }
 
 
 related_product
@@ -75,7 +77,9 @@ related_product
    :linenos:
 
     {
-
+        "semantics"="related_product"
+        "source" = "contribution_id",
+        "target" = "product_id"
     }
 
 
@@ -84,13 +88,15 @@ related_venue
 :Description: 
 :Use: Optional (0..1)
 :Source type: Contribution
-:Target type: Venue
+:Target type: :ref:`Venue <Venue>`
 
 .. code-block:: json
    :linenos:
 
     {
-
+        "semantics"="related_venue"
+        "source" = "contribution_id",
+        "target" = "venue_id"
     }
 
 
@@ -99,13 +105,15 @@ related_grant
 :Description: The affiliation of the :ref:`Person <Person>` related to the contribution entity
 :Use: Optional (0..1)
 :Source: Contribution  
-:Target: :ref:`Organization <Organization>`
+:Target: :ref:`Grant <Grant>`
 
 .. code-block:: json
    :linenos:
 
     {
-    
+        "semantics"="related_grant"
+        "source" = "contribution_id",
+        "target" = "grant_id"
     }
 
 
@@ -114,11 +122,13 @@ related_person_affiliation
 :Description: The affiliation of the :ref:`Person <Person>` related to the contribution entity
 :Use: Optional (0..*)
 :Source: Contribution  
-:Target: :ref:`Organization <Organization>`
+:Target: :ref:`Organisation <Organisation>`
 
 .. code-block:: json
    :linenos:
 
     {
-    
+        "semantics"="related_person_affiliation"
+        "source" = "contribution_id",
+        "target" = "organisation_id"
     }

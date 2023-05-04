@@ -12,7 +12,7 @@ Local identifier
 ----
 :Description: Unique code identifiying the Organisation in the SKG (if any, otherwise "stateless identifier")
 :Type: String 
-:Use: 
+:Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
@@ -24,15 +24,15 @@ Identifiers
 ----
 :Description: Alternative identifiers.
 :Type: List
-:Use: Optional, (1..*)
+:Use: Recommended (1)
 
-Identifier scheme
+Scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
 :Use: Mandatory (1)
 
-Identifier value
+Value
 ^^^^^^^^^
 :Description: The external identifier.
 :Type: String
@@ -54,7 +54,7 @@ Name
 ----
 :Description: 
 :Type: String
-:Use: Mandatory, (1)
+:Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
@@ -66,7 +66,7 @@ Short name
 ----
 :Description: 
 :Type: String
-:Use: Optional, (1..*)
+:Use: Optional (0..1)
  
 .. code-block:: json
    :linenos:
@@ -77,8 +77,8 @@ Short name
 Other names
 ----
 :Description: 
-:Type: List of strings
-:Use: Optional, (1..*)
+:Type: List
+:Use: Optional (1..*)
  
 .. code-block:: json
    :linenos:
@@ -90,7 +90,7 @@ Website
 ----
 :Description: 
 :Type: URL
-:Use: Mandatory, (1)
+:Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
@@ -98,17 +98,28 @@ Website
     "website": "https://..."
 
 
-Country
+Country code
 ----
 :Description: 
-:Type: String (follow ISO??)
-:Use: Mandatory, (1)
+:Type: String (follow ISO 3166-1 alpha-2)
+:Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
 
-    "country": "Italy"
+    "country": "IT"
 
+
+Organisation type
+----
+:Description: 
+:Type: String, one of the following [Archive, Company, Education, Facility, Government, Healthcare, Nonprofit, Funder, Other]
+:Use: Recommended (1)
+ 
+.. code-block:: json
+   :linenos:
+
+    "type": "Education"
 
 
 Relationships
