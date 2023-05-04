@@ -23,7 +23,7 @@ Local identifier
 ----
 :Description: Unique code identifiying the Data source in the SKG (if any, otherwise "stateless identifier").
 :Type: String
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -34,20 +34,20 @@ Local identifier
 Identifiers			
 ----
 :Description: Alternative identifiers.
-:Type: list
-:Use: optional, (1..*)
+:Type: List
+:Use: Optional, (1..*)
 
 Identifier scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Identifier value
 ^^^^^^^^^
 :Description: The external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
  
 .. code-block:: json
@@ -65,7 +65,7 @@ Name
 ----
 :Description: Name of the data source.
 :Type: String
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -77,7 +77,7 @@ Submission policy URL
 ----
 :Description: EOSC Data Source Profile This policy provides a comprehensive framework for the contribution of research products. Criteria for submitting content to the repository as well as product preparation guidelines can be stated. Concepts for quality assurance may be provided.
 :Type: URL
-:Use: recommended, (0..1)
+:Use: Recommended, (0..1)
  
 .. code-block:: json
    :linenos:
@@ -89,7 +89,7 @@ Preservation policy URL
 ----
 :Description: EOSC Data Source Profile This policy provides a comprehensive framework for the long-term preservation of the research products. Principles aims and responsibilities must be clarified. An important aspect is the description of preservation concepts to ensure the technical and conceptual utility of the content	
 :Type: URL
-:Use: recommended, (0..1)
+:Use: Recommended, (0..1)
  
 .. code-block:: json
    :linenos:
@@ -101,7 +101,7 @@ Version control
 ----
 :Description: EOSC Data Source Profile If data versioning is supported: the data source explicitly allows the deposition of different versions of the same object
 :Type: Boolean
-:Use: optional, (1)
+:Use: Optional, (1)
  
 .. code-block:: json
    :linenos:
@@ -113,7 +113,7 @@ Persistent Identity Systems
 ----
 :Description: EOSC Data Source Profile The persistent identifier systems that are used by the Data Source to identify the ProductType it supports.
 :Type: List
-:Use: recommended,	(0..*)
+:Use: Recommended,	(0..*)
 
 
 Persistent Identity Product Type
@@ -127,7 +127,7 @@ Persistent Identity Product Type Scheme
 ^^^^^^^^^^^^^^^^
 :Description: EOSC Data Source Profile Specify the list of persistent identifier schemes used to refer to ProductTypes
 :Type: List of terms following the vocabulary: `Persistent Identity Scheme <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-PersistentIdentityScheme>`_
-:Use: mandatory, (1..*)
+:Use: Mandatory, (1..*)
  
 .. code-block:: json
    :linenos:
@@ -144,7 +144,7 @@ Jurisdiction
 ----
 :Description: EOSC Data Source Profile The property defines the jurisdiction of the users of the data source, based on the vocabulary for this property	
 :Type: Vocabulary: `Jurisdiction <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-Jurisdiction>`_ 
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -156,7 +156,7 @@ Data Source Classification
 ----
 :Description: EOSC Data Source Profile The specific type of the data source based on the vocabulary defined for this property.
 :Type: Vocabulary: `Data Source Classification <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-DataSourceClassification>`_
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -168,7 +168,7 @@ Research Product Types
 ----
 :Description: The types of OpenAIRE entities managed by the data source, based on the vocabulary for this property	
 :Type: List of vocabulary terms: `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_
-:Use: mandatory, (1..*)
+:Use: Mandatory, (1..*)
  
 .. code-block:: json
    :linenos:
@@ -180,7 +180,7 @@ Thematic
 ----
 :Description: EOSC Data Source Profile Boolean value specifying if the data source is dedicated to a given discipline or is instead discipline agnostic	
 :Type: Boolean
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -192,21 +192,21 @@ Research Product Licensing
 ----
 :Description: EOSC Data Source Profile Licenses under which the research products contained within the data sources can be made available. Repositories can allow a license to be defined for each research product, while for scientific databases the database is typically provided under a single license.	
 :Type: List
-:Use: recommended, (0..*)
+:Use: Recommended, (0..*)
  
 
 Research Product License Name		
 ^^^^^^^
 :Description: 
 :Type: String
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 
 Research Product License URL
 ^^^^^^^^^
 :Description: 
 :Type: URL
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -223,7 +223,7 @@ Research Product Access Policy
 ----
 :Description: 
 :Type: List of terms following vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_
-:Use: recommended,	(0..*)
+:Use: Recommended,	(0..*)
  
 .. code-block:: json
    :linenos:
@@ -235,21 +235,21 @@ Research Product Metadata Licensing
 ----
 :Description: "EOSC Data Source Profile Metadata Policy for information describing items in the repository: Access and re-use of metadata"
 :Type: List
-:Use: recommended, (0..1)
+:Use: Recommended, (0..1)
 
 
 Research Product Metadata License Name		
 ^^^^^^^^^^^^
 :Description: 
 :Type: String
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
 
 
 Research Product Metadata License URL
 ^^^^^^^^^^^^^^^^^^
 :Description: 
 :Type: URL
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -266,7 +266,7 @@ Research Product Metadata Access Policy
 ----
 :Description: 
 :Type: List of terms following vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_
-:Use: recommended, (0..*)
+:Use: Recommended, (0..*)
  
 .. code-block:: json
    :linenos:

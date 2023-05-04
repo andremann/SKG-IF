@@ -11,7 +11,7 @@ This section is to describe the metadata fields for the **Organisations**.
 Local identifier
 ----
 :Description: Unique code identifiying the Organisation in the SKG (if any, otherwise "stateless identifier")
-:Type: string 
+:Type: String 
 :Use: 
  
 .. code-block:: json
@@ -23,20 +23,20 @@ Local identifier
 Identifiers			
 ----
 :Description: Alternative identifiers.
-:Type: list
-:Use: optional, (1..*)
+:Type: List
+:Use: Optional, (1..*)
 
 Identifier scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Identifier value
 ^^^^^^^^^
 :Description: The external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
  
 .. code-block:: json
@@ -53,8 +53,8 @@ Identifier value
 Name
 ----
 :Description: 
-:Type: string
-:Use: mandatory, (1)
+:Type: String
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -65,8 +65,8 @@ Name
 Short name
 ----
 :Description: 
-:Type: string
-:Use: optional, (1..*)
+:Type: String
+:Use: Optional, (1..*)
  
 .. code-block:: json
    :linenos:
@@ -78,7 +78,7 @@ Other names
 ----
 :Description: 
 :Type: List of strings
-:Use: optional, (1..*)
+:Use: Optional, (1..*)
  
 .. code-block:: json
    :linenos:
@@ -90,7 +90,7 @@ Website
 ----
 :Description: 
 :Type: URL
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -102,7 +102,7 @@ Country
 ----
 :Description: 
 :Type: String (follow ISO??)
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:

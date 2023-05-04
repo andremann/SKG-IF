@@ -14,26 +14,24 @@ Local Identifier
 ----
 :Description: Unique code identifiying the Contribution in the SKG (if any, otherwise "stateless identifier")
 :Type: String
-:Use: mandatory (1)
-:Representation: XML element ``localIdentifier``
+:Use: Mandatory (1)
  
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <localIdentifier>20|....</localIdentifier>
+    "name": ""
 
 
 Role
 ----
-:Description: Specific role of a :ref:`Person <Person>` 
+:Description: Specific role of a :ref:`Person <Person>` for the **Contribution**
 :Type: String (possibility: values from CRediT taxonomy)
 :Use: Mandatory (1)
-:Representation: XML element ``role``
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <role>43ebbd94-98b4-42f1-866b-c930cef228ca</role>
+    "role": "author"
     
 
 Rank
@@ -41,12 +39,11 @@ Rank
 :Description: The rank of the person (as an author) 
 :Type: Integer
 :Use: Optional (0..1)
-:Representation: XML element ``rank`` 
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <rank>1</rank>
+    "rank": "1"
        
 
 Relationships
@@ -59,13 +56,10 @@ relatedProduct
 :Source: **Contribution** 
 :Target: :ref:`Research product <Research product>`
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <relation semantics="relatedProduct">
-        <source type="contribution">contributionId</source>
-        <target type=researchProduct>resultId</target>
-    </relation>
+    "name": ""
 
 
 relatedPerson 
@@ -75,13 +69,10 @@ relatedPerson
 :Source: **Contribution** 
 :Target: :ref:`Person <Person>`
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <relation semantics="relatedPerson">
-        <source type="contribution">contribution_id</source>
-        <target type="person">person_id</target>
-    </relation>
+    "name": ""
 
 
 relatedPersonAffiliation
@@ -91,10 +82,7 @@ relatedPersonAffiliation
 :Source: **Contribution**  
 :Target: :ref:`Organization <Organization>`
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <relation semantics="relatedPersonAffiliation">
-        <source type="contribution">contribution_id</source>
-        <target type="organization">organisation_id</target>
-    </relation>
+    "name": ""

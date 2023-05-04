@@ -31,12 +31,11 @@ Properties
 This section is to describe the metadata fields for the Research Products
 
 
-
 Local identifier
 ----
 :Description: Unique code identifiying the Produc in the SKG (if any, otherwise "stateless identifier")
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
@@ -48,19 +47,19 @@ Alternative identifiers
 ----
 :Description: Identifier for the resource outside of the SKG. 
 :Type: List
-:Use: optional (0..n)
+:Use: Optional (0..n)
 
 Identifier scheme
 ^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Itentifier value
 ^^^^^^^^^^^
 :Description: The external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
@@ -78,29 +77,7 @@ Title
 ----
 :Description: The title of the research product.
 :Type: String
-:Use: mandatory, possibly multiple (1..*)
-
-.. titleType
-.. ^^^^^^^^
-.. :Description: The type of the title (main, subtitle).
-.. :Type: String
-.. :Use: mandatory, (1)
-
-.. titleLanguage
-.. ^^^^^^^^^^
-
-.. :Description: The language of the title of the research product
-.. :Type: string
-.. :Use: mandatory, (1)
-.. :Representation: XML attribute ``titleLanguage`` 
-
-
-.. languageCode
-.. ^^^^^^^^^^
-.. :Description: The code of the language of the title of the research product
-.. :Type: string
-.. :Use: mandatory, (1)
-.. :Representation: XML attribute ``languageCode`` 
+:Use: Mandatory, possibly multiple (1..*)
 
 .. code-block:: json
    :linenos:
@@ -112,22 +89,7 @@ Abstract
 --------
 :Description: A description for the research product.
 :Type: String
-:Use: required, possibly multiple (0..*) 
-
-.. abstractLanguage
-.. ^^^^^^^^^^^^^^
-.. :Description: The language of the abstract of the research product
-.. :Type: string
-.. :Use: mandatory, (1)
-.. :Representation: XML attribute ``abstractLanguage`` 
-
-
-.. languageCode
-.. ^^^^^^^^^^^
-.. :Description: The code of the language of the abstract of the research product
-.. :Type: string
-.. :Use: mandatory, (1)
-.. :Representation: XML attribute ``languageCode`` 
+:Use: Required, possibly multiple (0..*) 
 
 .. code-block:: json
    :linenos:
@@ -139,25 +101,25 @@ Dates
 -----
 :Description: Relevant dates for the research product.
 :Type: List
-:Use: mandatory, possibly more than one (1..*)
+:Use: Mandatory, possibly more than one (1..*)
 
 Date value
 ^^^^^^^^^^^^^
 :Description: The relevant date for the research product.
 :Type: String 
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Date type
 """""""""""""
 :Description: The type of the date (e.g. publishing, embargo...).
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Date format
 """""""""""""
 :Description: The format of the relevant date.
 :Type: String 
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
@@ -175,7 +137,7 @@ Product type
 -----
 :Description: The type of the research product. 
 :Type: String, one among `literature`, `researc data`, `research software`, `other``}.
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
 
 .. code-block:: json
    :linenos:
@@ -187,7 +149,7 @@ Product type description
 -----
 :Description: Free text describing the product.
 :Type: String, e.g., `journal-article`, `workflow`, `collection`, etc.
-:Use: required 
+:Use: Required 
 
 .. code-block:: json
    :linenos:
@@ -223,7 +185,7 @@ Start page
 ----
 :Description: 
 :Type: Integer
-:Use: optional, (0..1)
+:Use: Optional, (0..1)
 
 .. code-block:: json
    :linenos:
@@ -235,7 +197,7 @@ End page
 ----
 :Description: 
 :Type: Integer
-:Use: optional, (0..1)
+:Use: Optional, (0..1)
 
 .. code-block:: json
    :linenos:

@@ -12,14 +12,12 @@ Local Identifier
 ----
 :Description: Unique code identifiying the DeclaredAffiliation in the SKG (if any, otherwise "stateless identifier")
 :Type: String
-:Use: mandatory (1)
-:Representation: XML element ``localIdentifier``
- 
+:Use: Mandatory (1)
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <localIdentifier>20|....</localIdentifier>
+    "local_id": "the_id"
 
 
 Role
@@ -27,25 +25,23 @@ Role
 :Description: Specific role of the :ref:`Person <Person>` in the organization
 :Type: String (possibility: values from CRediT taxonomy)
 :Use: Mandatory (1)
-:Representation: XML element ``role``
 
-
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <role>43ebbd94-98b4-42f1-866b-c930cef228ca</role>
+    "role": "researcher"
+
     
 Start Date
 ----
 :Description: The date when the :ref:`Person <Person>` started to be affiliated with the organization
 :Type: String
 :Use: Required, (1)
-:Representation: XML element ``startDate`` 
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <startDate>2019-01-01</startDate>
+    "name": ""
        
 
 End Date
@@ -53,12 +49,11 @@ End Date
 :Description: The date when the :ref:`Person <Person>` was no more affiliated with the organization
 :Type: String
 :Use: Required, (1)
-:Representation: XML element ``endDate`` 
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <endDate>2019-01-01</endDate>
+    "name": ""
 
 
 Relationships
@@ -72,13 +67,10 @@ relatedPerson
 :Source: affiliation 
 :Target: person
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <relation semantics="relatedPerson">
-        <source type="affiliation">affiliation_id</source>
-        <target type=person>person_id</target>
-    </relation>
+    "name": ""
 
 
 relatedOrganization
@@ -89,10 +81,7 @@ relatedOrganization
 :Source: affiliation 
 :Target: organization
 
-.. code-block:: xml
+.. code-block:: json
    :linenos:
 
-    <relation semantics="relatedOrganization">
-        <source type="affiliation">affiliationId</source>
-        <target type=organization>organizationId</target>
-    </relation>
+    "name": ""

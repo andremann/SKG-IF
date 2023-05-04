@@ -25,19 +25,19 @@ Alternative identifiers
 ----
 :Description: Identifier for the resource outside of the SKG. 
 :Type: List
-:Use: optional (0..n)
+:Use: Optional (0..n)
 
 Identifier scheme
 ^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Itentifier value
 ^^^^^^^^^^^
 :Description: The external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:

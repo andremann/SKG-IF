@@ -7,14 +7,14 @@ This section is to describe the metadata fields for the research **Topic** entit
 
 Properties
 ==========
-This section is to describe the metadata fields for the Topics.
+This section is to describe the metadata fields for a **Topic**.
 
 
 Local identifier		
 ----
 :Description: Unique code identifiying the **Topic** in the SKG (if any, otherwise "stateless identifier").
 :Type: String
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -25,20 +25,20 @@ Local identifier
 Identifiers			
 ----
 :Description: Alternative identifiers.
-:Type: list
-:Use: optional, (1..*)
+:Type: List
+:Use: Optional, (1..*)
 
 Identifier scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Identifier value
 ^^^^^^^^^
 :Description: The external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
  
 .. code-block:: json
@@ -55,10 +55,10 @@ Identifier value
 Provenance
 ----
 :Description: 
-:Type: Wrapper element
+:Type: Object
 :Use: 
  
-Provenance type
+Type
 ^^^^^^^^^
 :Description: 
 :Type: 

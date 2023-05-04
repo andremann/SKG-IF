@@ -23,20 +23,20 @@ Local identifier
 Identifiers			
 ----
 :Description: Alternative identifiers.
-:Type: list
-:Use: optional, (1..*)
+:Type: List
+:Use: Optional, (1..*)
 
 Identifier scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Identifier value
 ^^^^^^^^^
 :Description: The external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
  
 .. code-block:: json
@@ -54,7 +54,7 @@ Title
 ----
 :Description: Title of the grant.
 :Type: String
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -66,7 +66,7 @@ Abstract
 ----
 :Description: Abstract of the grant.
 :Type: String
-:Use: recommended, (1)
+:Use: Recommended, (1)
  
 .. code-block:: json
    :linenos:
@@ -78,7 +78,7 @@ Acronym
 ----
 :Description: Grant acronym.
 :Type: String
-:Use: optional, (1)
+:Use: Optional, (1)
  
 .. code-block:: json
    :linenos:
@@ -146,25 +146,25 @@ Start date
 ----
 :Description: 
 :Type: Date
-:Use: recommended, (0..1)
+:Use: Recommended, (0..1)
  
 Date value
 ^^^^^^^^^^^^^
 :Description: The relevant date for the research product.
 :Type: String 
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Date type
 """""""""""""
 :Description: The type of the date (e.g. publishing, embargo...).
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Date format
 """""""""""""
 :Description: The format of the relevant date.
 :Type: String 
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
@@ -182,25 +182,25 @@ End date
 ----
 :Description: 
 :Type: Date
-:Use: recommended, (0..1)
+:Use: Recommended, (0..1)
  
 Date value
 ^^^^^^^^^^^^^
 :Description: The relevant date for the research product.
 :Type: String 
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Date type
 """""""""""""
 :Description: The type of the date (e.g. publishing, embargo...).
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Date format
 """""""""""""
 :Description: The format of the relevant date.
 :Type: String 
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
@@ -218,7 +218,7 @@ Website
 ----
 :Description: Grant website.
 :Type: URL
-:Use: recommended, (0..1)
+:Use: Recommended, (0..1)
  
 .. code-block:: json
    :linenos:

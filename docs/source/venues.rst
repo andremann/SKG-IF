@@ -21,7 +21,7 @@ Local identifier
 ----
 :Description: Unique code identifiying the **Venue** in the SKG (if any, otherwise "stateless identifier").
 :Type: String
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -32,20 +32,20 @@ Local identifier
 Identifiers			
 ----
 :Description: Alternative identifiers.
-:Type: list
-:Use: optional, (1..*)
+:Type: List
+:Use: Optional, (1..*)
 
 Identifier scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Identifier value
 ^^^^^^^^^
 :Description: The external identifier.
 :Type: String
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
@@ -61,9 +61,8 @@ Identifier value
 Name
 ----
 :Description: The name of the venue.
-:Type: string
-:Use: mandatory, (1)
-:Representation: XML element ``name``
+:Type: String
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -75,7 +74,7 @@ Acronym
 ----
 :Description: Acronym used by a venue.
 :Type: String
-:Use: recommended, (0..1)
+:Use: Recommended, (0..1)
  
 .. code-block:: json
    :linenos:
@@ -87,8 +86,8 @@ Venue type
 ----
 :Description: The type of the venue.
 :Type: vocabulary (see below)
-:Use: mandatory, (1)
-:Representation: XML element ``venueType``
+:Use: Mandatory, (1)
+
 .. tabularcolumns:: p{0.132\linewidth}p{0.198\linewidth}p{0.330\linewidth}
 .. csv-table:: Controlled vocabulary for different types of venue and its mapping towards OpenCitations
    :name: tables-csv-example
@@ -113,7 +112,7 @@ Peer review
 ----
 :Description: the type of peer-review in charge at a venue.
 :Type: Vocabulary {single-blind, double-blind, open, none}
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -125,7 +124,7 @@ Metadata curation
 ----
 :Description: The type of metadata curation taking place at a venue.
 :Type: Boolean
-:Use: mandatory, (1)
+:Use: Mandatory, (1)
  
 .. code-block:: json
    :linenos:
@@ -137,7 +136,7 @@ ISSN
 ----
 :Description: The ISSNs used by a venue.
 :Type: String
-:Use: optional, (0..*)
+:Use: Optional, (0..*)
  
 .. code-block:: json
    :linenos:
@@ -149,7 +148,7 @@ eISSN
 ----
 :Description: Eletronic ISSN used by a venue.
 :Type: String
-:Use: optional, (0..*)
+:Use: Optional, (0..*)
  
 .. code-block:: json
    :linenos:
@@ -161,7 +160,7 @@ Linked ISSN
 ----
 :Description: The `ISSN-L <https://en.wikipedia.org/wiki/International_Standard_Serial_Number#Linking_ISSN>`_ identifying this venue. 
 :Type: String
-:Use: optional, (0..1)
+:Use: Optional, (0..1)
  
 .. code-block:: json
    :linenos:
@@ -174,7 +173,6 @@ Conference place
 :Description: 
 :Type: 
 :Use: 
-:Representation: XML element ``place``
  
 .. code-block:: json
    :linenos:
@@ -187,25 +185,24 @@ Conference dates
 :Description: 
 :Type: date period
 :Use: 
-:Representation: XML element ``dates``
  
 Start date
 ^^^^^^^^^^^^^
 :Description: 
 :Type: String 
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 End date
 ^^^^^^^^^^^^^
 :Description: 
 :Type: String 
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 Date format
 """""""""""""
 :Description: The format of the relevant date.
 :Type: String 
-:Use: mandatory (1)
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
