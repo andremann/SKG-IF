@@ -2,7 +2,7 @@ Other entities
 ####
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    contributions
    affiliations
