@@ -47,7 +47,7 @@ Identifiers
 ----
 :Description: Identifier for the entity outside of the SKG. 
 :Type: List
-:Use: Optional (0..n)
+:Use: Optional (0..1)
 
 Scheme
 ^^^^^^^^^
