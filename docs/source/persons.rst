@@ -23,7 +23,7 @@ Local identifier
 
 Identifiers
 ----
-:Description: Identifier for the resource outside of the SKG. 
+:Description: Identifier for the entity outside of the SKG (e.g., ORCiD ID). 
 :Type: List
 :Use: Recommended (1)
 

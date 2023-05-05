@@ -31,7 +31,7 @@ Local identifier
 
 Identifiers			
 ----
-:Description: Alternative identifiers. Allowed schemes are ISSN, EISSN, LISSN, ISBN, OpenDOAR ID, re3data.org ID, etc.
+:Description: Identifier for the resource outside of the SKG. Allowed schemes are ISSN, EISSN, LISSN, ISBN, OpenDOAR ID, re3data.org ID, etc.
 :Type: List
 :Use: Optional, (0..1)
 

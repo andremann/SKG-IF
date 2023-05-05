@@ -43,19 +43,19 @@ Local identifier
     "localIdentifier": "the_id"
 
 
-Alternative identifiers
+Identifiers
 ----
-:Description: Identifier for the resource outside of the SKG. 
+:Description: Identifier for the entity outside of the SKG. 
 :Type: List
 :Use: Optional (0..n)
 
-Identifier scheme
+Scheme
 ^^^^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
 :Use: Mandatory (1)
 
-Itentifier value
+value
 ^^^^^^^^^^^
 :Description: The external identifier.
 :Type: String

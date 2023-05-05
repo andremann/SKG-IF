@@ -24,7 +24,7 @@ Local identifier
 
 Identifiers			
 ----
-:Description: Alternative identifiers.
+:Description: Identifier for the entity outside of the SKG (e.g., PID, pURL). 
 :Type: List
 :Use: Optional, (0..1)
 

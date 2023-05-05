@@ -22,7 +22,7 @@ Local identifier
 
 Identifiers			
 ----
-:Description: Alternative identifiers.
+:Description: Identifier for the entity outside of the SKG (e.g., PID). 
 :Type: List
 :Use: Recommended (1)
 

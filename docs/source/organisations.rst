@@ -22,7 +22,7 @@ Local identifier
 
 Identifiers			
 ----
-:Description: Alternative identifiers.
+:Description: Identifier for the entity outside of the SKG (e.g., ROR ID, ISNI). 
 :Type: List
 :Use: Recommended (1)
 
