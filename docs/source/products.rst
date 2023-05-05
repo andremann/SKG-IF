@@ -55,7 +55,7 @@ Scheme
 :Type: String
 :Use: Mandatory (1)
 
-value
+Value
 ^^^^^^^^^^^
 :Description: The external identifier.
 :Type: String
@@ -83,7 +83,7 @@ Titles
    :linenos:
 
     "title": ["The computer science ontology: a large-scale taxonomy of research areas"]
-       
+
 
 Abstracts
 --------
@@ -97,28 +97,50 @@ Abstracts
     "abstracts": ["Ontologies of research areas are important tools for characterising, exploring, and analysing the research landscape..."]
 
 
-Dates
+Product type
 -----
+:Description: The type of the research product. 
+:Type: String, one among `literature`, `research data`, `research software`, `other``}.
+:Use: Mandatory (1)
+
+.. code-block:: json
+   :linenos:
+
+    "product_type": "literature"
+
+
+Manifestations
+--------------------
+
+Product local type 
+^^^^^^^^^^^^^^^^
+:Description: The type of the manifestation. 
+:Type: String from a vocabulary
+:Use: Mandatory (1)
+
+
+Product local type schema
+^^^^^^^^^^^^^^^^
+:Description: The schema of the manifestation product type. 
+:Type: String
+:Use: Mandatory (1)
+
+Dates
+^^^^^^^^^^^^^^^^
 :Description: Relevant dates for the research product.
 :Type: List
-:Use: Mandatory, possibly more than one (1..*)
+:Use: Mandatory (1)
 
 Date value
-^^^^^^^^^^^^^
+"""""""""""""
 :Description: The relevant date for the research product.
 :Type: String (ISO 8601 date string)
 :Use: Mandatory (1)
 
 Date type
 """""""""""""
-:Description: The type of the date (e.g. publishing, embargo...).
+:Description: The type of the date (e.g. publishing, embargo, ...).
 :Type: String
-:Use: Mandatory (1)
-
-Date format
-"""""""""""""
-:Description: The format of the relevant date.
-:Type: String 
 :Use: Mandatory (1)
 
 .. code-block:: json
@@ -127,86 +149,109 @@ Date format
     "dates": [
         {
             "date_value": "2022-12-03",
-            "date_type": "embargo",
-            "date_format": "yyyy-MM-dd",
+            "date_type": "embargo"
         }
     ]
 
 
-Product type
------
-:Description: The type of the research product. 
-:Type: String, one among `literature`, `research data`, `research software`, `other``}.
-:Use: Mandatory, (1)
+Peer review
+^^^^^^^^^^^^^^^^
+:Description: 
+:Type: String, one of the following (single-blind, open, double-blind, unavailable)
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
 
-    "product_type": "literature"
+    "peer-review": "open"
 
 
-Product type description
------
-:Description: Free text describing the product.
-:Type: String, e.g., `journal-article`, `workflow`, `collection`, etc.
-:Use: Required 
+Metadata curation
+^^^^^^^^^^^^^^^^
+:Description: 
+:Type: String, one of the following (yes, no, unavailable)
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
 
-    "product_type_description": "journal-article"
+    "curation": "yes"
 
+
+URL
+^^^^^^^^^^^^^^^^
+:Description: 
+:Type: URL
+:Use: 
+
+.. code-block:: json
+   :linenos:
+
+    "url": "https://..."
+
+
+PID
+^^^^^^^^^^^^^^^^
+:Description: 
+:Type: URL
+:Use: Mandatory (1)
+
+.. code-block:: json
+   :linenos:
+
+    "pid": "https://doi.org/..."
+
+
+Bibliographic information
+^^^^^^^^^^^^^^^^
+:Description: 
+:Type: Object
+:Use: Mandatory (1)
 
 Issue
-----
-:Description: 
-:Type: String
-:Use: 
-
-.. code-block:: json
-   :linenos:
-
-    "issue": "42"
-
-
-Volume
-----
+"""""""""""""
 :Description: 
 :Type: 
 :Use: 
-
-.. code-block:: json
-   :linenos:
-
-    "volume": "IX"
-
 
 Start page
-----
+"""""""""""""
 :Description: 
-:Type: Integer
-:Use: Optional, (0..1)
-
-.. code-block:: json
-   :linenos:
-
-    "start_page": "3"
-
+:Type: 
+:Use: 
 
 End page
-----
+"""""""""""""
 :Description: 
-:Type: Integer
-:Use: Optional, (0..1)
+:Type: 
+:Use: 
 
-.. code-block:: json
-   :linenos:
-
-    "end_page": "13"
-
+Volume
+"""""""""""""
+:Description: 
+:Type: 
+:Use: 
 
 Edition
-----
+"""""""""""""
+:Description: 
+:Type: 
+:Use: 
+
+Number
+"""""""""""""
+:Description: 
+:Type: 
+:Use: 
+
+Publisher
+"""""""""""""
+:Description: 
+:Type: 
+:Use: 
+
+Series
+"""""""""""""
 :Description: 
 :Type: 
 :Use: 
@@ -214,7 +259,10 @@ Edition
 .. code-block:: json
    :linenos:
 
-    "edition": ""
+    "Bibliographic_info": {
+    
+    }
+
 
 
 Relationships
