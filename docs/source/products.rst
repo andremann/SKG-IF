@@ -72,7 +72,6 @@ Value
     ]
     
 
-
 Titles
 ----
 :Description: The titles of a research product (multiple for multilinguism).
@@ -118,7 +117,6 @@ Product local type
 :Type: String from a vocabulary
 :Use: Mandatory (1)
 
-
 Product local type schema
 ^^^^^^^^^^^^^^^^
 :Description: The schema of the manifestation product type. 
@@ -131,28 +129,17 @@ Dates
 :Type: List
 :Use: Mandatory (1)
 
-Date value
+Value
 """""""""""""
 :Description: The relevant date for the research product.
 :Type: String (ISO 8601 date string)
 :Use: Mandatory (1)
 
-Date type
+Type
 """""""""""""
 :Description: The type of the date (e.g. publishing, embargo, ...).
 :Type: String
 :Use: Mandatory (1)
-
-.. code-block:: json
-   :linenos:
-
-    "dates": [
-        {
-            "date_value": "2022-12-03",
-            "date_type": "embargo"
-        }
-    ]
-
 
 Peer review
 ^^^^^^^^^^^^^^^^
@@ -160,23 +147,11 @@ Peer review
 :Type: String, one of the following (single-blind, open, double-blind, unavailable)
 :Use: Mandatory (1)
 
-.. code-block:: json
-   :linenos:
-
-    "peer-review": "open"
-
-
 Metadata curation
 ^^^^^^^^^^^^^^^^
 :Description: 
 :Type: String, one of the following (yes, no, unavailable)
 :Use: Mandatory (1)
-
-.. code-block:: json
-   :linenos:
-
-    "curation": "yes"
-
 
 URL
 ^^^^^^^^^^^^^^^^
@@ -184,23 +159,29 @@ URL
 :Type: URL
 :Use: 
 
-.. code-block:: json
-   :linenos:
-
-    "url": "https://..."
-
-
 PID
 ^^^^^^^^^^^^^^^^
 :Description: 
 :Type: URL
 :Use: Mandatory (1)
 
-.. code-block:: json
-   :linenos:
+Access right
+^^^^^^^^^^^^^^^^
+:Description: 
+:Type: String, one of the following (open, closed, embargo, restricted, unavailable).
+:Use: Mandatory (1)
 
-    "pid": "https://doi.org/..."
+Licence
+^^^^^^^^^^^^^^^^
+:Description: 
+:Type: String
+:Use: Recommended (1)
 
+Licence schema
+^^^^^^^^^^^^^^^^
+:Description: 
+:Type: String
+:Use: Recommended (1)
 
 Bibliographic information
 ^^^^^^^^^^^^^^^^
@@ -256,13 +237,50 @@ Series
 :Type: 
 :Use: 
 
+Venue
+""""""""""""
+:Description: 
+:Type: 
+:Use: 
+
+Hosting data source
+""""""""""""
+:Description: 
+:Type: 
+:Use: 
+
 .. code-block:: json
    :linenos:
 
-    "Bibliographic_info": {
-    
-    }
-
+    "manifestations": [
+        {
+            "product_local_type": "",
+            "product_local_type_schema": "",
+            "dates": {
+                "value": "",
+                "type": ""
+            }
+            "peer-review": "",
+            "metadata curation": "",
+            "access rights": "",
+            "license": "",
+            "license_schema": "",
+            "url": "",
+            "pid": "",
+            "biblio_info": {
+                "issue": "",
+                "start_page": "",
+                "end_page": "",
+                "volume": "",
+                "edition": "",
+                "number": "",
+                "publisher": "",
+                "series": ""
+            }
+            "venue": "",
+            "hosting_data_source": "",
+        }
+    ]
 
 
 Relationships
