@@ -68,7 +68,7 @@ related_person
 
 related_product
 ----------------------
-:Description: It is the product related to this contribution
+:Description: It is the :ref:`Research product <Research product>` related to this contribution
 :Use: Optional (0..1)
 :Source type: Contribution
 :Target type: :ref:`Research product <Research product>`

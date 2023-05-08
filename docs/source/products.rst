@@ -74,7 +74,7 @@ Value
 
 Titles
 ----
-:Description: The titles of a research product (multiple for multilinguism).
+:Description: The titles of a :ref:`Research product <Research product>` (multiple for multilinguism).
 :Type: List
 :Use: Mandatory (1)
 
@@ -86,7 +86,7 @@ Titles
 
 Abstracts
 --------
-:Description: The abstracts of a research product (multiple for multilinguism).
+:Description: The abstracts of a :ref:`Research product <Research product>` (multiple for multilinguism).
 :Type: List
 :Use: Recommended (1)
 
@@ -288,7 +288,7 @@ Relationships
 
 hasContribution
 ---------------------
-:Description: It models the contribution of the research result. It can also reference to the :ref:`Organisation <Organisation>`(s) to which the :ref:`Person <Person>` was affiliated when generating this product. For this relation the :ref:`Person <Person>` is an entity in the SKG.
+:Description: It models the contribution of the **research product**. It can also reference to the :ref:`Organisation <Organisation>`(s) to which the :ref:`Person <Person>` was affiliated when generating this product. For this relation the :ref:`Person <Person>` is an entity in the SKG.
 :Use: Optional (0..*)
 :Source: research product 
 :Target: Contribution 
@@ -304,7 +304,7 @@ hasContribution
 
 hasPersonAffiliatedWith 
 ---------------------------
-:Description: It is a relation between the result and the :ref:`Organisation <Organisation>`. We do not know who is the :ref:`Person <Person>` involved (affiliated to the :ref:`Organisation <Organisation>`).
+:Description: It is a relation between the **research product** and the :ref:`Organisation <Organisation>`. We do not know who is the :ref:`Person <Person>` involved (affiliated to the :ref:`Organisation <Organisation>`).
 :Use: Optional (0..*)
 :Source: research product 
 :Target: :ref:`Organisation <Organisation>` 
@@ -320,7 +320,7 @@ hasPersonAffiliatedWith
 
 is_published_in
 --------------
-:Description: The research product publishing venue 
+:Description: The research **research product** publishing venue 
 :Use: Optional (0..*)
 :Source: research product
 :Target: venue 
@@ -336,7 +336,7 @@ is_published_in
 
 is_funded_by 
 -------------
-:Description: the funds thanks to which the product has been made
+:Description: the funds thanks to which the **research product** has been made
 :Use: Optional (0..*)
 :Source: research product 
 :Target: grant
@@ -352,7 +352,7 @@ is_funded_by
 
 has_subject
 -----------
-:Description: The topic this research product is related to 
+:Description: The topic this **research product** is related to 
 :Use: Optional (0..*)
 :Source: research product 
 :Target: Topic 
@@ -368,7 +368,7 @@ has_subject
 
 is_related_with_product
 -------------------
-:Description: other product the research product is related with 
+:Description: other product the **research product** is related with 
 :Use: Optional (0..*)
 :Source: research product 
 :Target: research product
