@@ -131,7 +131,7 @@ Person id
 :Type: String
 :Use: Mandatory (1)
 
-Organisation ids
+Declared affiliations
 ^^^^^^^^^^^^^^^^
 :Description: 
 :Type: List
@@ -153,8 +153,8 @@ Rank
    :linenos:
 
     "contributions": [
-        {"person_id": "the_id",
-        "organisations": ["org1", "org2", "org3"],
+        {"person_id": "person_123",
+        "declared_affiliations": ["org1", "org3"],
         "rank": 1,
         "roles": ["writing-original-draft", "conceptualization"]
         }
