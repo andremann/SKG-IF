@@ -95,19 +95,19 @@ Affiliations
 
 Organisation
 ^^^^^^^^^
-:Description: 
+:Description: The identifier of the **Organization** the **Person** is affiliated with. 
 :Type: String
 :Use: Mandatory (1)
 
 Start date
 ^^^^^^^^^
-:Description: 
+:Description: The start date of the affiliation with the **Organization**.
 :Type: String (ISO 8601 date string)
 :Use: Recommended (1)
 
 End date
 ^^^^^^^^^
-:Description: 
+:Description: The end day (if any) of the affiliation with the **Organization**.
 :Type: String (ISO 8601 date string)
 :Use: Optional (1)
 
