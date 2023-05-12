@@ -28,12 +28,12 @@ Other products
 
 Properties
 ====
-This section is to describe the metadata fields for the Research Products
+This section is to describe the metadata fields for the **Research Products**.
 
 
 Local identifier
 ----
-:Description: Unique code identifiying the Produc in the SKG (if any, otherwise "stateless identifier")
+:Description: Unique code identifiying the **Research product** in the SKG (if any, otherwise "stateless identifier")
 :Type: String
 :Use: Mandatory (1)
 
@@ -176,7 +176,7 @@ Product local type
 
 Product local type schema
 ^^^^^^^^^^^^^^^^
-:Description: The schema of the manifestation product type. 
+:Description: The schema of the manifestation type. 
 :Type: String
 :Use: Mandatory (1)
 
@@ -200,13 +200,13 @@ Type
 
 Peer review
 ^^^^^^^^^^^^^^^^
-:Description: Whether the product has undergone a peer review process.
+:Description: Whether the **Research product** has undergone a peer review process.
 :Type: String, one of the following (single-blind, open, double-blind, unavailable)
 :Use: Mandatory (1)
 
 Metadata curation
 ^^^^^^^^^^^^^^^^
-:Description: Whether the product has undergone a metadata curation process.
+:Description: Whether the **Research product** has undergone a metadata curation process.
 :Type: String, one of the following (yes, no, unavailable)
 :Use: Mandatory (1)
 
