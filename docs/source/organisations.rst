@@ -2,11 +2,10 @@
 
 Organisations
 #############
-TODO Description
+This section is to describe the metadata fields for the **Organization** entity.
 
 Properties
 ==========
-This section is to describe the metadata fields for the **Organisations**.
 
 Local identifier
 ----
@@ -52,7 +51,7 @@ Value
 
 Name
 ----
-:Description: 
+:Description: The name of the **Organization**
 :Type: String
 :Use: Mandatory (1)
  
@@ -64,7 +63,7 @@ Name
 
 Short name
 ----
-:Description: 
+:Description: The short name/acronym for the **Organization**
 :Type: String
 :Use: Optional (0..1)
  
@@ -76,7 +75,7 @@ Short name
 
 Other names
 ----
-:Description: 
+:Description: Other names, maybe in different languages, to identifie the **Organization**
 :Type: List
 :Use: Optional (1..*)
  
@@ -88,7 +87,7 @@ Other names
 
 Website
 ----
-:Description: 
+:Description: The website URL for the **Organization**
 :Type: URL
 :Use: Mandatory (1)
  
@@ -100,7 +99,7 @@ Website
 
 Country code
 ----
-:Description: 
+:Description: The country code of the **Organization**
 :Type: String (follow ISO 3166-1 alpha-2)
 :Use: Mandatory (1)
  
@@ -112,7 +111,7 @@ Country code
 
 Organisation type
 ----
-:Description: 
+:Description: The type of the **Organization**
 :Type: String, one of the following [Archive, Company, Education, Facility, Government, Healthcare, Nonprofit, Funder, Other]
 :Use: Recommended (1)
  
