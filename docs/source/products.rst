@@ -5,42 +5,28 @@ Research products
 
 This entity models **Research products**, which may be of four types, as follows.
 
-Literature
-====
-:Description: Intended for reading by humans (article, thesis, peer-review, blog posts, books, reports, patents, etc.)
-
-
-Research data
-====
-:Description: Self-contained, persistently identified digital assets intended for processing (e.g. files containing: tables, metadata collections, dumps; persistent dynamic queries to scientific databases)
-
-
-Research software
-====
-:Description: (definition from RDA WG) Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose. Note that software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are used for research but were not created during or with a clear research intent should be considered software in research and not Research Software. This differentiation may vary between disciplines. The minimal requirement for achieving computational reproducibility is that all the computational components (Research Software, software used in research, documentation and hardware) used during the research are identified, described, and made accessible to the extent that is possible.
-
-
-Other products
-====
-:Description: any digital asset, uniquely identified, whose nature does not fall in the first three types
+:Literature: Intended for reading by humans (article, thesis, peer-review, blog posts, books, reports, patents, etc.)
+:Research data: Self-contained, persistently identified digital assets intended for processing (e.g. files containing: tables, metadata collections, dumps; persistent dynamic queries to scientific databases)
+:Research software: (definition from RDA WG) Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose. Note that software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are used for research but were not created during or with a clear research intent should be considered software in research and not Research Software. This differentiation may vary between disciplines. The minimal requirement for achieving computational reproducibility is that all the computational components (Research Software, software used in research, documentation and hardware) used during the research are identified, described, and made accessible to the extent that is possible.
+:Other products: any digital asset, uniquely identified, whose nature does not fall in the first three types
 
 
 
 Properties
 ====
-This section is to describe the metadata fields for the Research Products
+This section is to describe the metadata fields for the **Research Products**.
 
 
 Local identifier
 ----
-:Description: Unique code identifiying the Produc in the SKG (if any, otherwise "stateless identifier")
+:Description: Unique code identifiying the **Research product** in the SKG (if any, otherwise "stateless identifier")
 :Type: String
 :Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
 
-    "localIdentifier": "paper_1"
+    "localIdentifier": "product_1"
 
 
 Identifiers
@@ -110,7 +96,7 @@ Product type
 
 Topics
 --------------------
-:Description: A list of :ref:`Topic <Topic>` IDs covered by the **Research product**.
+:Description: A list of :ref:`Topic <Topic>` identifiers covered by the **Research product**.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -176,7 +162,7 @@ Product local type
 
 Product local type schema
 ^^^^^^^^^^^^^^^^
-:Description: The schema of the manifestation product type. 
+:Description: The schema of the manifestation type. 
 :Type: String
 :Use: Mandatory (1)
 
@@ -200,13 +186,13 @@ Type
 
 Peer review
 ^^^^^^^^^^^^^^^^
-:Description: Whether the product has undergone a peer review process.
+:Description: Whether the **Research product** has undergone a peer review process.
 :Type: String, one of the following (single-blind, open, double-blind, unavailable)
 :Use: Mandatory (1)
 
 Metadata curation
 ^^^^^^^^^^^^^^^^
-:Description: Whether the product has undergone a metadata curation process.
+:Description: Whether the **Research product** has undergone a metadata curation process.
 :Type: String, one of the following (yes, no, unavailable)
 :Use: Mandatory (1)
 
@@ -296,13 +282,13 @@ Series
 
 Venue
 """"""""""""
-:Description: A :ref:`Venue <Venue>` IDs for the manifestation.
+:Description: A :ref:`Venue <Venue>` identifiers for the manifestation.
 :Type: String
 :Use: Mandatory (1)
 
 Hosting data source
 """"""""""""
-:Description: A :ref:`Data source <Data source>` IDs for the manifestation.`
+:Description: A :ref:`Data source <Data source>` identifiers for the manifestation.`
 :Type: String
 :Use: Mandatory (1)
 
@@ -342,7 +328,7 @@ Hosting data source
 
 Relevant organisations
 --------------------
-:Description: A list of relevant :ref:`Organisation <Organisation>` IDs associated with the **Research product** (without passing from :ref:`Person`)
+:Description: A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the **Research product** (without passing from a :ref:`Person <Person>`)
 :Type: List
 :Use: Recommended (0..1)
 
@@ -354,7 +340,7 @@ Relevant organisations
  
 Funding
 --------------------
-:Description: A list of relevant :ref:`Grant <Grant>` IDs associated with the **Research product**.
+:Description: A list of relevant :ref:`Grant <Grant>` identifiers associated with the **Research product**.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -364,11 +350,12 @@ Funding
     "funding": ["grant_1", "grant_2"]
     
 
-TODO: need to extend Product-to-Product relationship (a selection from DataCite).
+.. note::
+    TODO: need to extend Product-to-Product relationship (a selection from DataCite).
 
 Citations
 --------------------
-:Description: A list of **Research product** IDs cited.
+:Description: A list of **Research product** identifiers cited.
 :Type: List
 :Use: Recommended (0..1)
 
