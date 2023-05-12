@@ -47,7 +47,6 @@ Value
 :Type: String
 :Use: Mandatory (1)
 
- 
 .. code-block:: json
    :linenos:
 
@@ -272,6 +271,3 @@ Research Product Metadata Access Policy
     "research_product_metadata_access_policy": ["open access"]
 
 
-
-Relationships
-=============
