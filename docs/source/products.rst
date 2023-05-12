@@ -350,7 +350,8 @@ Funding
     "funding": ["grant_1", "grant_2"]
     
 
-TODO: need to extend Product-to-Product relationship (a selection from DataCite).
+.. note::
+    TODO: need to extend Product-to-Product relationship (a selection from DataCite).
 
 Citations
 --------------------
