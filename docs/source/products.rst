@@ -108,6 +108,17 @@ Product type
     "product_type": "literature"
 
 
+Topics
+--------------------
+:Description: A list of :ref:`Topic` covered by the **Research product**
+:Type: List
+:Use: Recommended (1)
+
+.. code-block:: json
+   :linenos:
+
+    "topics": ["computer science", "semantic web"]
+
 Contributions
 --------------------
 :Description:
@@ -131,7 +142,6 @@ Roles
 :Description: Specific role of a :ref:`Person <Person>` for the **Contribution**
 :Type: List of values from CRediT taxonomy
 :Use: Recommended (1)
-
 
 Rank
 ^^^^^^^^^^^^^^^^
