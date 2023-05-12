@@ -126,32 +126,3 @@ End date
             end_date: "2019"
         }
     ]
-
-
-Contribution to venues
-------
-:Description: A list of all the contributions of a **Person** gives to a :ref:`Venue`.
-:Type: List
-:Use: Optional (0..1)
-
-Venue
-^^^^^^^^^
-:Description: The id of a :ref:`Venue`.
-:Type: 
-:Use: Mandatory (1)
-
-Roles
-^^^^^^^^^
-:Description: 
-:Type: List of Strings representing the roles for the venue.
-:Use: Mandatory (1)
-
-.. code-block:: json
-   :linenos:
-
-   "venues": [
-        {
-            "venue": "venue_3",
-            "roles": ["editor"]
-        }
-   ]

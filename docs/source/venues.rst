@@ -132,6 +132,30 @@ Creation date
     "creation date": "2019-09-13"
 
 
-Relationships
-=============
-TODO
+Contribution
+------
+:Description: A list of all the :ref:`Person` that contributed to the **Venue**.
+:Type: List
+:Use: Optional (0..1)
+
+Person
+^^^^^^^^^
+:Description: The id of a :ref:`Person`.
+:Type: 
+:Use: Mandatory (1)
+
+Roles
+^^^^^^^^^
+:Description: 
+:Type: List of Strings representing the roles of the :ref:`Person` contributing to the **Venue**.
+:Use: Mandatory (1)
+
+.. code-block:: json
+   :linenos:
+
+   "venues": [
+        {
+            "person": "person_3",
+            "roles": ["editor"]
+        }
+   ]
