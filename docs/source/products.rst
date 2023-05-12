@@ -40,7 +40,7 @@ Local identifier
 .. code-block:: json
    :linenos:
 
-    "localIdentifier": "the_id"
+    "localIdentifier": "paper_1"
 
 
 Identifiers
@@ -110,43 +110,43 @@ Product type
 
 Topics
 --------------------
-:Description: A list of :ref:`Topic` IDs covered by the **Research product**.
+:Description: A list of :ref:`Topic <Topic>` IDs covered by the **Research product**.
 :Type: List
 :Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
 
-    "topics": ["topic_id_1", "topic__id_2"]
+    "topics": ["topic_1", "topic_2"]
 
 
 Contributions
 --------------------
-:Description:
+:Description: A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisation <Organisation>` when working to a **Research product**.
 :Type: List
 :Use: Mandatory (1)
 
-Person id
+Person
 ^^^^^^^^^^^^^^^^
-:Description: 
+:Description: The identifier of a :ref:`Person <Person>` contributing to the **Research product**.
 :Type: String
 :Use: Mandatory (1)
 
 Declared affiliations
 ^^^^^^^^^^^^^^^^
-:Description: 
+:Description: A list of :ref:`Organisation <Organisation>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the **research product**.
 :Type: List
 :Use: Recommended (0..1)
 
 Roles
 ^^^^^^^^^^^^^^^^
-:Description: Specific role of a :ref:`Person <Person>` for the **Contribution**
+:Description: The specific role that a :ref:`Person <Person>` had in the **Research product**.
 :Type: List of values from CRediT taxonomy
 :Use: Recommended (0..1)
 
 Rank
 ^^^^^^^^^^^^^^^^
-:Description: The rank of the :ref:`Person <Person>` in the author list of a :ref:`Product <Product>`
+:Description: The rank of the :ref:`Person <Person>` in the author list of a :ref:`Product <Product>`.
 :Type: Integer
 :Use: Recommended (0..1)
 
@@ -154,8 +154,8 @@ Rank
    :linenos:
 
     "contributions": [
-        {"person_id": "person_123",
-        "declared_affiliations": ["org1", "org3"],
+        {"person": "person_123",
+        "declared_affiliations": ["org_1", "org_3"],
         "rank": 1,
         "roles": ["writing-original-draft", "conceptualization"]
         }
