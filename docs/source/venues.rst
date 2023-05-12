@@ -60,7 +60,7 @@ Value
 
 Name
 ----
-:Description: The name of the venue.
+:Description: The name of the **Venue**.
 :Type: String
 :Use: Mandatory (1)
  
@@ -72,7 +72,7 @@ Name
 
 Acronym
 ----
-:Description: Acronym used by a venue.
+:Description: Acronym used by a **Venue**.
 :Type: String
 :Use: Recommended (0..1)
  
@@ -84,7 +84,7 @@ Acronym
 
 Type
 ----
-:Description: The type of the venue.
+:Description: The type of the **Venue**.
 :Type: String following the vocabulary below
 :Use: Mandatory (1)
 
@@ -110,7 +110,7 @@ Type
 
 Is currently full open access
 ----
-:Description: 
+:Description: True if the **Venue** contains only open access products 
 :Type: Boolean
 :Use: Mandatory (1)
  
@@ -122,7 +122,7 @@ Is currently full open access
 
 Creation date
 ----
-:Description: 
+:Description: The date of creation of the **Venue**
 :Type: String (ISO 8601 date string)
 :Use: Recommended (1)
  
@@ -141,13 +141,13 @@ Contribution
 Person
 ^^^^^^^^^
 :Description: The id of a :ref:`Person`.
-:Type: 
+:Type: String 
 :Use: Mandatory (1)
 
 Roles
 ^^^^^^^^^
-:Description: 
-:Type: List of Strings representing the roles of the :ref:`Person` contributing to the **Venue**.
+:Description: The roles of the :ref:`Person` contributing to the **Venue**.
+:Type: List of Strings 
 :Use: Mandatory (1)
 
 .. code-block:: json
