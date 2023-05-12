@@ -51,7 +51,7 @@ Identifiers
 
 Scheme
 ^^^^^^^^^
-:Description: The scheme for the external identifier.
+:Description: The scheme for the external identifier (e.g., doi, handle, purl, pubmed, etc.).
 :Type: String
 :Use: Mandatory (1)
 
@@ -81,14 +81,14 @@ Titles
 .. code-block:: json
    :linenos:
 
-    "title": ["The computer science ontology: a large-scale taxonomy of research areas"]
+    "titles": ["The computer science ontology: a large-scale taxonomy of research areas"]
 
 
 Abstracts
 --------
 :Description: The abstracts of a :ref:`Research product <Research product>` (multiple for multilinguism).
 :Type: List
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
@@ -110,14 +110,15 @@ Product type
 
 Topics
 --------------------
-:Description: A list of :ref:`Topic` IDs covered by the **Research product**
+:Description: A list of :ref:`Topic` IDs covered by the **Research product**.
 :Type: List
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
 
-    "topics": ["topic_1", "topic_2"]
+    "topics": ["topic_id_1", "topic__id_2"]
+
 
 Contributions
 --------------------
@@ -135,13 +136,13 @@ Declared affiliations
 ^^^^^^^^^^^^^^^^
 :Description: 
 :Type: List
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 Roles
 ^^^^^^^^^^^^^^^^
 :Description: Specific role of a :ref:`Person <Person>` for the **Contribution**
 :Type: List of values from CRediT taxonomy
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 Rank
 ^^^^^^^^^^^^^^^^
@@ -219,7 +220,7 @@ PID
 ^^^^^^^^^^^^^^^^
 :Description: the pid for the specific manifestation.
 :Type: String
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 Access right
 ^^^^^^^^^^^^^^^^
@@ -231,79 +232,79 @@ Licence
 ^^^^^^^^^^^^^^^^
 :Description: 
 :Type: String
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 Licence schema
 ^^^^^^^^^^^^^^^^
 :Description: 
 :Type: String
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 Bibliographic information
 ^^^^^^^^^^^^^^^^
-:Description: 
+:Description: An object containing bibliographic information about a **Research product**.
 :Type: Object
 :Use: Mandatory (1)
 
 Issue
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: Issue number.
+:Type: String
+:Use: Optional (0..1)
 
 Start page
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: The starting page.
+:Type: String
+:Use: Optional (0..1)
 
 End page
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: The ending date.
+:Type: String
+:Use: Optional (0..1)
 
 Volume
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: Volume number.
+:Type: String
+:Use: Optional (0..1)
 
 Edition
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: The edition.
+:Type: String
+:Use: Optional (0..1)
 
 Number
 """""""""""""
 :Description: 
-:Type: 
-:Use: 
+:Type: String
+:Use: Optional (0..1)
 
 Publisher
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: The name of the publisher.
+:Type: String
+:Use: Optional (0..1)
 
 Series
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: The name of the book series.
+:Type: String
+:Use: Optional (0..1)
 
 Venue
 """"""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: A :ref:`Venue` id for the manifestation.
+:Type: String
+:Use: Mandatory (1)
 
 Hosting data source
 """"""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: A :ref:`Data source` id for the manifestation.`
+:Type: String
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
@@ -313,11 +314,11 @@ Hosting data source
             "product_local_type": "",
             "product_local_type_schema": "",
             "dates": {
-                "value": "",
-                "type": ""
+                "value": "2012-03-21",
+                "type": "preprint"
             }
-            "peer-review": "",
-            "metadata curation": "",
+            "peer-review": "open",
+            "metadata curation": "yes",
             "access rights": "",
             "license": "",
             "license_schema": "",
@@ -333,8 +334,8 @@ Hosting data source
                 "publisher": "",
                 "series": ""
             }
-            "venue": "",
-            "hosting_data_source": "",
+            "venue": "venue_7",
+            "hosting_data_source": "datasource_4",
         }
     ]
 
