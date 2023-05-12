@@ -66,7 +66,7 @@ Value
 
     "identifiers": [
         {
-            "scheme": "https://doi.org"
+            "scheme": "doi"
             "value": "10.1103/PhysRevE.80.056103"
         }
     ]
@@ -163,14 +163,14 @@ Rank
 
 Manifestations
 --------------------
-:Description: 
+:Description:  A list of manifestations for the same **Research product** (e.g., a preprint, a postprint, etc.)
 :Type: List
 :Use: Mandatory (1)
 
 Product local type 
 ^^^^^^^^^^^^^^^^
 :Description: The type of the manifestation. 
-:Type: String from a vocabulary
+:Type: String
 :Use: Mandatory (1)
 
 Product local type schema
@@ -181,13 +181,13 @@ Product local type schema
 
 Dates
 ^^^^^^^^^^^^^^^^
-:Description: Relevant dates for the research product.
+:Description: Relevant dates for the **research product**.
 :Type: List
 :Use: Mandatory (1)
 
 Value
 """""""""""""
-:Description: The relevant date for the research product.
+:Description: The relevant date for the **research product**.
 :Type: String (ISO 8601 date string)
 :Use: Mandatory (1)
 
@@ -199,31 +199,31 @@ Type
 
 Peer review
 ^^^^^^^^^^^^^^^^
-:Description: 
+:Description: Whether the product has undergone a peer review process.
 :Type: String, one of the following (single-blind, open, double-blind, unavailable)
 :Use: Mandatory (1)
 
 Metadata curation
 ^^^^^^^^^^^^^^^^
-:Description: 
+:Description: Whether the product has undergone a metadata curation process.
 :Type: String, one of the following (yes, no, unavailable)
 :Use: Mandatory (1)
 
 URL
 ^^^^^^^^^^^^^^^^
-:Description: 
-:Type: URL
-:Use: 
-
-PID
-^^^^^^^^^^^^^^^^
-:Description: 
+:Description: An URL for the manifestation.
 :Type: URL
 :Use: Mandatory (1)
 
+PID
+^^^^^^^^^^^^^^^^
+:Description: the pid for the specific manifestation.
+:Type: String
+:Use: Recommended (1)
+
 Access right
 ^^^^^^^^^^^^^^^^
-:Description: 
+:Description: The access right for the specific materialisation.
 :Type: String, one of the following (open, closed, embargo, restricted, unavailable).
 :Use: Mandatory (1)
 
@@ -339,102 +339,41 @@ Hosting data source
     ]
 
 
-Relationships
-============
-
-hasContribution
----------------------
-:Description: It models the contribution of the **research product**. It can also reference to the :ref:`Organisation <Organisation>`(s) to which the :ref:`Person <Person>` was affiliated when generating this product. For this relation the :ref:`Person <Person>` is an entity in the SKG.
-:Use: Optional (0..*)
-:Source: research product 
-:Target: Contribution 
+Relevant organisations
+--------------------
+:Description: A list of relevant :ref:`Organisation` IDs associated witht he **Research product** (without passing from :ref:`Person`)
+:Type: List
+:Use: Recommended (1)
 
 .. code-block:: json
    :linenos:
 
-    "has_contribution": {
-        "research_product": "product_id",
-        "contribution": "contribution_id"
-    }
+    "relevant_organisations": ["org_1", "org5"]
 
-
-hasPersonAffiliatedWith 
----------------------------
-:Description: It is a relation between the **research product** and the :ref:`Organisation <Organisation>`. We do not know who is the :ref:`Person <Person>` involved (affiliated to the :ref:`Organisation <Organisation>`).
-:Use: Optional (0..*)
-:Source: research product 
-:Target: :ref:`Organisation <Organisation>` 
+ 
+Funding
+--------------------
+:Description: A list of relevant :ref:`Grant` IDs associated witht he **Research product**
+:Type: List
+:Use: Recommended (1)
 
 .. code-block:: json
    :linenos:
 
-    "has_person_affiliated_with": {
-        "research_product": "product_id",
-        "organisation": "organisation_id"
-    }
+    "funding": ["grant_1", "grant_2"]
+    
+
+TODO: need to add Product-to-Product relationship.
 
 
-is_published_in
---------------
-:Description: The research **research product** publishing venue 
-:Use: Optional (0..*)
-:Source: research product
-:Target: venue 
-
-.. code-block:: json
-   :linenos:
-
-    "is_published_in": {
-        "research_product": "product_id",
-        "venue": "venue_id"
-    }
 
 
-is_funded_by 
--------------
-:Description: the funds thanks to which the **research product** has been made
-:Use: Optional (0..*)
-:Source: research product 
-:Target: grant
-
-.. code-block:: json
-   :linenos:
-
-    "is_funded_by": {
-         "research_product": "product_id",
-         "grant": "grant_id"
-    }
 
 
-has_subject
------------
-:Description: The topic this **research product** is related to 
-:Use: Optional (0..*)
-:Source: research product 
-:Target: Topic 
-
-.. code-block:: json
-   :linenos:
-
-    "has_subject": {
-        "research_product": "product_id",
-         "subject": "subject_id"
-    }
 
 
-is_related_with_product
--------------------
-:Description: other product the **research product** is related with 
-:Use: Optional (0..*)
-:Source: research product 
-:Target: research product
-:Note: the semantics should be one among a set of predifined values. Possible "imposed" semantics: DataCite semantics or Scholix semantics set
 
-.. code-block:: json
-   :linenos:
 
-    "is_related_with_product": {
-        "semantics": "IsSupplementTo"
-        "research_product": "product_id",
-         "research_product": "product_id",
-    }
+
+
+
