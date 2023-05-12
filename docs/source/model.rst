@@ -6,7 +6,7 @@ TODO write introduction
 .. image:: images/model.png
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    products
    persons
