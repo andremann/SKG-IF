@@ -341,7 +341,7 @@ Hosting data source
 
 Relevant organisations
 --------------------
-:Description: A list of relevant :ref:`Organisation` IDs associated witht he **Research product** (without passing from :ref:`Person`)
+:Description: A list of relevant :ref:`Organisation` IDs associated with the **Research product** (without passing from :ref:`Person`)
 :Type: List
 :Use: Recommended (1)
 
@@ -353,7 +353,7 @@ Relevant organisations
  
 Funding
 --------------------
-:Description: A list of relevant :ref:`Grant` IDs associated witht he **Research product**
+:Description: A list of relevant :ref:`Grant` IDs associated with the **Research product**
 :Type: List
 :Use: Recommended (1)
 

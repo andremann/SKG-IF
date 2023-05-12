@@ -87,39 +87,71 @@ Agent
     "agent": "UNICEF"
 
 
+Affiliations
+------
+:Description: A list of all the affiliations of a **Person**.
+:Type: List
+:Use: Optional (0..1)
 
-Relationships
-================
-
-is_affiliated_with
-------------------
+Organisation
+^^^^^^^^^
 :Description: 
-:Use: Optional (0..*)
-:Source type: Person
-:Target type: Affiliation 
+:Type: String
+:Use: Mandatory (1)
+
+Start date
+^^^^^^^^^
+:Description: 
+:Type: 
+:Use: Recommended (1)
+
+End date
+^^^^^^^^^
+:Description: 
+:Type: 
+:Use: Optional (1)
 
 .. code-block:: json
    :linenos:
 
-    {
-        "semantics"="is_affiliated_with"
-        "source" = "person_id",
-        "target" = "affiliation_id"
-    }
+    "affiliations": [
+        {
+            "organisation": "org2",
+            start_date: "2015",
+            end_date: "2017"
+        },
+        {
+            "organisation": "org3",
+            start_date: "2017",
+            end_date: "2019"
+        }
+    ]
 
 
-has_contribution
------------------------
+Contribution to venues
+------
+:Description: A list of all the contributions of a **Person** gives to a :ref:`Venue`.
+:Type: List
+:Use: Optional (0..1)
+
+Venue
+^^^^^^^^^
+:Description: The id of a :ref:`Venue`.
+:Type: 
+:Use: Mandatory (1)
+
+Roles
+^^^^^^^^^
 :Description: 
-:Use: Optional(0..*)
-:Source type: Person 
-:Target type: Contribution
- 
+:Type: List of Strings representing the roles for the venue.
+:Use: Mandatory (1)
+
 .. code-block:: json
    :linenos:
 
-    {
-        "semantics"="has_contribution"
-        "source" = "person_id",
-        "target" = "contribution_id"
-    }
+   "venues": [
+        {
+            "venue": "venue_3",
+            "roles": ["editor"]
+        }
+   ]
