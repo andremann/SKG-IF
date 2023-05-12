@@ -110,14 +110,14 @@ Product type
 
 Topics
 --------------------
-:Description: A list of :ref:`Topic` covered by the **Research product**
+:Description: A list of :ref:`Topic` IDs covered by the **Research product**
 :Type: List
 :Use: Recommended (1)
 
 .. code-block:: json
    :linenos:
 
-    "topics": ["computer science", "semantic web"]
+    "topics": ["topic_1", "topic_2"]
 
 Contributions
 --------------------

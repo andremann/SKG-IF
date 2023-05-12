@@ -19,7 +19,7 @@ Local identifier
 .. code-block:: json
    :linenos:
 
-    "local_identifier": "123_local_id"
+    "local_identifier": "topic_1"
 
 
 Identifiers			
