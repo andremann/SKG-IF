@@ -108,8 +108,53 @@ Product type
     "product_type": "literature"
 
 
+Contributions
+--------------------
+:Description:
+:Type: List
+:Use: Mandatory (1)
+
+Person id
+^^^^^^^^^^^^^^^^
+:Description: 
+:Type: String
+:Use: Mandatory (1)
+
+Organisation ids
+^^^^^^^^^^^^^^^^
+:Description: 
+:Type: List
+:Use: Recommended (1)
+
+Rank
+^^^^^^^^^^^^^^^^
+:Description: 
+:Type: Integer
+:Use: Recommended (1)
+
+Roles
+^^^^^^^^^^^^^^^^
+:Description: 
+:Type: List of values from CRediT taxonomy
+:Use: Recommended (1)
+
+.. code-block:: json
+   :linenos:
+
+    "contributions": [
+        {'person_id': 'the_id',
+        'organisations': ['org1', 'org2', 'org3'],
+        'rank': 1,
+        'roles': ['writing-original-draft', 'conceptualization']
+        }
+    ]
+
+
 Manifestations
 --------------------
+:Description: 
+:Type: List
+:Use: Mandatory (1)
 
 Product local type 
 ^^^^^^^^^^^^^^^^
