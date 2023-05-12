@@ -40,7 +40,7 @@ Local identifier
 .. code-block:: json
    :linenos:
 
-    "localIdentifier": "paper_1"
+    "localIdentifier": "product_1"
 
 
 Identifiers
