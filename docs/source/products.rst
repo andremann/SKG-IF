@@ -143,10 +143,10 @@ Rank
    :linenos:
 
     "contributions": [
-        {'person_id': 'the_id',
-        'organisations': ['org1', 'org2', 'org3'],
-        'rank': 1,
-        'roles': ['writing-original-draft', 'conceptualization']
+        {"person_id": "the_id",
+        "organisations": ["org1", "org2", "org3"],
+        "rank": 1,
+        "roles": ["writing-original-draft", "conceptualization"]
         }
     ]
 
