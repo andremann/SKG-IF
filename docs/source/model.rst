@@ -15,6 +15,4 @@ TODO write introduction
    datasources
    grants
    topics
-   contributions
-   affiliations
     

@@ -20,30 +20,6 @@ Local Identifier
    :linenos:
 
     "local_id": "the_id"
-
-
-Roles
-----
-:Description: Specific role of a :ref:`Person <Person>` for the **Contribution**
-:Type: List of values from CRediT taxonomy
-:Use: Mandatory (1)
-
-.. code-block:: json
-   :linenos:
-
-    "roles": ["writing-original-draft", "supervision"]
-    
-
-Rank
-----
-:Description: The rank of the :ref:`Person <Person>` (as an author) 
-:Type: Integer
-:Use: Recommended (0..1)
-
-.. code-block:: json
-   :linenos:
-
-    "rank": 1
        
 
 Relationships

@@ -126,17 +126,18 @@ Organisation ids
 :Type: List
 :Use: Recommended (1)
 
-Rank
-^^^^^^^^^^^^^^^^
-:Description: 
-:Type: Integer
-:Use: Recommended (1)
-
 Roles
 ^^^^^^^^^^^^^^^^
-:Description: 
+:Description: Specific role of a :ref:`Person <Person>` for the **Contribution**
 :Type: List of values from CRediT taxonomy
 :Use: Recommended (1)
+
+
+Rank
+^^^^^^^^^^^^^^^^
+:Description: The rank of the :ref:`Person <Person>` in the author list of a :ref:`Product <Product>`
+:Type: Integer
+:Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
