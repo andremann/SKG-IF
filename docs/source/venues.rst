@@ -123,7 +123,7 @@ Is currently full open access
 Creation date
 ----
 :Description: 
-:Type: String ()
+:Type: String (ISO 8601 date string)
 :Use: Recommended (1)
  
 .. code-block:: json

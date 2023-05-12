@@ -120,8 +120,3 @@ Organisation type
    :linenos:
 
     "type": "Education"
-
-
-Relationships
-=============
-- isBeneficiaryOfGrant (to Grant)

@@ -102,13 +102,13 @@ Organisation
 Start date
 ^^^^^^^^^
 :Description: 
-:Type: 
+:Type: String (ISO 8601 date string)
 :Use: Recommended (1)
 
 End date
 ^^^^^^^^^
 :Description: 
-:Type: 
+:Type: String (ISO 8601 date string)
 :Use: Optional (1)
 
 .. code-block:: json
@@ -117,12 +117,12 @@ End date
     "affiliations": [
         {
             "organisation": "org2",
-            start_date: "2015",
-            end_date: "2017"
+            start_date: "2015-01-01",
+            end_date: "2017-01-01"
         },
         {
             "organisation": "org3",
-            start_date: "2017",
-            end_date: "2019"
+            start_date: "2017-01-01",
+            end_date: "2019-01-01"
         }
     ]
