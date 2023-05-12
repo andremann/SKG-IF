@@ -110,7 +110,7 @@ Product type
 
 Topics
 --------------------
-:Description: A list of :ref:`Topic <Topic>` IDs covered by the **Research product**.
+:Description: A list of :ref:`Topic <Topic>` identifiers covered by the **Research product**.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -296,13 +296,13 @@ Series
 
 Venue
 """"""""""""
-:Description: A :ref:`Venue <Venue>` IDs for the manifestation.
+:Description: A :ref:`Venue <Venue>` identifiers for the manifestation.
 :Type: String
 :Use: Mandatory (1)
 
 Hosting data source
 """"""""""""
-:Description: A :ref:`Data source <Data source>` IDs for the manifestation.`
+:Description: A :ref:`Data source <Data source>` identifiers for the manifestation.`
 :Type: String
 :Use: Mandatory (1)
 
@@ -342,7 +342,7 @@ Hosting data source
 
 Relevant organisations
 --------------------
-:Description: A list of relevant :ref:`Organisation <Organisation>` IDs associated with the **Research product** (without passing from :ref:`Person`)
+:Description: A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the **Research product** (without passing from :ref:`Person`)
 :Type: List
 :Use: Recommended (0..1)
 
@@ -354,7 +354,7 @@ Relevant organisations
  
 Funding
 --------------------
-:Description: A list of relevant :ref:`Grant <Grant>` IDs associated with the **Research product**.
+:Description: A list of relevant :ref:`Grant <Grant>` identifiers associated with the **Research product**.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -368,7 +368,7 @@ TODO: need to extend Product-to-Product relationship (a selection from DataCite)
 
 Citations
 --------------------
-:Description: A list of **Research product** IDs cited.
+:Description: A list of **Research product** identifiers cited.
 :Type: List
 :Use: Recommended (0..1)
 
