@@ -282,13 +282,13 @@ Series
 
 Venue
 """"""""""""
-:Description: A :ref:`Venue <Venue>` identifiers for the manifestation.
+:Description: A :ref:`Venue <Venue>` identifier for the manifestation.
 :Type: String
 :Use: Mandatory (1)
 
 Hosting data source
 """"""""""""
-:Description: A :ref:`Data source <Data source>` identifiers for the manifestation.`
+:Description: A :ref:`Data source <Data source>` identifier for the manifestation.`
 :Type: String
 :Use: Mandatory (1)
 
@@ -365,13 +365,49 @@ Citations
     "cites": ["product_2", "product_3", "product_4"]
 
 
+Supplementaty material
+--------------------
+:Description: A list of **Research products** identifiers supplementing the present one.
+:Type: List
+:Use: Recommended (0..1)
+
+.. code-block:: json
+   :linenos:
+
+    "is_supplemented_by": ["product_2", "product_3", "product_4"]
 
 
+Documentation
+--------------------
+:Description: A list of **Research products** identifiers describing the present one.
+:Type: List
+:Use: Recommended (0..1)
+
+.. code-block:: json
+   :linenos:
+
+    "is_documented_by": ["product_2", "product_3", "product_4"]
 
 
+Versioning
+--------------------
+:Description: A list of **Research products** identifiers pointing to newer versions of the product.
+:Type: List
+:Use: Recommended (0..1)
+
+.. code-block:: json
+   :linenos:
+
+    "is_new_version_of": ["product_2"]
 
 
+Hierarchy
+--------------------
+:Description: A list of **Research products** identifiers pointing to parent products for the present one.
+:Type: List
+:Use: Recommended (0..1)
 
+.. code-block:: json
+   :linenos:
 
-
-
+    "is_part_of": ["product_1"]
