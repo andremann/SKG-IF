@@ -3,7 +3,9 @@
 Persons
 ############
 
-This section is to describe the metadata fields for the **Person** entity.
+The **Person** entity is to represent as an individual who is involved in the creation, publication, and dissemination of academic research. 
+A **Person** can be an author, a reviewer, an editor, a publisher, a librarian, a researcher, a teacher, a student or any other stakeholder in the scholarly 
+communication process. 
 
 Properties 
 ===========
