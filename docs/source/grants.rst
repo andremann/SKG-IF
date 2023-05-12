@@ -2,11 +2,13 @@
 
 Grants
 ########
-This section is to describe the metadata fields for the **Grant** entity.
+The entity **Grant** it to describe funding awarded to an individual or an organization 
+by a funding body. These bodies, both public and private, can be funders, foundations, governments, agencies or institutions. 
+
 
 Properties
 ==========
-This section is to describe the metadata fields for the **Grant**.
+
 
 Local identifier
 ----
@@ -147,7 +149,7 @@ Keywords
 
 Start date
 ----
-:Description: 
+:Description: The date the grand started 
 :Type: String (ISO 8601 date string)
 :Use: Recommended (0..1)
 
@@ -159,7 +161,7 @@ Start date
 
 End date
 ----
-:Description: 
+:Description: The date the grant finishes
 :Type: String (ISO 8601 date string)
 :Use: Recommended, (0..1)
  
@@ -201,13 +203,13 @@ Contributors
  
  Person
  ^^^^^^^^^^^
-:Description: 
+:Description: The identifier of the :ref:`Person` who is the principal investigator  
 :Type: 
 :Use: 
 
  Organisation
  ^^^^^^^^^^^
-:Description: 
+:Description: The identifier of the :ref:`Organization` the principal investigator declares as affiliation for the **Grant**
 :Type: 
 :Use: 
 
