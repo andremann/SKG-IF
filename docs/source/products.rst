@@ -296,13 +296,13 @@ Series
 
 Venue
 """"""""""""
-:Description: A :ref:`Venue` id for the manifestation.
+:Description: A :ref:`Venue <Venue>` IDs for the manifestation.
 :Type: String
 :Use: Mandatory (1)
 
 Hosting data source
 """"""""""""
-:Description: A :ref:`Data source` id for the manifestation.`
+:Description: A :ref:`Data source <Data source>` IDs for the manifestation.`
 :Type: String
 :Use: Mandatory (1)
 
