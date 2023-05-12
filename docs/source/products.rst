@@ -342,7 +342,7 @@ Hosting data source
 
 Relevant organisations
 --------------------
-:Description: A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the **Research product** (without passing from :ref:`Person`)
+:Description: A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the **Research product** (without passing from a :ref:`Person <Person>`)
 :Type: List
 :Use: Recommended (0..1)
 
