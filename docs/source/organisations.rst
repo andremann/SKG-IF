@@ -2,7 +2,9 @@
 
 Organisations
 #############
-This section is to describe the metadata fields for the **Organization** entity.
+The entity **Organization** is to represent academic institutions, research centers, funders, or any other institutions 
+taking part to the research process.
+
 
 Properties
 ==========
