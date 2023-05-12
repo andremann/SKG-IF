@@ -40,7 +40,7 @@ Local identifier
 .. code-block:: json
    :linenos:
 
-    "localIdentifier": "the_id"
+    "localIdentifier": "paper_1"
 
 
 Identifiers
@@ -51,7 +51,7 @@ Identifiers
 
 Scheme
 ^^^^^^^^^
-:Description: The scheme for the external identifier.
+:Description: The scheme for the external identifier (e.g., doi, handle, purl, pubmed, etc.).
 :Type: String
 :Use: Mandatory (1)
 
@@ -81,14 +81,14 @@ Titles
 .. code-block:: json
    :linenos:
 
-    "title": ["The computer science ontology: a large-scale taxonomy of research areas"]
+    "titles": ["The computer science ontology: a large-scale taxonomy of research areas"]
 
 
 Abstracts
 --------
 :Description: The abstracts of a :ref:`Research product <Research product>` (multiple for multilinguism).
 :Type: List
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
@@ -110,42 +110,43 @@ Product type
 
 Topics
 --------------------
-:Description: A list of :ref:`Topic` IDs covered by the **Research product**
+:Description: A list of :ref:`Topic <Topic>` IDs covered by the **Research product**.
 :Type: List
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
 
     "topics": ["topic_1", "topic_2"]
 
+
 Contributions
 --------------------
-:Description:
+:Description: A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisation <Organisation>` when working to a **Research product**.
 :Type: List
 :Use: Mandatory (1)
 
-Person id
+Person
 ^^^^^^^^^^^^^^^^
-:Description: 
+:Description: The identifier of a :ref:`Person <Person>` contributing to the **Research product**.
 :Type: String
 :Use: Mandatory (1)
 
 Declared affiliations
 ^^^^^^^^^^^^^^^^
-:Description: 
+:Description: A list of :ref:`Organisation <Organisation>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the **research product**.
 :Type: List
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 Roles
 ^^^^^^^^^^^^^^^^
-:Description: Specific role of a :ref:`Person <Person>` for the **Contribution**
+:Description: The specific role that a :ref:`Person <Person>` had in the **Research product**.
 :Type: List of values from CRediT taxonomy
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 Rank
 ^^^^^^^^^^^^^^^^
-:Description: The rank of the :ref:`Person <Person>` in the author list of a :ref:`Product <Product>`
+:Description: The rank of the :ref:`Person <Person>` in the author list of a :ref:`Product <Product>`.
 :Type: Integer
 :Use: Recommended (0..1)
 
@@ -153,8 +154,8 @@ Rank
    :linenos:
 
     "contributions": [
-        {"person_id": "person_123",
-        "declared_affiliations": ["org1", "org3"],
+        {"person": "person_123",
+        "declared_affiliations": ["org_1", "org_3"],
         "rank": 1,
         "roles": ["writing-original-draft", "conceptualization"]
         }
@@ -219,7 +220,7 @@ PID
 ^^^^^^^^^^^^^^^^
 :Description: the pid for the specific manifestation.
 :Type: String
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 Access right
 ^^^^^^^^^^^^^^^^
@@ -231,79 +232,79 @@ Licence
 ^^^^^^^^^^^^^^^^
 :Description: 
 :Type: String
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 Licence schema
 ^^^^^^^^^^^^^^^^
 :Description: 
 :Type: String
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 Bibliographic information
 ^^^^^^^^^^^^^^^^
-:Description: 
+:Description: An object containing bibliographic information about a **Research product**.
 :Type: Object
 :Use: Mandatory (1)
 
 Issue
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: Issue number.
+:Type: String
+:Use: Optional (0..1)
 
 Start page
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: The starting page.
+:Type: String
+:Use: Optional (0..1)
 
 End page
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: The ending date.
+:Type: String
+:Use: Optional (0..1)
 
 Volume
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: Volume number.
+:Type: String
+:Use: Optional (0..1)
 
 Edition
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: The edition.
+:Type: String
+:Use: Optional (0..1)
 
 Number
 """""""""""""
 :Description: 
-:Type: 
-:Use: 
+:Type: String
+:Use: Optional (0..1)
 
 Publisher
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: The name of the publisher.
+:Type: String
+:Use: Optional (0..1)
 
 Series
 """""""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: The name of the book series.
+:Type: String
+:Use: Optional (0..1)
 
 Venue
 """"""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: A :ref:`Venue <Venue>` IDs for the manifestation.
+:Type: String
+:Use: Mandatory (1)
 
 Hosting data source
 """"""""""""
-:Description: 
-:Type: 
-:Use: 
+:Description: A :ref:`Data source <Data source>` IDs for the manifestation.`
+:Type: String
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
@@ -313,11 +314,11 @@ Hosting data source
             "product_local_type": "",
             "product_local_type_schema": "",
             "dates": {
-                "value": "",
-                "type": ""
+                "value": "2012-03-21",
+                "type": "preprint"
             }
-            "peer-review": "",
-            "metadata curation": "",
+            "peer-review": "open",
+            "metadata curation": "yes",
             "access rights": "",
             "license": "",
             "license_schema": "",
@@ -333,17 +334,17 @@ Hosting data source
                 "publisher": "",
                 "series": ""
             }
-            "venue": "",
-            "hosting_data_source": "",
+            "venue": "venue_7",
+            "hosting_data_source": "datasource_4",
         }
     ]
 
 
 Relevant organisations
 --------------------
-:Description: A list of relevant :ref:`Organisation` IDs associated with the **Research product** (without passing from :ref:`Person`)
+:Description: A list of relevant :ref:`Organisation <Organisation>` IDs associated with the **Research product** (without passing from :ref:`Person`)
 :Type: List
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
@@ -353,9 +354,9 @@ Relevant organisations
  
 Funding
 --------------------
-:Description: A list of relevant :ref:`Grant` IDs associated with the **Research product**
+:Description: A list of relevant :ref:`Grant <Grant>` IDs associated with the **Research product**.
 :Type: List
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
@@ -363,8 +364,18 @@ Funding
     "funding": ["grant_1", "grant_2"]
     
 
-TODO: need to add Product-to-Product relationship.
+TODO: need to extend Product-to-Product relationship (a selection from DataCite).
 
+Citations
+--------------------
+:Description: A list of **Research product** IDs cited.
+:Type: List
+:Use: Recommended (0..1)
+
+.. code-block:: json
+   :linenos:
+
+    "cites": ["product_2", "product_3", "product_4"]
 
 
 
