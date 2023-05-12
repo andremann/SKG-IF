@@ -38,7 +38,6 @@ Value
 :Type: String
 :Use: Mandatory (1)
 
- 
 .. code-block:: json
    :linenos:
 
@@ -182,9 +181,49 @@ Website
     "website": "https://..."
 
 
+Beneficiaries
+----
+:Description: A list of the :ref:`Organisation` funded by the **Grant**.
+:Type: List
+:Use: Recommended (0..1)
+ 
+.. code-block:: json
+   :linenos:
 
-Relationships
-=============
-- toResearchProduct
-- to :ref:`Organisation <Organisation>` 
-- hasSubject (to Topic)
+    "beneficiaries": ["org_2", "org_5"]
+
+
+Contributors
+----
+:Description: A list of the :ref:`Person` contributing to the **Grant**.
+:Type: List
+:Use: Recommended (0..1)
+ 
+ Person
+ ^^^^^^^^^^^
+:Description: 
+:Type: 
+:Use: 
+
+ Organisation
+ ^^^^^^^^^^^
+:Description: 
+:Type: 
+:Use: 
+
+ Roles
+ ^^^^^^^^^^^
+:Description: A list of the roles that the :ref:`Person` has in the **Grant**.
+:Type: List of roles.
+:Use: Recommended (1)
+
+.. code-block:: json
+   :linenos:
+
+    "contributors": [
+        {
+            "person": "person_2",
+            "organisation": "org_3",
+            "roles": ["principal investigator"]
+        }
+    ]
