@@ -344,7 +344,7 @@ Relevant organisations
 --------------------
 :Description: A list of relevant :ref:`Organisation <Organisation>` IDs associated with the **Research product** (without passing from :ref:`Person`)
 :Type: List
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
@@ -354,9 +354,9 @@ Relevant organisations
  
 Funding
 --------------------
-:Description: A list of relevant :ref:`Grant <Grant>` IDs associated with the **Research product**
+:Description: A list of relevant :ref:`Grant <Grant>` IDs associated with the **Research product**.
 :Type: List
-:Use: Recommended (1)
+:Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
@@ -364,8 +364,18 @@ Funding
     "funding": ["grant_1", "grant_2"]
     
 
-TODO: need to add Product-to-Product relationship.
+TODO: need to extend Product-to-Product relationship (a selection from DataCite).
 
+Citations
+--------------------
+:Description: A list of **Research product** IDs cited.
+:Type: List
+:Use: Recommended (0..1)
+
+.. code-block:: json
+   :linenos:
+
+    "cites": ["product_2", "product_3", "product_4"]
 
 
 
