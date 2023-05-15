@@ -2,7 +2,7 @@
 
 Topics
 ######
-A :ref:`Topic <Topic>` entity describes the scientific discipline, the subject and the keywords potentially relevant for a :ref:`Research product <Research product>`.
+A :ref:`Topic <Topic>` entity describes the scientific disciplines, the subjects and the keywords potentially relevant for a :ref:`Research product <Research product>`.
 
 
 Properties
