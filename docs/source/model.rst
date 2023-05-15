@@ -1,9 +1,13 @@
 Core model entities
 ##############
 
-TODO write introduction
+
+SKG-IF main entities and relations are reported in the figure below.
 
 .. image:: images/model.png
+
+.. note::
+TODO expand introduction.
 
 .. toctree::
    :maxdepth: 3
