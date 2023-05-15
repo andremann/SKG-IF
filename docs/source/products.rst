@@ -84,7 +84,7 @@ Abstracts
 
 Product type
 -----
-:Description: The type of the research product. 
+:Description: The type of the :ref:`Research product <Research product>`. 
 :Type: String, one among `literature`, `research data`, `research software`, `other``}.
 :Use: Mandatory (1)
 
@@ -96,7 +96,7 @@ Product type
 
 Topics
 --------------------
-:Description: A list of :ref:`Topic <Topic>` identifiers covered by the :ref:`Research product <Research product>`.
+:Description: A list of :ref:`Topic` identifiers covered by the :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -108,7 +108,7 @@ Topics
 
 Contributions
 --------------------
-:Description: A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisation <Organisation>` when working to a :ref:`Research product <Research product>`.
+:Description: A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisation <Organisations>` when working to a :ref:`Research product <Research product>`.
 :Type: List
 :Use: Mandatory (1)
 
@@ -120,7 +120,7 @@ Person
 
 Declared affiliations
 ^^^^^^^^^^^^^^^^
-:Description: A list of :ref:`Organisation <Organisation>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the :ref:`Research product <Research product>`.
+:Description: A list of :ref:`Organisation <Organisations>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -140,10 +140,11 @@ Rank
    :linenos:
 
     "contributions": [
-        {"person": "person_123",
-        "declared_affiliations": ["org_1", "org_3"],
-        "rank": 1,
-        "roles": ["writing-original-draft", "conceptualization"]
+        {
+            "person": "person_123",
+            "declared_affiliations": ["org_1", "org_3"],
+            "rank": 1,
+            "roles": ["writing-original-draft", "conceptualization"]
         }
     ]
 
@@ -187,7 +188,11 @@ Type
 Peer review
 ^^^^^^^^^^^^^^^^
 :Description: Whether the :ref:`Research product <Research product>` has undergone a peer review process.
-:Type: String, one of the following (single-blind, open, double-blind, unavailable)
+:Type: String, one of the following 
+    * single-blind
+    * open
+    * double-blind
+    * unavailable
 :Use: Mandatory (1)
 
 Metadata curation
