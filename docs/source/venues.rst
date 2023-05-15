@@ -90,7 +90,7 @@ Type
 .. code-block:: json
    :linenos:
 
-    "type", "Repository"
+    "type", "repository"
 
 .. tabularcolumns:: p{0.132\linewidth}p{0.198\linewidth}p{0.330\linewidth}
 .. csv-table:: Controlled vocabulary for different types of venue and its mapping towards OpenCitations
@@ -99,12 +99,12 @@ Type
    :class: longtable
    :align: center
 
-   "Repository", "Repository, Scientific database"
-   "Journal", "Journal issue, Journal volume, Journal"
-   "Conference", "Proceedings series, Proceedings"
-   "Book", "Book, Book part, Book section, Book series, Book set, Edited book, Reference book, Monograph"
-   "Other", "Report series, Standard series, Archival document"
-   "Unknown", ""
+   "repository", "Repository, Scientific database"
+   "journal", "Journal issue, Journal volume, Journal"
+   "conference", "Proceedings series, Proceedings"
+   "book", "Book, Book part, Book section, Book series, Book set, Edited book, Reference book, Monograph"
+   "other", "Report series, Standard series, Archival document"
+   "unknown", ""
 
 
 Is currently full open access

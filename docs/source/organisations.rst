@@ -113,7 +113,18 @@ Country code
 Organisation type
 ----
 :Description: The type of the :ref:`Organisation <Organisation>`
-:Type: String, one of the following [Archive, Company, Education, Facility, Government, Healthcare, Nonprofit, Funder, Other]
+:Type: String, one of the following 
+    
+    * archive
+    * company
+    * education
+    * facility
+    * government
+    * healthcare
+    * nonprofit
+    * funder
+    * other
+
 :Use: Recommended (1)
  
 .. code-block:: json
