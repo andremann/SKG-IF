@@ -14,7 +14,7 @@ This entity models **Research products**, which may be of four types, as follows
 
 Properties
 ====
-This section is to describe the metadata fields for the **Research Products**.
+This section is to describe the metadata fields for the :ref:`Research product`.
 
 
 Local identifier
