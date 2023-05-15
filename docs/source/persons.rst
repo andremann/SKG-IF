@@ -26,7 +26,7 @@ Local identifier
 
 Identifiers
 ----
-:Description: Identifier for the entity outside of the SKG (e.g., ORCiD ID). 
+:Description: Identifier for the entity outside of the SKG (e.g., ORCID). 
 :Type: List
 :Use: Recommended (1)
 
@@ -92,7 +92,7 @@ Agent
 
 Affiliations
 ------
-:Description: A list of all the affiliations of a :ref:`Person <Person>`.
+:Description: A list of all the affiliations of a :ref:`Person <Person>` (*à la* ORCID).
 :Type: List
 :Use: Optional (0..1)
 
