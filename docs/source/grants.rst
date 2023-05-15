@@ -114,12 +114,12 @@ Funding stream
 Currency
 ------
 :Description: Currency of the funded amount.
-:Type: String
+:Type: String (following `ISO 4217 <https://en.wikipedia.org/wiki/ISO_4217>`_ )
 :Use: Optional (0..1), Mandatory if funded amount is given
 .. code-block:: json
    :linenos:
 
-    "currency": ""
+    "currency": "EUR"
 
 
 Funded amount
@@ -144,7 +144,7 @@ Keywords
 .. code-block:: json
    :linenos:
 
-    "keywords": ["key1", "key2", "key3", "key4", "key5"]
+    "keywords": ["computer science", "big data"]
 
 
 Start date
@@ -180,7 +180,7 @@ Website
 .. code-block:: json
    :linenos:
 
-    "website": "https://..."
+    "website": "https://graspos.eu"
 
 
 Beneficiaries

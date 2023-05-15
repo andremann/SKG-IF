@@ -182,7 +182,7 @@ Thematic
 .. code-block:: json
    :linenos:
 
-    "thematic": False
+    "thematic": false
 
 
 Research Product Licensing	
