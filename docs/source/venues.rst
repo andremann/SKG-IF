@@ -90,7 +90,7 @@ Type
 .. code-block:: json
    :linenos:
 
-    "type", "repository"
+    "type": "repository"
 
 .. tabularcolumns:: p{0.132\linewidth}p{0.198\linewidth}p{0.330\linewidth}
 .. csv-table:: Controlled vocabulary for different types of venue and its mapping towards OpenCitations
@@ -116,7 +116,7 @@ Is currently full open access
 .. code-block:: json
    :linenos:
 
-    "is_currently_full_oa": True
+    "is_currently_full_oa": true
 
 
 Creation date
