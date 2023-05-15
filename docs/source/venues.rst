@@ -2,24 +2,24 @@
 
 Venues
 ######
-A **Venue** is an entity that models a publishing “gateway” used by :ref:`Person <Person>` to make their :ref:`Research product <Research product>` available to others.
+A :ref:`Venue <Venue>` is an entity that models a publishing “gateway” used by :ref:`Person <Person>` to make their :ref:`Research product <Research product>` available to others.
 
 Example:
 `Episciences <https://episciences.org>`_  is an overlay platform supporting the management of open-access journals on top of the Open Access repository HAL.fr. In this context, episciences.org is a publishing venue (journal, open access, open peer review), while HAL is a data source. Articles published via episciences.org will be therefore linked to the respective journal (publishing venue) and the data source HAL. 
 However, HAL is also a publishing venue for researchers that are directly uploading their products; a publishing venue with peer-review and some support for metadata curation. In this case, research products will be linked to HAL as a publishing venue and as a data source. 
 
 .. note::
-    Each :ref:`Research product <Research product>` must be associated with its publishing **Venue** and its :ref:`Data source <Data source>`. 
+    Each :ref:`Research product <Research product>` must be associated with its publishing :ref:`Venue <Venue>` and its :ref:`Data source <Data source>`. 
 
 
 Properties
 ==========
-This section is to describe the metadata fields for the Venues.
+This section is to describe the metadata fields for the :ref:`Venue <Venues>`.
 
 
 Local identifier		
 ----
-:Description: Unique code identifiying the **Venue** in the SKG (if any, otherwise "stateless identifier").
+:Description: Unique code identifiying the :ref:`Venue <Venue>` in the SKG (if any, otherwise "stateless identifier").
 :Type: String
 :Use: Mandatory (1)
  
@@ -60,7 +60,7 @@ Value
 
 Name
 ----
-:Description: The name of the **Venue**.
+:Description: The name of the :ref:`Venue <Venue>`.
 :Type: String
 :Use: Mandatory (1)
  
@@ -72,7 +72,7 @@ Name
 
 Acronym
 ----
-:Description: Acronym used by a **Venue**.
+:Description: Acronym used by a :ref:`Venue <Venue>`.
 :Type: String
 :Use: Recommended (0..1)
  
@@ -84,7 +84,7 @@ Acronym
 
 Type
 ----
-:Description: The type of the **Venue**.
+:Description: The type of the :ref:`Venue <Venue>`.
 :Type: String following the vocabulary below
 :Use: Mandatory (1)
 
@@ -110,7 +110,7 @@ Type
 
 Is currently full open access
 ----
-:Description: True if the **Venue** contains only open access products 
+:Description: True if the :ref:`Venue <Venue>` contains only open access products 
 :Type: Boolean
 :Use: Mandatory (1)
  
@@ -122,7 +122,7 @@ Is currently full open access
 
 Creation date
 ----
-:Description: The date of creation of the **Venue**
+:Description: The date of creation of the :ref:`Venue <Venue>`
 :Type: String (ISO 8601 date string)
 :Use: Recommended (1)
  
@@ -134,7 +134,7 @@ Creation date
 
 Contribution
 ------
-:Description: A list of all the :ref:`Person` that contributed to the **Venue**.
+:Description: A list of all the :ref:`Person` that contributed to the :ref:`Venue <Venue>`.
 :Type: List
 :Use: Optional (0..1)
 
@@ -146,7 +146,7 @@ Person
 
 Roles
 ^^^^^^^^^
-:Description: The roles of the :ref:`Person` contributing to the **Venue**.
+:Description: The roles of the :ref:`Person` contributing to the :ref:`Venue <Venue>`.
 :Type: List of Strings 
 :Use: Mandatory (1)
 

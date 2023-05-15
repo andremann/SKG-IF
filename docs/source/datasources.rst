@@ -2,7 +2,7 @@
 
 Data sources
 ############
-A **Data source** is a service where published material (metadata and files) are stored, preserved, and made discoverable and accessible; a data source is described by the `EOSC Profile for data sources <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile>`_.
+A :ref:`Data source <Data source>` is a service where published material (metadata and files) are stored, preserved, and made discoverable and accessible; a data source is described by the `EOSC Profile for data sources <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile>`_.
 
 Example:
 `Episciences <https://episciences.org>`_  is an overlay platform supporting the management of open-access journals on top of the Open Access repository HAL.fr. In this context, episciences.org is a publishing venue (journal, open access, open peer review), while HAL is a data source. Articles published via episciences.org will be therefore linked to the respective journal (publishing venue) and the data source HAL. 
@@ -14,7 +14,7 @@ However, HAL is also a publishing venue for researchers that are directly upload
 
 Properties
 ==========
-This section is to describe the metadata fields for the Data sources.
+This section describes the metadata fields for the Data sources.
 
 
 Local identifier		

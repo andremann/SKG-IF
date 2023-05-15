@@ -3,17 +3,18 @@
 Persons
 ############
 
-The **Person** entity is to represent as an individual who is involved in the creation, publication, and dissemination of academic research. 
-A **Person** can be an author, a reviewer, an editor, a publisher, a researcher, or any other stakeholder in the scholarly 
-communication process. 
+The :ref:`Person <Person>` entity represents an individual who is involved in the creation, publication, and dissemination of :ref:`Research product <Research products>`. 
+A :ref:`Person <Person>` can be an author, a reviewer, an editor, a publisher, a researcher, or any other stakeholder involved in the scholarly communication process. 
+
 
 Properties 
 ===========
+This section describes the metadata fields for the :ref:`Person <Person>`.
 
 
 Local identifier
 ----
-:Description: Unique code identifiying the **Person** in the SKG (if any, otherwise "stateless identifier").
+:Description: Unique code identifiying the :ref:`Person <Person>` in the SKG (if any, otherwise "stateless identifier").
 :Type: String
 :Use: Mandatory (1)
  
@@ -46,15 +47,15 @@ Value
 
     "identifiers": [
         {
-            "scheme": "https://..."
-            "value": "the_id"
+            "scheme": "orcid"
+            "value": "000-0002-5193-7851"
         }
     ]
 
 
 Given name
 ---------
-:Description: The given name of a **Person**.
+:Description: The given name of a :ref:`Person <Person>`.
 :Type: String 
 :Use: Mandatory (1)
 
@@ -66,7 +67,7 @@ Given name
 
 Family name
 -------------
-:Description: The family name of a **Person**.
+:Description: The family name of a :ref:`Person <Person>`.
 :Type: String
 :Use: Mandatory (1)
 
@@ -91,25 +92,25 @@ Agent
 
 Affiliations
 ------
-:Description: A list of all the affiliations of a **Person**.
+:Description: A list of all the affiliations of a :ref:`Person <Person>`.
 :Type: List
 :Use: Optional (0..1)
 
 Organisation
 ^^^^^^^^^
-:Description: The identifier of the **Organization** the **Person** is affiliated with. 
+:Description: The identifier of the :ref:`Organisation <Organisations>` the :ref:`Person <Person>` is affiliated with. 
 :Type: String
 :Use: Mandatory (1)
 
 Start date
 ^^^^^^^^^
-:Description: The start date of the affiliation with the **Organization**.
+:Description: The start date of the affiliation with the :ref:`Organisation <Organisation>`.
 :Type: String (ISO 8601 date string)
 :Use: Recommended (1)
 
 End date
 ^^^^^^^^^
-:Description: The end day (if any) of the affiliation with the **Organization**.
+:Description: The end day (if any) of the affiliation with the :ref:`Organisation <Organisation>`.
 :Type: String (ISO 8601 date string)
 :Use: Optional (1)
 

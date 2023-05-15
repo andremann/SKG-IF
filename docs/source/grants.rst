@@ -2,7 +2,7 @@
 
 Grants
 ########
-The entity **Grant** it to describe funding awarded to an individual or an organization 
+The entity :ref:`Grant <Grant>` it to describe funding awarded to an individual or an organization 
 by a funding body. These bodies, both public and private, can be funders, foundations, governments, agencies or institutions. 
 
 
@@ -12,7 +12,7 @@ Properties
 
 Local identifier
 ----
-:Description: Unique code identifiying the **Grant** in the SKG (if any, otherwise "stateless identifier").
+:Description: Unique code identifiying the :ref:`Grant <Grant>` in the SKG (if any, otherwise "stateless identifier").
 :Type: String
 :Use: Mandatory (1)
  
@@ -185,7 +185,7 @@ Website
 
 Beneficiaries
 ----
-:Description: A list of the :ref:`Organisation` funded by the **Grant**.
+:Description: A list of the :ref:`Organisation` funded by the :ref:`Grant <Grant>`.
 :Type: List
 :Use: Recommended (0..1)
  
@@ -197,7 +197,7 @@ Beneficiaries
 
 Contributors
 ----
-:Description: A list of the :ref:`Person` contributing to the **Grant**.
+:Description: A list of the :ref:`Person` contributing to the :ref:`Grant <Grant>`.
 :Type: List
 :Use: Recommended (0..1)
  
@@ -209,13 +209,13 @@ Contributors
 
  Organisation
  ^^^^^^^^^^^
-:Description: The identifier of the :ref:`Organization` the principal investigator declares as affiliation for the **Grant**
+:Description: The identifier of the :ref:`Organization` the principal investigator declares as affiliation for the :ref:`Grant <Grant>`
 :Type: 
 :Use: 
 
  Roles
  ^^^^^^^^^^^
-:Description: A list of the roles that the :ref:`Person` has in the **Grant**.
+:Description: A list of the roles that the :ref:`Person` has in the :ref:`Grant <Grant>`.
 :Type: List of roles.
 :Use: Recommended (1)
 

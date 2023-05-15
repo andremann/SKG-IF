@@ -2,17 +2,17 @@
 
 Topics
 ######
-This section is to describe the metadata fields for the research **Topic** entity.
+A :ref:`Topic <Topic>` entity describes the scientific discipline, the subject and the keywords potentially relevant for a :ref:`Research product <Research product>`.
 
 
 Properties
 ==========
-This section is to describe the metadata fields for a **Topic**.
+This section describes the metadata fields for a :ref:`Topic <Topic>`.
 
 
 Local identifier		
 ----
-:Description: Unique code identifiying the **Topic** in the SKG (if any, otherwise "stateless identifier").
+:Description: Unique code identifiying the :ref:`Topic <Topic>` in the SKG (if any, otherwise "stateless identifier").
 :Type: String
 :Use: Mandatory (1)
  
@@ -46,8 +46,8 @@ Value
 
     "identifiers": [
         {
-            "scheme": "https://..."
-            "value": "the_id"
+            "scheme": ""
+            "value": ""
         }
     ]
 

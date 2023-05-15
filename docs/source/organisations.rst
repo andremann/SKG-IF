@@ -2,8 +2,7 @@
 
 Organisations
 #############
-The entity **Organization** is to represent academic institutions, research centers, funders, or any other institutions 
-taking part to the research process.
+The entity :ref:`Organisation <Organisation>` represents academic institutions, research centers, funders, or any other institutions taking part to the research process.
 
 
 Properties
@@ -11,7 +10,7 @@ Properties
 
 Local identifier
 ----
-:Description: Unique code identifiying the Organisation in the SKG (if any, otherwise "stateless identifier")
+:Description: Unique code identifiying the :ref:`Organisation <Organisation>` in the SKG (if any, otherwise "stateless identifier")
 :Type: String 
 :Use: Mandatory (1)
  
@@ -45,63 +44,63 @@ Value
 
     "identifiers": [
         {
-            "scheme": "https://..."
-            "value": "the_id"
+            "scheme": "ROR"
+            "value": "05kacka20"
         }
     ]
 
 
 Name
 ----
-:Description: The name of the **Organization**
+:Description: The name of the :ref:`Organisation <Organisation>`
 :Type: String
 :Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
 
-    "name": "the name"
+    "name": "Institute of Information Science and Technologies"
 
 
 Short name
 ----
-:Description: The short name/acronym for the **Organization**
+:Description: The short name/acronym for the :ref:`Organisation <Organisation>`
 :Type: String
 :Use: Optional (0..1)
  
 .. code-block:: json
    :linenos:
 
-    "short_name": "the short name"
+    "short_name": "CNR-ISTI"
 
 
 Other names
 ----
-:Description: Other names, maybe in different languages, to identifie the **Organization**
+:Description: Other names, maybe in different languages, to identifie the :ref:`Organisation <Organisation>`
 :Type: List
 :Use: Optional (1..*)
  
 .. code-block:: json
    :linenos:
 
-    "other_names": ["foo", "bar"]
+    "other_names": ["ISTI", "ISTI-CNR"]
 
 
 Website
 ----
-:Description: The website URL for the **Organization**
+:Description: The website URL for the :ref:`Organisation <Organisation>`
 :Type: URL
 :Use: Mandatory (1)
  
 .. code-block:: json
    :linenos:
 
-    "website": "https://..."
+    "website": "http://www.isti.cnr.it"
 
 
 Country code
 ----
-:Description: The country code of the **Organization**
+:Description: The country code of the :ref:`Organisation <Organisation>`
 :Type: String (follow ISO 3166-1 alpha-2)
 :Use: Mandatory (1)
  
@@ -113,7 +112,7 @@ Country code
 
 Organisation type
 ----
-:Description: The type of the **Organization**
+:Description: The type of the :ref:`Organisation <Organisation>`
 :Type: String, one of the following [Archive, Company, Education, Facility, Government, Healthcare, Nonprofit, Funder, Other]
 :Use: Recommended (1)
  
