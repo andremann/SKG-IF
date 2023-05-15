@@ -188,11 +188,13 @@ Type
 Peer review
 ^^^^^^^^^^^^^^^^
 :Description: Whether the :ref:`Research product <Research product>` has undergone a peer review process.
-:Type: String, one of the following 
+:Type: String, one of the following
+
     * single-blind
     * open
     * double-blind
     * unavailable
+    
 :Use: Mandatory (1)
 
 Metadata curation
