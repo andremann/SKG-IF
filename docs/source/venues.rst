@@ -88,6 +88,11 @@ Type
 :Type: String following the vocabulary below
 :Use: Mandatory (1)
 
+.. code-block:: json
+   :linenos:
+
+    "type", "Repository"
+
 .. tabularcolumns:: p{0.132\linewidth}p{0.198\linewidth}p{0.330\linewidth}
 .. csv-table:: Controlled vocabulary for different types of venue and its mapping towards OpenCitations
    :name: tables-csv-example
@@ -101,11 +106,6 @@ Type
    "Book", "Book, Book part, Book section, Book series, Book set, Edited book, Reference book, Monograph"
    "Other", "Report series, Standard series, Archival document"
    "Unknown", ""
-
-.. code-block:: json
-   :linenos:
-
-    "type", "Repository"
 
 
 Is currently full open access

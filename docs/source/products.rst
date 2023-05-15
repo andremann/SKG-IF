@@ -85,7 +85,13 @@ Abstracts
 Product type
 -----
 :Description: The type of the :ref:`Research product <Research product>`. 
-:Type: String, one among `literature`, `research data`, `research software`, `other``}.
+:Type: String, one among 
+
+    * literature
+    * research data
+    * research software
+    * other
+    
 :Use: Mandatory (1)
 
 .. code-block:: json
@@ -194,13 +200,18 @@ Peer review
     * open
     * double-blind
     * unavailable
-    
+
 :Use: Mandatory (1)
 
 Metadata curation
 ^^^^^^^^^^^^^^^^
 :Description: Whether the :ref:`Research product <Research product>` has undergone a metadata curation process.
-:Type: String, one of the following (yes, no, unavailable)
+:Type: String, one of the following 
+
+    * yes
+    * no
+    * unavailable
+
 :Use: Mandatory (1)
 
 URL
@@ -218,7 +229,14 @@ PID
 Access right
 ^^^^^^^^^^^^^^^^
 :Description: The access right for the specific materialisation.
-:Type: String, one of the following (open, closed, embargo, restricted, unavailable).
+:Type: String, one of the following 
+
+    * open
+    * closed
+    * embargo
+    * restricted
+    * unavailable
+
 :Use: Mandatory (1)
 
 Licence
