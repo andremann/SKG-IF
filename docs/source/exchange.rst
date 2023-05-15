@@ -2,4 +2,7 @@
 
 Exchange protocols
 ######
-TODO
+
+
+.. note::
+   TODO
