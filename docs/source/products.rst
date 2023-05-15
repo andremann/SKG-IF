@@ -91,7 +91,7 @@ Product type
     * research data
     * research software
     * other
-    
+
 :Use: Mandatory (1)
 
 .. code-block:: json
@@ -289,7 +289,7 @@ Edition
 
 Number
 """""""""""""
-:Description: 
+:Description: Journal number.
 :Type: String
 :Use: Optional (0..1)
 
@@ -353,7 +353,7 @@ Hosting data source
 
 Relevant organisations
 --------------------
-:Description: A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the :ref:`Research product <Research product>` (without passing from a :ref:`Person <Person>`)
+:Description: A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the :ref:`Research product <Research product>` (In case the individual affiliations of the :ref:`Person <Persons>` are not available).
 :Type: List
 :Use: Recommended (0..1)
 
@@ -375,12 +375,9 @@ Funding
     "funding": ["grant_1", "grant_2"]
     
 
-.. note::
-    TODO: need to extend Product-to-Product relationship (a selection from DataCite).
-
 Citations
 --------------------
-:Description: A list of :ref:`Research product <Research product>` identifiers cited.
+:Description: A list of cited :ref:`Research product <Research product>` identifiers.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -399,7 +396,7 @@ Supplementaty material
 .. code-block:: json
    :linenos:
 
-    "is_supplemented_by": ["product_2", "product_3", "product_4"]
+    "is_supplemented_by": ["product_7", "product_8", "product_9"]
 
 
 Documentation
@@ -411,7 +408,7 @@ Documentation
 .. code-block:: json
    :linenos:
 
-    "is_documented_by": ["product_2", "product_3", "product_4"]
+    "is_documented_by": ["product_10", "product_13"]
 
 
 Versioning
@@ -423,7 +420,7 @@ Versioning
 .. code-block:: json
    :linenos:
 
-    "is_new_version_of": ["product_2"]
+    "is_new_version_of": ["product_5"]
 
 
 Hierarchical information
@@ -435,4 +432,4 @@ Hierarchical information
 .. code-block:: json
    :linenos:
 
-    "is_part_of": ["product_1"]
+    "is_part_of": ["product_11"]
