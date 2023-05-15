@@ -375,61 +375,62 @@ Funding
     "funding": ["grant_1", "grant_2"]
     
 
-Citations
+Related products
 --------------------
-:Description: A list of cited :ref:`Research product <Research product>` identifiers.
+:Description: A list objects representing related :ref:`Research product <Research products>` and the semantics of such relationships.
 :Type: List
 :Use: Recommended (0..1)
 
-.. code-block:: json
-   :linenos:
-
-    "cites": ["product_2", "product_3", "product_4"]
-
-
-Supplementaty material
---------------------
+Relation Type
+^^^^^^^^^^^^^^^^
 :Description: A list of :ref:`Research product` identifiers supplementing the present one.
-:Type: List
-:Use: Recommended (0..1)
+:Type: String; one of the following selection of `DataCite relationTypes <https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf>`_ 
 
-.. code-block:: json
-   :linenos:
+    * cites
+    * is_supplemented_by
+    * is_documented_by
+    * is_new_version_of
+    * is_part_of
 
-    "is_supplemented_by": ["product_7", "product_8", "product_9"]
+:Use: Mandatory (1)
 
-
-Documentation
---------------------
+Product list
+^^^^^^^^^^^^^^^^
 :Description: A list of :ref:`Research product` identifiers describing the present one.
 :Type: List
-:Use: Recommended (0..1)
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
 
-    "is_documented_by": ["product_10", "product_13"]
+    "related_products": [
+        {
+            "relation_type": "cites", 
+            "products": ["product_2", "product_3", "product_4"]
+        },
+        {
+            "relation_type": "is_supplemented_by",
+            "products": ["product_7", "product_8", "product_9"],
+        },
+        {
+            "relation_type": "is_documented_by",
+            "products": ["product_10", "product_13"],
+        },
+        {
+            "relation_type": "is_new_version_of",
+            "products": ["product_5"],
+        },
+        {
+            "relation_type": "is_part_of",
+            "products": ["product_11"],
+        }
+    ]
 
 
-Versioning
---------------------
-:Description: A list of :ref:`Research product` identifiers pointing to newer versions of the product.
-:Type: List
-:Use: Recommended (0..1)
-
-.. code-block:: json
-   :linenos:
-
-    "is_new_version_of": ["product_5"]
+        
 
 
-Hierarchical information
---------------------
-:Description: A list of parent :ref:`Research product` identifiers.
-:Type: List
-:Use: Recommended (0..1)
 
-.. code-block:: json
-   :linenos:
 
-    "is_part_of": ["product_11"]
+
+    
