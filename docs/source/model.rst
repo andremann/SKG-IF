@@ -7,7 +7,7 @@ SKG-IF core entities and relevant relations are reported in the figure below.
 .. image:: images/model.png
 
 .. note::
-TODO expand introduction.
+   TODO expand introduction.
 
 .. toctree::
    :maxdepth: 3
