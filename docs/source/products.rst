@@ -3,7 +3,7 @@
 Research products
 ####
 
-This entity models **Research products**, which may be of four types, as follows.
+This entity models :ref:`Research product`, which may be of four types, as follows.
 
 :Literature: Intended for reading by humans (article, thesis, peer-review, blog posts, books, reports, patents, etc.)
 :Research data: Self-contained, persistently identified digital assets intended for processing (e.g. files containing: tables, metadata collections, dumps; persistent dynamic queries to scientific databases)
@@ -367,7 +367,7 @@ Citations
 
 Supplementaty material
 --------------------
-:Description: A list of **Research products** identifiers supplementing the present one.
+:Description: A list of :ref:`Research product` identifiers supplementing the present one.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -379,7 +379,7 @@ Supplementaty material
 
 Documentation
 --------------------
-:Description: A list of **Research products** identifiers describing the present one.
+:Description: A list of :ref:`Research product` identifiers describing the present one.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -391,7 +391,7 @@ Documentation
 
 Versioning
 --------------------
-:Description: A list of **Research products** identifiers pointing to newer versions of the product.
+:Description: A list of :ref:`Research product` identifiers pointing to newer versions of the product.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -403,7 +403,7 @@ Versioning
 
 Hierarchical information
 --------------------
-:Description: A list of parent **Research products** identifiers.
+:Description: A list of parent :ref:`Research product` identifiers.
 :Type: List
 :Use: Recommended (0..1)
 
