@@ -2,7 +2,7 @@ Core model entities
 ##############
 
 
-SKG-IF main entities and relations are reported in the figure below.
+SKG-IF core entities and relevant relations are reported in the figure below.
 
 .. image:: images/model.png
 
