@@ -120,12 +120,12 @@ End date
     "affiliations": [
         {
             "organisation": "org2",
-            start_date: "2015-01-01",
-            end_date: "2017-01-01"
+            "start_date": "2015-01-01",
+            "end_date": "2017-01-01"
         },
         {
             "organisation": "org3",
-            start_date: "2017-01-01",
-            end_date: "2019-01-01"
+            "start_date": "2017-01-01",
+            "end_date": "2019-01-01"
         }
     ]
