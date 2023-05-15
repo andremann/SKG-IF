@@ -150,7 +150,7 @@ Keywords
 Start date
 ----
 :Description: The date the grand started 
-:Type: String (ISO 8601 date string)
+:Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_  date string)
 :Use: Recommended (0..1)
 
 .. code-block:: json
@@ -162,7 +162,7 @@ Start date
 End date
 ----
 :Description: The date the grant finishes
-:Type: String (ISO 8601 date string)
+:Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string)
 :Use: Recommended, (0..1)
  
 .. code-block:: json

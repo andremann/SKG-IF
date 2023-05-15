@@ -101,7 +101,7 @@ Website
 Country code
 ----
 :Description: The country code of the :ref:`Organisation <Organisation>`
-:Type: String (follow ISO 3166-1 alpha-2)
+:Type: String (follow `ISO 3166-1 alpha-2 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_`)
 :Use: Mandatory (1)
  
 .. code-block:: json

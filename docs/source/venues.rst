@@ -122,7 +122,7 @@ Is currently full open access
 Creation date
 ----
 :Description: The date of creation of the :ref:`Venue <Venue>`
-:Type: String (ISO 8601 date string)
+:Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string)
 :Use: Recommended (1)
  
 .. code-block:: json

@@ -182,7 +182,7 @@ Dates
 Value
 """""""""""""
 :Description: The relevant date for the :ref:`Research product <Research product>`.
-:Type: String (ISO 8601 date string)
+:Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string)
 :Use: Mandatory (1)
 
 Type

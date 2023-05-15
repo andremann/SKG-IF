@@ -105,13 +105,13 @@ Organisation
 Start date
 ^^^^^^^^^
 :Description: The start date of the affiliation with the :ref:`Organisation <Organisation>`.
-:Type: String (ISO 8601 date string)
+:Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string)
 :Use: Recommended (1)
 
 End date
 ^^^^^^^^^
 :Description: The end day (if any) of the affiliation with the :ref:`Organisation <Organisation>`.
-:Type: String (ISO 8601 date string)
+:Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string)
 :Use: Optional (1)
 
 .. code-block:: json
