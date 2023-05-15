@@ -19,7 +19,7 @@ This section is to describe the metadata fields for the **Research Products**.
 
 Local identifier
 ----
-:Description: Unique code identifiying the **Research product** in the SKG (if any, otherwise "stateless identifier")
+:Description: Unique code identifiying the :ref:`Research product <Research product>` in the SKG (if any, otherwise "stateless identifier")
 :Type: String
 :Use: Mandatory (1)
 
@@ -31,7 +31,7 @@ Local identifier
 
 Identifiers
 ----
-:Description: Identifier for the entity outside of the SKG. 
+:Description: A list of external identifiers for the entity. 
 :Type: List
 :Use: Optional (0..1)
 
@@ -96,7 +96,7 @@ Product type
 
 Topics
 --------------------
-:Description: A list of :ref:`Topic <Topic>` identifiers covered by the **Research product**.
+:Description: A list of :ref:`Topic <Topic>` identifiers covered by the :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -108,25 +108,25 @@ Topics
 
 Contributions
 --------------------
-:Description: A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisation <Organisation>` when working to a **Research product**.
+:Description: A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisation <Organisation>` when working to a :ref:`Research product <Research product>`.
 :Type: List
 :Use: Mandatory (1)
 
 Person
 ^^^^^^^^^^^^^^^^
-:Description: The identifier of a :ref:`Person <Person>` contributing to the **Research product**.
+:Description: The identifier of a :ref:`Person <Person>` contributing to the :ref:`Research product <Research product>`.
 :Type: String
 :Use: Mandatory (1)
 
 Declared affiliations
 ^^^^^^^^^^^^^^^^
-:Description: A list of :ref:`Organisation <Organisation>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the **research product**.
+:Description: A list of :ref:`Organisation <Organisation>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
 
 Roles
 ^^^^^^^^^^^^^^^^
-:Description: The specific role that a :ref:`Person <Person>` had in the **Research product**.
+:Description: The specific role that a :ref:`Person <Person>` had in the :ref:`Research product <Research product>`.
 :Type: List of values from CRediT taxonomy
 :Use: Recommended (0..1)
 
@@ -150,7 +150,7 @@ Rank
 
 Manifestations
 --------------------
-:Description:  A list of manifestations for the same **Research product** (e.g., a preprint, a postprint, etc.)
+:Description:  A list of manifestations for the same :ref:`Research product <Research product>` (e.g., a preprint, a postprint, etc.)
 :Type: List
 :Use: Mandatory (1)
 
@@ -168,13 +168,13 @@ Product local type schema
 
 Dates
 ^^^^^^^^^^^^^^^^
-:Description: Relevant dates for the **research product**.
+:Description: Relevant dates for the :ref:`Research product <Research product>`.
 :Type: List
 :Use: Mandatory (1)
 
 Value
 """""""""""""
-:Description: The relevant date for the **research product**.
+:Description: The relevant date for the :ref:`Research product <Research product>`.
 :Type: String (ISO 8601 date string)
 :Use: Mandatory (1)
 
@@ -186,13 +186,13 @@ Type
 
 Peer review
 ^^^^^^^^^^^^^^^^
-:Description: Whether the **Research product** has undergone a peer review process.
+:Description: Whether the :ref:`Research product <Research product>` has undergone a peer review process.
 :Type: String, one of the following (single-blind, open, double-blind, unavailable)
 :Use: Mandatory (1)
 
 Metadata curation
 ^^^^^^^^^^^^^^^^
-:Description: Whether the **Research product** has undergone a metadata curation process.
+:Description: Whether the :ref:`Research product <Research product>` has undergone a metadata curation process.
 :Type: String, one of the following (yes, no, unavailable)
 :Use: Mandatory (1)
 
@@ -228,7 +228,7 @@ Licence schema
 
 Bibliographic information
 ^^^^^^^^^^^^^^^^
-:Description: An object containing bibliographic information about a **Research product**.
+:Description: An object containing bibliographic information about a :ref:`Research product <Research product>`.
 :Type: Object
 :Use: Mandatory (1)
 
@@ -328,7 +328,7 @@ Hosting data source
 
 Relevant organisations
 --------------------
-:Description: A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the **Research product** (without passing from a :ref:`Person <Person>`)
+:Description: A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the :ref:`Research product <Research product>` (without passing from a :ref:`Person <Person>`)
 :Type: List
 :Use: Recommended (0..1)
 
@@ -340,7 +340,7 @@ Relevant organisations
  
 Funding
 --------------------
-:Description: A list of relevant :ref:`Grant <Grant>` identifiers associated with the **Research product**.
+:Description: A list of relevant :ref:`Grant <Grant>` identifiers associated with the :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -355,7 +355,7 @@ Funding
 
 Citations
 --------------------
-:Description: A list of **Research product** identifiers cited.
+:Description: A list of :ref:`Research product <Research product>` identifiers cited.
 :Type: List
 :Use: Recommended (0..1)
 
