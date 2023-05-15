@@ -2,7 +2,7 @@
 
 Grants
 ########
-The entity :ref:`Grant <Grant>` it to describe funding awarded to an individual or an organization 
+The entity :ref:`Grant <Grant>` describes funding awarded to a :ref:`Person <Person>` or an :ref:`Organisation <Organisation>` 
 by a funding body. These bodies, both public and private, can be funders, foundations, governments, agencies or institutions. 
 
 
@@ -45,8 +45,8 @@ Value
 
     "identifiers": [
         {
-            "scheme": "https://..."
-            "value": "the_id"
+            "scheme": "cordis"
+            "value": "101095129"
         }
     ]
 
@@ -60,7 +60,7 @@ Title
 .. code-block:: json
    :linenos:
 
-    "title": "the title"
+    "title": "GraspOS: next Generation Research Assessment to Promote Open Science"
 
 
 Abstract
@@ -72,7 +72,7 @@ Abstract
 .. code-block:: json
    :linenos:
 
-    "abstract": "..."
+    "abstract": "GraspOS aims to build and operate a data infrastructure to support the policy reforms and pave the way towards a responsible research assessment system that embeds OS practices and accelerates its adoption in Europe. GraspOS will focus on extending the EOSC ecosystem with tools and services that will facilitate monitoring the use and uptake of various types of research services and outputs (publications, datasets, software) and will catalyse the implementation of policy-level rewards to foster OS practices. These tools and services will build upon multiple sources of metric data (e.g. OpenCitations, Scholexplorer) including capabilities offered by the EOSC Core, that will be federated in the context of the project, and will take into consideration both contemporary guidelines for Responsible Research Assessment (RRA), like those provided by initiatives like DORA and the Leiden Manifesto, and the suggestions from a diversity of relevant stakeholders. GraspOS will also incorporate piloting activities to co-design, showcase, validate, and evaluate GraspOS’s key results considering domain-specific aspects and different levels of OS-aware RRA, such as the researcher (individual/group), institution, and national level."
 
 
 Acronym
@@ -96,7 +96,7 @@ Funder
 .. code-block:: json
    :linenos:
 
-    "funder": ""
+    "funder": "EC"
 
 
 Funding stream
@@ -108,7 +108,7 @@ Funding stream
 .. code-block:: json
    :linenos:
 
-    "funding_stream": ""
+    "funding_stream": "Horizon Europe"
 
 
 Currency
@@ -132,7 +132,7 @@ Funded amount
 .. code-block:: json
    :linenos:
 
-    "funded_amount": 1.000.000
+    "funded_amount": 2.985.441
 
 
 Keywords
