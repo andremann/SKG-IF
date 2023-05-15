@@ -401,9 +401,9 @@ Versioning
     "is_new_version_of": ["product_2"]
 
 
-Hierarchy
+Hierarchical information
 --------------------
-:Description: A list of **Research products** identifiers pointing to parent products for the present one.
+:Description: A list of parent **Research products** identifiers.
 :Type: List
 :Use: Recommended (0..1)
 
