@@ -377,7 +377,7 @@ Funding
 
 Related products
 --------------------
-:Description: A list objects representing related :ref:`Research product <Research products>` and the semantics of such relationships.
+:Description: A list objects representing related :ref:`Research product` and the semantics of such relationships.
 :Type: List
 :Use: Recommended (0..1)
 
