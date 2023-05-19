@@ -46,8 +46,12 @@ Value
 
     "identifiers": [
         {
-            "scheme": "",
-            "value": ""
+            "scheme": "Computer Science Ontology",
+            "value": "https://cso.kmi.open.ac.uk/topics/semantic_web"
+        },
+        {
+            "scheme": "dbpedia",
+            "value": "https://dbpedia.org/page/Semantic_Web"
         }
     ]
 
