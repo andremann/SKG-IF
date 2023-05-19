@@ -65,7 +65,7 @@ Title
 
 Abstract
 ----
-:Description: Abstract of the :ref:`Grant <Grant>`.
+:Description: The abstract or a description of the :ref:`Grant <Grant>`.
 :Type: String
 :Use: Recommended (1)
  
@@ -77,7 +77,7 @@ Abstract
 
 Acronym
 ----
-:Description: :ref:`Grant <Grant>` acronym.
+:Description: The acronym of the :ref:`Grant <Grant>`.
 :Type: String
 :Use: Optional (1)
  
@@ -89,7 +89,7 @@ Acronym
 
 Funder
 ------
-:Description: :ref:`Grant <Grant>` funder.
+:Description: The name of the body funding the :ref:`Grant <Grant>`.
 :Type: String
 :Use: Mandatory (1)
 
@@ -101,7 +101,7 @@ Funder
 
 Funding stream
 ------
-:Description: :ref:`Grant <Grant>` funding stream.
+:Description: The funding stream of the :ref:`Grant <Grant>`.
 :Type: String
 :Use: Optional (0..1)
 
