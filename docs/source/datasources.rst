@@ -6,7 +6,7 @@ A :ref:`Data source <Data source>` is a service where published material (metada
 A data source is described by the `EOSC Profile for data sources <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile>`_.
 
 :Example: `Episciences <https://episciences.org>`_  is an overlay platform supporting the management of open-access journals on top of the Open Access repository `HAL <https://hal.science>`_. In this context, episciences.org is a publishing :ref:`Venue <Venue>` (journal, open access, open peer review), while HAL is a :ref:`Data source <Data source>`. Articles published via episciences.org will be therefore linked to the respective journal (publishing :ref:`Venue <Venue>`) and the data source HAL. 
-    However, HAL is also a publishing :ref:`Venue <Venue>` for researchers that are directly uploading their :ref:`Research product <Research product>`; a publishing :ref:`Venue <Venue>` with peer-review and some support for metadata curation. In this case, :ref:`Research product <Research products>` will be linked to HAL as a publishing :ref:`Venue <Venue>` and as a :ref:`Data source <Data source>`. 
+    However, HAL is also a publishing :ref:`Venue <Venue>` for researchers that are directly uploading their :ref:`Research product <Research product>`. More specifically, a publishing :ref:`Venue <Venue>` with peer-review and some support for metadata curation. In this case, :ref:`Research product <Research products>` will be linked to HAL both as a publishing :ref:`Venue <Venue>` and as a :ref:`Data source <Data source>`. 
 
 .. note::
     Each :ref:`Research product <Research product>` must be associated with its publishing :ref:`Venue <Venue>` and its :ref:`Data source <Data source>`.
