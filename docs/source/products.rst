@@ -1,11 +1,8 @@
 .. _Research product:
-.. sectnum:
 
 Research products
 ####################
-.. sectnum::
-.. contents::
-    
+
 This entity models :ref:`Research product`, which may be of four types, as follows.
 
 :Literature: Intended for reading by humans (article, thesis, peer-review, blog posts, books, reports, patents, etc.)
@@ -17,6 +14,7 @@ This entity models :ref:`Research product`, which may be of four types, as follo
 
 Properties
 ====
+.. sectnum::
 This section describes the metadata fields for the :ref:`Research product`.
 
 
