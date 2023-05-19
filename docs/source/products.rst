@@ -110,11 +110,11 @@ Topic identifier
 ^^^^^^^^^
 :Description: The identifier of a :ref:`Topic <Topic>` relevant for the :ref:`Research product <Research product>`.
 :Type: List
-:Use: Recommended (0..1)
+:Use: Mandatory (1)
 
 Provenance
 ^^^^^^^^^
-:Description: Provenance information tracking the origin of the reation to the :ref:`Topic` for the :ref:`Research product <Research product>`.
+:Description: Provenance information tracking the origin of the reation to the :ref:`Topic` for a :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
  
