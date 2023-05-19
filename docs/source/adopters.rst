@@ -7,7 +7,7 @@ SKG-IF adopters
 
 
 .. tabularcolumns:: p{0.132\linewidth}p{0.198\linewidth}p{0.330\linewidth}
-.. csv-table:: Controlled vocabulary for different types of venue and its mapping towards OpenCitations
+.. csv-table:: List of SKG-IF adopters and contacts
    :name: tables-csv-example
    :header: "SKG name", "Organisation", "Contact person"
    :class: longtable
