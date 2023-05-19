@@ -176,7 +176,7 @@ Declared affiliations
 Roles
 ^^^^^^^^^^^^^^^^
 :Description: The specific role that a :ref:`Person <Person>` had in the :ref:`Research product <Research product>`.
-:Type: List of values from CRediT taxonomy
+:Type: List of values from `CRediT taxonomy <https://credit.niso.org>`_
 :Use: Recommended (0..1)
 
 Rank

@@ -146,7 +146,7 @@ Person
 Roles
 ^^^^^^^^^
 :Description: The roles of the :ref:`Person` contributing to the :ref:`Venue <Venue>`.
-:Type: List of Strings 
+:Type: List of strings 
 :Use: Mandatory (1)
 
 .. code-block:: json
