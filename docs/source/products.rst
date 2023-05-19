@@ -1,4 +1,5 @@
 .. _Research product:
+.. sectnum:
 
 Research products
 ####
