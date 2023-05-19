@@ -81,7 +81,7 @@ Name
 .. code-block:: json
    :linenos:
 
-    "name": "the name"
+    "name": "Lecture Notes in Computer Science"
 
 
 Acronym
