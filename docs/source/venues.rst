@@ -2,7 +2,7 @@
 
 Venues
 ######
-A :ref:`Venue <Venue>` is an entity that models a publishing “gateway” used by :ref:`Person <Person>` to make their :ref:`Research product <Research products>` available to others.
+A :ref:`Venue <Venue>` is an entity that models a publishing “gateway” used by :ref:`Person <Person>` to make their :ref:`Research products <Research product>` available to others.
 
 :Example: `Episciences <https://episciences.org>`_  is an overlay platform supporting the management of open-access journals on top of the Open Access repository `HAL <https://hal.science>`_. In this context, episciences.org is a publishing :ref:`Venue <Venue>` (journal, open access, open peer review), while HAL is a :ref:`Data source <Data source>`. Articles published via episciences.org will be therefore linked to the respective journal (publishing :ref:`Venue <Venue>`) and the data source HAL. 
     However, HAL is also a publishing :ref:`Venue <Venue>` for researchers that are directly uploading their :ref:`Research product <Research product>`. More specifically, a publishing :ref:`Venue <Venue>` with peer-review and some support for metadata curation. In this case, a :ref:`Research product <Research product>` will be linked to HAL both as a publishing :ref:`Venue <Venue>` and as a :ref:`Data source <Data source>`. 

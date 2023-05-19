@@ -187,7 +187,7 @@ Thematic
 
 Research Product Licensing	
 ----
-:Description: Licenses under which the research products contained within the :ref:`Data source <Data sources>` can be made available. Repositories can allow a license to be defined for each research product, while for scientific databases the database is typically provided under a single license.	
+:Description: Licenses under which the research products contained within the :ref:`Data source <Data source>` can be made available. Repositories can allow a license to be defined for each research product, while for scientific databases the database is typically provided under a single license.	
 :Type: List
 :Use: Recommended (0..1)
  

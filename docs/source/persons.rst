@@ -3,7 +3,7 @@
 Persons
 ############
 
-The :ref:`Person <Person>` entity represents an individual who is involved in the creation, publication, and dissemination of :ref:`Research product <Research products>`. 
+The :ref:`Person <Person>` entity represents an individual who is involved in the creation, publication, and dissemination of :ref:`Research products <Research product>`. 
 A :ref:`Person <Person>` can be an author, a reviewer, an editor, a publisher, a researcher, or any other stakeholder involved in the scholarly communication process. 
 
 

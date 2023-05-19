@@ -114,7 +114,7 @@ Topics
 
 Contributions
 --------------------
-:Description: A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisation <Organisations>` when working to a :ref:`Research product <Research product>`.
+:Description: A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisations <Organisation>` when working to a :ref:`Research product <Research product>`.
 :Type: List
 :Use: Mandatory (1)
 
