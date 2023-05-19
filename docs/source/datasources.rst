@@ -5,21 +5,21 @@ Data sources
 A :ref:`Data source <Data source>` is a service where published material (metadata and files) are stored, preserved, and made discoverable and accessible. 
 A data source is described by the `EOSC Profile for data sources <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile>`_.
 
-:Example: `Episciences <https://episciences.org>`_  is an overlay platform supporting the management of open-access journals on top of the Open Access repository HAL.fr. In this context, episciences.org is a publishing venue (journal, open access, open peer review), while HAL is a data source. Articles published via episciences.org will be therefore linked to the respective journal (publishing venue) and the data source HAL. 
-However, HAL is also a publishing venue for researchers that are directly uploading their products; a publishing venue with peer-review and some support for metadata curation. In this case, research products will be linked to HAL as a publishing venue and as a data source. 
+:Example: `Episciences <https://episciences.org>`_  is an overlay platform supporting the management of open-access journals on top of the Open Access repository `HAL <https://hal.science>`_. In this context, episciences.org is a publishing :ref:`Venue <Venue>` (journal, open access, open peer review), while HAL is a :ref:`Data source <Data source>`. Articles published via episciences.org will be therefore linked to the respective journal (publishing :ref:`Venue <Venue>`) and the data source HAL. 
+    However, HAL is also a publishing :ref:`Venue <Venue>` for researchers that are directly uploading their :ref:`Research product <Research product>`; a publishing :ref:`Venue <Venue>` with peer-review and some support for metadata curation. In this case, :ref:`Research product <Research products>` will be linked to HAL as a publishing :ref:`Venue <Venue>` and as a :ref:`Data source <Data source>`. 
 
 .. note::
-    Each :ref:`Research product <Research product>` must be associated with its publishing venue and its data source.
+    Each :ref:`Research product <Research product>` must be associated with its publishing :ref:`Venue <Venue>` and its :ref:`Data source <Data source>`.
 
 
 Properties
 ==========
-This section describes the metadata fields for the Data sources.
+This section describes the metadata fields for a :ref:`Data source <Data source>`.
 
 
 Local identifier		
 ----
-:Description: Unique code identifiying the Data source in the SKG (if any, otherwise "stateless identifier").
+:Description: Unique code identifiying a :ref:`Data source <Data source>` in the SKG (if any, otherwise "stateless identifier").
 :Type: String
 :Use: Mandatory (1)
  
@@ -60,7 +60,7 @@ Value
 
 Name		
 ----
-:Description: Name of the data source.
+:Description: Name of the :ref:`Data source <Data source>`.
 :Type: String
 :Use: Mandatory (1)
  
@@ -96,7 +96,7 @@ Preservation policy URL
 
 Version control	
 ----
-:Description: If data versioning is supported: the data source explicitly allows the deposition of different versions of the same object
+:Description: If data versioning is supported: the :ref:`Data source <Data source>` explicitly allows the deposition of different versions of the same object
 :Type: Boolean
 :Use: Optional (0..1)
  
@@ -108,7 +108,7 @@ Version control
 
 Persistent Identity Systems	
 ----
-:Description: The persistent identifier systems that are used by the Data Source to identify the ProductType it supports.
+:Description: The persistent identifier systems that are used by the :ref:`Data source <Data source>` to identify the ProductType it supports.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -139,7 +139,7 @@ Persistent Identity Product Type Scheme
 
 Jurisdiction	
 ----
-:Description: The property defines the jurisdiction of the users of the data source, based on the vocabulary for this property	
+:Description: The property defines the jurisdiction of the users of the :ref:`Data source <Data source>`, based on the vocabulary for this property	
 :Type: Vocabulary: `Jurisdiction <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-Jurisdiction>`_ 
 :Use: Mandatory (1)
  
@@ -151,7 +151,7 @@ Jurisdiction
 
 Data Source Classification	
 ----
-:Description: The specific type of the data source based on the vocabulary defined for this property.
+:Description: The specific type of the :ref:`Data source <Data source>` based on the vocabulary defined for this property.
 :Type: Vocabulary: `Data Source Classification <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-DataSourceClassification>`_
 :Use: Mandatory (1)
  
@@ -163,7 +163,7 @@ Data Source Classification
 
 Research Product Types	
 ----
-:Description: The types of OpenAIRE entities managed by the data source, based on the vocabulary for this property	
+:Description: The types of OpenAIRE entities managed by the :ref:`Data source <Data source>`, based on the vocabulary for this property	
 :Type: List of vocabulary terms: `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_
 :Use: Mandatory (1)
  
@@ -175,7 +175,7 @@ Research Product Types
 
 Thematic	
 ----
-:Description: Boolean value specifying if the data source is dedicated to a given discipline or is instead discipline agnostic	
+:Description: Boolean value specifying if the :ref:`Data source <Data source>` is dedicated to a given discipline or is instead discipline agnostic	
 :Type: Boolean
 :Use: Mandatory (1)
  
@@ -187,7 +187,7 @@ Thematic
 
 Research Product Licensing	
 ----
-:Description: Licenses under which the research products contained within the data sources can be made available. Repositories can allow a license to be defined for each research product, while for scientific databases the database is typically provided under a single license.	
+:Description: Licenses under which the research products contained within the :ref:`Data source <Data sources>` can be made available. Repositories can allow a license to be defined for each research product, while for scientific databases the database is typically provided under a single license.	
 :Type: List
 :Use: Recommended (0..1)
  
