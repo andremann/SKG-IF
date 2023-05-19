@@ -10,6 +10,7 @@ Core model entities
       - expand protocols section
       
    Open points for discussion
+      - Would move publisher and series from product into the venue.
       - scheme/value for external idenfiers: what is the common satrategy we want to pursue? Value is an URL or the identifier value? E.g., "https://orcid.org/0000-0002-5193-7851" VS. "0000-0002-5193-7851". Should we provide a fixed set of allowed schemes? For example from `SPAR ontologies <https://sparontologies.github.io/datacite/current/datacite.html#d4e569>`_ .
 
 
