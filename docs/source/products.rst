@@ -102,14 +102,57 @@ Product type
 
 Topics
 --------------------
-:Description: A list of :ref:`Topic` identifiers covered by the :ref:`Research product <Research product>`.
+:Description: A list of :ref:`Topic` covered by the :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
+
+Topic identifier
+^^^^^^^^^
+:Description: The identifier of a :ref:`Topic <Topic>` relevant for the :ref:`Research product <Research product>`.
+:Type: List
+:Use: Recommended (0..1)
+
+Provenance
+^^^^^^^^^
+:Description: Provenance information tracking the origin of the reation to the :ref:`Topic` for the :ref:`Research product <Research product>`.
+:Type: List
+:Use: Recommended (0..1)
+ 
+Type
+""""""""""""
+:Description: 
+:Type: String
+:Use: Mandatory (1)
+ 
+Trust
+""""""""""""
+:Description: 
+:Type: Number
+:Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
 
-    "topics": ["topic_1", "topic_2"]
+    "topics": [
+        {
+            "topic": "topic_1",
+            "provenance": [
+                {
+                    "type": "OpenAIRE mining",
+                    "trust": 0.7
+                }
+            ]
+        },
+        {
+            "topic": "topic_2",
+            "provenance": [
+                {
+                    "type": "OpenAlex",
+                    "trust": 0.9
+                }
+            ]
+        }
+    ]
 
 
 Contributions

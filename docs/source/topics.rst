@@ -51,31 +51,13 @@ Value
         }
     ]
 
-
-Provenance
+Name
 ----
-:Description: Provenance information tracking the origin of the topic.
-:Type: List
-:Use: Recommended (0..1)
- 
-Type
-^^^^^^^^^
-:Description: 
+:Description: The display name of the :ref:`Topic <Topic>`.
 :Type: String
 :Use: Mandatory (1)
- 
-Trust
-^^^^^^^^^
-:Description: 
-:Type: Number
-:Use: Mandatory (1)
- 
+
 .. code-block:: json
    :linenos:
 
-    "provenance": [
-        {
-            "type": "OpenAIRE",
-            "trust": 0.9
-        }
-    ]
+    "name": "Semantic Web"

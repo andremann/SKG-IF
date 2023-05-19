@@ -137,14 +137,14 @@ Funded amount
 
 Keywords
 ----
-:Description: A list of :ref:`Topic <Topic>` identifiers representing :ref:`Grant <Grant>` keywords.
+:Description: A list of keywords for the :ref:`Grant <Grant>`.
 :Type: List
 :Use: Optional (0..1)
  
 .. code-block:: json
    :linenos:
 
-    "keywords": ["topic_1", "topic_2"]
+    "keywords": ["Open science", "mutual learning", "open research"]
 
 
 Start date
@@ -209,7 +209,7 @@ Contributors
 
  Organisation
  ^^^^^^^^^^^
-:Description: The identifier of the :ref:`Organization` the principal investigator declares as affiliation for the :ref:`Grant <Grant>`
+:Description: The identifier of the :ref:`Organisation <Organisation>` the principal investigator has declared as affiliation for the :ref:`Grant <Grant>`.
 :Type: 
 :Use: 
 
