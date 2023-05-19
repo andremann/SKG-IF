@@ -187,7 +187,7 @@ Value
 
 Type
 """""""""""""
-:Description: The type of the date (e.g. publishing, embargo, ...).
+:Description: The type of the date (e.g., publishing, embargo, preprint, ...).
 :Type: String
 :Use: Mandatory (1)
 
@@ -241,19 +241,19 @@ Access right
 
 Licence
 ^^^^^^^^^^^^^^^^
-:Description: 
+:Description: Licence specific to the manifestation.
 :Type: String
 :Use: Recommended (0..1)
 
 Licence schema
 ^^^^^^^^^^^^^^^^
-:Description: 
+:Description: Schema of the licence.
 :Type: String
 :Use: Recommended (0..1)
 
 Bibliographic information
 ^^^^^^^^^^^^^^^^
-:Description: An object containing bibliographic information about a :ref:`Research product <Research product>`.
+:Description: An object containing bibliographic information about a :ref:`Research product <Research product>` of literature type.
 :Type: Object
 :Use: Mandatory (1)
 
@@ -277,13 +277,13 @@ End page
 
 Volume
 """""""""""""
-:Description: Volume number.
+:Description: Volume number (for journals, books, conferences).
 :Type: String
 :Use: Optional (0..1)
 
 Edition
 """""""""""""
-:Description: The edition.
+:Description: The edition (for journals and books).
 :Type: String
 :Use: Optional (0..1)
 
@@ -295,13 +295,13 @@ Number
 
 Publisher
 """""""""""""
-:Description: The name of the publisher.
+:Description: The name of the publisher (for journals, books, conferences).
 :Type: String
 :Use: Optional (0..1)
 
 Series
 """""""""""""
-:Description: The name of the book series.
+:Description: The name of the conference and book series.
 :Type: String
 :Use: Optional (0..1)
 
@@ -333,17 +333,17 @@ Hosting data source
             "access rights": "",
             "license": "",
             "license_schema": "",
-            "url": "",
-            "pid": "",
-            "biblio_info": {
-                "issue": "",
-                "start_page": "",
-                "end_page": "",
-                "volume": "",
+            "url": "https://link.springer.com/chapter/...",
+            "pid": "https://doi.org/10.1007/...",
+            "biblio": {
+                "issue": "1",
+                "start_page": "640",
+                "end_page": "645",
+                "volume": "13833",
                 "edition": "",
                 "number": "",
-                "publisher": "",
-                "series": ""
+                "publisher": "Springer International Publishing",
+                "series": "Lecture Notes in Computer Science"
             }
             "venue": "venue_7",
             "hosting_data_source": "datasource_4",
