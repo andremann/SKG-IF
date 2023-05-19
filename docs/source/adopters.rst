@@ -15,4 +15,3 @@ SKG-IF adopters
 
    "OpenAIRE Graph", "OpenAIRE AMKE", ""
    "DataCite", "DataCite", ""
-   "", "", ""
