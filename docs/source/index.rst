@@ -20,3 +20,4 @@ Contents
    model
    exchange
    adopters
+   contribute
