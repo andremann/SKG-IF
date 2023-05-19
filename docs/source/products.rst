@@ -126,7 +126,7 @@ Person
 
 Declared affiliations
 ^^^^^^^^^^^^^^^^
-:Description: A list of :ref:`Organisation <Organisations>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the :ref:`Research product <Research product>`.
+:Description: A list of :ref:`Organisations <Organisation>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
 
@@ -353,7 +353,7 @@ Hosting data source
 
 Relevant organisations
 --------------------
-:Description: A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the :ref:`Research product <Research product>` (In case the individual affiliations of the :ref:`Person <Persons>` are not available).
+:Description: A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the :ref:`Research product <Research product>` (In case the individual affiliations of the :ref:`Person <Person>` are not available).
 :Type: List
 :Use: Recommended (0..1)
 

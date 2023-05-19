@@ -98,7 +98,7 @@ Affiliations
 
 Organisation
 ^^^^^^^^^
-:Description: The identifier of the :ref:`Organisation <Organisations>` the :ref:`Person <Person>` is affiliated with. 
+:Description: The identifier of the :ref:`Organisation <Organisation>` a :ref:`Person <Person>` is affiliated with. 
 :Type: String
 :Use: Mandatory (1)
 

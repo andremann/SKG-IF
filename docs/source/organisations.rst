@@ -7,6 +7,8 @@ The entity :ref:`Organisation <Organisation>` represents academic institutions, 
 
 Properties
 ==========
+This section is to describe the metadata fields for the :ref:`Organisation <Organisation>`.
+
 
 Local identifier
 ----

@@ -13,7 +13,7 @@ A :ref:`Venue <Venue>` is an entity that models a publishing “gateway” used 
 
 Properties
 ==========
-This section is to describe the metadata fields for the :ref:`Venue <Venues>`.
+This section is to describe the metadata fields for the :ref:`Venue <Venue>`.
 
 
 Local identifier		
