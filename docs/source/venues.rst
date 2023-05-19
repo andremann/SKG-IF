@@ -30,14 +30,25 @@ Local identifier
 
 Identifiers			
 ----
-:Description: Identifier for the resource outside of the SKG. Allowed schemes are ISSN, EISSN, LISSN, ISBN, OpenDOAR ID, re3data.org ID, etc.
+:Description: Identifier for the resource outside of the SKG.
 :Type: List
 :Use: Optional, (0..1)
 
 Scheme
 ^^^^^^^^^^^
 :Description: The scheme for the external identifier.
-:Type: String
+:Type: String one of the following
+
+    * ISSN
+    * EISSN
+    * LISSN
+    * ISBN
+    * OpenDOAR
+    * re3data.org
+    * FAIRsharing
+    * doi
+    * handle
+
 :Use: Mandatory (1)
 
 Value
@@ -51,8 +62,12 @@ Value
 
     "identifiers": [
         {
-            "scheme": "https://..."
-            "value": "the_id"
+            "scheme": "issn"
+            "value": "0302-9743"
+        },
+        {
+            "scheme": "isbn"
+            "value": "978-3-031-25049-1"
         }
     ]
 

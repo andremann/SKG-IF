@@ -52,8 +52,8 @@ Value
 
     "identifiers": [
         {
-            "scheme": "https://..."
-            "value": "the_id"
+            "scheme": "doi"
+            "value": "https://doi.org/..."
         }
     ]
 
