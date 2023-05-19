@@ -109,24 +109,24 @@ Topics
 Topic identifier
 ^^^^^^^^^
 :Description: The identifier of a :ref:`Topic <Topic>` relevant for the :ref:`Research product <Research product>`.
-:Type: List
+:Type: String
 :Use: Mandatory (1)
 
 Provenance
 ^^^^^^^^^
-:Description: Provenance information tracking the origin of the reation to the :ref:`Topic` for a :ref:`Research product <Research product>`.
+:Description: A list of provenance information tracking the origin of the relation between a :ref:`Topic` and a :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
  
 Type
 """"""""""""
-:Description: 
+:Description: A string tracking the provenance of the topic relation.
 :Type: String
 :Use: Mandatory (1)
  
 Trust
 """"""""""""
-:Description: 
+:Description: A numeric value associated to the trust given to the relation to a :ref:`Topic`
 :Type: Number
 :Use: Mandatory (1)
 
