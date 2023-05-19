@@ -21,3 +21,4 @@ Contents
    exchange
    adopters
    contribute
+   references
