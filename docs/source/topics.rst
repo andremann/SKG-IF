@@ -46,7 +46,7 @@ Value
 
     "identifiers": [
         {
-            "scheme": ""
+            "scheme": "",
             "value": ""
         }
     ]
@@ -54,7 +54,7 @@ Value
 
 Provenance
 ----
-:Description: 
+:Description: Provenance information tracking the origin of the topic.
 :Type: List
 :Use: Recommended (0..1)
  

@@ -53,7 +53,7 @@ Value
 
 Title
 ----
-:Description: Title of the grant.
+:Description: Title of the :ref:`Grant <Grant>`.
 :Type: String
 :Use: Mandatory (1)
  
@@ -65,7 +65,7 @@ Title
 
 Abstract
 ----
-:Description: Abstract of the grant.
+:Description: Abstract of the :ref:`Grant <Grant>`.
 :Type: String
 :Use: Recommended (1)
  
@@ -77,7 +77,7 @@ Abstract
 
 Acronym
 ----
-:Description: Grant acronym.
+:Description: :ref:`Grant <Grant>` acronym.
 :Type: String
 :Use: Optional (1)
  
@@ -89,7 +89,7 @@ Acronym
 
 Funder
 ------
-:Description: Grant funder.
+:Description: :ref:`Grant <Grant>` funder.
 :Type: String
 :Use: Mandatory (1)
 
@@ -101,7 +101,7 @@ Funder
 
 Funding stream
 ------
-:Description: Grant funding stream.
+:Description: :ref:`Grant <Grant>` funding stream.
 :Type: String
 :Use: Optional (0..1)
 
@@ -124,7 +124,7 @@ Currency
 
 Funded amount
 ------
-:Description: Amount funded for the grant.
+:Description: Amount funded for the :ref:`Grant <Grant>`.
 :Type: Number
 :Use: Optional (0..1)
 
@@ -137,19 +137,19 @@ Funded amount
 
 Keywords
 ----
-:Description: Grant keywords.
+:Description: A list of :ref:`Topic <Topic>` identifiers representing :ref:`Grant <Grant>` keywords.
 :Type: List
 :Use: Optional (0..1)
  
 .. code-block:: json
    :linenos:
 
-    "keywords": ["computer science", "big data"]
+    "keywords": ["topic_1", "topic_2"]
 
 
 Start date
 ----
-:Description: The date the grand started 
+:Description: The date the :ref:`Grant <Grant>` started.
 :Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_  date string)
 :Use: Recommended (0..1)
 
@@ -161,7 +161,7 @@ Start date
 
 End date
 ----
-:Description: The date the grant finishes
+:Description: The date the :ref:`Grant <Grant>` finished.
 :Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string)
 :Use: Recommended, (0..1)
  
@@ -173,7 +173,7 @@ End date
 
 Website
 ----
-:Description: Grant website.
+:Description: :ref:`Grant <Grant>` website.
 :Type: URL
 :Use: Recommended (0..1)
  
@@ -185,7 +185,7 @@ Website
 
 Beneficiaries
 ----
-:Description: A list of the :ref:`Organisation` funded by the :ref:`Grant <Grant>`.
+:Description: A list of the :ref:`Organisation` identifiers funded by the :ref:`Grant <Grant>`.
 :Type: List
 :Use: Recommended (0..1)
  
