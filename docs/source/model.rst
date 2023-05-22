@@ -12,6 +12,7 @@ Core model entities
    Open points for discussion
       - Would move publisher and series from product into the venue.
       - scheme/value for external idenfiers: what is the common satrategy we want to pursue? Value is an URL or the identifier value? E.g., "https://orcid.org/0000-0002-5193-7851" VS. "0000-0002-5193-7851". Should we provide a fixed set of allowed schemes? For example from `SPAR ontologies <https://sparontologies.github.io/datacite/current/datacite.html#d4e569>`_ .
+      - Indicators and metrics (e.g., citation count, impact measures, usage counts, altmetrics, etc.) are not covered in the present iterations. Should we include them in a following one?
 
 
 SKG-IF core entities and relevant relations are reported in the figure below.
