@@ -27,7 +27,7 @@ Local identifier
 .. code-block:: json
    :linenos:
 
-    "localIdentifier": "product_1"
+    "local_identifier": "product_1"
 
 
 Identifiers
