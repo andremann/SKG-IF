@@ -300,7 +300,7 @@ Bibliographic information
 ^^^^^^^^^^^^^^^^
 :Description: An object containing bibliographic information about a :ref:`Research product <Research product>` of literature type.
 :Type: Object
-:Use: Mandatory (1)
+:Use: Optional (0..1)
 
 Issue
 """""""""""""
