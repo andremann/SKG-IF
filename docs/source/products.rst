@@ -369,10 +369,12 @@ Hosting data source
         {
             "product_local_type": "",
             "product_local_type_schema": "",
-            "dates": {
-                "value": "2012-03-21",
-                "type": "preprint"
-            }
+            "dates": [
+                {
+                    "value": "2012-03-21",
+                    "type": "preprint"
+                }
+            ],
             "peer-review": "open",
             "metadata curation": "yes",
             "access rights": "",
