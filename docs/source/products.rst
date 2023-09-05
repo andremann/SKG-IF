@@ -240,10 +240,11 @@ Peer review
 :Description: Whether the :ref:`Research product <Research product>` has undergone a peer review process.
 :Type: String, one of the following
 
+    * peer-reviewed
+    * not peer-reviewed
     * single-blind
-    * open
     * double-blind
-    * unavailable
+    * open peer review
 
 :Use: Mandatory (1)
 
