@@ -143,10 +143,10 @@ Creation date
 .. code-block:: json
    :linenos:
 
-    "creation date": "2019-09-13"
+    "creation_date": "2019-09-13"
 
 
-Contribution
+Contributions
 ------
 :Description: A list of all the :ref:`Person` that contributed to the :ref:`Venue <Venue>`.
 :Type: List
@@ -167,7 +167,7 @@ Roles
 .. code-block:: json
    :linenos:
 
-   "venues": [
+   "contributions": [
         {
             "person": "person_3",
             "roles": ["editor"]
