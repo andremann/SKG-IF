@@ -89,7 +89,7 @@ Abstracts
     "abstracts": {
         "en": ["Abstract", "Summary"],
         "es": ["Resumen"],
-        None: ["Aperpay ummarysay"]
+        "none": ["Aperpay ummarysay"]
     }
 
 
