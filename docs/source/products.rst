@@ -71,7 +71,7 @@ Titles
     "titles": {
                 "en": ["Title of the paper", "Title variant"],
                 "it": ["Titolo in italiano"],
-                None: ["itletay ofyay ethay aperpay"]
+                None: ["Itletay ofyay ethay aperpay"]
             }
 
 
@@ -87,7 +87,7 @@ Abstracts
     "abstracts": {
                 "en": ["Abstract", "Summary"],
                 "es": ["Resumen"],
-                None: ["aperpay ummarysay"]
+                None: ["Aperpay ummarysay"]
             }
 
 
