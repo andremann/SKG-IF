@@ -62,19 +62,23 @@ Value
 Titles
 ----
 :Description: The titles of a :ref:`Research product <Research product>` (multiple for multilinguism).
-:Type: List
+:Type: Dictionary. The keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`; the special key `None` is reserved whenever the informtion about language is not available or cannot be shared.
 :Use: Mandatory (1)
 
 .. code-block:: json
    :linenos:
 
-    "titles": ["The computer science ontology: a large-scale taxonomy of research areas"]
+    "titles": {
+                "en": ["Title of the paper", "Title variant"],
+                "it": ["Titolo in italiano"],
+                None: [itletay ofyay ethay aperpay"]
+            }
 
 
 Abstracts
 --------
 :Description: The abstracts of a :ref:`Research product <Research product>` (multiple for multilinguism).
-:Type: List
+:Type: Dictionary
 :Use: Recommended (0..1)
 
 .. code-block:: json
