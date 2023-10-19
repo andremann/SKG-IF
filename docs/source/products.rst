@@ -2,7 +2,6 @@
 
 Research products
 ++++++++++++++++++++++++++++++++
-.. sectnum::
 
 This entity models :ref:`Research product`, which may be of four types, as follows.
 
@@ -21,6 +20,7 @@ This section describes the metadata fields for the :ref:`Research product`.
 
 Local identifier
 ----
+.. sectnum::
 :Description: Unique code identifiying the :ref:`Research product <Research product>` in the SKG (if any, otherwise "stateless identifier")
 :Type: String
 :Use: Mandatory (1)
