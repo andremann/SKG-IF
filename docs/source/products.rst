@@ -62,7 +62,7 @@ Value
 Titles
 ----
 :Description: The titles of a :ref:`Research product <Research product>` (multiple for multilinguism).
-:Type: Dictionary. The keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key `None` is reserved whenever the informtion about the language is not available or cannot be shared.
+:Type: Dictionary. The keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key `none` is reserved whenever the informtion about the language is not available or cannot be shared.
 :Use: Mandatory (1)
 
 .. code-block:: json
@@ -78,7 +78,7 @@ Titles
 Abstracts
 --------
 :Description: The abstracts of a :ref:`Research product <Research product>` (multiple for multilinguism).
-:Type: Dictionary. The keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key `None` is reserved whenever the informtion about the language is not available or cannot be shared.
+:Type: Dictionary. The keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key `none` is reserved whenever the informtion about the language is not available or cannot be shared.
 :Use: Recommended (0..1)
 
 .. code-block:: json
