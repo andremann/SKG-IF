@@ -9,8 +9,7 @@ Hopefully soon, the work will be handed over to the RDA WG on `Scientific Knowle
 which is currently awaiting for the approval by the RDA Technical Advisory Board.
  
 .. note::
-   This project is under active development. 
-   This documentation translates and will be in sync with the `discussion worksheet <https://docs.google.com/spreadsheets/d/1m8vQkklLWmDYk55oI6YxZcqkvL7CHp385stjIyy-5mI>`_ used for online discussion.
+   This project is under active development.
 
 .. .. include:: snippets/foo.rsti
 
