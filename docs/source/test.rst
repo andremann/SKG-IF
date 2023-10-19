@@ -1,4 +1,4 @@
-Document Title
+Test section
 ==============
 .. sectnum::
 
