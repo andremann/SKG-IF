@@ -16,11 +16,13 @@ which is currently awaiting for the approval by the RDA Technical Advisory Board
 Contents
 --------
 
-.. toctree::
-   :maxdepth: 2
+.. .. toctree::
+..    :maxdepth: 2
+   
    
    model
    exchange
    adopters
    contribute
    references
+   test
