@@ -296,6 +296,12 @@ Licence schema
 :Type: String
 :Use: Recommended (0..1)
 
+Version
+^^^^^^^^^^^^^^^^
+:Description: Version for a software or research data product.
+:Type: String
+:Use: Recommended (0..1)
+
 Bibliographic information
 ^^^^^^^^^^^^^^^^
 :Description: An object containing bibliographic information about a :ref:`Research product <Research product>` of literature type.
@@ -380,6 +386,7 @@ Hosting data source
             "access rights": "",
             "license": "",
             "license_schema": "",
+            "version": "v1.0",
             "url": "https://link.springer.com/chapter/...",
             "pid": "https://doi.org/10.1007/...",
             "biblio": {
