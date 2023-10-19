@@ -84,11 +84,13 @@ Abstracts
 .. code-block:: json
    :linenos:
 
-    "abstracts": {
-                "en": ["Abstract", "Summary"],
-                "es": ["Resumen"],
-                None: ["Aperpay ummarysay"]
-            }
+    {
+        "abstracts": {
+            "en": ["Abstract", "Summary"],
+            "es": ["Resumen"],
+            None: ["Aperpay ummarysay"]
+        }
+    }
 
 
 Product type
