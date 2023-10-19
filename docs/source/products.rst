@@ -69,10 +69,10 @@ Titles
    :linenos:
 
     "titles": {
-                "en": ["Title of the paper", "Title variant"],
-                "it": ["Titolo in italiano"],
-                None: ["Itletay ofyay ethay aperpay"]
-            }
+        "en": ["Title of the paper", "Title variant"],
+        "it": ["Titolo in italiano"],
+        None: ["Itletay ofyay ethay aperpay"]
+    }
 
 
 Abstracts
@@ -84,12 +84,10 @@ Abstracts
 .. code-block:: json
    :linenos:
 
-    {
-        "abstracts": {
-            "en": ["Abstract", "Summary"],
-            "es": ["Resumen"],
-            None: ["Aperpay ummarysay"]
-        }
+    "abstracts": {
+        "en": ["Abstract", "Summary"],
+        "es": ["Resumen"],
+        None: ["Aperpay ummarysay"]
     }
 
 
