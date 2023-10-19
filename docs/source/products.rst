@@ -68,9 +68,11 @@ Titles
 .. code-block:: json
    :linenos:
 
-    "titles": {"en": ["Title of the paper", "Title variant"],
+    "titles": {
+                "en": ["Title of the paper", "Title variant"],
                 "it": ["Titolo in italiano"],
-                None: [itletay ofyay ethay aperpay"]}
+                "none": [itletay ofyay ethay aperpay"]
+            }
 
 
 Abstracts
