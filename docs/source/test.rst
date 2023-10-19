@@ -1,13 +1,13 @@
 Document Title
 ==============
-
+.. sectnum::
 
 BlaBla
 
 First section
 -------------
-.. sectnum::
-    
+
+
 BlaBla
 
 Second section
