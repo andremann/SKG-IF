@@ -25,4 +25,4 @@ Contents
    adopters
    contribute
    references
-   test
+   .. test
