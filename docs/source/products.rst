@@ -71,20 +71,24 @@ Titles
     "titles": {
                 "en": ["Title of the paper", "Title variant"],
                 "it": ["Titolo in italiano"],
-                "none": [itletay ofyay ethay aperpay"]
+                None: ["itletay ofyay ethay aperpay"]
             }
 
 
 Abstracts
 --------
 :Description: The abstracts of a :ref:`Research product <Research product>` (multiple for multilinguism).
-:Type: Dictionary
+:Type: Dictionary. The keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key `None` is reserved whenever the informtion about language is not available or cannot be shared.
 :Use: Recommended (0..1)
 
 .. code-block:: json
    :linenos:
 
-    "abstracts": ["Ontologies of research areas are important tools for characterising, exploring, and analysing the research landscape..."]
+    "abstracts": {
+                "en": ["Abstract", "Summary"],
+                "es": ["Resumen"],
+                None: ["aperpay ummarysay"]
+            }
 
 
 Product type
