@@ -1,7 +1,7 @@
 .. _Research product:
 
 Research products
-####################
+++++++++++++++++++++++++++++++++
 
 This entity models :ref:`Research product`, which may be of four types, as follows.
 
@@ -14,7 +14,6 @@ This entity models :ref:`Research product`, which may be of four types, as follo
 
 Properties
 ====
-.. sectnum::
 
 This section describes the metadata fields for the :ref:`Research product`.
 
