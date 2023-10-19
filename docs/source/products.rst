@@ -2,6 +2,7 @@
 
 Research products
 ++++++++++++++++++++++++++++++++
+.. sectnum::
 
 This entity models :ref:`Research product`, which may be of four types, as follows.
 
