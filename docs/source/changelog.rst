@@ -4,8 +4,8 @@ Changelog
 +-------------------------------------------------------------+------------------------------------------------------------------------+
 | **Version**                                                 | **What's new**                                                         |
 +=============================================================+========================================================================+
-| `latest <https://skg-if.readthedocs.io/en/latest>`_          | * Abstract and titles now support multiple languages                   |
+| `latest <https://skg-if.readthedocs.io/en/latest>`_         | * Abstract and titles now support multiple languages                   |
 |                                                             | * Version for software and research data                               |
 +-------------------------------------------------------------+------------------------------------------------------------------------+
-| `1.0 <https://skg-if.readthedocs.io/en/v1.0>`_               | First iteration of the SKG-IF model                                    |
+| `1.0 <https://skg-if.readthedocs.io/en/v1.0>`_              | First iteration of the SKG-IF model                                    |
 +-------------------------------------------------------------+------------------------------------------------------------------------+
