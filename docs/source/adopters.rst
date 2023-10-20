@@ -15,3 +15,4 @@ SKG-IF adopters
 
    "OpenAIRE Graph", "CNR-ISTI / OpenAIRE AMKE", "`Miriam Baglioni <mailto://miriam.baglioni@isti.cnr.it>`_ ", "not yet public"
    "DataCite", "DataCite", "TBA", "TBA"
+   "OpenCitations", "OpenCitations", "TBA", "TBA"
