@@ -25,4 +25,5 @@ Contents
    adopters
    contribute
    references
+   changelog
    .. test
