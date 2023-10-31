@@ -368,13 +368,13 @@ Venue
 """"""""""""
 :Description: A :ref:`Venue <Venue>` identifier for the manifestation.
 :Type: String
-:Use: Mandatory (1)
+:Use: Optional (0..1)
 
 Hosting data source
 """"""""""""
 :Description: A :ref:`Data source <Data source>` identifier for the manifestation.`
 :Type: String
-:Use: Mandatory (1)
+:Use: Optional (0..1)
 
 .. code-block:: json
    :linenos:
