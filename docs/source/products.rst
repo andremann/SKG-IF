@@ -352,18 +352,6 @@ Number
 :Type: String
 :Use: Optional (0..1)
 
-Publisher
-"""""""""""""
-:Description: The name of the publisher (for journals, books, conferences).
-:Type: String
-:Use: Optional (0..1)
-
-Series
-"""""""""""""
-:Description: The name of the conference and book series.
-:Type: String
-:Use: Optional (0..1)
-
 Venue
 """"""""""""
 :Description: A :ref:`Venue <Venue>` identifier for the manifestation.
@@ -402,10 +390,8 @@ Hosting data source
                 "start_page": "640",
                 "end_page": "645",
                 "volume": "13833",
-                "edition": "",
-                "number": "",
-                "publisher": "Springer International Publishing",
-                "series": "Lecture Notes in Computer Science"
+                "edition": "1",
+                "number": "7"
             }
             "venue": "venue_7",
             "hosting_data_source": "datasource_4",

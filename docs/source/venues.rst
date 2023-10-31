@@ -122,6 +122,30 @@ Type
    "unknown", ""
 
 
+Publisher
+----
+:Description: The name of the publisher (for journals, books, conferences).
+:Type: String
+:Use: Optional (0..1)
+
+.. code-block:: json
+   :linenos:
+
+    "publisher": "Springer Nature"
+
+
+Series
+----
+:Description: The name of the conference or book series.
+:Type: String
+:Use: Optional (0..1)
+
+.. code-block:: json
+   :linenos:
+
+    "series": "Lecture Notes in Computer Science (LNCS)"
+
+
 Is currently full open access
 ----
 :Description: True if the :ref:`Venue <Venue>` contains only open access products 
