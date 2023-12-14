@@ -49,7 +49,7 @@ Identifiers
 Titles
 ----
 *Object* (mandatory): The titles of a :ref:`Research product <Research product>` (multiple for multilinguism). 
-The object is a dictionary, the keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key `none` is reserved whenever the informtion about the language is not available or cannot be shared.
+The object is a dictionary, the keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key ``none`` is reserved whenever the informtion about the language is not available or cannot be shared.
 
 .. code-block:: json
    :linenos:
@@ -64,7 +64,7 @@ The object is a dictionary, the keys represent language codes following `ISO 639
 Abstracts
 --------
 *Object* (recommended): The abstracts of a :ref:`Research product <Research product>` (multiple for multilinguism).
-The object is a dictionary, the keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key `none` is reserved whenever the informtion about the language is not available or cannot be shared.
+The object is a dictionary, the keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key ``none`` is reserved whenever the informtion about the language is not available or cannot be shared.
 
 .. code-block:: json
    :linenos:
@@ -96,8 +96,7 @@ Topics
 *List* (recommended): A list objects referring to :ref:`Topic` covered by the :ref:`Research product <Research product>`. Each object has the following properties:
 
 * ``topic_id`` *String* (mandatory): The identifier of a :ref:`Topic <Topic>` relevant for the :ref:`Research product <Research product>`.
-* ``provenance`` *List* (recommended): A list of provenance information tracking the origin of the relation between a :ref:`Topic` and a :ref:`Research product <Research product>`.
-Each topic provenance object has the following properties:
+* ``provenance`` *List* (recommended): A list of provenance information tracking the origin of the relation between a :ref:`Topic` and a :ref:`Research product <Research product>`. Each topic provenance object has the following properties:
     * ``type`` *String* (mandatory): A string tracking the provenance of the topic relation.
     * ``trust`` *Float* (mandatory): A numeric value associated to the trust given to the relation to a :ref:`Topic`. 
     The float should be normalised in the range [0,1].
