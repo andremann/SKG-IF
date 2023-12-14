@@ -93,9 +93,10 @@ Product type
 
 Topics
 --------------------
-*List* (recommended): A list objects referring to :ref:`Topic` covered by the :ref:`Research product <Research product>`. Each object in the list has the following properties:
+*List* (recommended): A list objects referring to :ref:`Topic` covered by the :ref:`Research product <Research product>`. 
+Each object in the list has the following properties:
 
-* ``topic_id`` *String* (mandatory): The identifier of a :ref:`Topic <Topic>` relevant for the :ref:`Research product <Research product>`.
+* ``topic`` *String* (mandatory): The identifier of a :ref:`Topic <Topic>` relevant for the :ref:`Research product <Research product>`.
 * ``provenance`` *List* (recommended): A list of provenance information tracking the origin of the relation between a :ref:`Topic` and a :ref:`Research product <Research product>`. Each topic provenance object has the following properties:
     
     * ``type`` *String* (mandatory): A string tracking the provenance of the topic relation.
@@ -106,7 +107,7 @@ Topics
 
     "topics": [
         {
-            "topic_id": "topic_1",
+            "topic": "topic_1",
             "provenance": [
                 {
                     "type": "OpenAIRE mining",
@@ -128,33 +129,13 @@ Topics
 
 Contributions
 --------------------
-:Description: A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisations <Organisation>` when working to a :ref:`Research product <Research product>`.
-:Type: List
-:Use: Mandatory (1)
+*List* (mandatory): A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisations <Organisation>` when working to a :ref:`Research product <Research product>`.
+Each object is structured as follows:
 
-Person
-^^^^^^^^^^^^^^^^
-:Description: The identifier of a :ref:`Person <Person>` contributing to the :ref:`Research product <Research product>`.
-:Type: String
-:Use: Mandatory (1)
-
-Declared affiliations
-^^^^^^^^^^^^^^^^
-:Description: A list of :ref:`Organisations <Organisation>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the :ref:`Research product <Research product>`.
-:Type: List
-:Use: Recommended (0..1)
-
-Roles
-^^^^^^^^^^^^^^^^
-:Description: The specific role that a :ref:`Person <Person>` had in the :ref:`Research product <Research product>`.
-:Type: List of values from `CRediT taxonomy <https://credit.niso.org>`_
-:Use: Recommended (0..1)
-
-Rank
-^^^^^^^^^^^^^^^^
-:Description: The rank of the :ref:`Person <Person>` in the author list of a :ref:`Product <Product>`.
-:Type: Integer
-:Use: Recommended (0..1)
+* ``person`` *String* (mandatory): The identifier of a :ref:`Person <Person>` contributing to the :ref:`Research product <Research product>`.
+* ``declared_affiliations`` *List* (recommended): A list of :ref:`Organisations <Organisation>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the :ref:`Research product <Research product>`.
+* ``rank`` *Integer* (recommended): The rank (i.e., order of appearance) of the :ref:`Person <Person>` in the author list of a :ref:`Product <Product>`.
+* ``roles`` *List* (recommended): A list of the specific roles (from `CRediT taxonomy <https://credit.niso.org>`_) that a :ref:`Person <Person>` had in the :ref:`Research product <Research product>`.
 
 .. code-block:: json
    :linenos:
@@ -171,9 +152,7 @@ Rank
 
 Manifestations
 --------------------
-:Description:  A list of manifestations for the same :ref:`Research product <Research product>` (e.g., a preprint, a postprint, etc.)
-:Type: List
-:Use: Mandatory (1)
+*List* (mandatory):  A list of manifestations for the same :ref:`Research product <Research product>` (e.g., a preprint, a postprint, etc.)
 
 Product local type 
 ^^^^^^^^^^^^^^^^
