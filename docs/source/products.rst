@@ -18,9 +18,9 @@ Properties
 This section describes the metadata fields for the :ref:`Research product`.
 
 
-1) Local identifier
+1 Local identifier
 ----
-*String* (Mandatory): Unique code identifiying the :ref:`Research product <Research product>` in the SKG (if any, otherwise "stateless identifier")
+*String* (mandatory): Unique code identifiying the :ref:`Research product <Research product>` in the SKG (if any, otherwise "stateless identifier")
 
 .. code-block:: json
    :linenos:
@@ -28,23 +28,12 @@ This section describes the metadata fields for the :ref:`Research product`.
     "local_identifier": "product_1"
 
 
-Identifiers
+2 Identifiers
 ----
-:Description: A list of external identifiers for the entity. 
-:Type: List
-:Use: Optional (0..1)
+*List* (optional):  A list objects representing of external identifiers for the entity. Each object is structured as follows.
 
-Scheme
-^^^^^^^^^
-:Description: The scheme for the external identifier (e.g., doi, handle, purl, pubmed, etc.).
-:Type: String
-:Use: Mandatory (1)
-
-Value
-^^^^^^^^^^^
-:Description: The external identifier.
-:Type: String
-:Use: Mandatory (1)
+* ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., doi, handle, purl, pubmed, etc.).
+* ``value`` *String* (mandatory): The external identifier.
 
 .. code-block:: json
    :linenos:
@@ -57,11 +46,10 @@ Value
     ]
     
 
-Titles
+3 Titles
 ----
-:Description: The titles of a :ref:`Research product <Research product>` (multiple for multilinguism).
-:Type: Dictionary. The keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key `none` is reserved whenever the informtion about the language is not available or cannot be shared.
-:Use: Mandatory (1)
+*Object* (mandatory): The titles of a :ref:`Research product <Research product>` (multiple for multilinguism). 
+The object is a dictionary, the keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key `none` is reserved whenever the informtion about the language is not available or cannot be shared.
 
 .. code-block:: json
    :linenos:
