@@ -134,8 +134,8 @@ Each object is structured as follows:
 
 * ``person`` *String* (mandatory): The identifier of a :ref:`Person <Person>` contributing to the :ref:`Research product <Research product>`.
 * ``declared_affiliations`` *List* (recommended): A list of :ref:`Organisations <Organisation>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the :ref:`Research product <Research product>`.
-* ``rank`` *Integer* (recommended): The rank (i.e., order of appearance) of the :ref:`Person <Person>` in the author list of a :ref:`Product <Product>`.
-* ``roles`` *List* (recommended): A list of the specific roles (from `CRediT taxonomy <https://credit.niso.org>`_) that a :ref:`Person <Person>` had in the :ref:`Research product <Research product>`.
+* ``rank`` *Integer* (recommended): The rank (i.e., order of appearance) of the :ref:`Person <Person>` in the author list of a :ref:`Research product <Research product>`.
+* ``roles`` *List* (recommended): A list of the specific roles that a :ref:`Person <Person>` had in the :ref:`Research product <Research product>`. Each element in the list is a *String* compliant with the `CRediT taxonomy <https://credit.niso.org>`_.
 
 .. code-block:: json
    :linenos:
@@ -152,42 +152,17 @@ Each object is structured as follows:
 
 Manifestations
 --------------------
-*List* (mandatory):  A list of manifestations for the same :ref:`Research product <Research product>` (e.g., a preprint, a postprint, etc.)
+*List* (mandatory):  A list of objects representing multiple manifestations of the same :ref:`Research product <Research product>` (e.g., a preprint, a postprint, etc.).
+Each manifestation object has the following structure:
 
-Product local type 
-^^^^^^^^^^^^^^^^
-:Description: The type of the manifestation. 
-:Type: String
-:Use: Mandatory (1)
+* ``product_local_type`` *String* (mandatory): The type of the manifestation, e.g., preprint. 
+* ``product_local_type_schema`` *String* (mandatory): The schema of the manifestation type, e.g., a link to the vocabulary of allowed product types.
+* ``dates`` *List* (mandatory): Relevant dates for the :ref:`Research product <Research product>`. Each date has the following properties:
 
-Product local type schema
-^^^^^^^^^^^^^^^^
-:Description: The schema of the manifestation type. 
-:Type: String
-:Use: Mandatory (1)
+    * ``value`` *String* (mandatory): The relevant date for the :ref:`Research product <Research product>` expressed as a `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string.
+    * ``type`` *String* (mandatory): The type of the date (e.g., publishing, embargo, preprint, ...).
 
-Dates
-^^^^^^^^^^^^^^^^
-:Description: Relevant dates for the :ref:`Research product <Research product>`.
-:Type: List
-:Use: Mandatory (1)
-
-Value
-"""""""""""""
-:Description: The relevant date for the :ref:`Research product <Research product>`.
-:Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string)
-:Use: Mandatory (1)
-
-Type
-"""""""""""""
-:Description: The type of the date (e.g., publishing, embargo, preprint, ...).
-:Type: String
-:Use: Mandatory (1)
-
-Peer review
-^^^^^^^^^^^^^^^^
-:Description: Whether the :ref:`Research product <Research product>` has undergone a peer review process.
-:Type: String, one of the following
+* ``peer_review`` *String* (mandatory): Whether the :ref:`Research product <Research product>` has undergone a peer review process. It can be one of the following:
 
     * peer-reviewed
     * not peer-reviewed
@@ -195,35 +170,15 @@ Peer review
     * double-blind
     * open peer review
 
-:Use: Mandatory (1)
-
-Metadata curation
-^^^^^^^^^^^^^^^^
-:Description: Whether the :ref:`Research product <Research product>` has undergone a metadata curation process.
-:Type: String, one of the following 
+* ``metadata_curation`` *String* (mandatory): Whether the :ref:`Research product <Research product>` has undergone a metadata curation process. It can be one of the following :
 
     * yes
     * no
     * unavailable
 
-:Use: Mandatory (1)
-
-URL
-^^^^^^^^^^^^^^^^
-:Description: An URL for the manifestation.
-:Type: URL
-:Use: Mandatory (1)
-
-PID
-^^^^^^^^^^^^^^^^
-:Description: the pid for the specific manifestation.
-:Type: String
-:Use: Recommended (0..1)
-
-Access right
-^^^^^^^^^^^^^^^^
-:Description: The access right for the specific materialisation.
-:Type: String, one of the following 
+* ``url`` *String* (mandatory): An URL for the manifestation.
+* ``pid`` *String* (recommended): The pid for the specific manifestation.
+* ``access_rights`` *String* (mandatory): The access right for the specific materialisation. One of the following 
 
     * open
     * closed
@@ -231,79 +186,19 @@ Access right
     * restricted
     * unavailable
 
-:Use: Mandatory (1)
+* ``licence`` *String* (recommended): Licence specific to the manifestation.
+* ``license_schema`` *String* (recommended): Schema of the licence.
+* ``version`` *String* (recommended): Version for a software or research data product.
+* ``biblio`` *Object* (optional): An object containing bibliographic information about a :ref:`Research product <Research product>` of literature type. The object has the following properties:
 
-Licence
-^^^^^^^^^^^^^^^^
-:Description: Licence specific to the manifestation.
-:Type: String
-:Use: Recommended (0..1)
-
-Licence schema
-^^^^^^^^^^^^^^^^
-:Description: Schema of the licence.
-:Type: String
-:Use: Recommended (0..1)
-
-Version
-^^^^^^^^^^^^^^^^
-:Description: Version for a software or research data product.
-:Type: String
-:Use: Recommended (0..1)
-
-Bibliographic information
-^^^^^^^^^^^^^^^^
-:Description: An object containing bibliographic information about a :ref:`Research product <Research product>` of literature type.
-:Type: Object
-:Use: Optional (0..1)
-
-Issue
-"""""""""""""
-:Description: Issue number.
-:Type: String
-:Use: Optional (0..1)
-
-Start page
-"""""""""""""
-:Description: The starting page.
-:Type: String
-:Use: Optional (0..1)
-
-End page
-"""""""""""""
-:Description: The ending date.
-:Type: String
-:Use: Optional (0..1)
-
-Volume
-"""""""""""""
-:Description: Volume number (for journals, books, conferences).
-:Type: String
-:Use: Optional (0..1)
-
-Edition
-"""""""""""""
-:Description: The edition (for journals and books).
-:Type: String
-:Use: Optional (0..1)
-
-Number
-"""""""""""""
-:Description: Journal number.
-:Type: String
-:Use: Optional (0..1)
-
-Venue
-""""""""""""
-:Description: A :ref:`Venue <Venue>` identifier for the manifestation.
-:Type: String
-:Use: Optional (0..1)
-
-Hosting data source
-""""""""""""
-:Description: A :ref:`Data source <Data source>` identifier for the manifestation.`
-:Type: String
-:Use: Optional (0..1)
+    * ``issue`` *String* (optional): Issue number.
+    * ``start_page`` *String* (optional): The starting page.
+    * ``end_page`` *String* (optional): The ending page.
+    * ``volume`` *String* (optional): Volume number (for journals, books, conferences).
+    * ``edition`` *String* (optional): The edition (for journals and books).
+    * ``number`` *String* (optional): Journal number.
+    * ``venue``*String* (optional): A :ref:`Venue <Venue>` identifier for the manifestation.
+    * ``hosting_data_source`` *String* (optional): A :ref:`Data source <Data source>` identifier for the manifestation.`
 
 .. code-block:: json
    :linenos:
@@ -318,9 +213,9 @@ Hosting data source
                     "type": "preprint"
                 }
             ],
-            "peer-review": "open",
-            "metadata curation": "yes",
-            "access rights": "",
+            "peer_review": "open",
+            "metadata_curation": "yes",
+            "access_rights": "",
             "license": "",
             "license_schema": "",
             "version": "v1.0",
