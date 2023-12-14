@@ -18,11 +18,9 @@ Properties
 This section describes the metadata fields for the :ref:`Research product`.
 
 
-Local identifier
+1) Local identifier
 ----
-:Description: Unique code identifiying the :ref:`Research product <Research product>` in the SKG (if any, otherwise "stateless identifier")
-:Type: String
-:Use: Mandatory (1)
+*String* (Mandatory): Unique code identifiying the :ref:`Research product <Research product>` in the SKG (if any, otherwise "stateless identifier")
 
 .. code-block:: json
    :linenos:
