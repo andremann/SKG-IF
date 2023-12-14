@@ -93,14 +93,13 @@ Product type
 
 Topics
 --------------------
-*List* (recommended): A list objects referring to :ref:`Topic` covered by the :ref:`Research product <Research product>`. Each object has the following properties:
+*List* (recommended): A list objects referring to :ref:`Topic` covered by the :ref:`Research product <Research product>`. Each object in the list has the following properties:
 
 * ``topic_id`` *String* (mandatory): The identifier of a :ref:`Topic <Topic>` relevant for the :ref:`Research product <Research product>`.
 * ``provenance`` *List* (recommended): A list of provenance information tracking the origin of the relation between a :ref:`Topic` and a :ref:`Research product <Research product>`. Each topic provenance object has the following properties:
     
     * ``type`` *String* (mandatory): A string tracking the provenance of the topic relation.
-    * ``trust`` *Float* (mandatory): A numeric value associated to the trust given to the relation to a :ref:`Topic`. 
-    The float should be normalised in the range [0,1].
+    * ``trust`` *Float* (mandatory): A numeric value associated to the trust given to the relation to a :ref:`Topic`. The float should be normalised in the range [0,1].
  
 .. code-block:: json
    :linenos:
