@@ -258,7 +258,7 @@ Funding
 Related products
 --------------------
 *List* (recommended): A list of objects representing related :ref:`Research product` and the semantics of such relationships.
-Each object in the list is strucutred as follows:
+Each object in the list is structured as follows:
 
 * ``relation_type`` *String* (mandatory): A list of :ref:`Research product` identifiers supplementing the present one. One of the following selection of `DataCite relationTypes <https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf>`_ 
 
