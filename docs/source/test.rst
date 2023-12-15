@@ -1,5 +1,5 @@
 Test page
-==============
+=========
 .. sectnum::
 
 BlaBla
@@ -11,10 +11,10 @@ First section
 BlaBla
 
 Subsection A
-^^^^^^^^
+^^^^^^^^^^^^
 
 Subsection B
-^^^^^^^^
+^^^^^^^^^^^^
 
 Second section
 --------------
@@ -22,7 +22,7 @@ Second section
 BlaBla
 
 Subsection C
-^^^^^^^^
+^^^^^^^^^^^^
 
 Subsection D
-^^^^^^^^
+^^^^^^^^^^^^

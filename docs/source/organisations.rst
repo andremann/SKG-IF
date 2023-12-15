@@ -11,7 +11,7 @@ This section is to describe the metadata fields for the :ref:`Organisation <Orga
 
 
 Local identifier
-----
+----------------
 :Description: Unique code identifiying the :ref:`Organisation <Organisation>` in the SKG (if any, otherwise "stateless identifier")
 :Type: String 
 :Use: Mandatory (1)
@@ -23,19 +23,19 @@ Local identifier
 
 
 Identifiers			
-----
+-----------
 :Description: Identifier for the entity outside of the SKG (e.g., ROR ID, ISNI). 
 :Type: List
 :Use: Recommended (1)
 
 Scheme
-^^^^^^^^^^^
+^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
 :Use: Mandatory (1)
 
 Value
-^^^^^^^^^
+^^^^^
 :Description: The external identifier.
 :Type: String
 :Use: Mandatory (1)
@@ -65,7 +65,7 @@ Name
 
 
 Short name
-----
+----------
 :Description: The short name/acronym for the :ref:`Organisation <Organisation>`
 :Type: String
 :Use: Optional (0..1)
@@ -77,7 +77,7 @@ Short name
 
 
 Other names
-----
+-----------
 :Description: Other names, maybe in different languages, to identifie the :ref:`Organisation <Organisation>`
 :Type: List
 :Use: Optional (1..*)
@@ -89,7 +89,7 @@ Other names
 
 
 Website
-----
+-------
 :Description: The website URL for the :ref:`Organisation <Organisation>`
 :Type: URL
 :Use: Mandatory (1)
@@ -101,7 +101,7 @@ Website
 
 
 Country code
-----
+------------
 :Description: The country code of the :ref:`Organisation <Organisation>`
 :Type: String (follow `ISO 3166-1 alpha-2 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_`)
 :Use: Mandatory (1)
@@ -113,7 +113,7 @@ Country code
 
 
 Organisation type
-----
+-----------------
 :Description: The type of the :ref:`Organisation <Organisation>`
 :Type: String, one of the following 
     

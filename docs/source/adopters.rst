@@ -1,5 +1,5 @@
 SKG-IF adopters
-##############
+###############
 
 .. note::
     If you are interested in adopting SKG-IF, please send an email to andrea.mannocci ~at~ isti.cnr.it

@@ -1,7 +1,7 @@
 .. _Research product:
 
 Research products
-++++++++++++++++++++++++++++++++
++++++++++++++++++
 
 This entity models :ref:`Research product`, which may be of four types, as follows.
 
@@ -13,13 +13,13 @@ This entity models :ref:`Research product`, which may be of four types, as follo
 
 
 Properties
-====
+==========
 
 This section describes the metadata fields for the :ref:`Research product`.
 
 
 Local identifier
-----
+----------------
 :Description: Unique code identifiying the :ref:`Research product <Research product>` in the SKG (if any, otherwise "stateless identifier")
 :Type: String
 :Use: Mandatory (1)
@@ -31,19 +31,19 @@ Local identifier
 
 
 Identifiers
-----
+-----------
 :Description: A list of external identifiers for the entity. 
 :Type: List
 :Use: Optional (0..1)
 
 Scheme
-^^^^^^^^^
+^^^^^^
 :Description: The scheme for the external identifier (e.g., doi, handle, purl, pubmed, etc.).
 :Type: String
 :Use: Mandatory (1)
 
 Value
-^^^^^^^^^^^
+^^^^^
 :Description: The external identifier.
 :Type: String
 :Use: Mandatory (1)
@@ -60,7 +60,7 @@ Value
     
 
 Titles
-----
+------
 :Description: The titles of a :ref:`Research product <Research product>` (multiple for multilinguism).
 :Type: Dictionary. The keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key `none` is reserved whenever the informtion about the language is not available or cannot be shared.
 :Use: Mandatory (1)
@@ -76,7 +76,7 @@ Titles
 
 
 Abstracts
---------
+---------
 :Description: The abstracts of a :ref:`Research product <Research product>` (multiple for multilinguism).
 :Type: Dictionary. The keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key `none` is reserved whenever the informtion about the language is not available or cannot be shared.
 :Use: Recommended (0..1)
@@ -92,7 +92,7 @@ Abstracts
 
 
 Product type
------
+------------
 :Description: The type of the :ref:`Research product <Research product>`. 
 :Type: String, one among 
 
@@ -110,31 +110,31 @@ Product type
 
 
 Topics
---------------------
+------
 :Description: A list of :ref:`Topic` covered by the :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
 
 Topic identifier
-^^^^^^^^^
+^^^^^^^^^^^^^^^^
 :Description: The identifier of a :ref:`Topic <Topic>` relevant for the :ref:`Research product <Research product>`.
 :Type: String
 :Use: Mandatory (1)
 
 Provenance
-^^^^^^^^^
+^^^^^^^^^^
 :Description: A list of provenance information tracking the origin of the relation between a :ref:`Topic` and a :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
  
 Type
-""""""""""""
+""""
 :Description: A string tracking the provenance of the topic relation.
 :Type: String
 :Use: Mandatory (1)
  
 Trust
-""""""""""""
+"""""
 :Description: A numeric value associated to the trust given to the relation to a :ref:`Topic`
 :Type: Number
 :Use: Mandatory (1)
@@ -165,31 +165,31 @@ Trust
 
 
 Contributions
---------------------
+-------------
 :Description: A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisations <Organisation>` when working to a :ref:`Research product <Research product>`.
 :Type: List
 :Use: Mandatory (1)
 
 Person
-^^^^^^^^^^^^^^^^
+^^^^^^
 :Description: The identifier of a :ref:`Person <Person>` contributing to the :ref:`Research product <Research product>`.
 :Type: String
 :Use: Mandatory (1)
 
 Declared affiliations
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 :Description: A list of :ref:`Organisations <Organisation>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
 
 Roles
-^^^^^^^^^^^^^^^^
+^^^^^
 :Description: The specific role that a :ref:`Person <Person>` had in the :ref:`Research product <Research product>`.
 :Type: List of values from `CRediT taxonomy <https://credit.niso.org>`_
 :Use: Recommended (0..1)
 
 Rank
-^^^^^^^^^^^^^^^^
+^^^^
 :Description: The rank of the :ref:`Person <Person>` in the author list of a :ref:`Product <Product>`.
 :Type: Integer
 :Use: Recommended (0..1)
@@ -208,43 +208,43 @@ Rank
 
 
 Manifestations
---------------------
+--------------
 :Description:  A list of manifestations for the same :ref:`Research product <Research product>` (e.g., a preprint, a postprint, etc.)
 :Type: List
 :Use: Mandatory (1)
 
 Product local type 
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 :Description: The type of the manifestation. 
 :Type: String
 :Use: Mandatory (1)
 
 Product local type schema
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
 :Description: The schema of the manifestation type. 
 :Type: String
 :Use: Mandatory (1)
 
 Dates
-^^^^^^^^^^^^^^^^
+^^^^^
 :Description: Relevant dates for the :ref:`Research product <Research product>`.
 :Type: List
 :Use: Mandatory (1)
 
 Value
-"""""""""""""
+"""""
 :Description: The relevant date for the :ref:`Research product <Research product>`.
 :Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string)
 :Use: Mandatory (1)
 
 Type
-"""""""""""""
+""""
 :Description: The type of the date (e.g., publishing, embargo, preprint, ...).
 :Type: String
 :Use: Mandatory (1)
 
 Peer review
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^
 :Description: Whether the :ref:`Research product <Research product>` has undergone a peer review process.
 :Type: String, one of the following
 
@@ -257,7 +257,7 @@ Peer review
 :Use: Mandatory (1)
 
 Metadata curation
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 :Description: Whether the :ref:`Research product <Research product>` has undergone a metadata curation process.
 :Type: String, one of the following 
 
@@ -268,19 +268,19 @@ Metadata curation
 :Use: Mandatory (1)
 
 URL
-^^^^^^^^^^^^^^^^
+^^^
 :Description: An URL for the manifestation.
 :Type: URL
 :Use: Mandatory (1)
 
 PID
-^^^^^^^^^^^^^^^^
+^^^
 :Description: the pid for the specific manifestation.
 :Type: String
 :Use: Recommended (0..1)
 
 Access right
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
 :Description: The access right for the specific materialisation.
 :Type: String, one of the following 
 
@@ -293,73 +293,73 @@ Access right
 :Use: Mandatory (1)
 
 Licence
-^^^^^^^^^^^^^^^^
+^^^^^^^
 :Description: Licence specific to the manifestation.
 :Type: String
 :Use: Recommended (0..1)
 
 Licence schema
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 :Description: Schema of the licence.
 :Type: String
 :Use: Recommended (0..1)
 
 Version
-^^^^^^^^^^^^^^^^
+^^^^^^^
 :Description: Version for a software or research data product.
 :Type: String
 :Use: Recommended (0..1)
 
 Bibliographic information
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
 :Description: An object containing bibliographic information about a :ref:`Research product <Research product>` of literature type.
 :Type: Object
 :Use: Optional (0..1)
 
 Issue
-"""""""""""""
+"""""
 :Description: Issue number.
 :Type: String
 :Use: Optional (0..1)
 
 Start page
-"""""""""""""
+""""""""""
 :Description: The starting page.
 :Type: String
 :Use: Optional (0..1)
 
 End page
-"""""""""""""
+""""""""
 :Description: The ending date.
 :Type: String
 :Use: Optional (0..1)
 
 Volume
-"""""""""""""
+""""""
 :Description: Volume number (for journals, books, conferences).
 :Type: String
 :Use: Optional (0..1)
 
 Edition
-"""""""""""""
+"""""""
 :Description: The edition (for journals and books).
 :Type: String
 :Use: Optional (0..1)
 
 Number
-"""""""""""""
+""""""
 :Description: Journal number.
 :Type: String
 :Use: Optional (0..1)
 
 Venue
-""""""""""""
+"""""
 :Description: A :ref:`Venue <Venue>` identifier for the manifestation.
 :Type: String
 :Use: Optional (0..1)
 
 Hosting data source
-""""""""""""
+"""""""""""""""""""
 :Description: A :ref:`Data source <Data source>` identifier for the manifestation.`
 :Type: String
 :Use: Optional (0..1)
@@ -400,7 +400,7 @@ Hosting data source
 
 
 Relevant organisations
---------------------
+----------------------
 :Description: A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the :ref:`Research product <Research product>` (In case the individual affiliations of the :ref:`Person <Person>` are not available).
 :Type: List
 :Use: Recommended (0..1)
@@ -412,7 +412,7 @@ Relevant organisations
 
  
 Funding
---------------------
+-------
 :Description: A list of relevant :ref:`Grant <Grant>` identifiers associated with the :ref:`Research product <Research product>`.
 :Type: List
 :Use: Recommended (0..1)
@@ -424,13 +424,13 @@ Funding
     
 
 Related products
---------------------
+----------------
 :Description: A list objects representing related :ref:`Research product` and the semantics of such relationships.
 :Type: List
 :Use: Recommended (0..1)
 
 Relation Type
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 :Description: A list of :ref:`Research product` identifiers supplementing the present one.
 :Type: String; one of the following selection of `DataCite relationTypes <https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf>`_ 
 
@@ -443,7 +443,7 @@ Relation Type
 :Use: Mandatory (1)
 
 Product list
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
 :Description: A list of :ref:`Research product` identifiers describing the present one.
 :Type: List
 :Use: Mandatory (1)

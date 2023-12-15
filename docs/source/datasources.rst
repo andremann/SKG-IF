@@ -18,7 +18,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 
 Local identifier		
-----
+----------------
 :Description: Unique code identifiying a :ref:`Data source <Data source>` in the SKG (if any, otherwise "stateless identifier").
 :Type: String
 :Use: Mandatory (1)
@@ -30,19 +30,19 @@ Local identifier
 
 
 Identifiers			
-----
+-----------
 :Description: Identifier for the entity outside of the SKG (e.g., PID). 
 :Type: List
 :Use: Optional (0..1)
 
 Scheme
-^^^^^^^^^^^
+^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
 :Use: Mandatory (1)
 
 Value
-^^^^^^^^^
+^^^^^
 :Description: The external identifier.
 :Type: String
 :Use: Mandatory (1)
@@ -71,7 +71,7 @@ Name
 
 
 Submission policy URL	
-----
+---------------------
 :Description: This policy provides a comprehensive framework for the contribution of research products. Criteria for submitting content to the repository as well as product preparation guidelines can be stated. Concepts for quality assurance may be provided.
 :Type: URL
 :Use: Recommended (0..1)
@@ -83,7 +83,7 @@ Submission policy URL
 
 
 Preservation policy URL	
-----
+-----------------------
 :Description: This policy provides a comprehensive framework for the long-term preservation of the research products. Principles aims and responsibilities must be clarified. An important aspect is the description of preservation concepts to ensure the technical and conceptual utility of the content.
 :Type: URL
 :Use: Recommended (0..1)
@@ -95,7 +95,7 @@ Preservation policy URL
 
 
 Version control	
-----
+---------------
 :Description: If data versioning is supported: the :ref:`Data source <Data source>` explicitly allows the deposition of different versions of the same object
 :Type: Boolean
 :Use: Optional (0..1)
@@ -107,21 +107,21 @@ Version control
 
 
 Persistent Identity Systems	
-----
+---------------------------
 :Description: The persistent identifier systems that are used by the :ref:`Data source <Data source>` to identify the ProductType it supports.
 :Type: List
 :Use: Recommended (0..1)
 
 
 Persistent Identity Product Type
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 :Description: 	Specify the ProductType to which the persistent identifier is referring to.
 :Type: Vocabulary: `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_
 :Use: Mandatory (1)
 
 
 Persistent Identity Product Type Scheme	
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 :Description: Specify the list of persistent identifier schemes used to refer to ProductTypes
 :Type: List of terms following the vocabulary: `Persistent Identity Scheme <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-PersistentIdentityScheme>`_
 :Use: Mandatory (1)
@@ -138,7 +138,7 @@ Persistent Identity Product Type Scheme
 
 
 Jurisdiction	
-----
+------------
 :Description: The property defines the jurisdiction of the users of the :ref:`Data source <Data source>`, based on the vocabulary for this property	
 :Type: Vocabulary: `Jurisdiction <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-Jurisdiction>`_ 
 :Use: Mandatory (1)
@@ -150,7 +150,7 @@ Jurisdiction
 
 
 Data Source Classification	
-----
+--------------------------
 :Description: The specific type of the :ref:`Data source <Data source>` based on the vocabulary defined for this property.
 :Type: Vocabulary: `Data Source Classification <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-DataSourceClassification>`_
 :Use: Mandatory (1)
@@ -162,7 +162,7 @@ Data Source Classification
 
 
 Research Product Types	
-----
+----------------------
 :Description: The types of OpenAIRE entities managed by the :ref:`Data source <Data source>`, based on the vocabulary for this property	
 :Type: List of vocabulary terms: `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_
 :Use: Mandatory (1)
@@ -174,7 +174,7 @@ Research Product Types
 
 
 Thematic	
-----
+--------
 :Description: Boolean value specifying if the :ref:`Data source <Data source>` is dedicated to a given discipline or is instead discipline agnostic	
 :Type: Boolean
 :Use: Mandatory (1)
@@ -186,19 +186,19 @@ Thematic
 
 
 Research Product Licensing	
-----
+--------------------------
 :Description: Licenses under which the research products contained within the :ref:`Data source <Data source>` can be made available. Repositories can allow a license to be defined for each research product, while for scientific databases the database is typically provided under a single license.	
 :Type: List
 :Use: Recommended (0..1)
  
 Research Product License Name		
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 :Description: 
 :Type: String
 :Use: Mandatory (1)
  
 Research Product License URL
-^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 :Description: 
 :Type: URL
 :Use: Mandatory (1)
@@ -215,7 +215,7 @@ Research Product License URL
 
 
 Research Product Access Policy		
-----
+------------------------------
 :Description: 
 :Type: List of terms following vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_
 :Use: Recommended (0..1)
@@ -227,19 +227,19 @@ Research Product Access Policy
 
 
 Research Product Metadata Licensing	
-----
+-----------------------------------
 :Description: Metadata Policy for information describing items in the repository: Access and re-use of metadata.
 :Type: List
 :Use: Recommended (0..1)
 
 Research Product Metadata License Name		
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 :Description: 
 :Type: String
 :Use: Mandatory (1)
 
 Research Product Metadata License URL
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 :Description: 
 :Type: URL
 :Use: Mandatory (1)
@@ -256,7 +256,7 @@ Research Product Metadata License URL
 
 
 Research Product Metadata Access Policy		
-----
+---------------------------------------
 :Description: 
 :Type: List of terms following vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_
 :Use: Recommended (0..1)

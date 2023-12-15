@@ -17,7 +17,7 @@ This section is to describe the metadata fields for the :ref:`Venue <Venue>`.
 
 
 Local identifier		
-----
+----------------
 :Description: Unique code identifiying the :ref:`Venue <Venue>` in the SKG (if any, otherwise "stateless identifier").
 :Type: String
 :Use: Mandatory (1)
@@ -29,13 +29,13 @@ Local identifier
 
 
 Identifiers			
-----
+-----------
 :Description: Identifier for the resource outside of the SKG.
 :Type: List
 :Use: Optional, (0..1)
 
 Scheme
-^^^^^^^^^^^
+^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String one of the following
 
@@ -52,7 +52,7 @@ Scheme
 :Use: Mandatory (1)
 
 Value
-^^^^^^^^^
+^^^^^
 :Description: The external identifier.
 :Type: String
 :Use: Mandatory (1)
@@ -85,7 +85,7 @@ Name
 
 
 Acronym
-----
+-------
 :Description: Acronym used by a :ref:`Venue <Venue>`.
 :Type: String
 :Use: Recommended (0..1)
@@ -123,7 +123,7 @@ Type
 
 
 Publisher
-----
+---------
 :Description: The name of the publisher (for journals, books, conferences).
 :Type: String
 :Use: Optional (0..1)
@@ -135,7 +135,7 @@ Publisher
 
 
 Series
-----
+------
 :Description: The name of the conference or book series.
 :Type: String
 :Use: Optional (0..1)
@@ -147,7 +147,7 @@ Series
 
 
 Is currently full open access
-----
+-----------------------------
 :Description: True if the :ref:`Venue <Venue>` contains only open access products 
 :Type: Boolean
 :Use: Mandatory (1)
@@ -159,7 +159,7 @@ Is currently full open access
 
 
 Creation date
-----
+-------------
 :Description: The date of creation of the :ref:`Venue <Venue>`
 :Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string)
 :Use: Recommended (1)
@@ -171,19 +171,19 @@ Creation date
 
 
 Contributions
-------
+-------------
 :Description: A list of all the :ref:`Person` that contributed to the :ref:`Venue <Venue>`.
 :Type: List
 :Use: Optional (0..1)
 
 Person
-^^^^^^^^^
+^^^^^^
 :Description: The id of a :ref:`Person`.
 :Type: String 
 :Use: Mandatory (1)
 
 Roles
-^^^^^^^^^
+^^^^^
 :Description: The roles of the :ref:`Person` contributing to the :ref:`Venue <Venue>`.
 :Type: List of strings 
 :Use: Mandatory (1)

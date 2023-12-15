@@ -11,7 +11,7 @@ This section describes the metadata fields for a :ref:`Topic <Topic>`.
 
 
 Local identifier		
-----
+----------------
 :Description: Unique code identifiying the :ref:`Topic <Topic>` in the SKG (if any, otherwise "stateless identifier").
 :Type: String
 :Use: Mandatory (1)
@@ -23,19 +23,19 @@ Local identifier
 
 
 Identifiers			
-----
+-----------
 :Description: Identifier for the entity outside of the SKG (e.g., PID, pURL). 
 :Type: List
 :Use: Optional, (0..1)
 
 Scheme
-^^^^^^^^^^^
+^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
 :Use: Mandatory (1)
 
 Value
-^^^^^^^^^
+^^^^^
 :Description: The external identifier.
 :Type: String
 :Use: Mandatory (1)
