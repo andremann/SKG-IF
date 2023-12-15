@@ -109,7 +109,7 @@ Type
 
 .. tabularcolumns:: p{0.132\linewidth}p{0.198\linewidth}p{0.330\linewidth}
 .. csv-table:: Controlled vocabulary for different types of venue and its mapping towards OpenCitations
-   :name: tables-csv-example
+   :name: types-of-venues
    :header: "SKG-IF", "OpenCitations"
    :class: longtable
    :align: center

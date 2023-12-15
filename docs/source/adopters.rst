@@ -8,7 +8,7 @@ SKG-IF adopters
 
 .. tabularcolumns:: p{0.132\linewidth}p{0.198\linewidth}p{0.330\linewidth}
 .. csv-table:: List of SKG-IF adopters and contacts
-   :name: tables-csv-example
+   :name: skg-if-adopters
    :header: "SKG name", "Organisation", "Contact person", "Documentation"
    :class: longtable
    :align: center
