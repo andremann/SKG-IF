@@ -260,7 +260,7 @@ Related products
 *List* (recommended): A list of objects representing related :ref:`Research product` and the semantics of such relationships.
 Each object in the list is strucutred as follows:
 
-``relation_type`` *String* (mandatory): A list of :ref:`Research product` identifiers supplementing the present one. One of the following selection of `DataCite relationTypes <https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf>`_ 
+* ``relation_type`` *String* (mandatory): A list of :ref:`Research product` identifiers supplementing the present one. One of the following selection of `DataCite relationTypes <https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf>`_ 
 
     * cites
     * is_supplemented_by
@@ -268,7 +268,7 @@ Each object in the list is strucutred as follows:
     * is_new_version_of
     * is_part_of
 
-``products`` *List* (mandatory): A list of :ref:`Research product` identifiers describing the present one.
+* ``products`` *List* (mandatory): A list of :ref:`Research product` identifiers describing the present one.
 
 .. code-block:: json
    :linenos:
