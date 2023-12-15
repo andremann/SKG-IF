@@ -1,5 +1,6 @@
+================================
 Welcome to SKG-IF documentation!
-===================================
+================================
 
 This documentation provides an overview of the work started by the RDA Interest Group on
 `Open Science Graphs for FAIR Data <https://rd-alliance.org/groups/open-science-graphs-fair-data-ig>`_ 
@@ -18,7 +19,7 @@ Contents
 
 .. toctree::
    :maxdepth: 2
-   
+   :numbered:
    
    model
    exchange
@@ -26,4 +27,3 @@ Contents
    contribute
    references
    changelog
-   .. test

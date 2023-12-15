@@ -1,7 +1,7 @@
 .. _Research product:
 
 Research products
-++++++++++++++++++++++++++++++++
++++++++++++++++++
 
 This entity models :ref:`Research product`, which may be of four types, as follows.
 
@@ -13,13 +13,13 @@ This entity models :ref:`Research product`, which may be of four types, as follo
 
 
 Properties
-====
+==========
 
 This section describes the metadata fields for the :ref:`Research product`.
 
 
 Local identifier
-----
+----------------
 *String* (mandatory): Unique code identifiying the :ref:`Research product <Research product>` in the SKG (if any, otherwise "stateless identifier")
 
 .. code-block:: json
@@ -29,7 +29,7 @@ Local identifier
 
 
 Identifiers
-----
+-----------
 *List* (optional):  A list objects representing of external identifiers for the entity. Each object is structured as follows.
 
 * ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., doi, handle, purl, pubmed, etc.).
@@ -47,7 +47,7 @@ Identifiers
     
 
 Titles
-----
+------
 *Object* (mandatory): The titles of a :ref:`Research product <Research product>` (multiple for multilinguism). 
 The object is a dictionary, the keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key ``none`` is reserved whenever the informtion about the language is not available or cannot be shared.
 
@@ -62,7 +62,7 @@ The object is a dictionary, the keys represent language codes following `ISO 639
 
 
 Abstracts
---------
+---------
 *Object* (recommended): The abstracts of a :ref:`Research product <Research product>` (multiple for multilinguism).
 The object is a dictionary, the keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key ``none`` is reserved whenever the informtion about the language is not available or cannot be shared.
 
@@ -77,7 +77,7 @@ The object is a dictionary, the keys represent language codes following `ISO 639
 
 
 Product type
------
+------------
 *String* (mandatory): The type of the :ref:`Research product <Research product>`. One of the following values:
 
     * literature
@@ -92,16 +92,16 @@ Product type
 
 
 Topics
---------------------
+------
 *List* (recommended): A list objects referring to :ref:`Topic` covered by the :ref:`Research product <Research product>`. 
 Each object in the list has the following properties:
 
 * ``topic`` *String* (mandatory): The identifier of a :ref:`Topic <Topic>` relevant for the :ref:`Research product <Research product>`.
 * ``provenance`` *List* (recommended): A list of provenance information tracking the origin of the relation between a :ref:`Topic` and a :ref:`Research product <Research product>`. Each topic provenance object has the following properties:
-    
+
     * ``type`` *String* (mandatory): A string tracking the provenance of the topic relation.
     * ``trust`` *Float* (mandatory): A numeric value associated to the trust given to the relation to a :ref:`Topic`. The float should be normalised in the range [0,1].
- 
+
 .. code-block:: json
    :linenos:
 
@@ -128,7 +128,7 @@ Each object in the list has the following properties:
 
 
 Contributions
---------------------
+-------------
 *List* (mandatory): A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisations <Organisation>` when working to a :ref:`Research product <Research product>`.
 Each object is structured as follows:
 
@@ -151,7 +151,7 @@ Each object is structured as follows:
 
 
 Manifestations
---------------------
+--------------
 *List* (mandatory):  A list of objects representing multiple manifestations of the same :ref:`Research product <Research product>` (e.g., a preprint, a postprint, etc.).
 Each manifestation object has the following structure:
 
@@ -197,8 +197,8 @@ Each manifestation object has the following structure:
     * ``volume`` *String* (optional): Volume number (for journals, books, conferences).
     * ``edition`` *String* (optional): The edition (for journals and books).
     * ``number`` *String* (optional): Journal number.
-    * ``venue``*String* (optional): A :ref:`Venue <Venue>` identifier for the manifestation.
-    * ``hosting_data_source`` *String* (optional): A :ref:`Data source <Data source>` identifier for the manifestation.`
+    * ``venue`` *String* (optional): A :ref:`Venue <Venue>` identifier for the manifestation.
+    * ``hosting_data_source`` *String* (optional): A :ref:`Data source <Data source>` identifier for the manifestation.
 
 .. code-block:: json
    :linenos:
@@ -236,7 +236,7 @@ Each manifestation object has the following structure:
 
 
 Relevant organisations
---------------------
+----------------------
 *List* (recommended): A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the :ref:`Research product <Research product>` (In case the individual affiliations of the :ref:`Person <Person>` are not available).
 
 .. code-block:: json
@@ -246,7 +246,7 @@ Relevant organisations
 
  
 Funding
---------------------
+-------
 *List* (recommended): A list of relevant :ref:`Grant <Grant>` identifiers associated with the :ref:`Research product <Research product>`.
 
 .. code-block:: json
@@ -256,7 +256,7 @@ Funding
     
 
 Related products
---------------------
+----------------
 *List* (recommended): A list of objects representing related :ref:`Research product` and the semantics of such relationships.
 Each object in the list is structured as follows:
 

@@ -1,7 +1,7 @@
 .. _Exchange:
 
 Exchange protocols
-######
+##################
 
 For the sake of simplicity, JSON has been chosen as a reference data format in the examples describing the properties of the 
 entities comprised in SKG-IF.

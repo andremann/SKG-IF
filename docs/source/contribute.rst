@@ -1,5 +1,5 @@
 How to contribute
-########################
+#################
 
 
 If you wish to contribute to or extend the SKG-IF, please subscribe to the 

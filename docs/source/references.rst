@@ -1,5 +1,5 @@
 References
-##################
+##########
 
 
 - `Interesting article <https://sr.ithaka.org/publications/common-scholarly-communication-infrastructure-landscape-review>`_ by Oya Y. Rieger, Roger C. Schonfeld on "Common Scholarly Communication Infrastructure Landscape Review" talking about SKG-IF (among many other things), 2023.

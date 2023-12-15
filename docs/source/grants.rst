@@ -1,7 +1,7 @@
 .. _Grant:
 
 Grants
-########
+######
 The entity :ref:`Grant <Grant>` describes funding awarded to a :ref:`Person <Person>` or an :ref:`Organisation <Organisation>` 
 by a funding body. These bodies, both public and private, can be funders, foundations, governments, agencies or institutions. 
 
@@ -11,7 +11,7 @@ Properties
 
 
 Local identifier
-----
+----------------
 :Description: Unique code identifiying the :ref:`Grant <Grant>` in the SKG (if any, otherwise "stateless identifier").
 :Type: String
 :Use: Mandatory (1)
@@ -23,19 +23,19 @@ Local identifier
 
 
 Identifiers			
-----
+-----------
 :Description: Identifier for the entity outside of the SKG (e.g., PID). 
 :Type: List
 :Use: Recommended (1)
 
 Scheme
-^^^^^^^^^^^
+^^^^^^
 :Description: The scheme for the external identifier.
 :Type: String
 :Use: Mandatory (1)
 
 Value
-^^^^^^^^^
+^^^^^
 :Description: The external identifier.
 :Type: String
 :Use: Mandatory (1)
@@ -52,7 +52,7 @@ Value
 
 
 Title
-----
+-----
 :Description: Title of the :ref:`Grant <Grant>`.
 :Type: String
 :Use: Mandatory (1)
@@ -64,7 +64,7 @@ Title
 
 
 Abstract
-----
+--------
 :Description: The abstract or a description of the :ref:`Grant <Grant>`.
 :Type: String
 :Use: Recommended (1)
@@ -76,7 +76,7 @@ Abstract
 
 
 Acronym
-----
+-------
 :Description: The acronym of the :ref:`Grant <Grant>`.
 :Type: String
 :Use: Optional (1)
@@ -100,7 +100,7 @@ Funder
 
 
 Funding stream
-------
+--------------
 :Description: The funding stream of the :ref:`Grant <Grant>`.
 :Type: String
 :Use: Optional (0..1)
@@ -112,10 +112,11 @@ Funding stream
 
 
 Currency
-------
+--------
 :Description: Currency of the funded amount.
 :Type: String (following `ISO 4217 <https://en.wikipedia.org/wiki/ISO_4217>`_ )
 :Use: Optional (0..1), Mandatory if funded amount is given
+
 .. code-block:: json
    :linenos:
 
@@ -123,12 +124,11 @@ Currency
 
 
 Funded amount
-------
+-------------
 :Description: Amount funded for the :ref:`Grant <Grant>`.
 :Type: Number
 :Use: Optional (0..1)
 
- 
 .. code-block:: json
    :linenos:
 
@@ -136,7 +136,7 @@ Funded amount
 
 
 Keywords
-----
+--------
 :Description: A list of keywords for the :ref:`Grant <Grant>`.
 :Type: List
 :Use: Optional (0..1)
@@ -148,7 +148,7 @@ Keywords
 
 
 Start date
-----
+----------
 :Description: The date the :ref:`Grant <Grant>` started.
 :Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_  date string)
 :Use: Recommended (0..1)
@@ -160,7 +160,7 @@ Start date
 
 
 End date
-----
+--------
 :Description: The date the :ref:`Grant <Grant>` finished.
 :Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string)
 :Use: Recommended, (0..1)
@@ -172,7 +172,7 @@ End date
 
 
 Website
-----
+-------
 :Description: :ref:`Grant <Grant>` website.
 :Type: URL
 :Use: Recommended (0..1)
@@ -184,7 +184,7 @@ Website
 
 
 Beneficiaries
-----
+-------------
 :Description: A list of the :ref:`Organisation` identifiers funded by the :ref:`Grant <Grant>`.
 :Type: List
 :Use: Recommended (0..1)
@@ -196,25 +196,25 @@ Beneficiaries
 
 
 Contributors
-----
+------------
 :Description: A list of the :ref:`Person` contributing to the :ref:`Grant <Grant>`.
 :Type: List
 :Use: Recommended (0..1)
  
- Person
- ^^^^^^^^^^^
+Person
+^^^^^^
 :Description: The identifier of the :ref:`Person` who is the principal investigator  
 :Type: 
 :Use: 
 
- Organisation
- ^^^^^^^^^^^
+Organisation
+^^^^^^^^^^^^
 :Description: The identifier of the :ref:`Organisation <Organisation>` the principal investigator has declared as affiliation for the :ref:`Grant <Grant>`.
 :Type: 
 :Use: 
 
- Roles
- ^^^^^^^^^^^
+Roles
+^^^^^
 :Description: A list of the roles that the :ref:`Person` has in the :ref:`Grant <Grant>`.
 :Type: List of roles.
 :Use: Recommended (1)
