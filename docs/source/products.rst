@@ -237,9 +237,7 @@ Each manifestation object has the following structure:
 
 Relevant organisations
 --------------------
-:Description: A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the :ref:`Research product <Research product>` (In case the individual affiliations of the :ref:`Person <Person>` are not available).
-:Type: List
-:Use: Recommended (0..1)
+*List* (recommended): A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the :ref:`Research product <Research product>` (In case the individual affiliations of the :ref:`Person <Person>` are not available).
 
 .. code-block:: json
    :linenos:
@@ -249,9 +247,7 @@ Relevant organisations
  
 Funding
 --------------------
-:Description: A list of relevant :ref:`Grant <Grant>` identifiers associated with the :ref:`Research product <Research product>`.
-:Type: List
-:Use: Recommended (0..1)
+*List* (recommended): A list of relevant :ref:`Grant <Grant>` identifiers associated with the :ref:`Research product <Research product>`.
 
 .. code-block:: json
    :linenos:
@@ -261,14 +257,10 @@ Funding
 
 Related products
 --------------------
-:Description: A list objects representing related :ref:`Research product` and the semantics of such relationships.
-:Type: List
-:Use: Recommended (0..1)
+*List* (recommended): A list of objects representing related :ref:`Research product` and the semantics of such relationships.
+Each object in the list is strucutred as follows:
 
-Relation Type
-^^^^^^^^^^^^^^^^
-:Description: A list of :ref:`Research product` identifiers supplementing the present one.
-:Type: String; one of the following selection of `DataCite relationTypes <https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf>`_ 
+``Relation Type`` *String* (mandatory): A list of :ref:`Research product` identifiers supplementing the present one. One of the following selection of `DataCite relationTypes <https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf>`_ 
 
     * cites
     * is_supplemented_by
@@ -276,13 +268,7 @@ Relation Type
     * is_new_version_of
     * is_part_of
 
-:Use: Mandatory (1)
-
-Product list
-^^^^^^^^^^^^^^^^
-:Description: A list of :ref:`Research product` identifiers describing the present one.
-:Type: List
-:Use: Mandatory (1)
+``Product list`` *List* (mandatory): A list of :ref:`Research product` identifiers describing the present one.
 
 .. code-block:: json
    :linenos:
