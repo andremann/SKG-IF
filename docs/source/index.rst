@@ -27,4 +27,3 @@ Contents
    contribute
    references
    changelog
-   .. test
