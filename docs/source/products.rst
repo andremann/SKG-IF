@@ -190,7 +190,7 @@ Roles
 
 Rank
 ^^^^
-:Description: The rank of the :ref:`Person <Person>` in the author list of a :ref:`Product <Product>`.
+:Description: The rank of the :ref:`Person <Person>` in the author list of a :ref:`Research product <Research product>`.
 :Type: Integer
 :Use: Recommended (0..1)
 
