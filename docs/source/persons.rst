@@ -70,10 +70,10 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
 
 ``affiliations``
 ------
-*List* (optional): A list of all the affiliations of a :ref:`Person <Person>` (*à la* ORCID).
+*List* (optional): A list of all the affiliations of a :ref:`Person <Person>` (*à la* ORCID). Each element of the list is structured as follows:
 
 * ``organisation`` *String* (mandatory): The identifier of the :ref:`Organisation <Organisation>` a :ref:`Person <Person>` is affiliated with. 
-* ``Start date`` *String* (recommended): The start date of the affiliation with the :ref:`Organisation <Organisation>`. It adheres to `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_.
+* ``start_date`` *String* (recommended): The start date of the affiliation with the :ref:`Organisation <Organisation>`. It adheres to `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_.
 * ``end_date`` *String* (optional): The end day (if any) of the affiliation with the :ref:`Organisation <Organisation>`. It adheres to `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_.
 
 .. code-block:: json
