@@ -12,16 +12,12 @@ A data source is described by the `EOSC Profile for data sources <https://wiki.e
     Each :ref:`Research product <Research product>` must be associated with its publishing :ref:`Venue <Venue>` and its :ref:`Data source <Data source>`.
 
 
-Properties
-==========
 This section describes the metadata fields for a :ref:`Data source <Data source>`.
 
 
-Local identifier		
+``local_identifier``		
 ----
-:Description: Unique code identifiying a :ref:`Data source <Data source>` in the SKG (if any, otherwise "stateless identifier").
-:Type: String
-:Use: Mandatory (1)
+*String* (mandatory): Unique code identifiying a :ref:`Data source <Data source>` in the SKG (if any, otherwise "stateless identifier").
  
 .. code-block:: json
    :linenos:
@@ -29,23 +25,12 @@ Local identifier
     "local_identifier": "123"
 
 
-Identifiers			
+``identifiers``
 ----
-:Description: Identifier for the entity outside of the SKG (e.g., PID). 
-:Type: List
-:Use: Optional (0..1)
+*List* (optional):  A list objects representing of external identifiers for the entity. Each object is structured as follows.
 
-Scheme
-^^^^^^^^^^^
-:Description: The scheme for the external identifier.
-:Type: String
-:Use: Mandatory (1)
-
-Value
-^^^^^^^^^
-:Description: The external identifier.
-:Type: String
-:Use: Mandatory (1)
+* ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., a DOI).
+* ``value`` *String* (mandatory): The external identifier.
 
 .. code-block:: json
    :linenos:
@@ -58,11 +43,9 @@ Value
     ]
 
 
-Name		
+``name``
 ----
-:Description: Name of the :ref:`Data source <Data source>`.
-:Type: String
-:Use: Mandatory (1)
+*String* (mandatory): Name of the :ref:`Data source <Data source>`.
  
 .. code-block:: json
    :linenos:
@@ -70,11 +53,9 @@ Name
     "name": "Zenodo"
 
 
-Submission policy URL	
+``submission_policy_url``	
 ----
-:Description: This policy provides a comprehensive framework for the contribution of research products. Criteria for submitting content to the repository as well as product preparation guidelines can be stated. Concepts for quality assurance may be provided.
-:Type: URL
-:Use: Recommended (0..1)
+*String* (recommended): This policy provides a comprehensive framework for the contribution of research products. Criteria for submitting content to the repository as well as product preparation guidelines can be stated. Concepts for quality assurance may be provided.
  
 .. code-block:: json
    :linenos:
@@ -82,11 +63,9 @@ Submission policy URL
     "submission_policy_url": "https://..."
 
 
-Preservation policy URL	
+``preservation_policy_url``	
 ----
-:Description: This policy provides a comprehensive framework for the long-term preservation of the research products. Principles aims and responsibilities must be clarified. An important aspect is the description of preservation concepts to ensure the technical and conceptual utility of the content.
-:Type: URL
-:Use: Recommended (0..1)
+*String* (recommended): This policy provides a comprehensive framework for the long-term preservation of the research products. Principles aims and responsibilities must be clarified. An important aspect is the description of preservation concepts to ensure the technical and conceptual utility of the content.
  
 .. code-block:: json
    :linenos:
@@ -94,11 +73,9 @@ Preservation policy URL
     "preservation_policy_url": "https://..."
 
 
-Version control	
+``version_control``	
 ----
-:Description: If data versioning is supported: the :ref:`Data source <Data source>` explicitly allows the deposition of different versions of the same object
-:Type: Boolean
-:Use: Optional (0..1)
+*Boolean* (optional): If data versioning is supported: the :ref:`Data source <Data source>` explicitly allows the deposition of different versions of the same object
  
 .. code-block:: json
    :linenos:
@@ -106,25 +83,13 @@ Version control
     "version_control": true
 
 
-Persistent Identity Systems	
+``persistent_identity_systems``	
 ----
-:Description: The persistent identifier systems that are used by the :ref:`Data source <Data source>` to identify the ProductType it supports.
-:Type: List
-:Use: Recommended (0..1)
+*List* (recommended): The persistent identifier systems that are used by the :ref:`Data source <Data source>` to identify the ProductType it supports.
 
 
-Persistent Identity Product Type
-^^^^^^^^^^^^^^
-:Description: 	Specify the ProductType to which the persistent identifier is referring to.
-:Type: Vocabulary: `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_
-:Use: Mandatory (1)
-
-
-Persistent Identity Product Type Scheme	
-^^^^^^^^^^^^^^^^
-:Description: Specify the list of persistent identifier schemes used to refer to ProductTypes
-:Type: List of terms following the vocabulary: `Persistent Identity Scheme <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-PersistentIdentityScheme>`_
-:Use: Mandatory (1)
+* ``product_type`` *String* (mandatory): The Product type to which the persistent identifier is referring to. Follows the EOSC vocabulary `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_.
+* ``pid_schemes`` *List* (mandatory): the list of persistent identifier schemes used to refer to ProductTypes. Each elements must be drawn by the EOSC vocabulary `Persistent Identity Scheme <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-PersistentIdentityScheme>`_.
  
 .. code-block:: json
    :linenos:
@@ -132,16 +97,14 @@ Persistent Identity Product Type Scheme
     "persistent_identity_systems": [
         {
             "product_type": "Research Literature",
-            "pid_scheme": ["DOI", "Handle"]
+            "pid_schemes": ["DOI", "Handle"]
         }
     ]
 
 
-Jurisdiction	
+``jurisdiction``	
 ----
-:Description: The property defines the jurisdiction of the users of the :ref:`Data source <Data source>`, based on the vocabulary for this property	
-:Type: Vocabulary: `Jurisdiction <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-Jurisdiction>`_ 
-:Use: Mandatory (1)
+*String* (mandatory): The property defines the jurisdiction of the users of the :ref:`Data source <Data source>`, based on the vocabulary `Jurisdiction <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-Jurisdiction>`_.
  
 .. code-block:: json
    :linenos:
@@ -149,11 +112,9 @@ Jurisdiction
     "jurisdiction": "National"
 
 
-Data Source Classification	
+``data_source_classification``	
 ----
-:Description: The specific type of the :ref:`Data source <Data source>` based on the vocabulary defined for this property.
-:Type: Vocabulary: `Data Source Classification <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-DataSourceClassification>`_
-:Use: Mandatory (1)
+*String* (mandatory): The specific type of the :ref:`Data source <Data source>` based on the vocabulary `Data Source Classification <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-DataSourceClassification>`_.
  
 .. code-block:: json
    :linenos:
@@ -161,11 +122,9 @@ Data Source Classification
     "data_source_classification": "Journal Archive"
 
 
-Research Product Types	
+``research_product_type``	
 ----
-:Description: The types of OpenAIRE entities managed by the :ref:`Data source <Data source>`, based on the vocabulary for this property	
-:Type: List of vocabulary terms: `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_
-:Use: Mandatory (1)
+*List* (mandatory): The types of OpenAIRE entities managed by the :ref:`Data source <Data source>`, based on the vocabulary `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_.
  
 .. code-block:: json
    :linenos:
@@ -173,11 +132,9 @@ Research Product Types
     "research_product_type": []
 
 
-Thematic	
+``thematic``	
 ----
-:Description: Boolean value specifying if the :ref:`Data source <Data source>` is dedicated to a given discipline or is instead discipline agnostic	
-:Type: Boolean
-:Use: Mandatory (1)
+*Boolean* (mandatory): Boolean value specifying if the :ref:`Data source <Data source>` is dedicated to a given discipline or is instead discipline agnostic.
  
 .. code-block:: json
    :linenos:
@@ -185,23 +142,12 @@ Thematic
     "thematic": false
 
 
-Research Product Licensing	
+``research_product_license``	
 ----
-:Description: Licenses under which the research products contained within the :ref:`Data source <Data source>` can be made available. Repositories can allow a license to be defined for each research product, while for scientific databases the database is typically provided under a single license.	
-:Type: List
-:Use: Recommended (0..1)
+*List* (recommended): Licenses under which the research products contained within the :ref:`Data source <Data source>` can be made available. Repositories can allow a license to be defined for each research product, while for scientific databases the database is typically provided under a single license. Each element in the list is structured as follows:
  
-Research Product License Name		
-^^^^^^^
-:Description: 
-:Type: String
-:Use: Mandatory (1)
- 
-Research Product License URL
-^^^^^^^^^
-:Description: 
-:Type: URL
-:Use: Mandatory (1)
+* ``Research Product License Name`` *String* (mandatory): 
+* ``Research Product License URL`` *String* (mandatory): 
  
 .. code-block:: json
    :linenos:
@@ -214,11 +160,9 @@ Research Product License URL
     ]
 
 
-Research Product Access Policy		
+``research_product_access_policy``		
 ----
-:Description: 
-:Type: List of terms following vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_
-:Use: Recommended (0..1)
+*List* (recommended): List of terms following vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_.
  
 .. code-block:: json
    :linenos:
@@ -226,23 +170,12 @@ Research Product Access Policy
     "research_product_access_policy": ["open access"]
 
 
-Research Product Metadata Licensing	
+``research_product_metadata_license``	
 ----
-:Description: Metadata Policy for information describing items in the repository: Access and re-use of metadata.
-:Type: List
-:Use: Recommended (0..1)
+*List* (recommended): Metadata Policy for information describing items in the repository: Access and re-use of metadata. Each element has the following properties:
 
-Research Product Metadata License Name		
-^^^^^^^^^^^^
-:Description: 
-:Type: String
-:Use: Mandatory (1)
-
-Research Product Metadata License URL
-^^^^^^^^^^^^^^^^^^
-:Description: 
-:Type: URL
-:Use: Mandatory (1)
+* ``name`` *String* (mandatory): 
+* ``url`` *String* (mandatory): 
  
 .. code-block:: json
    :linenos:
@@ -255,11 +188,9 @@ Research Product Metadata License URL
     ]
 
 
-Research Product Metadata Access Policy		
+``research_product_metadata_access_policy``		
 ----
-:Description: 
-:Type: List of terms following vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_
-:Use: Recommended (0..1)
+*List* (recommended): List of terms following vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_.
  
 .. code-block:: json
    :linenos:
