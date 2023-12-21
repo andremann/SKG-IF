@@ -197,7 +197,7 @@ Each manifestation object has the following structure:
     * ``volume`` *String* (optional): Volume number (for journals, books, conferences).
     * ``edition`` *String* (optional): The edition (for journals and books).
     * ``number`` *String* (optional): Journal number.
-    * ``venue``*String* (optional): A :ref:`Venue <Venue>` identifier for the manifestation.
+    * ``venue`` *String* (optional): A :ref:`Venue <Venue>` identifier for the manifestation.
     * ``hosting_data_source`` *String* (optional): A :ref:`Data source <Data source>` identifier for the manifestation.`
 
 .. code-block:: json
