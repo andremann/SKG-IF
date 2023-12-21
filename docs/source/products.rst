@@ -25,7 +25,7 @@ This section describes the metadata fields for the :ref:`Research product`.
     "local_identifier": "product_1"
 
 
-Identifiers
+``identifiers``
 ----
 *List* (optional):  A list objects representing of external identifiers for the entity. Each object is structured as follows.
 
@@ -43,7 +43,7 @@ Identifiers
     ]
     
 
-Titles
+``titles``
 ----
 *Object* (mandatory): The titles of a :ref:`Research product <Research product>` (multiple for multilinguism). 
 The object is a dictionary, the keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key ``none`` is reserved whenever the informtion about the language is not available or cannot be shared.
@@ -58,7 +58,7 @@ The object is a dictionary, the keys represent language codes following `ISO 639
     }
 
 
-Abstracts
+``abstracts``
 --------
 *Object* (recommended): The abstracts of a :ref:`Research product <Research product>` (multiple for multilinguism).
 The object is a dictionary, the keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key ``none`` is reserved whenever the informtion about the language is not available or cannot be shared.
@@ -73,14 +73,14 @@ The object is a dictionary, the keys represent language codes following `ISO 639
     }
 
 
-Product type
+``product_type``
 -----
 *String* (mandatory): The type of the :ref:`Research product <Research product>`. One of the following values:
 
-    * literature
-    * research data
-    * research software
-    * other
+    * ``literature``
+    * ``research data``
+    * ``research software``
+    * ``other``
 
 .. code-block:: json
    :linenos:
@@ -88,7 +88,7 @@ Product type
     "product_type": "literature"
 
 
-Topics
+``topics``
 --------------------
 *List* (recommended): A list objects referring to :ref:`Topic` covered by the :ref:`Research product <Research product>`. 
 Each object in the list has the following properties:
@@ -124,7 +124,7 @@ Each object in the list has the following properties:
     ]
 
 
-Contributions
+``contributions``
 --------------------
 *List* (mandatory): A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisations <Organisation>` when working to a :ref:`Research product <Research product>`.
 Each object is structured as follows:
@@ -147,7 +147,7 @@ Each object is structured as follows:
     ]
 
 
-Manifestations
+``manifestations``
 --------------------
 *List* (mandatory):  A list of objects representing multiple manifestations of the same :ref:`Research product <Research product>` (e.g., a preprint, a postprint, etc.).
 Each manifestation object has the following structure:
@@ -161,27 +161,27 @@ Each manifestation object has the following structure:
 
 * ``peer_review`` *String* (mandatory): Whether the :ref:`Research product <Research product>` has undergone a peer review process. It can be one of the following:
 
-    * peer-reviewed
-    * not peer-reviewed
-    * single-blind
-    * double-blind
-    * open peer review
+    * ``peer-reviewed``
+    * ``not peer-reviewed``
+    * ``single-blind``
+    * ``double-blind``
+    * ``open peer review``
 
 * ``metadata_curation`` *String* (mandatory): Whether the :ref:`Research product <Research product>` has undergone a metadata curation process. It can be one of the following :
 
-    * yes
-    * no
-    * unavailable
+    * ``yes``
+    * ``no``
+    * ``unavailable``
 
 * ``url`` *String* (mandatory): An URL for the manifestation.
 * ``pid`` *String* (recommended): The pid for the specific manifestation.
 * ``access_rights`` *String* (mandatory): The access right for the specific materialisation. One of the following 
 
-    * open
-    * closed
-    * embargo
-    * restricted
-    * unavailable
+    * ``open``
+    * ``closed``
+    * ``embargo``
+    * ``restricted``
+    * ``unavailable``
 
 * ``licence`` *String* (recommended): Licence specific to the manifestation.
 * ``license_schema`` *String* (recommended): Schema of the licence.
@@ -232,7 +232,7 @@ Each manifestation object has the following structure:
     ]
 
 
-Relevant organisations
+``relevant_organisations``
 --------------------
 *List* (recommended): A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the :ref:`Research product <Research product>` (In case the individual affiliations of the :ref:`Person <Person>` are not available).
 
@@ -242,7 +242,7 @@ Relevant organisations
     "relevant_organisations": ["org_1", "org5"]
 
  
-Funding
+``funding``
 --------------------
 *List* (recommended): A list of relevant :ref:`Grant <Grant>` identifiers associated with the :ref:`Research product <Research product>`.
 
@@ -252,18 +252,18 @@ Funding
     "funding": ["grant_1", "grant_2"]
     
 
-Related products
+``related_products``
 --------------------
 *List* (recommended): A list of objects representing related :ref:`Research product` and the semantics of such relationships.
 Each object in the list is structured as follows:
 
 * ``relation_type`` *String* (mandatory): A list of :ref:`Research product` identifiers supplementing the present one. One of the following selection of `DataCite relationTypes <https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf>`_ 
 
-    * cites
-    * is_supplemented_by
-    * is_documented_by
-    * is_new_version_of
-    * is_part_of
+    * ``cites``
+    * ``is_supplemented_by``
+    * ``is_documented_by``
+    * ``is_new_version_of``
+    * ``is_part_of``
 
 * ``products`` *List* (mandatory): A list of :ref:`Research product` identifiers describing the present one.
 
