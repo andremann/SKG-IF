@@ -19,7 +19,7 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
 ``identifiers``
 ----
-*List* (optional):  A list objects representing of external identifiers for the entity. Each object is structured as follows.
+*List* (optional):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
 
 * ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., CORDIS).
 * ``value`` *String* (mandatory): The external identifier.

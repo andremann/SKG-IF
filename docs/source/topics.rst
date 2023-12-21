@@ -2,7 +2,7 @@
 
 Topics
 ######
-A :ref:`Topic <Topic>` entity describes the scientific disciplines, the subjects and the keywords potentially relevant for a :ref:`Research product <Research product>`.
+A :ref:`Topic <Topic>` describes the scientific disciplines, subjects and keywords potentially relevant for a :ref:`Research product <Research product>`.
 
 
 This section describes the metadata fields for a :ref:`Topic <Topic>`.
@@ -20,7 +20,7 @@ This section describes the metadata fields for a :ref:`Topic <Topic>`.
 
 ``identifiers``
 ----
-*List* (optional):  A list objects representing of external identifiers for the entity. Each object is structured as follows.
+*List* (optional):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
 
 * ``scheme`` *String* (mandatory): The scheme for the external identifier.
 * ``value`` *String* (mandatory): The external identifier.

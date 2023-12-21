@@ -26,7 +26,7 @@ This section is to describe the metadata fields for the :ref:`Venue <Venue>`.
 
 ``identifiers``
 ----
-*List* (recommended): A list objects representing of external identifiers for the entity. Each object is structured as follows.
+*List* (recommended): A list of objects representing external identifiers for the entity. Each object is structured as follows.
 
 * ``scheme`` *String* (mandatory): The scheme for the external identifier. It can be one of the following
 

@@ -27,7 +27,7 @@ This section describes the metadata fields for the :ref:`Research product`.
 
 ``identifiers``
 ----
-*List* (optional):  A list objects representing of external identifiers for the entity. Each object is structured as follows.
+*List* (optional):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
 
 * ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., doi, handle, purl, pubmed, etc.).
 * ``value`` *String* (mandatory): The external identifier.
