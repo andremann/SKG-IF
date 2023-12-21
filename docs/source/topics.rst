@@ -5,16 +5,12 @@ Topics
 A :ref:`Topic <Topic>` entity describes the scientific disciplines, the subjects and the keywords potentially relevant for a :ref:`Research product <Research product>`.
 
 
-Properties
-==========
 This section describes the metadata fields for a :ref:`Topic <Topic>`.
 
 
-Local identifier		
+``local_identifier``		
 ----
-:Description: Unique code identifiying the :ref:`Topic <Topic>` in the SKG (if any, otherwise "stateless identifier").
-:Type: String
-:Use: Mandatory (1)
+*String* (mandatory): Unique code identifiying the :ref:`Topic <Topic>` in the SKG (if any, otherwise "stateless identifier").
  
 .. code-block:: json
    :linenos:
@@ -22,23 +18,12 @@ Local identifier
     "local_identifier": "topic_1"
 
 
-Identifiers			
+``identifiers``
 ----
-:Description: Identifier for the entity outside of the SKG (e.g., PID, pURL). 
-:Type: List
-:Use: Optional, (0..1)
+*List* (optional):  A list objects representing of external identifiers for the entity. Each object is structured as follows.
 
-Scheme
-^^^^^^^^^^^
-:Description: The scheme for the external identifier.
-:Type: String
-:Use: Mandatory (1)
-
-Value
-^^^^^^^^^
-:Description: The external identifier.
-:Type: String
-:Use: Mandatory (1)
+* ``scheme`` *String* (mandatory): The scheme for the external identifier.
+* ``value`` *String* (mandatory): The external identifier.
 
  
 .. code-block:: json
@@ -55,11 +40,9 @@ Value
         }
     ]
 
-Name
+``name``
 ----
-:Description: The display name of the :ref:`Topic <Topic>`.
-:Type: String
-:Use: Mandatory (1)
+*String* (mandatory): The display name of the :ref:`Topic <Topic>`.
 
 .. code-block:: json
    :linenos:
