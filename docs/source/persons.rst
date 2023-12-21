@@ -7,16 +7,12 @@ The :ref:`Person <Person>` entity represents an individual who is involved in th
 A :ref:`Person <Person>` can be an author, a reviewer, an editor, a publisher, a researcher, or any other stakeholder involved in the scholarly communication process. 
 
 
-Properties 
-===========
 This section describes the metadata fields for the :ref:`Person <Person>`.
 
 
-Local identifier
+``local_identifier``
 ----
-:Description: Unique code identifiying the :ref:`Person <Person>` in the SKG (if any, otherwise "stateless identifier").
-:Type: String
-:Use: Mandatory (1)
+*String* (mandatory): Unique code identifiying the :ref:`Person <Person>` in the SKG (if any, otherwise "stateless identifier").
  
 .. code-block:: json
    :linenos:
@@ -24,23 +20,12 @@ Local identifier
     "local_identifier": "the_id"
 
 
-Identifiers
+``identifiers``
 ----
-:Description: Identifier for the entity outside of the SKG (e.g., ORCID). 
-:Type: List
-:Use: Recommended (1)
+*List* (optional):  A list objects representing of external identifiers for the entity. Each object is structured as follows.
 
-Scheme
-^^^^^^^^^
-:Description: The scheme for the external identifier.
-:Type: String
-:Use: Mandatory (1)
-
-Value
-^^^^^^^^^^^
-:Description: The external identifier.
-:Type: String
-:Use: Mandatory (1)
+* ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., ORCID).
+* ``value`` *String* (mandatory): The external identifier.
 
 .. code-block:: json
    :linenos:
@@ -53,11 +38,9 @@ Value
     ]
 
 
-Given name
+``given_name``
 ---------
-:Description: The given name of a :ref:`Person <Person>`.
-:Type: String 
-:Use: Mandatory (1), unless an agent is specified
+*String* (mandatory): The given name of a :ref:`Person <Person>`.
 
 .. code-block:: json
    :linenos:
@@ -65,12 +48,9 @@ Given name
     "given_name": "John"
 
 
-Family name
+``family_name``
 -------------
-:Description: The family name of a :ref:`Person <Person>`.
-:Type: String
-:Use: Mandatory (1), unless an agent is specified.
-
+*String* (mandatory, unless an ``agent`` is specified): The family name of a :ref:`Person <Person>`.
 
 .. code-block:: json
    :linenos:
@@ -78,11 +58,9 @@ Family name
     "family_name": "Doe"
 
 
-Agent
+``agent``
 ------
-:Description: The name of an agent (e.g., a collactive name or a legal entity).
-:Type: String
-:Use: Optional (0..1), unless given name and family name are not present.
+*String* (optional, unless given name and family name are not present): The name of an agent (e.g., a collective name or a legal entity).
 
 .. code-block:: json
    :linenos:
@@ -90,29 +68,13 @@ Agent
     "agent": "Data curation team"
 
 
-Affiliations
+``affiliations``
 ------
-:Description: A list of all the affiliations of a :ref:`Person <Person>` (*à la* ORCID).
-:Type: List
-:Use: Optional (0..1)
+*List* (optional): A list of all the affiliations of a :ref:`Person <Person>` (*à la* ORCID).
 
-Organisation
-^^^^^^^^^
-:Description: The identifier of the :ref:`Organisation <Organisation>` a :ref:`Person <Person>` is affiliated with. 
-:Type: String
-:Use: Mandatory (1)
-
-Start date
-^^^^^^^^^
-:Description: The start date of the affiliation with the :ref:`Organisation <Organisation>`.
-:Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string)
-:Use: Recommended (1)
-
-End date
-^^^^^^^^^
-:Description: The end day (if any) of the affiliation with the :ref:`Organisation <Organisation>`.
-:Type: String (`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ date string)
-:Use: Optional (1)
+* ``organisation`` *String* (mandatory): The identifier of the :ref:`Organisation <Organisation>` a :ref:`Person <Person>` is affiliated with. 
+* ``Start date`` *String* (recommended): The start date of the affiliation with the :ref:`Organisation <Organisation>`. It adheres to `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_.
+* ``end_date`` *String* (optional): The end day (if any) of the affiliation with the :ref:`Organisation <Organisation>`. It adheres to `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_.
 
 .. code-block:: json
    :linenos:
