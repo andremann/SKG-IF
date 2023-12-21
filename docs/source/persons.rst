@@ -40,7 +40,7 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
 
 ``given_name``
 ---------
-*String* (mandatory): The given name of a :ref:`Person <Person>`.
+*String* (mandatory, unless an ``agent`` is specified): The given name of a :ref:`Person <Person>`.
 
 .. code-block:: json
    :linenos:
