@@ -79,7 +79,7 @@ This section is to describe the metadata fields for the :ref:`Organisation <Orga
 
 ``country``
 ----
-*String* (mandatory): The country code of the :ref:`Organisation <Organisation>` as in `ISO 3166-1 alpha-2 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_.
+*String* (mandatory): The country code of the :ref:`Organisation <Organisation>` expressed as `ISO 3166-1 alpha-2 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_.
  
 .. code-block:: json
    :linenos:
