@@ -5,16 +5,12 @@ Organisations
 The entity :ref:`Organisation <Organisation>` represents academic institutions, research centers, funders, or any other institutions taking part to the research process.
 
 
-Properties
-==========
 This section is to describe the metadata fields for the :ref:`Organisation <Organisation>`.
 
 
-Local identifier
+``local_identifier``
 ----
-:Description: Unique code identifiying the :ref:`Organisation <Organisation>` in the SKG (if any, otherwise "stateless identifier")
-:Type: String 
-:Use: Mandatory (1)
+*String* (mandatory): Unique code identifiying the :ref:`Organisation <Organisation>` in the SKG (if any, otherwise "stateless identifier").
  
 .. code-block:: json
    :linenos:
@@ -22,23 +18,12 @@ Local identifier
     "local_identifier": "the_id"
 
 
-Identifiers			
+``identifiers``
 ----
-:Description: Identifier for the entity outside of the SKG (e.g., ROR ID, ISNI). 
-:Type: List
-:Use: Recommended (1)
+*List* (recommended):  A list objects representing of external identifiers for the entity. Each object is structured as follows.
 
-Scheme
-^^^^^^^^^^^
-:Description: The scheme for the external identifier.
-:Type: String
-:Use: Mandatory (1)
-
-Value
-^^^^^^^^^
-:Description: The external identifier.
-:Type: String
-:Use: Mandatory (1)
+* ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., ROR, ISNI).
+* ``value`` *String* (mandatory): The external identifier.
 
  
 .. code-block:: json
@@ -52,11 +37,9 @@ Value
     ]
 
 
-Name
+``name``
 ----
-:Description: The name of the :ref:`Organisation <Organisation>`
-:Type: String
-:Use: Mandatory (1)
+*String* (mandatory): The name of the :ref:`Organisation <Organisation>`.
  
 .. code-block:: json
    :linenos:
@@ -64,11 +47,9 @@ Name
     "name": "Institute of Information Science and Technologies"
 
 
-Short name
+``short_name``
 ----
-:Description: The short name/acronym for the :ref:`Organisation <Organisation>`
-:Type: String
-:Use: Optional (0..1)
+*String* (optional): The short name/acronym for the :ref:`Organisation <Organisation>`.
  
 .. code-block:: json
    :linenos:
@@ -76,11 +57,9 @@ Short name
     "short_name": "CNR-ISTI"
 
 
-Other names
+``other_names``
 ----
-:Description: Other names, maybe in different languages, to identifie the :ref:`Organisation <Organisation>`
-:Type: List
-:Use: Optional (1..*)
+*List* (optional): A list of other names, maybe in different languages, identifiying the :ref:`Organisation <Organisation>`.
  
 .. code-block:: json
    :linenos:
@@ -88,11 +67,9 @@ Other names
     "other_names": ["ISTI", "ISTI-CNR"]
 
 
-Website
+``website``
 ----
-:Description: The website URL for the :ref:`Organisation <Organisation>`
-:Type: URL
-:Use: Mandatory (1)
+*String* (mandatory): The website URL for the :ref:`Organisation <Organisation>`.
  
 .. code-block:: json
    :linenos:
@@ -100,36 +77,31 @@ Website
     "website": "http://www.isti.cnr.it"
 
 
-Country code
+``country``
 ----
-:Description: The country code of the :ref:`Organisation <Organisation>`
-:Type: String (follow `ISO 3166-1 alpha-2 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_`)
-:Use: Mandatory (1)
+*String* (mandatory): The country code of the :ref:`Organisation <Organisation>` as in `ISO 3166-1 alpha-2 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_.
  
 .. code-block:: json
    :linenos:
 
-    "country": "IT"
+    "country": "DE"
 
 
-Organisation type
+``type``
 ----
-:Description: The type of the :ref:`Organisation <Organisation>`
-:Type: String, one of the following 
+*String* (recommended): The type of the :ref:`Organisation <Organisation>`. One from the following values:
     
-    * archive
-    * company
-    * education
-    * facility
-    * government
-    * healthcare
-    * nonprofit
-    * funder
-    * other
+    * ``archive``
+    * ``company``
+    * ``education``
+    * ``facility``
+    * ``government``
+    * ``healthcare``
+    * ``nonprofit``
+    * ``funder``
+    * ``other``
 
-:Use: Recommended (1)
- 
 .. code-block:: json
    :linenos:
 
-    "type": "Education"
+    "type": "education"
