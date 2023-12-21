@@ -46,7 +46,7 @@ For the time being, the easiest way we conceived is about exchanging data by eng
 
 A SKG-IF compliant SKG should provide an implementation of endpoint managing requests of this types 
 
-* ``https://my.skg.io/list_schemes`` which provides a comprehensive JSON list of the ids and PIDs schemes that the API is willing to resolve. The scheme `local` refers to ids that are valid locally in the SKG at hand, and should always be present (e.g., ``['local', 'doi', 'handle', 'cordis', 'openalex']``).
+* ``https://my.skg.io/list_schemes`` which provides a comprehensive JSON list of the ids and PIDs schemes that the API is willing to resolve. The scheme ``local`` refers to ids that are valid locally in the SKG at hand, and should always be present (e.g., ``['local', 'doi', 'handle', 'cordis', 'openalex']``).
 * ``https://my.skg.io/search/<scheme>:<id>`` 
    * The parameter ``schemes`` is one from the list provided by the method above.
    * The parameter ``id`` is the identifiers that we are asking a SKG-IF representation (if any).
