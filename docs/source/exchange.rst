@@ -25,6 +25,8 @@ To ease the consumption of such a file, the following structure has been agreed 
 | │   ├── /00000-00999
 | │       ├── part_00000.jsonl 
 | │       ├── part_00001.jsonl
+          ├── ...
+          └── part_00999.jsonl
 | │   ├── /01000-01999
 | │   └── /...
 | ├── /persons
