@@ -123,7 +123,7 @@ This section is to describe the metadata fields for the :ref:`Venue <Venue>`.
 
 ``is_full_oa``
 ----
-*Boolean* (optional): True if the :ref:`Venue <Venue>` contains only open access products.
+*Boolean* (optional): True if the :ref:`Venue <Venue>` contains only open access products (to the best of knowledge, at the time of expert).
  
 .. code-block:: json
    :linenos:
