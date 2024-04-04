@@ -9,19 +9,19 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
 ``local_identifier``
 ----
-*String* (mandatory): Unique code identifiying the :ref:`Grant <Grant>` in the SKG (if any, otherwise "stateless identifier").
+*String* (mandatory): Unique code identifiying the :ref:`Grant <Grant>` at the funder.
  
 .. code-block:: json
    :linenos:
 
-    "local_identifier": "the_id"
+    "local_identifier": "101095129"
 
 
 ``identifiers``
 ----
 *List* (optional):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
 
-* ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., CORDIS).
+* ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., DOI).
 * ``value`` *String* (mandatory): The external identifier.
 
 .. code-block:: json
@@ -29,8 +29,8 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
     "identifiers": [
         {
-            "scheme": "cordis"
-            "value": "101095129"
+            "scheme": "doi"
+            "value": "10.3030/101095129"
         }
     ]
 
