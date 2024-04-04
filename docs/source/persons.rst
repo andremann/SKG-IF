@@ -40,7 +40,7 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
 
 ``given_name``
 ---------
-*String* (mandatory, unless an ``agent`` is specified): The given name of a :ref:`Person <Person>`.
+*String* (mandatory, unless an ``agent`` or a ``fullname`` is indicated): The given name of a :ref:`Person <Person>`.
 
 .. code-block:: json
    :linenos:
@@ -50,7 +50,7 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
 
 ``family_name``
 -------------
-*String* (mandatory, unless an ``agent`` is specified): The family name of a :ref:`Person <Person>`.
+*String* (mandatory, unless an ``agent`` or a ``fullname`` is indicated): The family name of a :ref:`Person <Person>`.
 
 .. code-block:: json
    :linenos:
@@ -58,9 +58,19 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
     "family_name": "Doe"
 
 
+``fullname``
+---------
+*String* (optional, unless ``given_name`` and ``family_name`` are not present, or an ``agent`` is not indicated): The string containing whatever concatenation of a :ref:`Person <Person>`'s name(s) and surnames(s).
+
+.. code-block:: json
+   :linenos:
+
+    "fullname": "John M. Doe"
+
+
 ``agent``
 ------
-*String* (optional, unless given name and family name are not present): The name of an agent (e.g., a collective name or a legal entity).
+*String* (optional, unless all name property are missing): The name of an agent (e.g., a collective name or a legal entity).
 
 .. code-block:: json
    :linenos:
