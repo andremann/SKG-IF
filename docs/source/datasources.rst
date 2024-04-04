@@ -80,7 +80,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 .. code-block:: json
    :linenos:
 
-    "version_control": true
+    "version_control": True
 
 
 ``persistent_identity_systems``	
@@ -139,7 +139,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 .. code-block:: json
    :linenos:
 
-    "thematic": false
+    "thematic": False
 
 
 ``research_product_license``	

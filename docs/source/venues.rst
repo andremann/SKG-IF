@@ -121,14 +121,14 @@ This section is to describe the metadata fields for the :ref:`Venue <Venue>`.
     "series": "Lecture Notes in Computer Science (LNCS)"
 
 
-``is_currently_full_oa``
+``is_full_oa``
 ----
-*Boolean* (mandatory): True if the :ref:`Venue <Venue>` contains only open access products.
+*Boolean* (optional): True if the :ref:`Venue <Venue>` contains only open access products.
  
 .. code-block:: json
    :linenos:
 
-    "is_currently_full_oa": true
+    "is_currently_full_oa": True
 
 
 ``creation_date``
