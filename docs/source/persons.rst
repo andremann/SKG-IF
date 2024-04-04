@@ -70,7 +70,7 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
 
 ``agent``
 ------
-*String* (optional, unless all name property are missing): The name of an agent (e.g., a collective name or a legal entity).
+*String* (optional, unless all name properties are missing): The name of an agent (e.g., a collective name or a legal entity).
 
 .. code-block:: json
    :linenos:
