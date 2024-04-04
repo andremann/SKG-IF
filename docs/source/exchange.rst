@@ -41,7 +41,8 @@ To ease the consumption of such a file, the following structure has been agreed 
 
 API resolver
 ================================================================
-Our field work suggested that providing a full-fledged API would be not feasible at this stage, as it requires extensive discussions that can hadly meet the WG deadlines. 
+Our field work suggested that providing a full-fledged API would be not feasible at this stage, as it requires extensive discussions that can be hardly met within the WG deadlines. 
+In the future, we will explore its feasibility via a dedicated RDA WG.
 
 For the time being, the easiest way we conceived is about exchanging data by engaging with a API resolver, that returns SKG-IF, if any, given a ID in input.
 
