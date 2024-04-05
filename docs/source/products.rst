@@ -133,6 +133,7 @@ Each object is structured as follows:
 * ``declared_affiliations`` *List* (recommended): A list of :ref:`Organisations <Organisation>` identifiers that reflect the declared affiliations of a :ref:`Person <Person>` for the :ref:`Research product <Research product>`.
 * ``rank`` *Integer* (recommended): The rank (i.e., order of appearance) of the :ref:`Person <Person>` in the author list of a :ref:`Research product <Research product>`.
 * ``roles`` *List* (recommended): A list of the specific roles that a :ref:`Person <Person>` had in the :ref:`Research product <Research product>`. Each element in the list is a *String* compliant with the `CRediT taxonomy <https://credit.niso.org>`_.
+* ``is_listed_author`` *Boolean* (recommended): True if the :ref:`Person <Person>` indicated is listed as an author of the :ref:`Research product <Research product>`, False otherwise (e.g., another kind of contribution).
 
 .. code-block:: json
    :linenos:
@@ -142,7 +143,8 @@ Each object is structured as follows:
             "person": "person_123",
             "declared_affiliations": ["org_1", "org_3"],
             "rank": 1,
-            "roles": ["writing-original-draft", "conceptualization"]
+            "roles": ["writing-original-draft", "conceptualization"],
+            "is_listed_author": True,
         }
     ]
 
