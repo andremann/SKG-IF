@@ -2,11 +2,11 @@
 
 # -- Project information
 project = 'SKG-IF'
-copyright = '2023, Andrea Mannocci, Miriam Baglioni, RDA SKG-IF WG'
-author = 'Andrea Mannocci, Miriam Baglioni, RDA SKG-IF WG'
+copyright = '2024, RDA SKG-IF WG, Andrea Mannocci, Miriam Baglioni'
+author = 'RDA SKG-IF WG, Andrea Mannocci, Miriam Baglioni'
 
-release = '0.1'
-version = '0.1.0'
+release = '1.1.draft'
+version = '1.1.0'
 
 # -- General configuration
 extensions = [
