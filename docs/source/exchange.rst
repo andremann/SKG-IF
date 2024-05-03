@@ -21,7 +21,7 @@ To ease the consumption of such a file, the following structure has been agreed 
 
 
 | ./dump.zip
-| ├── /results
+| ├── /products
 | │   ├── /00000-00999
 | │   │   ├── part_00000.jsonl 
 | │   │   ├── part_00001.jsonl
