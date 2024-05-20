@@ -27,7 +27,7 @@ This section describes the metadata fields for the :ref:`Research product`.
 
 ``identifiers``
 ----
-*List* (optional):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
+*List* (recommended):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
 
 * ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., doi, handle, purl, pubmed, etc.).
 * ``value`` *String* (mandatory): The external identifier.
@@ -45,7 +45,7 @@ This section describes the metadata fields for the :ref:`Research product`.
 
 ``titles``
 ----
-*Object* (mandatory): The titles of a :ref:`Research product <Research product>` (multiple for multilinguism). 
+*Object* (optional): The titles of a :ref:`Research product <Research product>` (multiple for multilinguism). 
 The object is a dictionary, the keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key ``none`` is reserved whenever the informtion about the language is not available or cannot be shared.
 
 .. code-block:: json
@@ -60,7 +60,7 @@ The object is a dictionary, the keys represent language codes following `ISO 639
 
 ``abstracts``
 --------
-*Object* (recommended): The abstracts of a :ref:`Research product <Research product>` (multiple for multilinguism).
+*Object* (optional): The abstracts of a :ref:`Research product <Research product>` (multiple for multilinguism).
 The object is a dictionary, the keys represent language codes following `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_; the special key ``none`` is reserved whenever the informtion about the language is not available or cannot be shared.
 
 .. code-block:: json
@@ -75,7 +75,7 @@ The object is a dictionary, the keys represent language codes following `ISO 639
 
 ``product_type``
 -----
-*String* (mandatory): The type of the :ref:`Research product <Research product>`. One of the following values:
+*String* (optional): The type of the :ref:`Research product <Research product>`. One of the following values:
 
     * ``literature``
     * ``research data``
@@ -90,7 +90,7 @@ The object is a dictionary, the keys represent language codes following `ISO 639
 
 ``topics``
 --------------------
-*List* (recommended): A list objects referring to :ref:`Topic` covered by the :ref:`Research product <Research product>`. 
+*List* (optional): A list objects referring to :ref:`Topic` covered by the :ref:`Research product <Research product>`. 
 Each object in the list has the following properties:
 
 * ``topic`` *String* (mandatory): The identifier of a :ref:`Topic <Topic>` relevant for the :ref:`Research product <Research product>`.
@@ -126,7 +126,7 @@ Each object in the list has the following properties:
 
 ``contributions``
 --------------------
-*List* (mandatory): A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisations <Organisation>` when working to a :ref:`Research product <Research product>`.
+*List* (optional): A list of objects that describe a :ref:`Person <Person>`, his/her role, rank and declared affiliations to :ref:`Organisations <Organisation>` when working to a :ref:`Research product <Research product>`.
 Each object is structured as follows:
 
 * ``person`` *String* (mandatory): The identifier of a :ref:`Person <Person>` contributing to the :ref:`Research product <Research product>`.
@@ -151,7 +151,7 @@ Each object is structured as follows:
 
 ``manifestations``
 --------------------
-*List* (mandatory):  A list of objects representing multiple manifestations of the same :ref:`Research product <Research product>` (e.g., a preprint, a postprint, etc.).
+*List* (optional):  A list of objects representing multiple manifestations of the same :ref:`Research product <Research product>` (e.g., a preprint, a postprint, etc.).
 Each manifestation object has the following structure:
 
 * ``product_local_type`` *String* (mandatory): The type of the manifestation, e.g., preprint. 
@@ -236,7 +236,7 @@ Each manifestation object has the following structure:
 
 ``relevant_organisations``
 --------------------
-*List* (recommended): A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the :ref:`Research product <Research product>` (In case the individual affiliations of the :ref:`Person <Person>` are not available).
+*List* (optional): A list of relevant :ref:`Organisation <Organisation>` identifiers associated with the :ref:`Research product <Research product>` (In case the individual affiliations of the :ref:`Person <Person>` are not available).
 
 .. code-block:: json
    :linenos:
@@ -246,7 +246,7 @@ Each manifestation object has the following structure:
  
 ``funding``
 --------------------
-*List* (recommended): A list of relevant :ref:`Grant <Grant>` identifiers associated with the :ref:`Research product <Research product>`.
+*List* (optional): A list of relevant :ref:`Grant <Grant>` identifiers associated with the :ref:`Research product <Research product>`.
 
 .. code-block:: json
    :linenos:
@@ -256,7 +256,7 @@ Each manifestation object has the following structure:
 
 ``related_products``
 --------------------
-*List* (recommended): A list of objects representing related :ref:`Research product` and the semantics of such relationships.
+*List* (optional): A list of objects representing related :ref:`Research product` and the semantics of such relationships.
 Each object in the list is structured as follows:
 
 * ``relation_type`` *String* (mandatory): A list of :ref:`Research product` identifiers supplementing the present one. One of the following selection of `DataCite relationTypes <https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf>`_ 
