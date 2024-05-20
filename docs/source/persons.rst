@@ -38,6 +38,16 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
     ]
 
 
+``entity_type``
+----
+*String* (mandatory): Field stating what kind of entity is being serialised. Needed for parsing purposes; fixed to ``person``.
+
+.. code-block:: json
+   :linenos:
+
+    "entity_type": "person"
+    
+
 ``given_name``
 ---------
 *String* (optional): The given name of a :ref:`Person <Person>`.

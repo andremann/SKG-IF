@@ -40,6 +40,17 @@ This section describes the metadata fields for a :ref:`Topic <Topic>`.
         }
     ]
 
+
+``entity_type``
+----
+*String* (mandatory): Field stating what kind of entity is being serialised. Needed for parsing purposes; fixed to ``topic``.
+
+.. code-block:: json
+   :linenos:
+
+    "entity_type": "topic"
+    
+
 ``name``
 ----
 *String* (optional): The display name of the :ref:`Topic <Topic>`.

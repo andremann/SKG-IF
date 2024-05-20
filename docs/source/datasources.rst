@@ -43,6 +43,16 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
     ]
 
 
+``entity_type``
+----
+*String* (mandatory): Field stating what kind of entity is being serialised. Needed for parsing purposes; fixed to ``datasource``.
+
+.. code-block:: json
+   :linenos:
+
+    "entity_type": "datasource"
+    
+
 ``name``
 ----
 *String* (optional): Name of the :ref:`Data source <Data source>`.

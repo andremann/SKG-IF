@@ -57,6 +57,16 @@ This section is to describe the metadata fields for the :ref:`Venue <Venue>`.
     ]
 
 
+``entity_type``
+----
+*String* (mandatory): Field stating what kind of entity is being serialised. Needed for parsing purposes; fixed to ``venue``.
+
+.. code-block:: json
+   :linenos:
+
+    "entity_type": "venue"
+    
+
 ``name`` 
 ----
  *String* (optional): The name of the :ref:`Venue <Venue>`.

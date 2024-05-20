@@ -37,6 +37,16 @@ This section is to describe the metadata fields for the :ref:`Organisation <Orga
     ]
 
 
+``entity_type``
+----
+*String* (mandatory): Field stating what kind of entity is being serialised. Needed for parsing purposes; fixed to ``organisation``.
+
+.. code-block:: json
+   :linenos:
+
+    "entity_type": "organisation"
+    
+
 ``name``
 ----
 *String* (optional): The name of the :ref:`Organisation <Organisation>`.

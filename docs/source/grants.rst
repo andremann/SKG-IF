@@ -35,6 +35,16 @@ by a funding body. These bodies, both public and private, can be funders, founda
     ]
 
 
+``entity_type``
+----
+*String* (mandatory): Field stating what kind of entity is being serialised. Needed for parsing purposes; fixed to ``grant``.
+
+.. code-block:: json
+   :linenos:
+
+    "entity_type": "grant"
+    
+
 ``title``
 ----
 *String* (optional): Title of the :ref:`Grant <Grant>`.

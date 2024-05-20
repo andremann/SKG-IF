@@ -41,6 +41,16 @@ This section describes the metadata fields for the :ref:`Research product`.
             "value": "10.1103/PhysRevE.80.056103"
         }
     ]
+
+
+``entity_type``
+----
+*String* (mandatory): Field stating what kind of entity is being serialised. Needed for parsing purposes; fixed to ``product``.
+
+.. code-block:: json
+   :linenos:
+
+    "entity_type": "product"
     
 
 ``titles``
