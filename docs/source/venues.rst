@@ -59,7 +59,7 @@ This section is to describe the metadata fields for the :ref:`Venue <Venue>`.
 
 ``name`` 
 ----
- *String* (mandatory): The name of the :ref:`Venue <Venue>`.
+ *String* (optional): The name of the :ref:`Venue <Venue>`.
 
 .. code-block:: json
    :linenos:
@@ -69,7 +69,7 @@ This section is to describe the metadata fields for the :ref:`Venue <Venue>`.
 
 ``acronym`` 
 ----
- *String* (recommended): Acronym used by a :ref:`Venue <Venue>`.
+ *String* (optional): Acronym used by a :ref:`Venue <Venue>`.
 
 .. code-block:: json
    :linenos:
@@ -79,7 +79,7 @@ This section is to describe the metadata fields for the :ref:`Venue <Venue>`.
 
 ``type``
 ----
-*String* (mandatory): The type of the :ref:`Venue <Venue>`. The String follows the vocabulary below
+*String* (optional): The type of the :ref:`Venue <Venue>`. The String follows the vocabulary below
 
 .. tabularcolumns:: p{0.132\linewidth}p{0.198\linewidth}p{0.330\linewidth}
 .. csv-table:: Controlled vocabulary for different types of venue and its mapping towards OpenCitations
@@ -133,7 +133,7 @@ This section is to describe the metadata fields for the :ref:`Venue <Venue>`.
 
 ``creation_date``
 ----
-*String* (recommended): The date of creation of the :ref:`Venue <Venue>` expressed as `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_.
+*String* (optional): The date of creation of the :ref:`Venue <Venue>` expressed as `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_.
  
 .. code-block:: json
    :linenos:
