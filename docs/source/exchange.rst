@@ -15,7 +15,7 @@ For the sake of simplicity, JSON has been chosen as a reference data format for 
 
 Bulk .zip file
 ================================================================
-As a first step, adopters of the SKG-IF can expose their mapped data as a bulk ``.zip`` file (all-inclusive) where records are serialised in JSON a slip across different ``part`` files.
+As a first step, adopters of the SKG-IF can expose their mapped data as a bulk ``.zip`` file (all-inclusive) where records are serialised in JSON and split across different ``part`` files.
 Each part file contains 10,000 SKG-IF records in JSON lines format.
 Part files are grouped into folder whose name indicates the range of the part files contained.
 In this way, each folder will contain 10 million SKG-IF records in total.
