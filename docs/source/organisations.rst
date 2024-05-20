@@ -39,7 +39,7 @@ This section is to describe the metadata fields for the :ref:`Organisation <Orga
 
 ``name``
 ----
-*String* (mandatory): The name of the :ref:`Organisation <Organisation>`.
+*String* (optional): The name of the :ref:`Organisation <Organisation>`.
  
 .. code-block:: json
    :linenos:
@@ -69,7 +69,7 @@ This section is to describe the metadata fields for the :ref:`Organisation <Orga
 
 ``website``
 ----
-*String* (mandatory): The website URL for the :ref:`Organisation <Organisation>`.
+*String* (optional): The website URL for the :ref:`Organisation <Organisation>`.
  
 .. code-block:: json
    :linenos:
@@ -79,7 +79,7 @@ This section is to describe the metadata fields for the :ref:`Organisation <Orga
 
 ``country``
 ----
-*String* (mandatory): The country code of the :ref:`Organisation <Organisation>` expressed as `ISO 3166-1 alpha-2 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_.
+*String* (optional): The country code of the :ref:`Organisation <Organisation>` expressed as `ISO 3166-1 alpha-2 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_.
  
 .. code-block:: json
    :linenos:
@@ -89,7 +89,7 @@ This section is to describe the metadata fields for the :ref:`Organisation <Orga
 
 ``type``
 ----
-*String* (recommended): The type of the :ref:`Organisation <Organisation>`. One from the following values:
+*String* (optional): The type of the :ref:`Organisation <Organisation>`. One from the following values:
     
     * ``archive``
     * ``company``
