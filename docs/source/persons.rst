@@ -22,7 +22,7 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
 
 ``identifiers``
 ----
-*List* (optional):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
+*List* (recommended):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
 
 * ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., ORCID).
 * ``value`` *String* (mandatory): The external identifier.
@@ -40,7 +40,7 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
 
 ``given_name``
 ---------
-*String* (mandatory, unless an ``agent`` or a ``fullname`` is indicated): The given name of a :ref:`Person <Person>`.
+*String* (optional): The given name of a :ref:`Person <Person>`.
 
 .. code-block:: json
    :linenos:
@@ -50,7 +50,7 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
 
 ``family_name``
 -------------
-*String* (mandatory, unless an ``agent`` or a ``fullname`` is indicated): The family name of a :ref:`Person <Person>`.
+*String* (optional): The family name of a :ref:`Person <Person>`.
 
 .. code-block:: json
    :linenos:
@@ -60,7 +60,7 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
 
 ``fullname``
 ---------
-*String* (optional, unless ``given_name`` and ``family_name`` are not present, or an ``agent`` is not indicated): The string containing whatever concatenation of a :ref:`Person <Person>`'s name(s) and surnames(s).
+*String* (optional): The string containing whatever concatenation of a :ref:`Person <Person>`'s name(s) and surnames(s).
 
 .. code-block:: json
    :linenos:
@@ -70,7 +70,7 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
 
 ``agent``
 ------
-*String* (optional, unless all name properties are missing): The name of an agent (e.g., a collective name or a legal entity).
+*String* (optional): The name of an agent (e.g., a collective name or a legal entity).
 
 .. code-block:: json
    :linenos:
