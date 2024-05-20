@@ -20,7 +20,7 @@ This section describes the metadata fields for a :ref:`Topic <Topic>`.
 
 ``identifiers``
 ----
-*List* (optional):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
+*List* (recommended):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
 
 * ``scheme`` *String* (mandatory): The scheme for the external identifier.
 * ``value`` *String* (mandatory): The external identifier.
@@ -42,7 +42,7 @@ This section describes the metadata fields for a :ref:`Topic <Topic>`.
 
 ``name``
 ----
-*String* (mandatory): The display name of the :ref:`Topic <Topic>`.
+*String* (optional): The display name of the :ref:`Topic <Topic>`.
 
 .. code-block:: json
    :linenos:
