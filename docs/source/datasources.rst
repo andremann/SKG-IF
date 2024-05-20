@@ -27,7 +27,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``identifiers``
 ----
-*List* (optional):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
+*List* (recommended):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
 
 * ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., a DOI).
 * ``value`` *String* (mandatory): The external identifier.
@@ -45,7 +45,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``name``
 ----
-*String* (mandatory): Name of the :ref:`Data source <Data source>`.
+*String* (optional): Name of the :ref:`Data source <Data source>`.
  
 .. code-block:: json
    :linenos:
@@ -55,7 +55,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``submission_policy_url``	
 ----
-*String* (recommended): This policy provides a comprehensive framework for the contribution of research products. Criteria for submitting content to the repository as well as product preparation guidelines can be stated. Concepts for quality assurance may be provided.
+*String* (optional): This policy provides a comprehensive framework for the contribution of research products. Criteria for submitting content to the repository as well as product preparation guidelines can be stated. Concepts for quality assurance may be provided.
  
 .. code-block:: json
    :linenos:
@@ -65,7 +65,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``preservation_policy_url``	
 ----
-*String* (recommended): This policy provides a comprehensive framework for the long-term preservation of the research products. Principles aims and responsibilities must be clarified. An important aspect is the description of preservation concepts to ensure the technical and conceptual utility of the content.
+*String* (optional): This policy provides a comprehensive framework for the long-term preservation of the research products. Principles aims and responsibilities must be clarified. An important aspect is the description of preservation concepts to ensure the technical and conceptual utility of the content.
  
 .. code-block:: json
    :linenos:
@@ -85,7 +85,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``persistent_identity_systems``	
 ----
-*List* (recommended): The persistent identifier systems that are used by the :ref:`Data source <Data source>` to identify the ProductType it supports.
+*List* (optional): The persistent identifier systems that are used by the :ref:`Data source <Data source>` to identify the ProductType it supports.
 
 
 * ``product_type`` *String* (mandatory): The Product type to which the persistent identifier is referring to. Follows the EOSC vocabulary `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_.
@@ -104,7 +104,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``jurisdiction``	
 ----
-*String* (mandatory): The property defines the jurisdiction of the users of the :ref:`Data source <Data source>`, based on the vocabulary `Jurisdiction <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-Jurisdiction>`_.
+*String* (optional): The property defines the jurisdiction of the users of the :ref:`Data source <Data source>`, based on the vocabulary `Jurisdiction <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-Jurisdiction>`_.
  
 .. code-block:: json
    :linenos:
@@ -114,7 +114,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``data_source_classification``	
 ----
-*String* (mandatory): The specific type of the :ref:`Data source <Data source>` based on the vocabulary `Data Source Classification <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-DataSourceClassification>`_.
+*String* (optional): The specific type of the :ref:`Data source <Data source>` based on the vocabulary `Data Source Classification <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-DataSourceClassification>`_.
  
 .. code-block:: json
    :linenos:
@@ -124,7 +124,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``research_product_type``	
 ----
-*List* (mandatory): The types of OpenAIRE entities managed by the :ref:`Data source <Data source>`, based on the vocabulary `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_.
+*List* (optional): The types of OpenAIRE entities managed by the :ref:`Data source <Data source>`, based on the vocabulary `Research Product Type <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile#D.v4.00EOSCDataSourceProfile-ResearchProductType>`_.
  
 .. code-block:: json
    :linenos:
@@ -134,7 +134,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``thematic``	
 ----
-*Boolean* (mandatory): Boolean value specifying if the :ref:`Data source <Data source>` is dedicated to a given discipline or is instead discipline agnostic.
+*Boolean* (optional): Boolean value specifying if the :ref:`Data source <Data source>` is dedicated to a given discipline or is instead discipline agnostic.
  
 .. code-block:: json
    :linenos:
@@ -144,7 +144,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``research_product_license``	
 ----
-*List* (recommended): Licenses under which the research products contained within the :ref:`Data source <Data source>` can be made available. Repositories can allow a license to be defined for each research product, while for scientific databases the database is typically provided under a single license. Each element in the list is structured as follows:
+*List* (optional): Licenses under which the research products contained within the :ref:`Data source <Data source>` can be made available. Repositories can allow a license to be defined for each research product, while for scientific databases the database is typically provided under a single license. Each element in the list is structured as follows:
  
 * ``Research Product License Name`` *String* (mandatory): 
 * ``Research Product License URL`` *String* (mandatory): 
@@ -162,7 +162,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``research_product_access_policy``		
 ----
-*List* (recommended): List of terms following vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_.
+*List* (optional): List of terms following vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_.
  
 .. code-block:: json
    :linenos:
@@ -172,7 +172,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``research_product_metadata_license``	
 ----
-*List* (recommended): Metadata Policy for information describing items in the repository: Access and re-use of metadata. Each element has the following properties:
+*List* (optional): Metadata Policy for information describing items in the repository: Access and re-use of metadata. Each element has the following properties:
 
 * ``name`` *String* (mandatory): 
 * ``url`` *String* (mandatory): 
@@ -190,7 +190,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``research_product_metadata_access_policy``		
 ----
-*List* (recommended): List of terms following vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_.
+*List* (optional): List of terms following vocabulary: `COAR Access Rights 1.0 <https://vocabularies.coar-repositories.org/access_rights/>`_.
  
 .. code-block:: json
    :linenos:
