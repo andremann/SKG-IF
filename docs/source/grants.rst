@@ -19,7 +19,7 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
 ``identifiers``
 ----
-*List* (optional):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
+*List* (recommended):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
 
 * ``scheme`` *String* (mandatory): The scheme for the external identifier (e.g., DOI).
 * ``value`` *String* (mandatory): The external identifier.
@@ -37,7 +37,7 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
 ``title``
 ----
-*String* (mandatory): Title of the :ref:`Grant <Grant>`.
+*String* (optional): Title of the :ref:`Grant <Grant>`.
  
 .. code-block:: json
    :linenos:
@@ -47,7 +47,7 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
 ``abstract``
 ----
-*String* (recommended): The abstract or a description of the :ref:`Grant <Grant>`.
+*String* (optional): The abstract or a description of the :ref:`Grant <Grant>`.
  
 .. code-block:: json
    :linenos:
@@ -67,7 +67,7 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
 ``funder``
 ------
-*String* (mandatory): The name of the body funding the :ref:`Grant <Grant>`.
+*String* (optional): The name of the body funding the :ref:`Grant <Grant>`.
 
 .. code-block:: json
    :linenos:
@@ -87,7 +87,7 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
 ``currency``
 ------
-*String* (mandatory, if ``funded_amount`` is provided): Currency of the funded amount, following `ISO 4217 <https://en.wikipedia.org/wiki/ISO_4217>`_.
+*String* (mandatory, if ``funded_amount`` is provided; optional otherwise): Currency of the funded amount, following `ISO 4217 <https://en.wikipedia.org/wiki/ISO_4217>`_.
 
 .. code-block:: 
     json
@@ -119,7 +119,7 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
 ``start_date``
 ----
-*String* (recommended): The date the :ref:`Grant <Grant>` started expressed as `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_.
+*String* (optional): The date the :ref:`Grant <Grant>` started expressed as `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_.
 
 .. code-block:: json
    :linenos:
@@ -129,7 +129,7 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
 ``end_date``
 ----
-*String* (recommended): The date the :ref:`Grant <Grant>` finished expressed as `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_.
+*String* (optional): The date the :ref:`Grant <Grant>` finished expressed as `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_.
  
 .. code-block:: json
    :linenos:
@@ -139,7 +139,7 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
 ``website``
 ----
-*String* (recommended): An URL poiting to the website of the funded project.
+*String* (optional): An URL poiting to the website of the funded project.
  
 .. code-block:: json
    :linenos:
@@ -149,7 +149,7 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
 ``beneficiaries``
 ----
-*List* (recommended): A list of the :ref:`Organisation` identifiers funded by the :ref:`Grant <Grant>`.
+*List* (optional): A list of the :ref:`Organisation` identifiers funded by the :ref:`Grant <Grant>`.
  
 .. code-block:: json
    :linenos:
@@ -159,7 +159,7 @@ by a funding body. These bodies, both public and private, can be funders, founda
 
 ``contributors``
 ----
-*List* (recommended): A list of the :ref:`Person` contributing to the :ref:`Grant <Grant>`.
+*List* (optional): A list of the :ref:`Person` contributing to the :ref:`Grant <Grant>`.
  
 * ``person``: The identifier of the :ref:`Person` who is the principal investigator  
 * ``organisation``: The identifier of the :ref:`Organisation <Organisation>` the principal investigator has declared as affiliation for the :ref:`Grant <Grant>`.
