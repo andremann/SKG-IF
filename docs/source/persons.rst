@@ -33,7 +33,7 @@ This section describes the metadata fields for the :ref:`Person <Person>`.
     "identifiers": [
         {
             "scheme": "orcid"
-            "value": "000-0002-5193-7851"
+            "value": "0000-0002-5193-7851"
         }
     ]
 
