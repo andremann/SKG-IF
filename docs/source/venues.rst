@@ -138,7 +138,7 @@ This section is to describe the metadata fields for the :ref:`Venue <Venue>`.
 .. code-block:: json
    :linenos:
 
-    "is_currently_full_oa": True
+    "is_currently_full_oa": true
 
 
 ``creation_date``

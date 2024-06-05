@@ -85,12 +85,12 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 
 ``version_control``	
 ----
-*Boolean* (optional): If data versioning is supported: the :ref:`Data source <Data source>` explicitly allows the deposition of different versions of the same object
+*Boolean* (optional): True if data versioning is supported: the :ref:`Data source <Data source>` explicitly allows the deposition of different versions of the same object
  
 .. code-block:: json
    :linenos:
 
-    "version_control": True
+    "version_control": true
 
 
 ``persistent_identity_systems``	
@@ -149,7 +149,7 @@ This section describes the metadata fields for a :ref:`Data source <Data source>
 .. code-block:: json
    :linenos:
 
-    "thematic": False
+    "thematic": false
 
 
 ``research_product_license``	

@@ -154,7 +154,7 @@ Each object is structured as follows:
             "declared_affiliations": ["org_1", "org_3"],
             "rank": 1,
             "roles": ["writing-original-draft", "conceptualization"],
-            "is_listed_author": True
+            "is_listed_author": true
         }
     ]
 
