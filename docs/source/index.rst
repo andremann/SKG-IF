@@ -24,6 +24,7 @@ Contents
    exchange
    adopters
    contribute
+   extensions
    references
    changelog
    .. test
