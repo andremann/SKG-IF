@@ -38,7 +38,7 @@ Knowledge Sharing and Collaboration: Community extensions encourage knowledge sh
 Empowerment, Accountability, and Ownership: Developing a community extension empowers scientific community members to actively contribute to the evolution and enhancement of the SKG-IF framework. It fosters a sense of ownership and investment in the standardisation efforts, encouraging community engagement and participation in shaping the future of scientific knowledge representation.
 
 
-Apllying for an extension
+Applying for an extension
 ---------------------------
 A case statement should be submitted to the WG for each extension, outlining the justification, rationale, and intended use of the extension within the SKG-IF framework.
 This requirement promotes thoughtful consideration, accountability, and alignment with the broader goals and principles of the SKG-IF. 
