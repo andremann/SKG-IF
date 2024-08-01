@@ -21,10 +21,11 @@ Contents
    
    
    model
+   extensions
    exchange
    adopters
    contribute
-   extensions
+   how_to_extend
    references
    changelog
    .. test
