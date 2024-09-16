@@ -39,16 +39,21 @@ The primary motivations for developing an SKG-IF extension include:
 * **Empowerment, Accountability, and Ownership:** Developing an SKG-IF extension empowers scientific community members to actively contribute to the evolution and enhancement of the SKG-IF framework. It fosters a sense of ownership and investment in the standardisation efforts, encouraging community engagement and participation in shaping the future of scientific knowledge representation.
 
 
-Applying for an extension
+Participation guidelines
 ---------------------------
-A case statement should be submitted to the WG for each extension, outlining the justification, rationale, and intended use of the extension within the SKG-IF framework.
-This requirement promotes thoughtful consideration, accountability, and alignment with the broader goals and principles of the SKG-IF. 
-The principles guiding the development and implementation of extensions within the Scientific Knowledge Graph Interoperability Framework (SKG-IF) emphasise the following key factors:
+These are the engagement rules that proponents of a new SKG-IF extension should follow in order to be eligible
 
 * **Shared Interest/Need:** Extensions should address a collective interest or requirement identified within projects, communities, or domains rather than catering to individual or isolated needs. This principle ensures that extensions serve a broader purpose and contribute to the overall advancement of scientific knowledge representation.
 * **Non-Interference:** Extensions should not interfere with or disrupt the entities already defined within the SKG-IF. They should not serve as shortcuts for sharing information that should be placed elsewhere within the framework. By adhering to this principle, the integrity and coherence of the SKG-IF are preserved.
 
-By adhering to these guiding principles, the development and adoption of SKG-IF extensions are driven by a commitment to collaboration, standardisation, interoperability, and continuous improvement in representing and sharing scientific knowledge effectively across diverse research domains and communities.
+Applying for an extension
+---------------------------
+In order to apply for an SKG-IF extensions, proponents should head to the `SKG-IF repository <https://github.com/andremann/SKG-IF>`_ on GitHub, open a new issue selecting the proper template and follow the prompted instructions.
+All the fields between angle brackets included in the aforementioned template must be substituted with the appropriate text. All the fields are mandatory.
+
+All the requests will be evaluated by SKG-IF WG members. 
+It is possible for a new proposal to have a few iterative responses before being given a final response on whether or not the proposed ontology is endorsed. 
+
 
 Documenting an extension
 ---------------------------
