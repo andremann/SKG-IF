@@ -1,6 +1,6 @@
 ---
 name: SKG-IF extension
-about: Case statement tempalte for new SKG-IF extension
+about: Case statement template for new SKG-IF extension
 title: ''
 labels: ''
 assignees: ''
