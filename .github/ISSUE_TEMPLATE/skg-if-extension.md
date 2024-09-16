@@ -2,7 +2,7 @@
 name: SKG-IF extension
 about: Case statement template for new SKG-IF extension
 title: ''
-labels: ''
+labels: new extension
 assignees: ''
 
 ---
