@@ -13,7 +13,7 @@ TBA
 Rationale
 ---------
 
-**TL;DR: Extensions primarily act as plug-ins for extra properties that enhance the core entities defined by the SKG-IF, for extra entities capturing community concepts, and for relationships between properties.**
+**In a nutshell:** Extensions primarily act as plug-ins for extra properties that enhance the core entities defined by the SKG-IF, for extra entities capturing community concepts, and for relationships between properties.
 
 Introducing extensions to the SKG-IF serves as a strategic step towards addressing the evolving and diverse needs of scientific communities and projects.
 The concept of extensions within the SKG-IF framework is designed to cater to shared interests and requirements that the existing standard entities and properties may not fully meet.
