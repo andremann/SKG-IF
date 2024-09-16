@@ -8,8 +8,8 @@ towards the definition of the **Scientific Knowledge Graphs Interoperability Fra
 Currently, the work has been handed over to the RDA WG on `Scientific Knowledge Graphs - Interoperability Framework <https://www.rd-alliance.org/groups/scientific-knowledge-graphs-interoperability-framework-skg-if-wg>`_ 
 which has been endorsed in June 2023.
  
-.. note::
-   This documentation is under active development.
+.. warning::
+   This version of documentation is under active development.
 
 .. .. include:: snippets/foo.rsti
 
