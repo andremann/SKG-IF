@@ -7,11 +7,11 @@ SKG-IF core entities and relevant relations are reported in the figure below.
 .. toctree::
    :maxdepth: 3
 
-   products
-   persons
-   organisations
-   venues
-   datasources
-   grants
-   topics
+   product
+   person
+   organisation
+   venue
+   datasource
+   grant
+   topic
     

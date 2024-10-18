@@ -1,6 +1,6 @@
 .. _Grant:
 
-Grants
+Grant
 ########
 The entity :ref:`Grant <Grant>` describes funding awarded to a :ref:`Person <Person>` or an :ref:`Organisation <Organisation>` 
 by a funding body. These bodies, both public and private, can be funders, foundations, governments, agencies or institutions. 

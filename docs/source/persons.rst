@@ -1,6 +1,6 @@
 .. _Person:
 
-Persons
+Person
 ############
 
 The :ref:`Person <Person>` entity represents an individual who is involved in the creation, publication, and dissemination of :ref:`Research products <Research product>`. 
