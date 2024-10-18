@@ -1,6 +1,6 @@
 .. _Topic:
 
-Topics
+Topic
 ######
 A :ref:`Topic <Topic>` describes the scientific disciplines, subjects and keywords potentially relevant for a :ref:`Research product <Research product>`.
 

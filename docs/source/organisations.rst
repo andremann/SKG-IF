@@ -1,6 +1,6 @@
 .. _Organisation:
 
-Organisations
+Organisation
 #############
 The entity :ref:`Organisation <Organisation>` represents academic institutions, research centers, funders, or any other institutions taking part to the research process.
 

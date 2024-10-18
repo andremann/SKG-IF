@@ -1,6 +1,6 @@
 .. _Venue:
 
-Venues
+Venue
 ######
 A :ref:`Venue <Venue>` is an entity that models a publishing “gateway” used by :ref:`Person <Person>` to make their :ref:`Research products <Research product>` available to others.
 

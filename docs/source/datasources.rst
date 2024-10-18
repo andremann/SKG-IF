@@ -1,6 +1,6 @@
 .. _Data source:
 
-Data sources
+Data source
 ############
 A :ref:`Data source <Data source>` is a service where published material (metadata and files) are stored, preserved, and made discoverable and accessible. 
 A data source is described by the `EOSC Profile for data sources <https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile>`_.
