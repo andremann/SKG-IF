@@ -5,8 +5,8 @@ project = 'SKG-IF'
 copyright = '2024, RDA SKG-IF WG, Andrea Mannocci, Miriam Baglioni'
 author = 'RDA SKG-IF WG, Andrea Mannocci, Miriam Baglioni'
 
-release = '1.1.draft'
-version = '1.1.0'
+release = 'discontinued'
+version = 'discontinued'
 
 # -- General configuration
 extensions = [
