@@ -1,5 +1,3 @@
-.. _Exchange:
-
 Exchange protocols
 ######
 
