@@ -1,31 +1,6 @@
 Welcome to SKG-IF documentation!
 ===================================
 
-This documentation provides an overview of the work started by the RDA Interest Group on
-`Open Science Graphs for FAIR Data <https://rd-alliance.org/groups/open-science-graphs-fair-data-ig>`_ 
-towards the definition of the **Scientific Knowledge Graphs Interoperability Framwork** (**SKG-IF**).
-
-Currently, the work has been handed over to the RDA WG on `Scientific Knowledge Graphs - Interoperability Framework <https://www.rd-alliance.org/groups/scientific-knowledge-graphs-interoperability-framework-skg-if-wg>`_ 
-which has been endorsed in June 2023.
- 
 .. warning::
-   This version of documentation is under active development.
-
-.. .. include:: snippets/foo.rsti
-
-Contents
---------
-
-.. toctree::
-   :maxdepth: 2
-   
-   
-   model
-   extensions
-   exchange
-   adopters
-   contribute
-   how_to_extend
-   references
-   changelog
-   .. test
+    SKG-IF is now an `organisation on GitHub <https://github.com/skg-if>`_ and consequently the documentation have been moved.
+    The new documentation home can be found `here <https://skg-if.github.io>`_, while older releases can still be found on this website, from the bottom-right menu.

@@ -1,6 +1,6 @@
 How to contribute
 ########################
 
-
-If you wish to participate to the discussion around the SKG-IF, please subscribe to the 
-`RDA WG Scientific Knowledge Graphs - Interoperability Framework <https://www.rd-alliance.org/groups/scientific-knowledge-graphs-interoperability-framework-skg-if-wg>`_.
+.. warning::
+    SKG-IF is now an `organisation on GitHub <https://github.com/skg-if>`_ and consequently the documentation have been moved.
+    The new documentation home can be found `here <https://skg-if.github.io>`_, while older releases can still be found on this website, from the bottom-right menu.

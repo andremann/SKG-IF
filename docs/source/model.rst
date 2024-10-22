@@ -1,17 +1,6 @@
 Core model entities
 ##############
-SKG-IF core entities and relevant relations are reported in the figure below.
 
-.. image:: images/model.png
-
-.. toctree::
-   :maxdepth: 3
-
-   products
-   persons
-   organisations
-   venues
-   datasources
-   grants
-   topics
-    
+.. warning::
+    SKG-IF is now an `organisation on GitHub <https://github.com/skg-if>`_ and consequently the documentation have been moved.
+    The new documentation home can be found `here <https://skg-if.github.io>`_, while older releases can still be found on this website, from the bottom-right menu.

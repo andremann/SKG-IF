@@ -1,61 +1,6 @@
-.. _Topic:
-
 Topics
 ######
-A :ref:`Topic <Topic>` describes the scientific disciplines, subjects and keywords potentially relevant for a :ref:`Research product <Research product>`.
 
-
-This section describes the metadata fields for a :ref:`Topic <Topic>`.
-
-
-``local_identifier``		
-----
-*String* (mandatory): Unique code identifiying the :ref:`Topic <Topic>` in the SKG (if any, otherwise "stateless identifier").
- 
-.. code-block:: json
-   :linenos:
-
-    "local_identifier": "topic_1"
-
-
-``identifiers``
-----
-*List* (recommended):  A list of objects representing external identifiers for the entity. Each object is structured as follows.
-
-* ``scheme`` *String* (mandatory): The scheme for the external identifier.
-* ``value`` *String* (mandatory): The external identifier.
-
- 
-.. code-block:: json
-   :linenos:
-
-    "identifiers": [
-        {
-            "scheme": "Computer Science Ontology",
-            "value": "https://cso.kmi.open.ac.uk/topics/semantic_web"
-        },
-        {
-            "scheme": "dbpedia",
-            "value": "https://dbpedia.org/page/Semantic_Web"
-        }
-    ]
-
-
-``entity_type``
-----
-*String* (mandatory): Field stating what kind of entity is being serialised. Needed for parsing purposes; fixed to ``topic``.
-
-.. code-block:: json
-   :linenos:
-
-    "entity_type": "topic"
-    
-
-``name``
-----
-*String* (optional): The display name of the :ref:`Topic <Topic>`.
-
-.. code-block:: json
-   :linenos:
-
-    "name": "Semantic Web"
+.. warning::
+    SKG-IF is now an `organisation on GitHub <https://github.com/skg-if>`_ and consequently the documentation have been moved.
+    The new documentation home can be found `here <https://skg-if.github.io>`_, while older releases can still be found on this website, from the bottom-right menu.
