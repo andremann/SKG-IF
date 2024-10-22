@@ -1,4 +1,4 @@
-Welcome to SKG-IF documentation!
+SKG-IF documentation has been noved!
 ===================================
 
 .. warning::
