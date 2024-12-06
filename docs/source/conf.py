@@ -35,3 +35,5 @@ html_theme_options = {
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+html_extra_path = ['robots.txt']
