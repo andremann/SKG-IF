@@ -1,5 +1,7 @@
 .. meta::
     :google-site-verification: 3A2WcFwf_lWINiYPgzfItCZt2DKWiw-jcb0hJ6NMoN4
+    :robots: noindex, nofollow
+
 SKG-IF documentation has been moved!
 ===================================
 
